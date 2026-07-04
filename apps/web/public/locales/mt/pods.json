@@ -1,0 +1,26 @@
+{
+  "loading": "Qed jillowdja l-pods...",
+  "error": "Ma rnexxiex jillowdja l-pods",
+  "empty": "Ma nstabux pods għal dan id-Deployment",
+  "yes": "Iva",
+  "no": "Le",
+  "table": {
+    "name": "Pod",
+    "phase": "Fażi",
+    "ready": "Lest",
+    "restarts": "Restarts",
+    "node": "Node",
+    "podIp": "Pod IP",
+    "ports": "Ports",
+    "actions": "Azzjonijiet"
+  },
+  "actions": {
+    "restart": "Erġa' ibda pod",
+    "delete": "Ħassar pod",
+    "console": "Iftaħ console"
+  },
+  "delete": {
+    "title": "Ħassar pod",
+    "message": "Ħassar pod {{name}}? Il-kontrollur tad-Deployment jista' jerġa' joħolqu."
+  }
+}

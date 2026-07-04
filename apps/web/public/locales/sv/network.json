@@ -1,0 +1,81 @@
+{
+  "title": "Nätverk",
+  "subtitle": "Services, Endpoints och Ingress: hur pods når varandra i clustret",
+  "tabs": {
+    "ariaLabel": "Nätverkssektioner",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Laddar services...",
+    "error": "Kunde inte ladda services",
+    "empty": "Inga services i detta namespace",
+    "table": {
+      "name": "Namn",
+      "type": "Typ",
+      "clusterIp": "Cluster IP",
+      "ports": "Portar",
+      "selector": "Selector",
+      "actions": "Åtgärder"
+    },
+    "actions": {
+      "delete": "Ta bort",
+      "open": "Öppna {{name}} i webbläsaren",
+      "openTooltip": "{{url}}: om sidan inte laddas, kör i terminalen: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Kopiera port-forward-kommando för {{name}}",
+      "copied": "Kommando kopierat",
+      "edit": "Redigera portar",
+      "editShort": "Portar"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Typ",
+      "portsLabel": "Portar",
+      "port": "Service-port",
+      "targetPort": "Target-port",
+      "nodePort": "NodePort",
+      "cancel": "Avbryt",
+      "save": "Spara",
+      "saving": "Sparar..."
+    },
+    "delete": {
+      "title": "Ta bort service",
+      "message": "Ta bort service {{name}}? Pods fortsätter köra men DNS-namnet slutar fungera."
+    },
+    "create": {
+      "title": "Skapa service",
+      "name": "Service-namn",
+      "deployment": "Deployment",
+      "port": "Service-port",
+      "targetPort": "Target-port (valfritt)",
+      "submit": "Skapa service",
+      "submitting": "Skapar...",
+      "cancel": "Avbryt"
+    }
+  },
+  "endpoints": {
+    "subtitle": "Pod IP-adresser bakom varje service (hanteras automatiskt av Kubernetes)",
+    "loading": "Laddar endpoints...",
+    "error": "Kunde inte ladda endpoints",
+    "empty": "Inga endpoints ännu: skapa en service för ett deployment",
+    "table": {
+      "name": "Service",
+      "ports": "Portar",
+      "addresses": "Pod IP / namn"
+    }
+  },
+  "deployment": {
+    "title": "Kopplade services",
+    "loading": "Laddar services...",
+    "error": "Kunde inte ladda services",
+    "empty": "Ingen service för detta deployment. Skapa en på Nätverk-sidan.",
+    "openNetwork": "Öppna nätverk",
+    "viewEndpoints": "Pod IP ->"
+  }
+}

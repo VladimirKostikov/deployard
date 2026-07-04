@@ -1,0 +1,316 @@
+{
+  "title": "Deployments",
+  "subtitle": "Εφαρμογές στο επιλεγμένο namespace",
+  "subtitleAll": "Εφαρμογές σε όλα τα προσβάσιμα namespaces",
+  "loading": "Φόρτωση deployments...",
+  "error": "Αποτυχία φόρτωσης deployments",
+  "empty": "Δεν βρέθηκαν deployments σε αυτό το namespace",
+  "emptyAll": "Δεν βρέθηκαν deployments σε προσβάσιμα namespaces",
+  "projectGroups": {
+    "standalone": "Αυτόνομο",
+    "services_one": "{{count}} υπηρεσία",
+    "services_other": "{{count}} υπηρεσίες",
+    "health": "{{healthy}}/{{total}} υγιή",
+    "restarting": "{{count}}/{{total}} επανεκκινούνται",
+    "restartingBanner": "Επανεκκίνηση {{count}} από {{total}} deployments σε αυτή την ομάδα",
+    "settings": "Ρυθμίσεις",
+    "settingsTitle": "Ρυθμίσεις ομάδας",
+    "settingsGroupLabel": "Ομάδα project",
+    "settingsDockerReady": "Docker διαθέσιμο",
+    "settingsDockerUnavailable": "Docker μη διαθέσιμο",
+    "settingsRebuildHint": "Ξαναχτίζει το compose, φορτώνει images στο kind και κάνει rollout deployments σε αυτή την ομάδα.",
+    "settingsLoading": "Έλεγχος περιβάλλοντος...",
+    "settingsClose": "Κλείσιμο",
+    "settingsNoCompose": "Δεν βρέθηκε compose project με αυτό το όνομα. Το rebuild είναι διαθέσιμο μόνο για ομάδες που εισήχθησαν από Docker Compose.",
+    "delete": "Διαγραφή ομάδας",
+    "restart": "Επανεκκίνηση ομάδας",
+    "disable": "Απενεργοποίηση ομάδας",
+    "deleteTitle": "Διαγραφή ομάδας project",
+    "deleteMessage": "Διαγραφή όλων των deployments, services και secrets στην ομάδα \"{{name}}\";"
+  },
+  "table": {
+    "name": "Όνομα",
+    "namespace": "Namespace",
+    "image": "Image",
+    "replicas": "Ready / Total",
+    "revision": "Revision",
+    "status": "Κατάσταση"
+  },
+  "status": {
+    "healthy": "Υγιές",
+    "starting": "Εκκίνηση",
+    "restarting": "Επανεκκίνηση",
+    "degraded": "Υποβαθμισμένο",
+    "scaledToZero": "Scaled σε 0",
+    "disabled": "Disabled"
+  },
+  "statusModal": {
+    "open": "Προβολή λεπτομερειών κατάστασης",
+    "title": "Κατάσταση deployment",
+    "summary": {
+      "healthy": "Όλα τα pods είναι έτοιμα.",
+      "starting": "Το deployment ξεκινά. Αυτό είναι φυσιολογικό αμέσως μετά τη δημιουργία.",
+      "degraded": "Κάποια pods δεν είναι έτοιμα. Άνοιξε τις λεπτομέρειες για να δεις γιατί.",
+      "scaledToZero": "Ο αριθμός replicas είναι 0, δεν τρέχουν pods.",
+      "disabled": "Deployment is disabled. Pods are stopped until you enable it again.",
+      "restarting": "Rolling restart σε εξέλιξη: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} ενημερωμένα."
+    },
+    "reasonsTitle": "Γιατί αυτή η κατάσταση",
+    "desired": "Επιθυμητά",
+    "ready": "Ready",
+    "available": "Διαθέσιμα",
+    "updated": "Ενημερωμένα",
+    "reasons": {
+      "healthy": "{{ready}} από {{desired}} replicas είναι έτοιμα.",
+      "starting": "Το deployment μόλις δημιουργήθηκε ή ενημερώνεται.",
+      "scaledToZero": "Scaled σε 0, δεν τρέχουν pods.",
+      "disabled": "Disabled via Deployard. Enable to restore {{replicas}} replica(s).",
+      "podsNotReady": "{{ready}} από {{desired}} ready, δεν πέρασαν όλα τα readiness probes.",
+      "podsNotAvailable": "{{available}} από {{desired}} διαθέσιμα, τα pods δεν είναι ακόμα έτοιμα.",
+      "rolloutInProgress": "{{updated}} από {{desired}} ενημερωμένα, rollout σε εξέλιξη.",
+      "rolloutStalled": "Το rolling update ολοκληρώθηκε αλλά τα pods δεν γίνονται έτοιμα. Δες τον πίνακα παρακάτω.",
+      "restarting": "Τα pod δημιουργούνται ξανά: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} ενημερωμένα."
+    },
+    "podsTitle": "Κατάσταση pods",
+    "podsLoading": "Φόρτωση pods...",
+    "podsEmpty": "Δεν βρέθηκαν pods για αυτό το deployment.",
+    "podsHint": "Το image μπορεί να λείπει από το cluster. Χτίσε το τοπικά και φόρτωσέ το στο kind, ή χρησιμοποίησε registry.",
+    "podsColumns": {
+      "pod": "Pod",
+      "phase": "Phase",
+      "container": "Container",
+      "state": "Κατάσταση"
+    },
+    "containerStates": {
+      "ImagePullBackOff": "Δεν μπορεί να γίνει pull το image",
+      "ErrImagePull": "Σφάλμα pull image",
+      "CrashLoopBackOff": "Το container κρασάρει και επανεκκινεί",
+      "ContainerCreating": "Δημιουργείται το container",
+      "PodInitializing": "Το pod αρχικοποιείται",
+      "CreateContainerConfigError": "Σφάλμα ρύθμισης container",
+      "InvalidImageName": "Μη έγκυρο όνομα image",
+      "CreateContainerError": "Αποτυχία δημιουργίας container",
+      "RunContainerError": "Αποτυχία εκτέλεσης container",
+      "waiting": "Αναμονή",
+      "running": "Τρέχει αλλά δεν είναι ready",
+      "terminated": "Τερματίστηκε",
+      "pending": "Αναμονή scheduling"
+    }
+  },
+  "actions": {
+    "label": "Ενέργειες",
+    "view": "Προβολή",
+    "pods": "Προβολή pods",
+    "logs": "Προβολή logs",
+    "history": "Ιστορικό revisions",
+    "console": "Άνοιγμα κονσόλας",
+    "restart": "Επανεκκίνηση deployment",
+    "delete": "Διαγραφή deployment",
+    "disable": "Disable deployment",
+    "enable": "Enable deployment",
+    "enableAfterError": "Ενεργοποίηση ξανά. Υπήρχαν σφάλματα κατά την απενεργοποίηση",
+    "error": "Η ενέργεια απέτυχε"
+  },
+  "tabs": {
+    "ariaLabel": "Ενότητες deployment",
+    "overview": "Επισκόπηση",
+    "health": "Health probes",
+    "config": "Ρυθμίσεις",
+    "history": "Ιστορικό",
+    "pods": "Pods",
+    "files": "Αρχεία",
+    "logs": "Logs",
+    "console": "Κονσόλα"
+  },
+  "files": {
+    "podLabel": "Pod",
+    "loading": "Φόρτωση αρχείων...",
+    "error": "Αποτυχία φόρτωσης αρχείων",
+    "empty": "Αυτός ο φάκελος είναι κενός",
+    "noPods": "Δεν υπάρχουν pod για αυτό το deployment",
+    "refresh": "Ανανέωση",
+    "newFolder": "Νέος φάκελος",
+    "upload": "Μεταφόρτωση αρχείου",
+    "download": "Λήψη",
+    "rename": "Μετονομασία",
+    "delete": "Διαγραφή",
+    "folderPrompt": "Όνομα φακέλου",
+    "renamePrompt": "Νέο όνομα",
+    "deleteConfirm": "Διαγραφή του \"{{name}}\";",
+    "previewEmpty": "Το αρχείο είναι κενό",
+    "breadcrumbs": "Διαδρομή",
+    "root": "Ρίζα",
+    "pod": "Pod",
+    "columns": {
+      "name": "Όνομα",
+      "size": "Μέγεθος",
+      "modified": "Τροποποιήθηκε",
+      "actions": "Ενέργειες"
+    }
+  },
+  "scale": {
+    "label": "Replicas",
+    "submit": "Εφαρμογή scale",
+    "submitting": "Scaling...",
+    "hint": "Άλλαξε πόσα αντίγραφα pod πρέπει να τρέχουν στο deployment."
+  },
+  "disable": {
+    "disable": "Disable deployment",
+    "disabling": "Disabling...",
+    "disableHint": "Stops all pods and saves the current replica count for quick restore.",
+    "enable": "Enable deployment",
+    "enabling": "Enabling...",
+    "enableHint": "Restores {{replicas}} replica(s) and starts pods again.",
+    "enableErrorHint": "Υπήρχαν σφάλματα κατά την απενεργοποίηση. Διόρθωσε το image ή τη ρύθμιση και ενεργοποίησε ξανά ({{replicas}} replicas)."
+  },
+  "console": {
+    "connect": "Σύνδεση",
+    "connecting": "Σύνδεση...",
+    "disconnect": "Αποσύνδεση",
+    "connected": "Συνδέθηκε στο {{pod}}",
+    "disconnected": "Η συνεδρία έκλεισε",
+    "statusConnected": "Συνδεδεμένο",
+    "statusDisconnected": "Αποσυνδεδεμένο",
+    "empty": "Συνδέσου για να ανοίξεις interactive shell στο επιλεγμένο pod.",
+    "inputPlaceholder": "Πληκτρολόγησε εντολές εδώ...",
+    "inputDisabled": "Συνδέσου πρώτα στο pod"
+  },
+  "detail": {
+    "subtitle": "Namespace: {{namespace}}",
+    "loading": "Φόρτωση deployment...",
+    "error": "Αποτυχία φόρτωσης deployment",
+    "historyTitle": "Ιστορικό revisions",
+    "podsTitle": "Pods",
+    "logsTitle": "Logs",
+    "logsEmpty": "Δεν υπάρχουν διαθέσιμα pods για streaming logs"
+  },
+  "history": {
+    "loading": "Φόρτωση ιστορικού revisions...",
+    "error": "Αποτυχία φόρτωσης ιστορικού revisions",
+    "empty": "Δεν βρέθηκαν revisions",
+    "current": "Τρέχον",
+    "rollback": "Rollback",
+    "table": {
+      "revision": "Revision",
+      "image": "Image",
+      "replicas": "Replicas",
+      "created": "Δημιουργήθηκε",
+      "actions": "Ενέργειες"
+    }
+  },
+  "rollback": {
+    "title": "Επιβεβαίωση rollback",
+    "subtitle": "Deployment: {{name}}",
+    "targetRevision": "Στόχος revision",
+    "targetImage": "Στόχος image",
+    "cancel": "Ακύρωση",
+    "confirm": "Rollback",
+    "submitting": "Rollback..."
+  },
+  "create": {
+    "title": "Νέο deployment",
+    "namePlaceholder": "my-api",
+    "imagePlaceholder": "Διάλεξε από catalog ή πληκτρολόγησε δικό σου",
+    "replicasPlaceholder": "Replicas",
+    "portPlaceholder": "Port container",
+    "projectLabel": "Ομάδα project",
+    "projectHint": "Deployments με το ίδιο label εμφανίζονται μαζί στη λίστα.",
+    "projectNone": "Χωρίς ομάδα",
+    "projectExisting": "Προσθήκη σε υπάρχουσα ομάδα",
+    "projectNew": "Δημιουργία νέας ομάδας",
+    "projectNewPlaceholder": "my-project",
+    "submit": "Δημιουργία deployment",
+    "submitting": "Δημιουργία...",
+    "cancel": "Ακύρωση"
+  },
+  "image": {
+    "label": "Container image",
+    "submit": "Deploy νέα έκδοση",
+    "submitting": "Deploy...",
+    "hint": "Ενημερώνει το template του deployment και ξεκινά rolling rollout.",
+    "error": "Αποτυχία ενημέρωσης container image.",
+    "unchanged": "Το image είναι ήδη deployed."
+  },
+  "imagePicker": {
+    "placeholder": "nginx:1.27-alpine, redis:7-alpine, postgres:16-alpine...",
+    "browse": "Catalog images",
+    "catalogHint": "{{count}} images: Web server, Database, Runtime και άλλα",
+    "customTitle": "Custom image",
+    "customHint": "Πληκτρολόγησε registry/repository:tag",
+    "empty": "Κανένα αποτέλεσμα. Πληκτρολόγησε custom image παραπάνω."
+  },
+  "delete": {
+    "title": "Διαγραφή deployment",
+    "message": "Διαγραφή deployment {{name}}; Όλα τα pods θα αφαιρεθούν.",
+    "submit": "Διαγραφή deployment"
+  },
+  "restart": {
+    "submit": "Επανεκκίνηση deployment",
+    "submitting": "Επανεκκίνηση...",
+    "hint": "Το rolling restart ξαναδημιουργεί όλα τα pods με το ίδιο image (όπως kubectl rollout restart).",
+    "bannerTitle": "Ενημέρωση σε εξέλιξη",
+    "bannerProgress": "{{ready}}/{{desired}} ready, {{updated}}/{{desired}} ενημερωμένα",
+    "bannerHint": "Τα pods ξαναδημιουργούνται. Παρακολούθησε την καρτέλα Pods για live κατάσταση.",
+    "rowProgress": "({{ready}}/{{desired}} ready)",
+    "error": "Αποτυχία επανεκκίνησης deployment.",
+    "done": "Το deployment επανεκκινεί"
+  },
+  "config": {
+    "title": "Μεταβλητές περιβάλλοντος",
+    "loading": "Φόρτωση ρυθμίσεων...",
+    "error": "Αποτυχία φόρτωσης ρυθμίσεων",
+    "empty": "Δεν έχουν οριστεί μεταβλητές",
+    "namePlaceholder": "MYSQL_ROOT_PASSWORD",
+    "valuePlaceholder": "τιμή",
+    "add": "Προσθήκη μεταβλητής",
+    "remove": "Αφαίρεση",
+    "submit": "Αποθήκευση",
+    "submitting": "Αποθήκευση...",
+    "portHint": "Port container: {{port}}",
+    "createHint": "Τα catalog images παίρνουν dev defaults. Έλεγξε πριν τη δημιουργία."
+  },
+  "healthProbes": {
+    "title": "Health probes",
+    "loading": "Φόρτωση ρύθμισης probes...",
+    "error": "Αποτυχία φόρτωσης health probes",
+    "empty": "Δεν έχουν ρυθμιστεί probes για το κύριο container",
+    "configTitle": "Ρυθμισμένα probes",
+    "podsTitle": "Readiness pods",
+    "podsEmpty": "Δεν υπάρχουν pods για έλεγχο",
+    "podReady": "Ready",
+    "podNotReady": "Όχι ready",
+    "podStates": {
+      "ready": "Ready",
+      "runningNotReady": "Τρέχει, δεν είναι ready",
+      "pending": "Σε αναμονή",
+      "failed": "Αποτυχία",
+      "notReady": "Δεν είναι ready"
+    },
+    "types": {
+      "readiness": "Readiness",
+      "liveness": "Liveness",
+      "startup": "Startup"
+    },
+    "mechanisms": {
+      "http": "HTTP",
+      "tcp": "TCP",
+      "exec": "Exec",
+      "grpc": "gRPC",
+      "none": "Κανένα"
+    },
+    "columns": {
+      "type": "Τύπος",
+      "mechanism": "Μηχανισμός",
+      "target": "Στόχος",
+      "timing": "Χρονισμός",
+      "pod": "Pod",
+      "phase": "Phase",
+      "podStatus": "Readiness"
+    },
+    "timing": {
+      "start": "start {{seconds}}s",
+      "every": "κάθε {{seconds}}s",
+      "timeout": "timeout {{seconds}}s"
+    }
+  }
+}

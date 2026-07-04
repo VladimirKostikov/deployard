@@ -1,0 +1,71 @@
+{
+  "title": "Administravimas",
+  "subtitle": "Naudotojai, rolės ir deployment leidimai",
+  "back": "Atgal į deployments",
+  "actions": {
+    "label": "Veiksmai",
+    "create": "Sukurti",
+    "edit": "Redaguoti",
+    "delete": "Ištrinti",
+    "save": "Išsaugoti",
+    "cancel": "Atšaukti",
+    "saving": "Saugoma...",
+    "deleting": "Trinama..."
+  },
+  "users": {
+    "title": "Naudotojai",
+    "subtitle": "Valdykite dashboard paskyras ir rolių priskyrimus",
+    "create": "Pridėti naudotoją",
+    "createTitle": "Sukurti naudotoją",
+    "editTitle": "Redaguoti naudotoją",
+    "deleteTitle": "Ištrinti naudotoją",
+    "deleteMessage": "Ištrinti {{email}}? To negalima atšaukti.",
+    "email": "El. paštas",
+    "name": "Vardas",
+    "password": "Slaptažodis",
+    "newPassword": "Naujas slaptažodis (neprivaloma)",
+    "roles": "Rolės",
+    "status": "Būsena",
+    "active": "Aktyvus",
+    "inactive": "Neaktyvus"
+  },
+  "roles": {
+    "title": "Rolės",
+    "subtitle": "Rolių apibrėžimai ir priskirti leidimai",
+    "create": "Pridėti rolę",
+    "createTitle": "Sukurti rolę",
+    "editTitle": "Redaguoti rolę",
+    "deleteTitle": "Ištrinti rolę",
+    "deleteMessage": "Ištrinti rolę \"{{name}}\"? Ji negali būti priskirta jokiam naudotojui.",
+    "name": "Pavadinimas",
+    "permissions": "Leidimai"
+  },
+  "permissions": {
+    "title": "Leidimai",
+    "subtitle": "Detalios prieigos taisyklės deploymentams",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Skyrius",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Tinklas",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Metrikos",
+      "admin": "Administravimas"
+    },
+    "level": "Prieiga",
+    "levels": {
+      "none": "Nėra prieigos",
+      "view": "Peržiūra",
+      "operate": "Valdymas",
+      "manage": "Administravimas"
+    },
+    "hints": {
+      "view": "Atidaryti skyrių, skaityti sąrašus ir detales",
+      "operate": "Perkrovimas, išjungimas, rollback, logai, terminalas",
+      "manage": "Kūrimas, šalinimas, import ir admin pakeitimai"
+    }
+  }
+}

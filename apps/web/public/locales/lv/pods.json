@@ -1,0 +1,26 @@
+{
+  "loading": "Ielādē podus...",
+  "error": "Neizdevās ielādēt podus",
+  "empty": "Šim deployment nav atrasti podi",
+  "yes": "Jā",
+  "no": "Nē",
+  "table": {
+    "name": "Pod",
+    "phase": "Phase",
+    "ready": "Ready",
+    "restarts": "Pārstartēšanas",
+    "node": "Node",
+    "podIp": "Pod IP",
+    "ports": "Porti",
+    "actions": "Darbības"
+  },
+  "actions": {
+    "restart": "Pārstartēt pod",
+    "delete": "Dzēst pod",
+    "console": "Atvērt konsoli"
+  },
+  "delete": {
+    "title": "Dzēst pod",
+    "message": "Dzēst pod {{name}}? Deployment kontrolleris var to atjaunot."
+  }
+}

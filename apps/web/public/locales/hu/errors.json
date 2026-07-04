@@ -1,0 +1,10 @@
+{
+  "DEPLOYMENT_NOT_FOUND": "A deployment nem található",
+  "POD_NOT_FOUND": "A pod nem található",
+  "NAMESPACE_NOT_FOUND": "A namespace nem található",
+  "ROLLBACK_FAILED": "A rollback sikertelen",
+  "K8S_API_ERROR": "Kubernetes API hiba",
+  "FORBIDDEN": "Elégtelen jogosultság",
+  "VALIDATION_ERROR": "Érvényesítési hiba",
+  "INTERNAL_ERROR": "Belső szerverhiba"
+}

@@ -1,0 +1,81 @@
+{
+  "title": "Omrežje",
+  "subtitle": "Services, Endpoints in Ingress: kako se podi v clusterju medsebojno dosežejo",
+  "tabs": {
+    "ariaLabel": "Omrežni razdelki",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Nalaganje services...",
+    "error": "Services ni bilo mogoče naložiti",
+    "empty": "V tem namespace ni services",
+    "table": {
+      "name": "Ime",
+      "type": "Tip",
+      "clusterIp": "Cluster IP",
+      "ports": "Vrata",
+      "selector": "Selector",
+      "actions": "Dejanja"
+    },
+    "actions": {
+      "delete": "Izbriši",
+      "open": "Odpri {{name}} v brskalniku",
+      "openTooltip": "{{url}}: če se stran ne naloži, zaženite v terminalu: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Kopiraj ukaz port-forward za {{name}}",
+      "copied": "Ukaz kopiran",
+      "edit": "Uredi vrata",
+      "editShort": "Vrata"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Tip",
+      "portsLabel": "Vrata",
+      "port": "Vrata service",
+      "targetPort": "Target port",
+      "nodePort": "NodePort",
+      "cancel": "Prekliči",
+      "save": "Shrani",
+      "saving": "Shranjevanje..."
+    },
+    "delete": {
+      "title": "Izbriši service",
+      "message": "Izbrisati service {{name}}? Podi še naprej tečejo, DNS ime pa ne bo več delovalo."
+    },
+    "create": {
+      "title": "Ustvari service",
+      "name": "Ime service",
+      "deployment": "Deployment",
+      "port": "Vrata service",
+      "targetPort": "Target port (neobvezno)",
+      "submit": "Ustvari service",
+      "submitting": "Ustvarjanje...",
+      "cancel": "Prekliči"
+    }
+  },
+  "endpoints": {
+    "subtitle": "Pod IP naslovi za vsak service (samodejno upravlja Kubernetes)",
+    "loading": "Nalaganje endpoints...",
+    "error": "Endpoints ni bilo mogoče naložiti",
+    "empty": "Endpoints še ni: ustvarite service za deployment",
+    "table": {
+      "name": "Service",
+      "ports": "Vrata",
+      "addresses": "Pod IP / ime"
+    }
+  },
+  "deployment": {
+    "title": "Povezani services",
+    "loading": "Nalaganje services...",
+    "error": "Services ni bilo mogoče naložiti",
+    "empty": "Za ta deployment ni service. Ustvarite ga na strani Omrežje.",
+    "openNetwork": "Odpri omrežje",
+    "viewEndpoints": "Pod IP ->"
+  }
+}

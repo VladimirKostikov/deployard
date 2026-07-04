@@ -1,0 +1,29 @@
+{
+  "title": "Namespaces",
+  "subtitle": "Opret og fjern Kubernetes namespaces i det aktive cluster",
+  "loading": "Indlæser namespaces...",
+  "error": "Kunne ikke indlæse namespaces",
+  "protected": "Beskyttet",
+  "create": {
+    "title": "Nyt namespace",
+    "label": "Navn",
+    "placeholder": "staging",
+    "submit": "Opret namespace",
+    "submitting": "Opretter...",
+    "cancel": "Annuller",
+    "hint": "Brug små bogstaver i DNS-navne. System namespaces med kube- præfiks kan ikke slettes."
+  },
+  "table": {
+    "name": "Navn",
+    "status": "Status",
+    "created": "Oprettet",
+    "actions": "Handlinger"
+  },
+  "actions": {
+    "delete": "Slet"
+  },
+  "delete": {
+    "title": "Slet namespace",
+    "message": "Slet namespace {{name}}? Alle ressourcer i det fjernes."
+  }
+}

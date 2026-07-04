@@ -1,0 +1,32 @@
+{
+  "appTitle": "Deployard",
+  "sections": {
+    "main": "Основно",
+    "admin": "Контрол на достъп",
+    "settings": "Настройки"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "import": "Import",
+    "faq": "FAQ",
+    "nodes": "Nodes",
+    "namespaces": "Namespaces",
+    "ingress": "Ingress",
+    "network": "Мрежа",
+    "metrics": "Metrics",
+    "admin": "Администрация",
+    "users": "Потребители",
+    "roles": "Роли",
+    "permissions": "Права",
+    "backToApp": "Обратно към приложението",
+    "logout": "Изход"
+  },
+  "topbar": {
+    "connected": "API свързан",
+    "checking": "Проверка на API..."
+  },
+  "mobileMenu": {
+    "open": "Отвори меню",
+    "close": "Затвори меню"
+  }
+}

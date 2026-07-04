@@ -1,0 +1,29 @@
+{
+  "title": "Namespaces",
+  "subtitle": "Luo ja poista Kubernetes-namespaceja aktiivisessa clusterissa",
+  "loading": "Ladataan namespaceja...",
+  "error": "Namespacejen lataus epäonnistui",
+  "protected": "Suojattu",
+  "create": {
+    "title": "Uusi namespace",
+    "label": "Nimi",
+    "placeholder": "staging",
+    "submit": "Luo namespace",
+    "submitting": "Luodaan...",
+    "cancel": "Peruuta",
+    "hint": "Käytä pieniä DNS-nimiä. kube- etuliitteellisiä system-namespaceja ei voi poistaa."
+  },
+  "table": {
+    "name": "Nimi",
+    "status": "Status",
+    "created": "Luotu",
+    "actions": "Toiminnot"
+  },
+  "actions": {
+    "delete": "Poista"
+  },
+  "delete": {
+    "title": "Poista namespace",
+    "message": "Poistetaanko namespace {{name}}? Kaikki sen resurssit poistetaan."
+  }
+}

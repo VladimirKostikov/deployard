@@ -1,0 +1,71 @@
+{
+  "title": "Администрация",
+  "subtitle": "Потребители, роли и права за deployments",
+  "back": "Обратно към deployments",
+  "actions": {
+    "label": "Действия",
+    "create": "Създай",
+    "edit": "Редактирай",
+    "delete": "Изтрий",
+    "save": "Запази",
+    "cancel": "Отказ",
+    "saving": "Запазване...",
+    "deleting": "Изтриване..."
+  },
+  "users": {
+    "title": "Потребители",
+    "subtitle": "Управление на акаунти и роли в dashboard-а",
+    "create": "Добави потребител",
+    "createTitle": "Създай потребител",
+    "editTitle": "Редактирай потребител",
+    "deleteTitle": "Изтрий потребител",
+    "deleteMessage": "Изтрий {{email}}? Това действие не може да бъде отменено.",
+    "email": "Имейл",
+    "name": "Име",
+    "password": "Парола",
+    "newPassword": "Нова парола (по избор)",
+    "roles": "Роли",
+    "status": "Статус",
+    "active": "Активен",
+    "inactive": "Неактивен"
+  },
+  "roles": {
+    "title": "Роли",
+    "subtitle": "Дефиниции на роли и свързани права",
+    "create": "Добави роля",
+    "createTitle": "Създай роля",
+    "editTitle": "Редактирай роля",
+    "deleteTitle": "Изтрий роля",
+    "deleteMessage": "Изтрий ролята \"{{name}}\"? Не трябва да е присвоена на потребител.",
+    "name": "Име",
+    "permissions": "Права"
+  },
+  "permissions": {
+    "title": "Права",
+    "subtitle": "Детайлни правила за достъп до deployments",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Раздел",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Мрежа",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Метрики",
+      "admin": "Администрация"
+    },
+    "level": "Достъп",
+    "levels": {
+      "none": "Без достъп",
+      "view": "Преглед",
+      "operate": "Управление",
+      "manage": "Администриране"
+    },
+    "hints": {
+      "view": "Отваряне на раздел, четене на списъци и детайли",
+      "operate": "Рестарт, деактивиране, rollback, логове, терминал",
+      "manage": "Създаване, изтриване, импорт и административни промени"
+    }
+  }
+}

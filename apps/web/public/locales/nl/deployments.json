@@ -1,0 +1,316 @@
+{
+  "title": "Deployments",
+  "subtitle": "Applicaties in de geselecteerde namespace",
+  "subtitleAll": "Applicaties in alle toegankelijke namespaces",
+  "loading": "Deployments laden...",
+  "error": "Deployments laden mislukt",
+  "empty": "Geen deployments in deze namespace",
+  "emptyAll": "Geen deployments in toegankelijke namespaces",
+  "projectGroups": {
+    "standalone": "Los",
+    "services_one": "{{count}} service",
+    "services_other": "{{count}} services",
+    "health": "{{healthy}}/{{total}} gezond",
+    "restarting": "{{count}}/{{total}} herstarten",
+    "restartingBanner": "Herstart {{count}} van {{total}} deployments in deze groep",
+    "settings": "Instellingen",
+    "settingsTitle": "Groepsinstellingen",
+    "settingsGroupLabel": "Projectgroep",
+    "settingsDockerReady": "Docker beschikbaar",
+    "settingsDockerUnavailable": "Docker niet beschikbaar",
+    "settingsRebuildHint": "Bouwt compose opnieuw, laadt images in kind en rolt deployments in deze groep uit.",
+    "settingsLoading": "Omgeving controleren...",
+    "settingsClose": "Sluiten",
+    "settingsNoCompose": "Geen compose-project met deze naam gevonden. Rebuild is alleen beschikbaar voor groepen geimporteerd uit Docker Compose.",
+    "delete": "Groep verwijderen",
+    "restart": "Groep herstarten",
+    "disable": "Groep uitschakelen",
+    "deleteTitle": "Projectgroep verwijderen",
+    "deleteMessage": "Alle deployments, services en secrets in groep \"{{name}}\" verwijderen?"
+  },
+  "table": {
+    "name": "Naam",
+    "namespace": "Namespace",
+    "image": "Image",
+    "replicas": "Ready / Total",
+    "revision": "Revision",
+    "status": "Status"
+  },
+  "status": {
+    "healthy": "Gezond",
+    "starting": "Starten",
+    "restarting": "Herstarten",
+    "degraded": "Verslechterd",
+    "scaledToZero": "Naar nul geschaald",
+    "disabled": "Disabled"
+  },
+  "statusModal": {
+    "open": "Statusdetails bekijken",
+    "title": "Deployment-status",
+    "summary": {
+      "healthy": "Alle pods zijn gereed.",
+      "starting": "De deployment start op. Normaal direct na aanmaken.",
+      "degraded": "Sommige pods zijn niet gereed. Open details om te zien waarom.",
+      "scaledToZero": "Aantal replicas is 0, geen pods draaien.",
+      "disabled": "Deployment is disabled. Pods are stopped until you enable it again.",
+      "restarting": "Rolling restart bezig: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} bijgewerkt."
+    },
+    "reasonsTitle": "Waarom deze status",
+    "desired": "Gewenst",
+    "ready": "Ready",
+    "available": "Beschikbaar",
+    "updated": "Bijgewerkt",
+    "reasons": {
+      "healthy": "{{ready}} van {{desired}} replicas zijn gereed.",
+      "starting": "De deployment is net aangemaakt of wordt bijgewerkt.",
+      "scaledToZero": "Naar nul geschaald, geen pods draaien.",
+      "disabled": "Disabled via Deployard. Enable to restore {{replicas}} replica(s).",
+      "podsNotReady": "{{ready}} van {{desired}} gereed, niet alle pods zijn geslaagd voor readiness probes.",
+      "podsNotAvailable": "{{available}} van {{desired}} beschikbaar, pods zijn nog niet gereed.",
+      "rolloutInProgress": "{{updated}} van {{desired}} bijgewerkt, rollout bezig.",
+      "rolloutStalled": "Update klaar maar pods worden niet gereed. Zie tabel hieronder.",
+      "restarting": "Pod worden opnieuw aangemaakt: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} bijgewerkt."
+    },
+    "podsTitle": "Pod-status",
+    "podsLoading": "Pods laden...",
+    "podsEmpty": "Geen pods voor deze deployment.",
+    "podsHint": "De image ontbreekt mogelijk in het cluster. Bouw lokaal en laad in kind, of gebruik een registry.",
+    "podsColumns": {
+      "pod": "Pod",
+      "phase": "Phase",
+      "container": "Container",
+      "state": "Status"
+    },
+    "containerStates": {
+      "ImagePullBackOff": "Kan image niet ophalen",
+      "ErrImagePull": "Fout bij ophalen image",
+      "CrashLoopBackOff": "Container crasht en herstart",
+      "ContainerCreating": "Container wordt aangemaakt",
+      "PodInitializing": "Pod wordt geinitialiseerd",
+      "CreateContainerConfigError": "Containerconfiguratiefout",
+      "InvalidImageName": "Ongeldige imagenaam",
+      "CreateContainerError": "Container aanmaken mislukt",
+      "RunContainerError": "Container starten mislukt",
+      "waiting": "Wachten",
+      "running": "Draait maar niet gereed",
+      "terminated": "Beëindigd",
+      "pending": "Scheduling in afwachting"
+    }
+  },
+  "actions": {
+    "label": "Acties",
+    "view": "Bekijken",
+    "pods": "Pods bekijken",
+    "logs": "Logs bekijken",
+    "history": "Revisiegeschiedenis",
+    "console": "Console openen",
+    "restart": "Deployment herstarten",
+    "delete": "Deployment verwijderen",
+    "disable": "Disable deployment",
+    "enable": "Enable deployment",
+    "enableAfterError": "Opnieuw inschakelen. Er waren fouten bij uitschakelen",
+    "error": "Actie mislukt"
+  },
+  "tabs": {
+    "ariaLabel": "Deployment-secties",
+    "overview": "Overzicht",
+    "health": "Health probes",
+    "config": "Config",
+    "history": "Geschiedenis",
+    "pods": "Pods",
+    "files": "Bestanden",
+    "logs": "Logs",
+    "console": "Console"
+  },
+  "files": {
+    "podLabel": "Pod",
+    "loading": "Bestanden laden...",
+    "error": "Bestanden laden mislukt",
+    "empty": "Deze map is leeg",
+    "noPods": "Geen pod beschikbaar voor dit deployment",
+    "refresh": "Vernieuwen",
+    "newFolder": "Nieuwe map",
+    "upload": "Bestand uploaden",
+    "download": "Downloaden",
+    "rename": "Hernoemen",
+    "delete": "Verwijderen",
+    "folderPrompt": "Mapnaam",
+    "renamePrompt": "Nieuwe naam",
+    "deleteConfirm": "\"{{name}}\" verwijderen?",
+    "previewEmpty": "Bestand is leeg",
+    "breadcrumbs": "Pad",
+    "root": "Root",
+    "pod": "Pod",
+    "columns": {
+      "name": "Naam",
+      "size": "Grootte",
+      "modified": "Gewijzigd",
+      "actions": "Acties"
+    }
+  },
+  "scale": {
+    "label": "Replicas",
+    "submit": "Scale toepassen",
+    "submitting": "Schalen...",
+    "hint": "Wijzig hoeveel pod-kopieen de deployment moet draaien."
+  },
+  "disable": {
+    "disable": "Disable deployment",
+    "disabling": "Disabling...",
+    "disableHint": "Stops all pods and saves the current replica count for quick restore.",
+    "enable": "Enable deployment",
+    "enabling": "Enabling...",
+    "enableHint": "Restores {{replicas}} replica(s) and starts pods again.",
+    "enableErrorHint": "Er waren fouten bij uitschakelen. Repareer image of config en schakel opnieuw in ({{replicas}} replicas)."
+  },
+  "console": {
+    "connect": "Verbinden",
+    "connecting": "Verbinden...",
+    "disconnect": "Verbreken",
+    "connected": "Verbonden met {{pod}}",
+    "disconnected": "Sessie gesloten",
+    "statusConnected": "Verbonden",
+    "statusDisconnected": "Verbroken",
+    "empty": "Verbind om een interactieve shell in de geselecteerde pod te starten.",
+    "inputPlaceholder": "Typ commando's hier...",
+    "inputDisabled": "Verbind eerst met de pod"
+  },
+  "detail": {
+    "subtitle": "Namespace: {{namespace}}",
+    "loading": "Deployment laden...",
+    "error": "Deployment laden mislukt",
+    "historyTitle": "Revisiegeschiedenis",
+    "podsTitle": "Pods",
+    "logsTitle": "Logs",
+    "logsEmpty": "Geen pods beschikbaar voor log-streaming"
+  },
+  "history": {
+    "loading": "Revisiegeschiedenis laden...",
+    "error": "Revisiegeschiedenis laden mislukt",
+    "empty": "Geen revisies gevonden",
+    "current": "Huidig",
+    "rollback": "Rollback",
+    "table": {
+      "revision": "Revision",
+      "image": "Image",
+      "replicas": "Replicas",
+      "created": "Aangemaakt",
+      "actions": "Acties"
+    }
+  },
+  "rollback": {
+    "title": "Rollback bevestigen",
+    "subtitle": "Deployment: {{name}}",
+    "targetRevision": "Doelrevisie",
+    "targetImage": "Doelimage",
+    "cancel": "Annuleren",
+    "confirm": "Rollback",
+    "submitting": "Rollback bezig..."
+  },
+  "create": {
+    "title": "Nieuwe deployment",
+    "namePlaceholder": "my-api",
+    "imagePlaceholder": "Kies uit catalogus of typ zelf",
+    "replicasPlaceholder": "Replicas",
+    "portPlaceholder": "Containerpoort",
+    "projectLabel": "Projectgroep",
+    "projectHint": "Deployments met hetzelfde label staan samen in de lijst.",
+    "projectNone": "Geen groep",
+    "projectExisting": "Toevoegen aan bestaande groep",
+    "projectNew": "Nieuwe groep aanmaken",
+    "projectNewPlaceholder": "my-project",
+    "submit": "Deployment aanmaken",
+    "submitting": "Aanmaken...",
+    "cancel": "Annuleren"
+  },
+  "image": {
+    "label": "Containerimage",
+    "submit": "Nieuwe versie deployen",
+    "submitting": "Deployen...",
+    "hint": "Werkt het deployment-template bij en start een rolling rollout.",
+    "error": "Containerimage bijwerken mislukt.",
+    "unchanged": "Deze image is al gedeployed."
+  },
+  "imagePicker": {
+    "placeholder": "nginx:1.27-alpine, redis:7-alpine, postgres:16-alpine...",
+    "browse": "Imagecatalogus",
+    "catalogHint": "{{count}} images: web server, database, runtime en meer",
+    "customTitle": "Eigen image",
+    "customHint": "Typ registry/repository:tag",
+    "empty": "Geen matches. Typ hierboven een eigen image."
+  },
+  "delete": {
+    "title": "Deployment verwijderen",
+    "message": "Deployment {{name}} verwijderen? Alle pods worden verwijderd.",
+    "submit": "Deployment verwijderen"
+  },
+  "restart": {
+    "submit": "Deployment herstarten",
+    "submitting": "Herstarten...",
+    "hint": "Rolling restart maakt alle pods opnieuw met dezelfde image (zoals kubectl rollout restart).",
+    "bannerTitle": "Update bezig",
+    "bannerProgress": "{{ready}}/{{desired}} gereed, {{updated}}/{{desired}} bijgewerkt",
+    "bannerHint": "Pods worden opnieuw aangemaakt. Volg het tabblad Pods voor live status.",
+    "rowProgress": "({{ready}}/{{desired}} ready)",
+    "error": "Deployment herstarten mislukt.",
+    "done": "Deployment wordt herstart"
+  },
+  "config": {
+    "title": "Omgevingsvariabelen",
+    "loading": "Configuratie laden...",
+    "error": "Configuratie laden mislukt",
+    "empty": "Geen variabelen ingesteld",
+    "namePlaceholder": "MYSQL_ROOT_PASSWORD",
+    "valuePlaceholder": "waarde",
+    "add": "Variabele toevoegen",
+    "remove": "Verwijderen",
+    "submit": "Opslaan",
+    "submitting": "Opslaan...",
+    "portHint": "Containerpoort: {{port}}",
+    "createHint": "Catalogusimages krijgen dev-defaults. Controleer voor aanmaken."
+  },
+  "healthProbes": {
+    "title": "Health probes",
+    "loading": "Probe-configuratie laden...",
+    "error": "Health probes laden mislukt",
+    "empty": "Geen probes geconfigureerd voor de primaire container",
+    "configTitle": "Geconfigureerde probes",
+    "podsTitle": "Pod readiness",
+    "podsEmpty": "Geen pods om te inspecteren",
+    "podReady": "Ready",
+    "podNotReady": "Niet gereed",
+    "podStates": {
+      "ready": "Ready",
+      "runningNotReady": "Draait, niet ready",
+      "pending": "In afwachting",
+      "failed": "Mislukt",
+      "notReady": "Niet ready"
+    },
+    "types": {
+      "readiness": "Readiness",
+      "liveness": "Liveness",
+      "startup": "Startup"
+    },
+    "mechanisms": {
+      "http": "HTTP",
+      "tcp": "TCP",
+      "exec": "Exec",
+      "grpc": "gRPC",
+      "none": "Geen"
+    },
+    "columns": {
+      "type": "Type",
+      "mechanism": "Mechanisme",
+      "target": "Doel",
+      "timing": "Timing",
+      "pod": "Pod",
+      "phase": "Phase",
+      "podStatus": "Readiness"
+    },
+    "timing": {
+      "start": "start {{seconds}}s",
+      "every": "elke {{seconds}}s",
+      "timeout": "timeout {{seconds}}s"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "title": "Адміністрування",
+  "subtitle": "Користувачі, ролі та дозволи для deployment",
+  "back": "Назад до deployments",
+  "actions": {
+    "label": "Дії",
+    "create": "Створити",
+    "edit": "Редагувати",
+    "delete": "Видалити",
+    "save": "Зберегти",
+    "cancel": "Скасувати",
+    "saving": "Збереження...",
+    "deleting": "Видалення..."
+  },
+  "users": {
+    "title": "Користувачі",
+    "subtitle": "Облікові записи та призначені ролі",
+    "create": "Додати користувача",
+    "createTitle": "Створити користувача",
+    "editTitle": "Редагувати користувача",
+    "deleteTitle": "Видалити користувача",
+    "deleteMessage": "Видалити {{email}}? Цю дію не можна скасувати.",
+    "email": "Email",
+    "name": "Ім'я",
+    "password": "Пароль",
+    "newPassword": "Новий пароль (необов'язково)",
+    "roles": "Ролі",
+    "status": "Статус",
+    "active": "Активний",
+    "inactive": "Неактивний"
+  },
+  "roles": {
+    "title": "Ролі",
+    "subtitle": "Визначення ролей і прив'язані дозволи",
+    "create": "Додати роль",
+    "createTitle": "Створити роль",
+    "editTitle": "Редагувати роль",
+    "deleteTitle": "Видалити роль",
+    "deleteMessage": "Видалити роль \"{{name}}\"? Вона не повинна бути призначена жодному користувачу.",
+    "name": "Назва",
+    "permissions": "Дозволи"
+  },
+  "permissions": {
+    "title": "Дозволи",
+    "subtitle": "Детальні правила доступу до deployments",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Розділ",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Мережа",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Метрики",
+      "admin": "Адміністрування"
+    },
+    "level": "Доступ",
+    "levels": {
+      "none": "Без доступу",
+      "view": "Перегляд",
+      "operate": "Керування",
+      "manage": "Адміністрування"
+    },
+    "hints": {
+      "view": "Відкрити розділ, читати списки та деталі",
+      "operate": "Перезапуск, вимкнення, rollback, логи, термінал",
+      "manage": "Створення, видалення, import та адмін-зміни"
+    }
+  }
+}

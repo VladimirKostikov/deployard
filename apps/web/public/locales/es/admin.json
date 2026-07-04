@@ -1,0 +1,71 @@
+{
+  "title": "Administración",
+  "subtitle": "Usuarios, roles y permisos de deployment",
+  "back": "Volver a deployments",
+  "actions": {
+    "label": "Acciones",
+    "create": "Crear",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "saving": "Guardando...",
+    "deleting": "Eliminando..."
+  },
+  "users": {
+    "title": "Usuarios",
+    "subtitle": "Gestionar cuentas y roles asignados",
+    "create": "Añadir usuario",
+    "createTitle": "Crear usuario",
+    "editTitle": "Editar usuario",
+    "deleteTitle": "Eliminar usuario",
+    "deleteMessage": "¿Eliminar {{email}}? Esta acción no se puede deshacer.",
+    "email": "Email",
+    "name": "Nombre",
+    "password": "Contraseña",
+    "newPassword": "Nueva contraseña (opcional)",
+    "roles": "Roles",
+    "status": "Estado",
+    "active": "Activo",
+    "inactive": "Inactivo"
+  },
+  "roles": {
+    "title": "Roles",
+    "subtitle": "Definiciones de roles y permisos asociados",
+    "create": "Añadir rol",
+    "createTitle": "Crear rol",
+    "editTitle": "Editar rol",
+    "deleteTitle": "Eliminar rol",
+    "deleteMessage": "¿Eliminar rol \"{{name}}\"? No debe estar asignado a ningún usuario.",
+    "name": "Nombre",
+    "permissions": "Permisos"
+  },
+  "permissions": {
+    "title": "Permisos",
+    "subtitle": "Reglas de acceso detalladas para deployments",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Sección",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Red",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Métricas",
+      "admin": "Administración"
+    },
+    "level": "Acceso",
+    "levels": {
+      "none": "Sin acceso",
+      "view": "Ver",
+      "operate": "Operar",
+      "manage": "Gestionar"
+    },
+    "hints": {
+      "view": "Abrir sección, leer listas y detalles",
+      "operate": "Reiniciar, desactivar, rollback, logs, terminal",
+      "manage": "Crear, eliminar, importar y cambios de administración"
+    }
+  }
+}

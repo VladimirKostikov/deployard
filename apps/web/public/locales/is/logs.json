@@ -1,0 +1,7 @@
+{
+  "title": "Logs",
+  "streaming": "Streymir logs...",
+  "error": "Tókst ekki að streyma logs",
+  "empty": "Engar log-línur enn",
+  "autoScroll": "Sjálfvirk skrun"
+}

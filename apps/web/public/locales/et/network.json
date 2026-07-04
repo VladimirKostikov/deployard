@@ -1,0 +1,81 @@
+{
+  "title": "Võrk",
+  "subtitle": "Services, Endpoints ja Ingress: kuidas podid clusteris üksteiseni jõuavad",
+  "tabs": {
+    "ariaLabel": "Võrgu jaotised",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Laadin services...",
+    "error": "Services laadimine ebaõnnestus",
+    "empty": "Selles namespace'is pole services",
+    "table": {
+      "name": "Nimi",
+      "type": "Tüüp",
+      "clusterIp": "Cluster IP",
+      "ports": "Pordid",
+      "selector": "Selector",
+      "actions": "Toimingud"
+    },
+    "actions": {
+      "delete": "Kustuta",
+      "open": "Ava {{name}} brauseris",
+      "openTooltip": "{{url}}: kui leht ei lae, käivita terminalis: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Kopeeri port-forward käsk {{name}} jaoks",
+      "copied": "Käsk kopeeritud",
+      "edit": "Muuda porte",
+      "editShort": "Pordid"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Tüüp",
+      "portsLabel": "Pordid",
+      "port": "Service port",
+      "targetPort": "Sihtport",
+      "nodePort": "NodePort",
+      "cancel": "Tühista",
+      "save": "Salvesta",
+      "saving": "Salvestan..."
+    },
+    "delete": {
+      "title": "Kustuta service",
+      "message": "Kustutada service {{name}}? Podid jätkavad tööd, kuid DNS nimi lakkab töötamast."
+    },
+    "create": {
+      "title": "Loo service",
+      "name": "Service nimi",
+      "deployment": "Deployment",
+      "port": "Service port",
+      "targetPort": "Target port (valikuline)",
+      "submit": "Loo service",
+      "submitting": "Loon...",
+      "cancel": "Tühista"
+    }
+  },
+  "endpoints": {
+    "subtitle": "Pod IP-d iga service taga (haldab automaatselt Kubernetes)",
+    "loading": "Laadin endpoints...",
+    "error": "Endpoints laadimine ebaõnnestus",
+    "empty": "Endpoints pole veel: loo deploymentile service",
+    "table": {
+      "name": "Service",
+      "ports": "Pordid",
+      "addresses": "Pod IP / nimi"
+    }
+  },
+  "deployment": {
+    "title": "Seotud services",
+    "loading": "Laadin services...",
+    "error": "Services laadimine ebaõnnestus",
+    "empty": "Selle deploymenti jaoks pole service't. Loo see Võrk lehel.",
+    "openNetwork": "Ava võrk",
+    "viewEndpoints": "Pod IP-d →"
+  }
+}

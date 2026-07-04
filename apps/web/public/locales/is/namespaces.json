@@ -1,0 +1,29 @@
+{
+  "title": "Namespaces",
+  "subtitle": "Stofna og fjarlægja Kubernetes namespaces í virku cluster",
+  "loading": "Hleður namespaces...",
+  "error": "Tókst ekki að hlaða namespaces",
+  "protected": "Varið",
+  "create": {
+    "title": "Nýtt namespace",
+    "label": "Nafn",
+    "placeholder": "staging",
+    "submit": "Stofna namespace",
+    "submitting": "Stofnar...",
+    "cancel": "Hætta við",
+    "hint": "Notaðu lágstafi í DNS-nöfnum. Kerfis namespaces með kube- forskeyti er ekki hægt að eyða."
+  },
+  "table": {
+    "name": "Nafn",
+    "status": "Staða",
+    "created": "Stofnað",
+    "actions": "Aðgerðir"
+  },
+  "actions": {
+    "delete": "Eyða"
+  },
+  "delete": {
+    "title": "Eyða namespace",
+    "message": "Eyða namespace {{name}}? Öllum auðlindum innan þess verður eytt."
+  }
+}

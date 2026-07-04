@@ -1,0 +1,211 @@
+{
+  "title": "FAQ",
+  "subtitle": "Коротко про термины Kubernetes и где это видно в Deployard. Раскрой пункт, если что-то непонятно в кластере или на странице импорта.",
+  "labels": {
+    "inApp": "Где в интерфейсе",
+    "example": "Пример"
+  },
+  "sections": {
+    "basics": "Основы",
+    "workloads": "Нагрузки",
+    "operations": "Работа каждый день",
+    "import": "Импорт Compose",
+    "network": "Сеть и доступ",
+    "dev": "Локальная разработка",
+    "admin": "Администрирование"
+  },
+  "items": {
+    "namespace": {
+      "question": "Что такое namespace?",
+      "answer": "Namespace делит один кластер на именованные зоны. Объекты в default и в staging живут на тех же нодах, но имеют разные имена. RBAC может ограничить, кто что видит.\n\nДля демо хватит одного default. Отдельные namespace нужны, когда делите команды или окружения.",
+      "inApp": "На страницах Deployments и Network выберите namespace в селекторе рядом с заголовком.\n\nБоковое меню -> Namespaces: создать или удалить namespace, если хватает прав.",
+      "example": "После make seed-demo demo-api и demo-web обычно в default.\n\nМожно импортировать weather-station тоже в default. Один кластер, один namespace, разные имена деплоев."
+    },
+    "cluster": {
+      "question": "Что такое кластер?",
+      "answer": "A cluster is the Kubernetes control plane plus the nodes that run pods. Deployard uses kubeconfig contexts and the Kubernetes API.\n\nOne kubeconfig file can list several contexts. Each context is one cluster.",
+      "inApp": "Top bar -> cluster selector when more than one context is registered.\n\nLocal kind is often kind-dpd-local.",
+      "example": "Only kind-dpd-local visible: all pages use that cluster."
+    },
+    "deployment": {
+      "question": "Что такое deployment?",
+      "answer": "Deployment держит нужное число одинаковых pod'ов. В spec лежат образ, реплики, env, probes и стратегия rollout.\n\nПри смене тега образа Kubernetes создаёт новый ReplicaSet и постепенно меняет pod'ы. Старые не правят на месте, их заменяют.",
+      "inApp": "Меню -> Deployments: таблица в выбранном namespace.\n\nПо имени: Overview, Health probes, Config, History, Pods, Logs, Console.",
+      "example": "demo-api: образ demo-shop-api:local, 1 реплика, HTTP probe на /health порт 3000.\n\nНа Overview -> Replicas -> Apply scale можно поставить 3 реплики."
+    },
+    "metrics": {
+      "question": "Что показывает страница Metrics?",
+      "answer": "Metrics про процесс API Deployard, а не про CPU pod'ов в кластере. Счётчики из Prometheus внутри NestJS.\n\nВидно число запросов, перцентили задержки, долю 5xx и память Node.js. Полезно, когда UI тормозит или сыпет 500.",
+      "inApp": "Меню -> Metrics. Обновление каждые несколько секунд.\n\nКарточки: запросы, req/s, 5xx, p95, RSS, uptime. Ниже разбивка по статусам и маршрутам.",
+      "example": "Покликали Deployments минуту -> в Top routes появится GET /api/deployments.\n\np95 вырос после тяжёлого import: для большого compose это нормально. Нулевая доля ошибок значит API жив, даже если pod'ы падают."
+    },
+    "pod": {
+      "question": "Что такое pod?",
+      "answer": "Pod это один или несколько контейнеров с общим IP и томами. Deployment создаёт и пересоздаёт pod'ы. Вручную pod'ы почти не создают.\n\nСлучайный суффикс в имени (demo-api-7d4f8b9c-xk2lm) это норма. После рестарта или rollout имя будет другое.",
+      "inApp": "Страница деплоя -> вкладка Pods: имя, phase, ready, restarts, node, IP, порты.\n\nLogs и Console берут pod из этого списка.",
+      "example": "weather-api-78cc9f79b9-ab12c: один работающий экземпляр.\n\nУдалите pod через kubectl, deployment поднимет новый с другим суффиксом."
+    },
+    "node": {
+      "question": "Что такое node?",
+      "answer": "Node это машина или VM, куда scheduler ставит pod'ы. В локальном kind часто одна нода на всё.\n\nPod в Pending с текстом про нехватку CPU на ноде бывает редко в демо.",
+      "inApp": "Таблица pod'ов -> колонка Node.\n\nПоказывает, на какой ноде крутится pod.",
+      "example": "dpd-local-control-plane: одна нода после make cluster-up.\n\nУ всех pod'ов demo-shop одно и то же имя ноды."
+    },
+    "replica": {
+      "question": "Что значит Ready и Total?",
+      "answer": "Total сколько копий pod'ов deployment должен держать. Ready сколько прошли readiness и могут принимать трафик.\n\n1/1 одна нужна и одна готова. 0/3 три нужны, но ни одна не готова. Если так дольше пары минут после старта, это уже проблема.",
+      "inApp": "Таблица Deployments: колонка Ready/Total.\n\nНа overview деплоя те же цифры и статус.",
+      "example": "3/3 после scale-up: rollout закончился.\n\n0/1 сразу после import: часто нет образа в kind. Смотрите Pods на ImagePullBackOff, прежде чем копать код приложения."
+    },
+    "image": {
+      "question": "Что такое образ контейнера?",
+      "answer": "Образ это шаблон контейнера: repository:tag или registry/repository:tag. Тег сам не обновляется. demo-api:local и demo-api:v2 это разные образы.\n\nСервисы с build в compose собираются на Docker-хосте. kind должен их загрузить, иначе Kubernetes не стартует контейнер.",
+      "inApp": "Таблица Deployments -> колонка Image.\n\nПревью import и поля override перед Apply. В Rebuild подставляются теги по сервисам.",
+      "example": "nginx:1.27 тянется с Docker Hub.\n\ndemo-shop-api:local собран на хосте и загружен в kind. Без override :local кластер может искать weather-api:latest и падать."
+    },
+    "phase": {
+      "question": "Что такое phase pod'а?",
+      "answer": "Phase грубое состояние: Pending, Running, Succeeded, Failed, Unknown.\n\nRunning не значит, что приложение здорово. Смотрите Ready и диалог статуса. Pending часто ждёт образ или место на ноде.",
+      "inApp": "Вкладка Pods -> Phase.\n\nСтатус в списке деплоев открывает pod'ы и последние события.",
+      "example": "Running и 0/1 Ready: контейнер стартовал, readiness не проходит. БД ещё поднимается, так бывает.\n\nPending и ImagePullBackOff: поправьте тег или сделайте Rebuild."
+    },
+    "restarts": {
+      "question": "Что такое restarts?",
+      "answer": "Restarts сколько раз основной контейнер в pod'е упал и был запущен снова. Несколько рестартов при rollout нормально. Рост каждую минуту это crash loop.\n\nСразу смотрите логи после рестарта. Последние строки перед выходом обычно с ошибкой.",
+      "inApp": "Pods -> колонка Restarts.\n\nДальше вкладка Logs для этого pod'а.",
+      "example": "Restarts 0 на стабильном деплое.\n\nRestarts 20 за 10 минут: в логах часто видно missing env var при старте."
+    },
+    "ready": {
+      "question": "Что значит Ready у pod'а?",
+      "answer": "Ready да, когда все контейнеры прошли readiness probe. До этого pod может быть Running, но не Ready.\n\nService шлёт трафик только на ready pod'ы. При deploy старые ready pod'ы держат трафик, пока новые не пройдут проверки.",
+      "inApp": "Pods -> колонка Ready.\n\nHealth probes показывает настройки probe и результат по pod'ам.",
+      "example": "0/1 Ready 30 секунд пока Postgres стартует: подождите.\n\n0/1 Ready 10 минут на demo-api: логи, потом путь и порт probe на Overview."
+    },
+    "revision": {
+      "question": "Что такое revision?",
+      "answer": "Каждое изменение шаблона pod'а, обычно образ или env, повышает revision. Старые ReplicaSet остаются для rollback.\n\nНомер revision не равен git commit. Это счётчик внутри deployment в кластере.",
+      "inApp": "History: revision, образ, реплики, время.\n\nТекущая revision помечена. Старые строки для rollback.",
+      "example": "Rev 1: weather-api:latest, pull ломается.\n\nRev 2 после Rebuild: weather-api:local, rollout ок, Rev 2 current."
+    },
+    "rollback": {
+      "question": "Как работает rollback?",
+      "answer": "Rollback возвращает deployment к старому шаблону ReplicaSet. Быстрее, чем пересобирать образ, если прошлая revision точно работала.\n\nRollback не откатывает миграции БД и внешний конфиг. Меняется только spec deployment в кластере.",
+      "inApp": "History -> Rollback на строке не current -> в диалоге виден целевой образ.\n\nСледите за Pods, пока поднимутся pod'ы старого шаблона.",
+      "example": "Rev 3 с тегом :broken, pod'ы падают.\n\nRollback на Rev 2 с :local. Ready снова 1/1 без повторного import compose."
+    },
+    "scale": {
+      "question": "Как изменить число реплик?",
+      "answer": "Scale меняет spec.replicas. Kubernetes создаёт или убирает pod'ы. Образ заново не собирается.\n\nScale 0 останавливает pod'ы, deployment остаётся. Верните 1 или больше, когда нужен трафик.",
+      "inApp": "Overview -> Replicas -> Apply scale.\n\nВ таблице обновится Ready/Total по мере старта или остановки pod'ов.",
+      "example": "demo-api 1/1. Ставите 3, Apply scale. Ждёте 3/3.\n\n0 на время работ. 1 перед демо."
+    },
+    "logs": {
+      "question": "Как читать логи?",
+      "answer": "Логи это stdout и stderr контейнера. Deployard стримит через API. kubectl на ноутбуке для простого tail не нужен.\n\nПосле рестарта pod'а смотрите previous container, если есть опция, или события в статусе.",
+      "inApp": "Logs -> выбор pod в dropdown.\n\nПока вкладка открыта, поток обновляется.",
+      "example": "Строка Listening on 3000: сервер слушает порт.\n\nError: connect ECONNREFUSED postgres:5432: приложение стартовало раньше БД."
+    },
+    "console": {
+      "question": "Зачем вкладка Console?",
+      "answer": "Console открывает shell в контейнере, если в образе есть shell и у роли есть exec. В минимальных образах /bin/sh может не быть.\n\nДля быстрой проверки ls, env, wget localhost. В проде чаще хватит логов и probes.",
+      "inApp": "Console -> выбор pod -> connect.\n\nНужно право exec на пользователе.",
+      "example": "В demo-api: wget -qO- http://127.0.0.1:3000/health проверяет probe изнутри.\n\nDistroless может не поддерживать console вообще."
+    },
+    "status": {
+      "question": "Что значит Healthy и Degraded?",
+      "answer": "Healthy: ready совпадает с desired. Degraded: не хватает pod'ов или они не ready.\n\nDegraded после import часто, пока не загрузили образы. Degraded после долгой стабильной работы: смотрите pod'ы, а не только badge.",
+      "inApp": "Список Deployments и группы проектов показывают статус и ready count.\n\nКлик по статусу открывает pod'ы и события.",
+      "example": "Healthy 1/1 на demo-web после seed.\n\nDegraded 0/1 на weather-api: Pods, ImagePullBackOff, override, Rebuild."
+    },
+    "healthProbes": {
+      "question": "Что такое health probes?",
+      "answer": "Probes это HTTP, TCP или exec проверки по расписанию. Liveness: рестарт при fail. Readiness: убрать из endpoints при fail. Startup: дать медленному приложению время до liveness.\n\nНеверный порт или путь держит pod Not Ready, хотя приложение слушает другой порт.",
+      "inApp": "Health probes: конфиг и статус по pod'ам.\n\nСверьте с env и портами на Overview и Config.",
+      "example": "HTTP GET /health порт 3000 каждые 10 сек.\n\nПриложение на 8080, probe на 3000: 0/1 Ready. Поправьте env или шаблон import."
+    },
+    "composeImport": {
+      "question": "Как работает import Compose?",
+      "answer": "Import читает docker-compose.yml и мапит сервисы в Deployments и Services. Тома в PVC где поддерживается. Secrets и env файлы тоже, если есть.\n\nС build: нужен явный тег через override. Кластер сам compose build не запускает.",
+      "inApp": "Deployments -> Import Compose или меню Import.\n\nВыбор проекта, вставка YAML или scan Docker. Preview, overrides, Apply.",
+      "example": "Import demo/weather-station создаёт weather-api, weather-web и ClusterIP services.\n\nPreview показывает реплики и образы до apply в кластер."
+    },
+    "projectGroup": {
+      "question": "Что такое группа проекта?",
+      "answer": "Деплои из одного compose делят label part-of по имени проекта. В UI они под одним заголовком.\n\nRebuild, stop, delete группы бьют по всем деплоям в группе. Действия на строке только для одного деплоя.",
+      "inApp": "Deployments: раскройте заголовок weather-station, demo-shop и т.д.\n\nМеню группы: Rebuild, удалить группу.",
+      "example": "Группа weather-station: weather-api и weather-web.\n\nRebuild на группе пересобирает оба образа и обновляет оба deployment."
+    },
+    "imageOverride": {
+      "question": "Зачем image overrides?",
+      "answer": "Override сопоставляет имя сервиса compose с образом для Kubernetes. Нужно для build, потому что в compose только build: . без стабильного тега.\n\nВ этом репо для локальных демо: servicename:local после make demo-load или Rebuild.",
+      "inApp": "Панель опций import перед Apply.\n\nRebuild подставляет overrides с прошлого import.",
+      "example": "Сервис weather-api -> override weather-api:local.\n\nweb на nginx:1.27 можно не трогать, если публичный образ без build."
+    },
+    "rebuild": {
+      "question": "Что делает Rebuild?",
+      "answer": "Rebuild запускает docker compose build на Docker-хосте, грузит образы в kind, повторно применяет manifest и патчит deployment'ы группы на заданные теги.\n\nЛокальные контейнеры Docker Compose не запускаются - после import рабочая среда это Kubernetes.",
+      "inApp": "Import -> блок Rebuild для локальных проектов.\n\nИли меню группы -> Rebuild в списке Deployments.",
+      "example": "Edit demo/weather-station/api, then Rebuild on group weather-station.\n\nNew image tag rolls out. History tab shows new revision with updated image digest or tag."
+    },
+    "kindLoad": {
+      "question": "Зачем грузить образы в kind?",
+      "answer": "Ноды kind крутятся внутри Docker и не видят образы с хоста, пока их не import.\n\nБез load Kubernetes тянет из registry. Тег myapp:local есть только на хосте, pull падает.",
+      "inApp": "Автоматически при local import и Rebuild.\n\nImport -> Load images to cluster для ручного повтора.",
+      "example": "make demo-load собирает demo-shop и делает kind load docker-image в dpd-local.\n\nДо load в describe pod ErrImagePull, после Running."
+    },
+    "service": {
+      "question": "Что такое Service в Kubernetes?",
+      "answer": "Service это стабильное DNS имя и порт для pod'ов по labels. ClusterIP только внутри кластера. NodePort открывает порт на нодах. Ingress маршрутизирует HTTP по host и path.\n\nIP pod'ов меняются. Имя demo-api в namespace остаётся, пока selector совпадает.",
+      "inApp": "Network: services в namespace, тип, cluster IP, порты, selector.\n\nНа overview деплоя могут быть ссылки на связанные services.",
+      "example": "demo-api ClusterIP порт 3000 на pod'ы с label app.kubernetes.io/name=demo-api.\n\nИз другого pod'а: http://demo-api:3000."
+    },
+    "portForward": {
+      "question": "Что такое port-forward?",
+      "answer": "Port-forward пробрасывает порт с вашей машины на pod или service. Deployard запускает kubectl port-forward на сервере и проксирует HTTP для кнопки Open.\n\nТуннель живёт пока идёт сессия. Для dev, не постоянный публичный URL.",
+      "inApp": "Network -> Open на порту service.\n\nБраузер ходит через API Deployard.",
+      "example": "Open demo-api 3000 -> /health в браузере.\n\nТо же, что kubectl port-forward svc/demo-api 3000:3000, но без ручного ввода."
+    },
+    "nodePort": {
+      "question": "Что такое NodePort?",
+      "answer": "NodePort публикует service на порту 30000-32767 на каждой ноде. В kind часто пробрасывают на localhost через extraPortMappings.\n\nУдобно для демо без ingress.",
+      "inApp": "Опция Expose host ports при import, если в compose host ports из этого диапазона.\n\nВ Network колонка NodePort для типа NodePort.",
+      "example": "demo-web NodePort 30081 -> http://localhost:30081 после make seed-demo.\n\nОдин ClusterIP с хоста без port-forward не открыть."
+    },
+    "dockerCompose": {
+      "question": "Compose и Kubernetes в этом проекте",
+      "answer": "Compose описывает и собирает на Docker-хосте. Kubernetes крутит workload после import. Обычный цикл: правка кода -> Rebuild (compose build + kind load) -> rollout pod'ов.\n\ndocker compose up локально для отладки можно, dashboard смотрит на кластер после import.",
+      "inApp": "Compose sources: demo/ in the repo and Docker Desktop projects.\n\nCluster view: Deployments, Network, Metrics.",
+      "example": "docker compose up в demo/weather-station только на хосте.\n\nImport + Rebuild выводит weather-api в Deployments с probes в кластере."
+    },
+    "errImagePull": {
+      "question": "ErrImagePull или ImagePullBackOff. Что делать?",
+      "answer": "Нода не может стартовать контейнер: нет образа или pull failed. На kind чаще всего тег не загружен (:local только на хосте) или override оставили :latest для своей сборки.\n\nРеже: private registry без imagePullSecrets, опечатка в имени образа.",
+      "inApp": "Pods -> статус или диалог status.\n\nOverride на Import или Rebuild. Load images вручную. Restart на Overview.",
+      "example": "weather-api:latest: такого тега на Hub нет.\n\nOverride weather-api:local, Rebuild, kind load. Phase Running."
+    },
+    "demoProjects": {
+      "question": "Какие демо есть в репозитории?",
+      "answer": "demo-shop: Postgres + API + web, seeded with make seed-demo, good first import.\n\nweather-station, todo-board: smaller stacks for import practice.",
+      "inApp": "Import lists projects under /workspace/demo when API runs in Docker.",
+      "example": "make docker-up && make seed-demo -> open Deployments, see demo-api Healthy."
+    },
+    "users": {
+      "question": "Пользователи",
+      "answer": "Пользователь это логин email + пароль. Одному user несколько roles. Seed создаёт admin@dpd.local и user@dpd.local с разными правами.\n\nДоступ убирают через roles или деактивацию, не удалением ресурсов кластера.",
+      "inApp": "Administration -> Users: список, создание, roles.\n\nSign out в sidebar.",
+      "example": "Operator user: can rollback and import, cannot open Administration -> Users.\n\nadmin@dpd.local: full access including permissions."
+    },
+    "roles": {
+      "question": "Роли",
+      "answer": "Роль это именованный набор permissions. User получает roles, не отдельные галочки в коде UI. Смена role бьёт по всем, у кого она есть.\n\nВ seed обычно admin и viewer. Можно добавить свои под команду.",
+      "inApp": "Administration -> Roles: создать, прикрепить permissions.\n\nФорма user -> roles при создании и правке.",
+      "example": "viewer: view + logs на все namespace.\n\noperator: плюс rollback, scale, import на выбранные namespace."
+    },
+    "permissions": {
+      "question": "Права (permissions)",
+      "answer": "A permission is one allowed action, optionally scoped to a namespace or deployment name. Examples: view deployments, read logs, apply import.\n\nThe API checks permissions on every write. Missing permission returns 403 in the UI as a generic error.",
+      "inApp": "Administration -> Permissions: список actions.\n\nРедактирование role включает нужные permissions.",
+      "example": "import:apply lets you press Apply on compose preview."
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Ingress",
+  "subtitle": "HTTP routing pravila u odabranom namespace-u",
+  "loading": "Učitavanje ingress pravila...",
+  "error": "Učitavanje ingress pravila nije uspjelo",
+  "empty": "Nema ingress pravila u ovom namespace-u",
+  "create": {
+    "title": "Novi ingress",
+    "name": "Naziv",
+    "host": "Host (npr. api.local)",
+    "path": "Path",
+    "service": "Naziv service-a",
+    "port": "Port service-a",
+    "submit": "Stvori ingress",
+    "submitting": "Stvaranje...",
+    "cancel": "Odustani"
+  },
+  "table": {
+    "name": "Naziv",
+    "host": "Host",
+    "path": "Path",
+    "service": "Backend",
+    "actions": "Radnje"
+  },
+  "actions": {
+    "delete": "Obriši"
+  },
+  "delete": {
+    "title": "Obriši ingress",
+    "message": "Obrisati ingress {{name}}?"
+  }
+}

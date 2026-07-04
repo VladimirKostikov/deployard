@@ -1,0 +1,7 @@
+{
+  "title": "Logs",
+  "streaming": "Logok streamelése...",
+  "error": "Nem sikerült streamelni a logokat",
+  "empty": "Még nincsenek log sorok",
+  "autoScroll": "Automatikus görgetés"
+}

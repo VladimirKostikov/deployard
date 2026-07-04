@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Nodes workers du cluster et pods qui y tournent",
+  "loading": "Chargement des nodes...",
+  "error": "Impossible de charger les nodes",
+  "podsTitle": "Pods sur {{node}}",
+  "podsLoading": "Chargement des pods...",
+  "podsError": "Impossible de charger les pods pour ce node",
+  "podsEmpty": "Aucun pod sur ce node",
+  "table": {
+    "name": "Node",
+    "status": "Statut",
+    "roles": "Rôles",
+    "pods": "Pods",
+    "version": "Kubelet",
+    "actions": "Actions"
+  },
+  "actions": {
+    "viewPods": "Voir les pods"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Phase",
+    "ready": "Ready",
+    "yes": "Oui",
+    "no": "Non"
+  }
+}

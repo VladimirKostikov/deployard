@@ -1,0 +1,32 @@
+{
+  "title": "Ingress",
+  "subtitle": "HTTP routing правила в избрания namespace",
+  "loading": "Зареждане на ingress правила...",
+  "error": "Неуспешно зареждане на ingress правила",
+  "empty": "Няма ingress правила в този namespace",
+  "create": {
+    "title": "Нов ingress",
+    "name": "Име",
+    "host": "Host (напр. api.local)",
+    "path": "Path",
+    "service": "Service име",
+    "port": "Service порт",
+    "submit": "Създай ingress",
+    "submitting": "Създаване...",
+    "cancel": "Отказ"
+  },
+  "table": {
+    "name": "Име",
+    "host": "Host",
+    "path": "Path",
+    "service": "Backend",
+    "actions": "Действия"
+  },
+  "actions": {
+    "delete": "Изтрий"
+  },
+  "delete": {
+    "title": "Изтрий ingress",
+    "message": "Изтрий ingress {{name}}?"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Ingress",
+  "subtitle": "HTTP-beiningarreglur í völdu namespace",
+  "loading": "Hleður ingress-reglur...",
+  "error": "Tókst ekki að hlaða ingress-reglur",
+  "empty": "Engar ingress-reglur í þessu namespace",
+  "create": {
+    "title": "Ný ingress",
+    "name": "Nafn",
+    "host": "Host (t.d. api.local)",
+    "path": "Slóð",
+    "service": "Service-nafn",
+    "port": "Service-port",
+    "submit": "Stofna ingress",
+    "submitting": "Stofnar...",
+    "cancel": "Hætta við"
+  },
+  "table": {
+    "name": "Nafn",
+    "host": "Host",
+    "path": "Slóð",
+    "service": "Backend",
+    "actions": "Aðgerðir"
+  },
+  "actions": {
+    "delete": "Eyða"
+  },
+  "delete": {
+    "title": "Eyða ingress",
+    "message": "Eyða ingress {{name}}?"
+  }
+}

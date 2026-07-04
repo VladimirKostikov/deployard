@@ -1,0 +1,10 @@
+{
+  "DEPLOYMENT_NOT_FOUND": "Níor aimsíodh an Deployment",
+  "POD_NOT_FOUND": "Níor aimsíodh an pod",
+  "NAMESPACE_NOT_FOUND": "Níor aimsíodh an Namespace",
+  "ROLLBACK_FAILED": "Theip ar an rollback",
+  "K8S_API_ERROR": "Earráid API Kubernetes",
+  "FORBIDDEN": "Ceadanna neamhleor",
+  "VALIDATION_ERROR": "Earráid bailíochtaithe",
+  "INTERNAL_ERROR": "Earráid inmheánach freastalaí"
+}

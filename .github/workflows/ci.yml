@@ -1,0 +1,183 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+env:
+  DATABASE_URL: postgresql://dpd:dpd@localhost:5432/dpd
+  DB_SYNCHRONIZE: 'false'
+  DB_MIGRATE: 'true'
+  DB_SEED: 'true'
+  JWT_SECRET: ci-test-jwt-secret-minimum-32-chars
+  JWT_EXPIRES_IN: 8h
+  COOKIE_SECURE: 'false'
+  CORS_ORIGIN: http://localhost:5173
+  K8S_CONFIG_MODE: default
+  K8S_SKIP_TLS_VERIFY: 'true'
+  DEPLOY_WEBHOOK_SECRET: ci-deploy-webhook-secret
+  SEED_ADMIN_PASSWORD: Admin123!
+  SEED_USER_PASSWORD: User123!
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Unit tests
+        run: pnpm --filter @dpd/api test && pnpm --filter @dpd/web test
+
+      - name: Build apps
+        run: pnpm --filter @dpd/shared build && pnpm --filter @dpd/api --filter @dpd/web run build
+
+      - name: Helm lint
+        run: helm lint deploy/helm/dpd
+
+  integration:
+    needs: build
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: dpd
+          POSTGRES_USER: dpd
+          POSTGRES_PASSWORD: dpd
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U dpd -d dpd"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install tools
+        run: |
+          curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.26.0/kind-linux-amd64
+          chmod +x ./kind
+          sudo mv ./kind /usr/local/bin/kind
+          kubectl version --client=true
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build API
+        run: pnpm --filter @dpd/shared build && pnpm --filter @dpd/api build
+
+      - name: Start kind cluster
+        run: |
+          kind create cluster --name dpd-local --config examples/kubernetes/kind-config.yaml
+          kubectl cluster-info --context kind-dpd-local
+          make seed-demo KUBE_CONTEXT=kind-dpd-local
+
+      - name: Start API
+        run: |
+          cd apps/api
+          node dist/main &
+          for i in $(seq 1 30); do
+            curl -fsS http://localhost:3000/api/health/ready && break
+            sleep 2
+          done
+
+      - name: Integration tests
+        run: API_BASE_URL=http://localhost:3000/api pnpm --filter @dpd/integration-tests test
+
+  e2e:
+    needs: build
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: dpd
+          POSTGRES_USER: dpd
+          POSTGRES_PASSWORD: dpd
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U dpd -d dpd"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install tools
+        run: |
+          curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.26.0/kind-linux-amd64
+          chmod +x ./kind
+          sudo mv ./kind /usr/local/bin/kind
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build workspace
+        run: |
+          pnpm --filter @dpd/shared build
+          pnpm --filter @dpd/api build
+          VITE_API_BASE_URL=http://localhost:3000/api pnpm --filter @dpd/web build
+
+      - name: Install Playwright
+        run: pnpm --filter @dpd/e2e exec playwright install chromium
+
+      - name: Start kind cluster
+        run: |
+          kind create cluster --name dpd-local --config examples/kubernetes/kind-config.yaml
+          make seed-demo KUBE_CONTEXT=kind-dpd-local
+
+      - name: Start stack
+        run: |
+          cd apps/api
+          node dist/main &
+          cd ../web
+          pnpm preview --host 127.0.0.1 --port 5173 &
+          for i in $(seq 1 30); do
+            curl -fsS http://localhost:5173/ && curl -fsS http://localhost:3000/api/health/ready && break
+            sleep 2
+          done
+
+      - name: E2E tests
+        run: E2E_BASE_URL=http://localhost:5173 pnpm --filter @dpd/e2e test

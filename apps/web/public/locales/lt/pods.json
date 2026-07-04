@@ -1,0 +1,26 @@
+{
+  "loading": "Kraunami podai...",
+  "error": "Nepavyko įkelti podų",
+  "empty": "Šiam deployment nerasta podų",
+  "yes": "Taip",
+  "no": "Ne",
+  "table": {
+    "name": "Pod",
+    "phase": "Phase",
+    "ready": "Ready",
+    "restarts": "Perkrovimai",
+    "node": "Node",
+    "podIp": "Pod IP",
+    "ports": "Prievadai",
+    "actions": "Veiksmai"
+  },
+  "actions": {
+    "restart": "Perkrauti pod",
+    "delete": "Ištrinti pod",
+    "console": "Atidaryti konsolę"
+  },
+  "delete": {
+    "title": "Ištrinti pod",
+    "message": "Ištrinti pod {{name}}? Deployment valdiklis gali jį atkurti."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "title": "Administração",
+  "subtitle": "Utilizadores, funções e permissões de deployment",
+  "back": "Voltar aos deployments",
+  "actions": {
+    "label": "Ações",
+    "create": "Criar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "saving": "A guardar...",
+    "deleting": "A eliminar..."
+  },
+  "users": {
+    "title": "Utilizadores",
+    "subtitle": "Gerir contas do painel e atribuição de funções",
+    "create": "Adicionar utilizador",
+    "createTitle": "Criar utilizador",
+    "editTitle": "Editar utilizador",
+    "deleteTitle": "Eliminar utilizador",
+    "deleteMessage": "Eliminar {{email}}? Isto não pode ser desfeito.",
+    "email": "Email",
+    "name": "Nome",
+    "password": "Palavra-passe",
+    "newPassword": "Nova palavra-passe (opcional)",
+    "roles": "Funções",
+    "status": "Estado",
+    "active": "Ativo",
+    "inactive": "Inativo"
+  },
+  "roles": {
+    "title": "Funções",
+    "subtitle": "Definições de funções e permissões associadas",
+    "create": "Adicionar função",
+    "createTitle": "Criar função",
+    "editTitle": "Editar função",
+    "deleteTitle": "Eliminar função",
+    "deleteMessage": "Eliminar a função \"{{name}}\"? Não pode estar atribuída a nenhum utilizador.",
+    "name": "Nome",
+    "permissions": "Permissões"
+  },
+  "permissions": {
+    "title": "Permissões",
+    "subtitle": "Regras de acesso detalhadas para deployments",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Secção",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Rede",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Métricas",
+      "admin": "Administração"
+    },
+    "level": "Acesso",
+    "levels": {
+      "none": "Sem acesso",
+      "view": "Ver",
+      "operate": "Operar",
+      "manage": "Gerir"
+    },
+    "hints": {
+      "view": "Abrir secção, ler listas e detalhes",
+      "operate": "Reiniciar, desativar, rollback, logs, terminal",
+      "manage": "Criar, eliminar, import e alterações admin"
+    }
+  }
+}

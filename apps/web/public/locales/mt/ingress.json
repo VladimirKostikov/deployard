@@ -1,0 +1,32 @@
+{
+  "title": "Ingress",
+  "subtitle": "Regoli ta' routing HTTP fin-Namespace magħżul",
+  "loading": "Qed jillowdja r-regoli Ingress...",
+  "error": "Ma rnexxiex jillowdja r-regoli Ingress",
+  "empty": "M'hemmx regoli Ingress f'dan in-Namespace",
+  "create": {
+    "title": "Ingress ġdid",
+    "name": "Isem",
+    "host": "Host (eż. api.local)",
+    "path": "Path",
+    "service": "Isem tas-service",
+    "port": "Port tas-service",
+    "submit": "Oħloq Ingress",
+    "submitting": "Qed joħolqu...",
+    "cancel": "Ikkanċella"
+  },
+  "table": {
+    "name": "Isem",
+    "host": "Host",
+    "path": "Path",
+    "service": "Backend",
+    "actions": "Azzjonijiet"
+  },
+  "actions": {
+    "delete": "Ħassar"
+  },
+  "delete": {
+    "title": "Ħassar Ingress",
+    "message": "Ħassar Ingress {{name}}?"
+  }
+}

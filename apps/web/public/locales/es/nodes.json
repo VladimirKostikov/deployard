@@ -1,0 +1,29 @@
+{
+  "title": "Nodos",
+  "subtitle": "Nodos del cluster y pods programados en ellos",
+  "loading": "Cargando nodos...",
+  "error": "No se pudieron cargar los nodos",
+  "podsTitle": "Pods en {{node}}",
+  "podsLoading": "Cargando pods...",
+  "podsError": "No se pudieron cargar los pods de este nodo",
+  "podsEmpty": "No hay pods en este nodo",
+  "table": {
+    "name": "Nodo",
+    "status": "Estado",
+    "roles": "Roles",
+    "pods": "Pods",
+    "version": "Kubelet",
+    "actions": "Acciones"
+  },
+  "actions": {
+    "viewPods": "Ver pods"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Fase",
+    "ready": "Ready",
+    "yes": "Sí",
+    "no": "No"
+  }
+}

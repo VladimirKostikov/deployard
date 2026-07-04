@@ -1,0 +1,7 @@
+{
+  "title": "Logs",
+  "streaming": "Qed jistrimja l-logs...",
+  "error": "Ma rnexxiex jistrimja l-logs",
+  "empty": "Għad m'hemmx linji tal-log",
+  "autoScroll": "Scroll awtomatiku"
+}

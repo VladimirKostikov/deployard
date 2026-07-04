@@ -1,0 +1,10 @@
+{
+  "DEPLOYMENT_NOT_FOUND": "Deployment fannst ekki",
+  "POD_NOT_FOUND": "Pod fannst ekki",
+  "NAMESPACE_NOT_FOUND": "Namespace fannst ekki",
+  "ROLLBACK_FAILED": "Rollback mistókst",
+  "K8S_API_ERROR": "Kubernetes API-villa",
+  "FORBIDDEN": "Ófullnægjandi heimildir",
+  "VALIDATION_ERROR": "Staðfestingarvilla",
+  "INTERNAL_ERROR": "Innri netþjónustuvilla"
+}

@@ -1,0 +1,32 @@
+{
+  "appTitle": "Deployard",
+  "sections": {
+    "main": "Põhi",
+    "admin": "Juurdepääsukontroll",
+    "settings": "Seaded"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "import": "Import",
+    "faq": "KKK",
+    "nodes": "Nodes",
+    "namespaces": "Namespaces",
+    "ingress": "Ingress",
+    "network": "Võrk",
+    "metrics": "Metrics",
+    "admin": "Haldus",
+    "users": "Kasutajad",
+    "roles": "Rollid",
+    "permissions": "Õigused",
+    "backToApp": "Tagasi rakendusse",
+    "logout": "Logi välja"
+  },
+  "topbar": {
+    "connected": "API ühendatud",
+    "checking": "Kontrollin API-d..."
+  },
+  "mobileMenu": {
+    "open": "Ava menüü",
+    "close": "Sule menüü"
+  }
+}

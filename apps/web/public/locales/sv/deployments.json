@@ -1,0 +1,316 @@
+{
+  "title": "Deployments",
+  "subtitle": "Applikationer i valt namespace",
+  "subtitleAll": "Applikationer i alla tillgängliga namespaces",
+  "loading": "Laddar deployments...",
+  "error": "Kunde inte ladda deployments",
+  "empty": "Inga deployments i detta namespace",
+  "emptyAll": "Inga deployments i tillgängliga namespaces",
+  "projectGroups": {
+    "standalone": "Fristående",
+    "services_one": "{{count}} tjänst",
+    "services_other": "{{count}} tjänster",
+    "health": "{{healthy}}/{{total}} friska",
+    "restarting": "{{count}}/{{total}} startar om",
+    "restartingBanner": "Startar om {{count}} av {{total}} deployments i denna grupp",
+    "settings": "Inställningar",
+    "settingsTitle": "Gruppinställningar",
+    "settingsGroupLabel": "Projektgrupp",
+    "settingsDockerReady": "Docker tillgänglig",
+    "settingsDockerUnavailable": "Docker otillgänglig",
+    "settingsRebuildHint": "Bygger om compose, laddar images till kind och rullar ut deployments i denna grupp.",
+    "settingsLoading": "Kontrollerar miljö...",
+    "settingsClose": "Stäng",
+    "settingsNoCompose": "Inget compose-projekt med detta namn hittades. Rebuild finns bara för grupper importerade från Docker Compose.",
+    "delete": "Ta bort grupp",
+    "restart": "Starta om grupp",
+    "disable": "Inaktivera grupp",
+    "deleteTitle": "Ta bort projektgrupp",
+    "deleteMessage": "Ta bort alla deployments, services och secrets i gruppen \"{{name}}\"?"
+  },
+  "table": {
+    "name": "Namn",
+    "namespace": "Namespace",
+    "image": "Image",
+    "replicas": "Redo / Totalt",
+    "revision": "Revision",
+    "status": "Status"
+  },
+  "status": {
+    "healthy": "Healthy",
+    "starting": "Startar",
+    "restarting": "Startar om",
+    "degraded": "Degraded",
+    "scaledToZero": "Skalad till noll",
+    "disabled": "Disabled"
+  },
+  "statusModal": {
+    "open": "Visa statusdetaljer",
+    "title": "Deployment-status",
+    "summary": {
+      "healthy": "Alla pods är redo.",
+      "starting": "Deployment startar. Det är normalt direkt efter skapande.",
+      "degraded": "Vissa pods är inte redo. Öppna detaljer för att se varför.",
+      "scaledToZero": "Replikantal är 0, inga pods körs.",
+      "disabled": "Deployment is disabled. Pods are stopped until you enable it again.",
+      "restarting": "Rolling restart pågår: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} uppdaterade."
+    },
+    "reasonsTitle": "Varför denna status",
+    "desired": "Önskat",
+    "ready": "Ready",
+    "available": "Tillgängliga",
+    "updated": "Uppdaterade",
+    "reasons": {
+      "healthy": "{{ready}} av {{desired}} replikor är redo.",
+      "starting": "Deployment skapades nyss eller uppdateras.",
+      "scaledToZero": "Skalad till noll, inga pods körs.",
+      "disabled": "Disabled via Deployard. Enable to restore {{replicas}} replica(s).",
+      "podsNotReady": "{{ready}} av {{desired}} redo, inte alla pods klarade readiness probes.",
+      "podsNotAvailable": "{{available}} av {{desired}} tillgängliga, pods är inte redo ännu.",
+      "rolloutInProgress": "{{updated}} av {{desired}} uppdaterade, rollout pågår.",
+      "rolloutStalled": "Rolling update är klar men pods blir inte redo. Se tabellen nedan.",
+      "restarting": "Pod skapas om: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} uppdaterade."
+    },
+    "podsTitle": "Pod-status",
+    "podsLoading": "Laddar pods...",
+    "podsEmpty": "Inga pods hittades för detta deployment.",
+    "podsHint": "Imagen kan saknas i clustret. Bygg lokalt och ladda till kind, eller använd ett registry.",
+    "podsColumns": {
+      "pod": "Pod",
+      "phase": "Phase",
+      "container": "Container",
+      "state": "State"
+    },
+    "containerStates": {
+      "ImagePullBackOff": "Kan inte hämta image",
+      "ErrImagePull": "Fel vid image pull",
+      "CrashLoopBackOff": "Containern kraschar och startar om",
+      "ContainerCreating": "Container skapas",
+      "PodInitializing": "Pod initieras",
+      "CreateContainerConfigError": "Fel i containerkonfiguration",
+      "InvalidImageName": "Ogiltigt image-namn",
+      "CreateContainerError": "Kunde inte skapa container",
+      "RunContainerError": "Kunde inte köra container",
+      "waiting": "Väntar",
+      "running": "Kör men inte redo",
+      "terminated": "Avslutad",
+      "pending": "Väntar på schemaläggning"
+    }
+  },
+  "actions": {
+    "label": "Åtgärder",
+    "view": "Visa",
+    "pods": "Visa pods",
+    "logs": "Visa loggar",
+    "history": "Revisionshistorik",
+    "console": "Öppna konsol",
+    "restart": "Starta om deployment",
+    "delete": "Ta bort deployment",
+    "disable": "Disable deployment",
+    "enable": "Enable deployment",
+    "enableAfterError": "Aktivera igen. Det fanns fel vid inaktivering",
+    "error": "Åtgärden misslyckades"
+  },
+  "tabs": {
+    "ariaLabel": "Deployment-sektioner",
+    "overview": "Översikt",
+    "health": "Hälsokontroller",
+    "config": "Konfig",
+    "history": "Historik",
+    "pods": "Pods",
+    "files": "Filer",
+    "logs": "Loggar",
+    "console": "Konsol"
+  },
+  "files": {
+    "podLabel": "Pod",
+    "loading": "Laddar filer...",
+    "error": "Kunde inte ladda filer",
+    "empty": "Denna mapp är tom",
+    "noPods": "Inga pod tillgängliga för detta deployment",
+    "refresh": "Uppdatera",
+    "newFolder": "Ny mapp",
+    "upload": "Ladda upp fil",
+    "download": "Ladda ner",
+    "rename": "Byt namn",
+    "delete": "Ta bort",
+    "folderPrompt": "Mappnamn",
+    "renamePrompt": "Nytt namn",
+    "deleteConfirm": "Ta bort \"{{name}}\"?",
+    "previewEmpty": "Filen är tom",
+    "breadcrumbs": "Sökväg",
+    "root": "Rot",
+    "pod": "Pod",
+    "columns": {
+      "name": "Namn",
+      "size": "Storlek",
+      "modified": "Ändrad",
+      "actions": "Åtgärder"
+    }
+  },
+  "scale": {
+    "label": "Replikor",
+    "submit": "Tillämpa skalning",
+    "submitting": "Skalar...",
+    "hint": "Ändra hur många pod-kopior deployment ska hålla igång."
+  },
+  "disable": {
+    "disable": "Disable deployment",
+    "disabling": "Disabling...",
+    "disableHint": "Stops all pods and saves the current replica count for quick restore.",
+    "enable": "Enable deployment",
+    "enabling": "Enabling...",
+    "enableHint": "Restores {{replicas}} replica(s) and starts pods again.",
+    "enableErrorHint": "Det fanns fel vid inaktivering. Åtgärda image eller config och aktivera igen ({{replicas}} replikor)."
+  },
+  "console": {
+    "connect": "Anslut",
+    "connecting": "Ansluter...",
+    "disconnect": "Koppla från",
+    "connected": "Ansluten till {{pod}}",
+    "disconnected": "Session avslutad",
+    "statusConnected": "Ansluten",
+    "statusDisconnected": "Frånkopplad",
+    "empty": "Anslut för att starta en interaktiv shell i vald pod.",
+    "inputPlaceholder": "Skriv kommandon här...",
+    "inputDisabled": "Anslut till poden först"
+  },
+  "detail": {
+    "subtitle": "Namespace: {{namespace}}",
+    "loading": "Laddar deployment...",
+    "error": "Kunde inte ladda deployment",
+    "historyTitle": "Revisionshistorik",
+    "podsTitle": "Pods",
+    "logsTitle": "Loggar",
+    "logsEmpty": "Inga pods tillgängliga för loggströmning"
+  },
+  "history": {
+    "loading": "Laddar revisionshistorik...",
+    "error": "Kunde inte ladda revisionshistorik",
+    "empty": "Inga revisioner hittades",
+    "current": "Aktuell",
+    "rollback": "Rollback",
+    "table": {
+      "revision": "Revision",
+      "image": "Image",
+      "replicas": "Replikor",
+      "created": "Skapad",
+      "actions": "Åtgärder"
+    }
+  },
+  "rollback": {
+    "title": "Bekräfta rollback",
+    "subtitle": "Deployment: {{name}}",
+    "targetRevision": "Målrevision",
+    "targetImage": "Mål-image",
+    "cancel": "Avbryt",
+    "confirm": "Rollback",
+    "submitting": "Rollback pågår..."
+  },
+  "create": {
+    "title": "Nytt deployment",
+    "namePlaceholder": "my-api",
+    "imagePlaceholder": "Välj från katalog eller skriv eget",
+    "replicasPlaceholder": "Replikor",
+    "portPlaceholder": "Container-port",
+    "projectLabel": "Projektgrupp",
+    "projectHint": "Deployments med samma etikett visas tillsammans i listan.",
+    "projectNone": "Ingen grupp",
+    "projectExisting": "Lägg till i befintlig grupp",
+    "projectNew": "Skapa ny grupp",
+    "projectNewPlaceholder": "my-project",
+    "submit": "Skapa deployment",
+    "submitting": "Skapar...",
+    "cancel": "Avbryt"
+  },
+  "image": {
+    "label": "Containerimage",
+    "submit": "Deploya ny version",
+    "submitting": "Deployar...",
+    "hint": "Uppdaterar deployment-mallen och startar rolling rollout.",
+    "error": "Kunde inte uppdatera container image.",
+    "unchanged": "Imagen är redan deployad."
+  },
+  "imagePicker": {
+    "placeholder": "nginx:1.27-alpine, redis:7-alpine, postgres:16-alpine...",
+    "browse": "Image-katalog",
+    "catalogHint": "{{count}} images: Web server, Database, Runtime med mera",
+    "customTitle": "Egen image",
+    "customHint": "Skriv valfritt registry/repository:tag",
+    "empty": "Inga träffar. Skriv en egen image ovan."
+  },
+  "delete": {
+    "title": "Ta bort deployment",
+    "message": "Ta bort deployment {{name}}? Alla pods tas bort.",
+    "submit": "Ta bort deployment"
+  },
+  "restart": {
+    "submit": "Starta om deployment",
+    "submitting": "Startar om...",
+    "hint": "Rolling restart återskapar alla pods med samma image (som kubectl rollout restart).",
+    "bannerTitle": "Uppdatering pågår",
+    "bannerProgress": "{{ready}}/{{desired}} redo, {{updated}}/{{desired}} uppdaterade",
+    "bannerHint": "Pods återskapas. Följ fliken Pods för live-status.",
+    "rowProgress": "({{ready}}/{{desired}} ready)",
+    "error": "Kunde inte starta om deployment.",
+    "done": "Deployment startar om"
+  },
+  "config": {
+    "title": "Miljövariabler",
+    "loading": "Laddar konfiguration...",
+    "error": "Kunde inte ladda konfiguration",
+    "empty": "Inga variabler satta",
+    "namePlaceholder": "MYSQL_ROOT_PASSWORD",
+    "valuePlaceholder": "värde",
+    "add": "Lägg till variabel",
+    "remove": "Ta bort",
+    "submit": "Spara",
+    "submitting": "Sparar...",
+    "portHint": "Container-port: {{port}}",
+    "createHint": "Katalog-images får dev-defaults. Granska innan skapande."
+  },
+  "healthProbes": {
+    "title": "Hälsokontroller",
+    "loading": "Laddar probe-konfiguration...",
+    "error": "Kunde inte ladda health probes",
+    "empty": "Inga probes konfigurerade för primär container",
+    "configTitle": "Konfigurerade probes",
+    "podsTitle": "Pod-redo",
+    "podsEmpty": "Inga pods att inspektera",
+    "podReady": "Redo",
+    "podNotReady": "Inte redo",
+    "podStates": {
+      "ready": "Ready",
+      "runningNotReady": "Kör, inte ready",
+      "pending": "Väntar",
+      "failed": "Misslyckades",
+      "notReady": "Inte ready"
+    },
+    "types": {
+      "readiness": "Readiness",
+      "liveness": "Liveness",
+      "startup": "Startup"
+    },
+    "mechanisms": {
+      "http": "HTTP",
+      "tcp": "TCP",
+      "exec": "Exec",
+      "grpc": "gRPC",
+      "none": "Ingen"
+    },
+    "columns": {
+      "type": "Typ",
+      "mechanism": "Mekanism",
+      "target": "Mål",
+      "timing": "Timing",
+      "pod": "Pod",
+      "phase": "Phase",
+      "podStatus": "Readiness"
+    },
+    "timing": {
+      "start": "start {{seconds}}s",
+      "every": "var {{seconds}}:e s",
+      "timeout": "timeout {{seconds}}s"
+    }
+  }
+}

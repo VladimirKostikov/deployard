@@ -1,0 +1,26 @@
+{
+  "loading": "Nalaganje podov...",
+  "error": "Podov ni bilo mogoče naložiti",
+  "empty": "Za ta deployment ni podov",
+  "yes": "Da",
+  "no": "Ne",
+  "table": {
+    "name": "Pod",
+    "phase": "Phase",
+    "ready": "Ready",
+    "restarts": "Ponovni zagoni",
+    "node": "Node",
+    "podIp": "Pod IP",
+    "ports": "Vrata",
+    "actions": "Dejanja"
+  },
+  "actions": {
+    "restart": "Ponovno zaženi pod",
+    "delete": "Izbriši pod",
+    "console": "Odpri konzolo"
+  },
+  "delete": {
+    "title": "Izbriši pod",
+    "message": "Izbrisati pod {{name}}? Deployment controller ga lahko znova ustvari."
+  }
+}

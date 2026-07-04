@@ -1,0 +1,10 @@
+{
+  "DEPLOYMENT_NOT_FOUND": "Deployment ma nstabx",
+  "POD_NOT_FOUND": "Pod ma nstabx",
+  "NAMESPACE_NOT_FOUND": "Namespace ma nstabx",
+  "ROLLBACK_FAILED": "Rollback falla",
+  "K8S_API_ERROR": "Żball tal-API Kubernetes",
+  "FORBIDDEN": "Permessi mhux biżżejjed",
+  "VALIDATION_ERROR": "Żball ta' validazzjoni",
+  "INTERNAL_ERROR": "Żball intern tas-server"
+}

@@ -1,0 +1,26 @@
+{
+  "loading": "Indlæser pods...",
+  "error": "Kunne ikke indlæse pods",
+  "empty": "Ingen pods fundet for dette deployment",
+  "yes": "Ja",
+  "no": "Nej",
+  "table": {
+    "name": "Pod",
+    "phase": "Phase",
+    "ready": "Ready",
+    "restarts": "Genstarter",
+    "node": "Node",
+    "podIp": "Pod IP",
+    "ports": "Porte",
+    "actions": "Handlinger"
+  },
+  "actions": {
+    "restart": "Genstart pod",
+    "delete": "Slet pod",
+    "console": "Åbn konsol"
+  },
+  "delete": {
+    "title": "Slet pod",
+    "message": "Slet pod {{name}}? Deployment-controlleren kan genskabe den."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "appTitle": "Deployard",
+  "sections": {
+    "main": "Hlavné",
+    "admin": "Riadenie prístupu",
+    "settings": "Nastavenia"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "import": "Import",
+    "faq": "FAQ",
+    "nodes": "Nodes",
+    "namespaces": "Namespaces",
+    "ingress": "Ingress",
+    "network": "Sieť",
+    "metrics": "Metrics",
+    "admin": "Správa",
+    "users": "Používatelia",
+    "roles": "Roly",
+    "permissions": "Oprávnenia",
+    "backToApp": "Späť do aplikácie",
+    "logout": "Odhlásiť sa"
+  },
+  "topbar": {
+    "connected": "API pripojené",
+    "checking": "Kontrola API..."
+  },
+  "mobileMenu": {
+    "open": "Otvoriť menu",
+    "close": "Zavrieť menu"
+  }
+}

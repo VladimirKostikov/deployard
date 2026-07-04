@@ -1,0 +1,29 @@
+{
+  "title": "Ноды",
+  "subtitle": "Worker-ноды кластера и pod'ы на них",
+  "loading": "Загрузка нод...",
+  "error": "Не удалось загрузить ноды",
+  "podsTitle": "Pod'ы на {{node}}",
+  "podsLoading": "Загрузка pod'ов...",
+  "podsError": "Не удалось загрузить pod'ы для этой ноды",
+  "podsEmpty": "На этой ноде нет pod'ов",
+  "table": {
+    "name": "Нода",
+    "status": "Статус",
+    "roles": "Роли",
+    "pods": "Pod'ы",
+    "version": "Kubelet",
+    "actions": "Действия"
+  },
+  "actions": {
+    "viewPods": "Pod'ы"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Фаза",
+    "ready": "Готов",
+    "yes": "Да",
+    "no": "Нет"
+  }
+}

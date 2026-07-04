@@ -1,0 +1,71 @@
+{
+  "title": "Administrasjon",
+  "subtitle": "Brukere, roller og deployment-tillatelser",
+  "back": "Tilbake til deployments",
+  "actions": {
+    "label": "Handlinger",
+    "create": "Opprett",
+    "edit": "Rediger",
+    "delete": "Slett",
+    "save": "Lagre",
+    "cancel": "Avbryt",
+    "saving": "Lagrer...",
+    "deleting": "Sletter..."
+  },
+  "users": {
+    "title": "Brukere",
+    "subtitle": "Administrer dashboard-kontoer og rolletildelinger",
+    "create": "Legg til bruker",
+    "createTitle": "Opprett bruker",
+    "editTitle": "Rediger bruker",
+    "deleteTitle": "Slett bruker",
+    "deleteMessage": "Slette {{email}}? Dette kan ikke angres.",
+    "email": "E-post",
+    "name": "Navn",
+    "password": "Passord",
+    "newPassword": "Nytt passord (valgfritt)",
+    "roles": "Roller",
+    "status": "Status",
+    "active": "Aktiv",
+    "inactive": "Inaktiv"
+  },
+  "roles": {
+    "title": "Roller",
+    "subtitle": "Rolledefinisjoner og tilknyttede tillatelser",
+    "create": "Legg til rolle",
+    "createTitle": "Opprett rolle",
+    "editTitle": "Rediger rolle",
+    "deleteTitle": "Slett rolle",
+    "deleteMessage": "Slette rolle \"{{name}}\"? Den må ikke være tildelt noen bruker.",
+    "name": "Navn",
+    "permissions": "Tillatelser"
+  },
+  "permissions": {
+    "title": "Tillatelser",
+    "subtitle": "Detaljerte tilgangsregler for deployments",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Seksjon",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Nettverk",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Metrikker",
+      "admin": "Administrasjon"
+    },
+    "level": "Tilgang",
+    "levels": {
+      "none": "Ingen tilgang",
+      "view": "Vis",
+      "operate": "Betjen",
+      "manage": "Administrer"
+    },
+    "hints": {
+      "view": "Åpne seksjon, lese lister og detaljer",
+      "operate": "Omstart, deaktiver, rollback, logger, terminal",
+      "manage": "Opprett, slett, import og admin-endringer"
+    }
+  }
+}

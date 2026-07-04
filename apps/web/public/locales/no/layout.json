@@ -1,0 +1,32 @@
+{
+  "appTitle": "Deployard",
+  "sections": {
+    "main": "Hoved",
+    "admin": "Tilgangskontroll",
+    "settings": "Innstillinger"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "import": "Import",
+    "faq": "FAQ",
+    "nodes": "Nodes",
+    "namespaces": "Namespaces",
+    "ingress": "Ingress",
+    "network": "Nettverk",
+    "metrics": "Metrics",
+    "admin": "Administrasjon",
+    "users": "Brukere",
+    "roles": "Roller",
+    "permissions": "Tillatelser",
+    "backToApp": "Tilbake til app",
+    "logout": "Logg ut"
+  },
+  "topbar": {
+    "connected": "API tilkoblet",
+    "checking": "Sjekker API..."
+  },
+  "mobileMenu": {
+    "open": "Åpne meny",
+    "close": "Lukk meny"
+  }
+}

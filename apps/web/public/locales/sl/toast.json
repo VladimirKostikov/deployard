@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Replike posodobljene",
+    "scaleError": "Deploymenta ni bilo mogoče skalirati",
+    "imageSuccess": "Container image posodobljen",
+    "imageError": "Container image ni bilo mogoče posodobiti",
+    "deleteSuccess": "Deployment izbrisan",
+    "deleteError": "Deploymenta ni bilo mogoče izbrisati",
+    "createSuccess": "Deployment ustvarjen",
+    "createError": "Deploymenta ni bilo mogoče ustvariti",
+    "configSaved": "Konfiguracija shranjena",
+    "configError": "Konfiguracije ni bilo mogoče shraniti",
+    "restartSuccess": "Deployment ponovno zagnan",
+    "restartError": "Deploymenta ni bilo mogoče ponovno zagnati",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback končan",
+    "rollbackError": "Rollback ni uspel",
+    "projectGroupDeleteSuccess": "Skupina projekta izbrisana",
+    "projectGroupDeleteError": "Skupine projekta ni bilo mogoče izbrisati",
+    "projectGroupRestartSuccess": "Skupina ponovno zagnana",
+    "projectGroupRestartError": "Skupine ni bilo mogoče ponovno zagnati",
+    "projectGroupDisableSuccess": "Skupina onemogočena",
+    "projectGroupDisableError": "Skupine ni bilo mogoče onemogočiti",
+    "filesFolderCreated": "Mapa ustvarjena",
+    "filesUploaded": "Datoteka naložena",
+    "filesDeleted": "Izbrisano",
+    "filesRenamed": "Preimenovano",
+    "filesError": "Operacija z datoteko ni uspela"
+  },
+  "pod": {
+    "restartSuccess": "Pod ponovno zagnan",
+    "restartError": "Poda ni bilo mogoče ponovno zagnati",
+    "deleteSuccess": "Pod izbrisan",
+    "deleteError": "Poda ni bilo mogoče izbrisati"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service ustvarjen",
+    "serviceCreateError": "Service ni bilo mogoče ustvariti",
+    "serviceDeleteSuccess": "Service izbrisan",
+    "serviceDeleteError": "Service ni bilo mogoče izbrisati",
+    "serviceUpdateSuccess": "Service posodobljen",
+    "serviceUpdateError": "Service ni bilo mogoče posodobiti",
+    "tunnelError": "Dostopa do service ni bilo mogoče odpreti",
+    "openBlocked": "Brskalnik je blokiral nov zavihek. Dovoli pop-up okna za to spletno mesto.",
+    "openError": "Ni bilo mogoče odpreti {{name}}. Preveri, ali podi tečejo.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Ingress pravilo izbrisano",
+    "ingressDeleteError": "Ingress pravila ni bilo mogoče izbrisati"
+  },
+  "ingress": {
+    "createSuccess": "Ingress pravilo ustvarjeno",
+    "createError": "Ingress pravila ni bilo mogoče ustvariti",
+    "deleteSuccess": "Ingress pravilo izbrisano",
+    "deleteError": "Ingress pravila ni bilo mogoče izbrisati"
+  },
+  "namespace": {
+    "createSuccess": "Namespace ustvarjen",
+    "createError": "Namespace ni bilo mogoče ustvariti",
+    "deleteSuccess": "Namespace izbrisan",
+    "deleteError": "Namespace ni bilo mogoče izbrisati"
+  },
+  "import": {
+    "buildSuccess": "Images zgrajeni",
+    "buildError": "Images ni bilo mogoče zgraditi",
+    "rebuildSuccess": "Docker Compose ponovno zgrajen in zagnan",
+    "rebuildError": "Projekta ni bilo mogoče ponovno zgraditi",
+    "loadSuccess": "Images naloženi v cluster",
+    "loadError": "Images ni bilo mogoče naložiti v cluster",
+    "applySuccess": "Projekt uvožen v Kubernetes",
+    "applyWithImages": "Projekt uvožen, {{count}} images naloženih v kind",
+    "openImportedApp": "Odpiranje aplikacije na {{url}}",
+    "openUnavailable": "Import končan, vendar URL še ni pripravljen. Odpri ga v Network → web.",
+    "applyError": "Projekta ni bilo mogoče uvoziti",
+    "previewError": "Predogleda ni bilo mogoče ustvariti"
+  },
+  "admin": {
+    "userSaveSuccess": "Uporabnik shranjen",
+    "userSaveError": "Uporabnika ni bilo mogoče shraniti",
+    "userDeleteSuccess": "Uporabnik izbrisan",
+    "userDeleteError": "Uporabnika ni bilo mogoče izbrisati",
+    "roleSaveSuccess": "Vloga shranjena",
+    "roleSaveError": "Vloge ni bilo mogoče shraniti",
+    "roleDeleteSuccess": "Vloga izbrisana",
+    "roleDeleteError": "Vloge ni bilo mogoče izbrisati",
+    "permissionSaveSuccess": "Dovoljenje shranjeno",
+    "permissionSaveError": "Dovoljenja ni bilo mogoče shraniti",
+    "permissionDeleteSuccess": "Dovoljenje izbrisano",
+    "permissionDeleteError": "Dovoljenja ni bilo mogoče izbrisati"
+  }
+}

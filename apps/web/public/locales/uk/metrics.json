@@ -1,0 +1,66 @@
+{
+  "title": "Метрики",
+  "subtitle": "Живі показники процесу API",
+  "scopeNote": "HTTP-трафік, затримки та runtime Node.js. Метрики кластера не включені.",
+  "loading": "Завантаження метрик...",
+  "error": "Не вдалося завантажити дашборд метрик",
+  "updatedAt": "Оновлено о {{time}}",
+  "empty": "Поки немає даних",
+  "header": {
+    "healthy": "Немає серверних помилок у поточному вікні",
+    "errors": "{{count}} серверних помилок ({{rate}})"
+  },
+  "cards": {
+    "requests": "HTTP-запити",
+    "requestsHint": "Усього оброблено з запуску процесу",
+    "throughput": "Пропускна здатність",
+    "throughputHint": "Середня кількість запитів на секунду",
+    "errorRate": "Частка помилок",
+    "errorRateHint": "{{count}} відповідей зі статусом 5xx",
+    "p95": "Затримка p95",
+    "p95Hint": "95% запитів були швидшими за це значення",
+    "memory": "Памʼять (RSS)",
+    "memoryHint": "Resident set size процесу API",
+    "uptime": "Аптайм",
+    "uptimeHint": "Час від запуску процесу API"
+  },
+  "sections": {
+    "latency": "Затримка відповіді",
+    "byStatus": "Запити за статусом",
+    "byMethod": "Запити за методом",
+    "routes": "Топ маршрутів",
+    "process": "Ресурси процесу"
+  },
+  "latency": {
+    "subtitle": "Перцентилі гістограми тривалості запитів",
+    "samples": "{{count}} вибірок",
+    "p50": "p50",
+    "p95": "p95",
+    "p99": "p99",
+    "avg": "Середнє"
+  },
+  "routes": {
+    "subtitle": "Найчастіші маршрути API зі середнім часом і кількістю 5xx",
+    "columns": {
+      "route": "Маршрут",
+      "requests": "Запити",
+      "avgDuration": "Сер. час",
+      "errors": "5xx"
+    }
+  },
+  "process": {
+    "subtitle": "Лічильники runtime Node.js зі стандартних метрик Prometheus",
+    "rss": "RSS памʼять",
+    "heap": "Heap used",
+    "cpuUser": "CPU user time",
+    "cpuSystem": "CPU system time",
+    "eventLoopLag": "Event loop lag",
+    "uptime": "Аптайм процесу"
+  },
+  "units": {
+    "seconds": "сек",
+    "minutes": "хв",
+    "hours": "год",
+    "perSecond": "зап/с"
+  }
+}

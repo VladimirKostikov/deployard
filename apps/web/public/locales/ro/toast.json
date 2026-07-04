@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Replicile au fost actualizate",
+    "scaleError": "Nu s-a putut scala deployment-ul",
+    "imageSuccess": "Imaginea containerului a fost actualizată",
+    "imageError": "Nu s-a putut actualiza imaginea containerului",
+    "deleteSuccess": "Deployment șters",
+    "deleteError": "Nu s-a putut șterge deployment-ul",
+    "createSuccess": "Deployment creat",
+    "createError": "Nu s-a putut crea deployment-ul",
+    "configSaved": "Configurație salvată",
+    "configError": "Nu s-a putut salva configurația",
+    "restartSuccess": "Deployment repornit",
+    "restartError": "Nu s-a putut reporni deployment-ul",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback finalizat",
+    "rollbackError": "Rollback eșuat",
+    "projectGroupDeleteSuccess": "Grupul de proiect a fost șters",
+    "projectGroupDeleteError": "Nu s-a putut șterge grupul de proiect",
+    "projectGroupRestartSuccess": "Grup repornit",
+    "projectGroupRestartError": "Repornirea grupului a eșuat",
+    "projectGroupDisableSuccess": "Grup dezactivat",
+    "projectGroupDisableError": "Dezactivarea grupului a eșuat",
+    "filesFolderCreated": "Folder creat",
+    "filesUploaded": "Fișier încărcat",
+    "filesDeleted": "Șters",
+    "filesRenamed": "Redenumit",
+    "filesError": "Operația cu fișierul a eșuat"
+  },
+  "pod": {
+    "restartSuccess": "Pod repornit",
+    "restartError": "Nu s-a putut reporni pod-ul",
+    "deleteSuccess": "Pod șters",
+    "deleteError": "Nu s-a putut șterge pod-ul"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service creat",
+    "serviceCreateError": "Nu s-a putut crea service-ul",
+    "serviceDeleteSuccess": "Service șters",
+    "serviceDeleteError": "Nu s-a putut șterge service-ul",
+    "serviceUpdateSuccess": "Service actualizat",
+    "serviceUpdateError": "Nu s-a putut actualiza service-ul",
+    "tunnelError": "Nu s-a putut deschide accesul la service",
+    "openBlocked": "Browserul a blocat tab-ul nou. Permite pop-up-urile pentru acest site.",
+    "openError": "Nu s-a putut deschide {{name}}. Verifică dacă pod-urile rulează.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Regula ingress ștearsă",
+    "ingressDeleteError": "Nu s-a putut șterge regula ingress"
+  },
+  "ingress": {
+    "createSuccess": "Regula ingress creată",
+    "createError": "Nu s-a putut crea regula ingress",
+    "deleteSuccess": "Regula ingress ștearsă",
+    "deleteError": "Nu s-a putut șterge regula ingress"
+  },
+  "namespace": {
+    "createSuccess": "Namespace creat",
+    "createError": "Nu s-a putut crea namespace-ul",
+    "deleteSuccess": "Namespace șters",
+    "deleteError": "Nu s-a putut șterge namespace-ul"
+  },
+  "import": {
+    "buildSuccess": "Imaginile au fost construite",
+    "buildError": "Nu s-au putut construi imaginile",
+    "rebuildSuccess": "Docker Compose reconstruit și pornit",
+    "rebuildError": "Nu s-a putut reconstrui proiectul",
+    "loadSuccess": "Imaginile au fost încărcate în cluster",
+    "loadError": "Nu s-au putut încărca imaginile în cluster",
+    "applySuccess": "Proiect importat în Kubernetes",
+    "applyWithImages": "Proiect importat, {{count}} imagini încărcate în kind",
+    "openImportedApp": "Deschidere app la {{url}}",
+    "openUnavailable": "Import finalizat, dar URL-ul nu e încă gata. Deschide-l din Network → web.",
+    "applyError": "Nu s-a putut importa proiectul",
+    "previewError": "Nu s-a putut genera previzualizarea"
+  },
+  "admin": {
+    "userSaveSuccess": "Utilizator salvat",
+    "userSaveError": "Nu s-a putut salva utilizatorul",
+    "userDeleteSuccess": "Utilizator șters",
+    "userDeleteError": "Nu s-a putut șterge utilizatorul",
+    "roleSaveSuccess": "Rol salvat",
+    "roleSaveError": "Nu s-a putut salva rolul",
+    "roleDeleteSuccess": "Rol șters",
+    "roleDeleteError": "Nu s-a putut șterge rolul",
+    "permissionSaveSuccess": "Permisiune salvată",
+    "permissionSaveError": "Nu s-a putut salva permisiunea",
+    "permissionDeleteSuccess": "Permisiune ștearsă",
+    "permissionDeleteError": "Nu s-a putut șterge permisiunea"
+  }
+}

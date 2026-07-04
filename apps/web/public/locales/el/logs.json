@@ -1,0 +1,7 @@
+{
+  "title": "Logs",
+  "streaming": "Ροή logs...",
+  "error": "Αποτυχία ροής logs",
+  "empty": "Δεν υπάρχουν ακόμα γραμμές log",
+  "autoScroll": "Αυτόματη κύλιση"
+}

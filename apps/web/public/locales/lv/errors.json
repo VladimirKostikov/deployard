@@ -1,0 +1,10 @@
+{
+  "DEPLOYMENT_NOT_FOUND": "Deployment nav atrasts",
+  "POD_NOT_FOUND": "Pod nav atrasts",
+  "NAMESPACE_NOT_FOUND": "Namespace nav atrasts",
+  "ROLLBACK_FAILED": "Rollback neizdevās",
+  "K8S_API_ERROR": "Kubernetes API kļūda",
+  "FORBIDDEN": "Nepietiekamas atļaujas",
+  "VALIDATION_ERROR": "Validācijas kļūda",
+  "INTERNAL_ERROR": "Iekšējā servera kļūda"
+}

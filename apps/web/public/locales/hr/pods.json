@@ -1,0 +1,26 @@
+{
+  "loading": "Učitavanje podova...",
+  "error": "Učitavanje podova nije uspjelo",
+  "empty": "Nema podova za ovaj deployment",
+  "yes": "Da",
+  "no": "Ne",
+  "table": {
+    "name": "Pod",
+    "phase": "Phase",
+    "ready": "Ready",
+    "restarts": "Restarti",
+    "node": "Node",
+    "podIp": "Pod IP",
+    "ports": "Portovi",
+    "actions": "Radnje"
+  },
+  "actions": {
+    "restart": "Restart poda",
+    "delete": "Obriši pod",
+    "console": "Otvori konzolu"
+  },
+  "delete": {
+    "title": "Obriši pod",
+    "message": "Obrisati pod {{name}}? Deployment controller ga može ponovno stvoriti."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "title": "Beheer",
+  "subtitle": "Gebruikers, rollen en deployment-rechten",
+  "back": "Terug naar deployments",
+  "actions": {
+    "label": "Acties",
+    "create": "Aanmaken",
+    "edit": "Bewerken",
+    "delete": "Verwijderen",
+    "save": "Opslaan",
+    "cancel": "Annuleren",
+    "saving": "Opslaan...",
+    "deleting": "Verwijderen..."
+  },
+  "users": {
+    "title": "Gebruikers",
+    "subtitle": "Dashboard-accounts en roltoewijzing beheren",
+    "create": "Gebruiker toevoegen",
+    "createTitle": "Gebruiker aanmaken",
+    "editTitle": "Gebruiker bewerken",
+    "deleteTitle": "Gebruiker verwijderen",
+    "deleteMessage": "{{email}} verwijderen? Dit kan niet ongedaan worden gemaakt.",
+    "email": "Email",
+    "name": "Naam",
+    "password": "Wachtwoord",
+    "newPassword": "Nieuw wachtwoord (optioneel)",
+    "roles": "Rollen",
+    "status": "Status",
+    "active": "Actief",
+    "inactive": "Inactief"
+  },
+  "roles": {
+    "title": "Rollen",
+    "subtitle": "Roldefinities en gekoppelde rechten",
+    "create": "Rol toevoegen",
+    "createTitle": "Rol aanmaken",
+    "editTitle": "Rol bewerken",
+    "deleteTitle": "Rol verwijderen",
+    "deleteMessage": "Rol \"{{name}}\" verwijderen? De rol mag aan geen enkele gebruiker zijn toegewezen.",
+    "name": "Naam",
+    "permissions": "Rechten"
+  },
+  "permissions": {
+    "title": "Rechten",
+    "subtitle": "Fijnmazige toegangsregels voor deployments",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Sectie",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Netwerk",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Metrics",
+      "admin": "Beheer"
+    },
+    "level": "Toegang",
+    "levels": {
+      "none": "Geen toegang",
+      "view": "Bekijken",
+      "operate": "Bedienen",
+      "manage": "Beheren"
+    },
+    "hints": {
+      "view": "Sectie openen, lijsten en details lezen",
+      "operate": "Herstarten, uitschakelen, rollback, logs, terminal",
+      "manage": "Aanmaken, verwijderen, import en admin-wijzigingen"
+    }
+  }
+}

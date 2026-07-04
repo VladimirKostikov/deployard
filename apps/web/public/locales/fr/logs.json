@@ -1,0 +1,7 @@
+{
+  "title": "Logs",
+  "streaming": "Flux de logs en cours...",
+  "error": "Impossible de lire les logs",
+  "empty": "Aucune ligne de log pour l'instant",
+  "autoScroll": "Défilement auto"
+}

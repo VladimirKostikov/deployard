@@ -1,0 +1,71 @@
+{
+  "title": "Amministrazzjoni",
+  "subtitle": "Utenti, rwoli, u permessi tad-Deployment",
+  "back": "Lura għall-Deployments",
+  "actions": {
+    "label": "Azzjonijiet",
+    "create": "Oħloq",
+    "edit": "Editja",
+    "delete": "Ħassar",
+    "save": "Issejvja",
+    "cancel": "Ikkanċella",
+    "saving": "Qed jissejvja...",
+    "deleting": "Qed jħassar..."
+  },
+  "users": {
+    "title": "Utenti",
+    "subtitle": "Immaniġġja kontijiet tad-dashboard u l-assenjazzjoni tar-rwoli",
+    "create": "Żid utent",
+    "createTitle": "Oħloq utent",
+    "editTitle": "Editja utent",
+    "deleteTitle": "Ħassar utent",
+    "deleteMessage": "Ħassar {{email}}? Ma tistax tħassar dan.",
+    "email": "Email",
+    "name": "Isem",
+    "password": "Password",
+    "newPassword": "Password ġdida (opzjonali)",
+    "roles": "Rwoli",
+    "status": "Status",
+    "active": "Attiv",
+    "inactive": "Inattiv"
+  },
+  "roles": {
+    "title": "Rwoli",
+    "subtitle": "Definizzjonijiet tar-rwoli u permessi marbuta",
+    "create": "Żid rwol",
+    "createTitle": "Oħloq rwol",
+    "editTitle": "Editja rwol",
+    "deleteTitle": "Ħassar rwol",
+    "deleteMessage": "Ħassar rwol \"{{name}}\"? Ma jistax ikun assenjat lil utent.",
+    "name": "Isem",
+    "permissions": "Permessi"
+  },
+  "permissions": {
+    "title": "Permessi",
+    "subtitle": "Regoli ta' aċċess dettaljati għall-Deployments",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Sezzjoni",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Netwerk",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Metriki",
+      "admin": "Amministrazzjoni"
+    },
+    "level": "Aċċess",
+    "levels": {
+      "none": "L-ebda aċċess",
+      "view": "Ara",
+      "operate": "Opera",
+      "manage": "Amministra"
+    },
+    "hints": {
+      "view": "Iftaħ sezzjoni, aqra listi u dettalji",
+      "operate": "Erġa' ibda, iddiżattiva, rollback, logs, terminal",
+      "manage": "Oħloq, ħassar, import u bidliet admin"
+    }
+  }
+}

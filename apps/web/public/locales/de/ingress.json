@@ -1,0 +1,32 @@
+{
+  "title": "Ingress",
+  "subtitle": "HTTP-Routing-Regeln im gewählten Namespace",
+  "loading": "Ingress-Regeln werden geladen...",
+  "error": "Ingress-Regeln konnten nicht geladen werden",
+  "empty": "Keine Ingress-Regeln in diesem Namespace",
+  "create": {
+    "title": "Neuer Ingress",
+    "name": "Name",
+    "host": "Host (z. B. api.local)",
+    "path": "Path",
+    "service": "Service-Name",
+    "port": "Service-Port",
+    "submit": "Ingress erstellen",
+    "submitting": "Erstelle...",
+    "cancel": "Abbrechen"
+  },
+  "table": {
+    "name": "Name",
+    "host": "Host",
+    "path": "Path",
+    "service": "Backend",
+    "actions": "Aktionen"
+  },
+  "actions": {
+    "delete": "Löschen"
+  },
+  "delete": {
+    "title": "Ingress löschen",
+    "message": "Ingress {{name}} löschen?"
+  }
+}

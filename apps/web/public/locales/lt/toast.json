@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Replikos atnaujintos",
+    "scaleError": "Nepavyko keisti deployment mastelio",
+    "imageSuccess": "Container image atnaujintas",
+    "imageError": "Nepavyko atnaujinti container image",
+    "deleteSuccess": "Deployment ištrintas",
+    "deleteError": "Nepavyko ištrinti deployment",
+    "createSuccess": "Deployment sukurtas",
+    "createError": "Nepavyko sukurti deployment",
+    "configSaved": "Konfigūracija išsaugota",
+    "configError": "Nepavyko išsaugoti konfigūracijos",
+    "restartSuccess": "Deployment perkrautas",
+    "restartError": "Nepavyko perkrauti deployment",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback baigtas",
+    "rollbackError": "Rollback nepavyko",
+    "projectGroupDeleteSuccess": "Projekto grupė ištrinta",
+    "projectGroupDeleteError": "Nepavyko ištrinti projekto grupės",
+    "projectGroupRestartSuccess": "Grupė perkrauta",
+    "projectGroupRestartError": "Nepavyko perkrauti grupės",
+    "projectGroupDisableSuccess": "Grupė išjungta",
+    "projectGroupDisableError": "Nepavyko išjungti grupės",
+    "filesFolderCreated": "Aplankas sukurtas",
+    "filesUploaded": "Failas įkeltas",
+    "filesDeleted": "Ištrinta",
+    "filesRenamed": "Pervardyta",
+    "filesError": "Failo operacija nepavyko"
+  },
+  "pod": {
+    "restartSuccess": "Pod perkrautas",
+    "restartError": "Nepavyko perkrauti pod",
+    "deleteSuccess": "Pod ištrintas",
+    "deleteError": "Nepavyko ištrinti pod"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service sukurtas",
+    "serviceCreateError": "Nepavyko sukurti service",
+    "serviceDeleteSuccess": "Service ištrintas",
+    "serviceDeleteError": "Nepavyko ištrinti service",
+    "serviceUpdateSuccess": "Service atnaujintas",
+    "serviceUpdateError": "Nepavyko atnaujinti service",
+    "tunnelError": "Nepavyko atidaryti service prieigos",
+    "openBlocked": "Naršyklė užblokavo naują skirtuką. Leiskite pop-up šiai svetainei.",
+    "openError": "Nepavyko atidaryti {{name}}. Patikrinkite, ar pod veikia.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Ingress taisyklė ištrinta",
+    "ingressDeleteError": "Nepavyko ištrinti ingress taisyklės"
+  },
+  "ingress": {
+    "createSuccess": "Ingress taisyklė sukurta",
+    "createError": "Nepavyko sukurti ingress taisyklės",
+    "deleteSuccess": "Ingress taisyklė ištrinta",
+    "deleteError": "Nepavyko ištrinti ingress taisyklės"
+  },
+  "namespace": {
+    "createSuccess": "Namespace sukurtas",
+    "createError": "Nepavyko sukurti namespace",
+    "deleteSuccess": "Namespace ištrintas",
+    "deleteError": "Nepavyko ištrinti namespace"
+  },
+  "import": {
+    "buildSuccess": "Images sukurti",
+    "buildError": "Nepavyko sukurti images",
+    "rebuildSuccess": "Docker Compose perkurtas ir paleistas",
+    "rebuildError": "Nepavyko perkurti projekto",
+    "loadSuccess": "Images įkelti į cluster",
+    "loadError": "Nepavyko įkelti images į cluster",
+    "applySuccess": "Projektas importuotas į Kubernetes",
+    "applyWithImages": "Projektas importuotas, {{count}} images įkelti į kind",
+    "openImportedApp": "Atidaroma programa {{url}}",
+    "openUnavailable": "Import baigtas, bet URL dar neparuoštas. Atidarykite jį per Network → web.",
+    "applyError": "Nepavyko importuoti projekto",
+    "previewError": "Nepavyko sukurti peržiūros"
+  },
+  "admin": {
+    "userSaveSuccess": "Naudotojas išsaugotas",
+    "userSaveError": "Nepavyko išsaugoti naudotojo",
+    "userDeleteSuccess": "Naudotojas ištrintas",
+    "userDeleteError": "Nepavyko ištrinti naudotojo",
+    "roleSaveSuccess": "Rolė išsaugota",
+    "roleSaveError": "Nepavyko išsaugoti rolės",
+    "roleDeleteSuccess": "Rolė ištrinta",
+    "roleDeleteError": "Nepavyko ištrinti rolės",
+    "permissionSaveSuccess": "Leidimas išsaugotas",
+    "permissionSaveError": "Nepavyko išsaugoti leidimo",
+    "permissionDeleteSuccess": "Leidimas ištrintas",
+    "permissionDeleteError": "Nepavyko ištrinti leidimo"
+  }
+}

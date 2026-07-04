@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Hub</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <h1>Order Hub</h1>
+      </header>
+
+      <section class="panel">
+        <h2>Services</h2>
+        <ul id="mesh-list" class="mesh-list"></ul>
+      </section>
+
+      <section class="panel">
+        <h2>Catalog</h2>
+        <ul id="catalog-list" class="catalog-list"></ul>
+      </section>
+
+      <section class="panel">
+        <h2>Place order</h2>
+        <form id="order-form" class="order-form">
+          <select id="product-select" required></select>
+          <input id="quantity-input" type="number" min="1" value="1" required />
+          <button type="submit">Place order</button>
+        </form>
+        <p id="order-feedback" class="feedback"></p>
+      </section>
+
+      <section class="panel">
+        <h2>Recent orders</h2>
+        <ul id="orders-list" class="orders-list"></ul>
+      </section>
+    </main>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

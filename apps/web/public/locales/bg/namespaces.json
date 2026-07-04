@@ -1,0 +1,29 @@
+{
+  "title": "Namespaces",
+  "subtitle": "Създаване и изтриване на Kubernetes namespaces в активния cluster",
+  "loading": "Зареждане на namespaces...",
+  "error": "Неуспешно зареждане на namespaces",
+  "protected": "Защитен",
+  "create": {
+    "title": "Нов namespace",
+    "label": "Име",
+    "placeholder": "staging",
+    "submit": "Създай namespace",
+    "submitting": "Създаване...",
+    "cancel": "Отказ",
+    "hint": "Използвай малки букви по DNS правила. Системните namespaces с kube- префикс не могат да се изтриват."
+  },
+  "table": {
+    "name": "Име",
+    "status": "Статус",
+    "created": "Създаден",
+    "actions": "Действия"
+  },
+  "actions": {
+    "delete": "Изтрий"
+  },
+  "delete": {
+    "title": "Изтрий namespace",
+    "message": "Изтрий namespace {{name}}? Всички ресурси в него ще бъдат премахнати."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "loading": "Φόρτωση pods...",
+  "error": "Αποτυχία φόρτωσης pods",
+  "empty": "Δεν βρέθηκαν pods για αυτό το deployment",
+  "yes": "Ναι",
+  "no": "Όχι",
+  "table": {
+    "name": "Pod",
+    "phase": "Phase",
+    "ready": "Ready",
+    "restarts": "Restarts",
+    "node": "Node",
+    "podIp": "Pod IP",
+    "ports": "Ports",
+    "actions": "Ενέργειες"
+  },
+  "actions": {
+    "restart": "Επανεκκίνηση pod",
+    "delete": "Διαγραφή pod",
+    "console": "Άνοιγμα κονσόλας"
+  },
+  "delete": {
+    "title": "Διαγραφή pod",
+    "message": "Διαγραφή pod {{name}}; Ο controller του deployment μπορεί να το ξαναδημιουργήσει."
+  }
+}

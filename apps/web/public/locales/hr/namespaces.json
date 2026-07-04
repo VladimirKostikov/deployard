@@ -1,0 +1,29 @@
+{
+  "title": "Namespaces",
+  "subtitle": "Stvaranje i brisanje Kubernetes namespace-a u aktivnom clusteru",
+  "loading": "Učitavanje namespace-a...",
+  "error": "Učitavanje namespace-a nije uspjelo",
+  "protected": "Zaštićen",
+  "create": {
+    "title": "Novi namespace",
+    "label": "Naziv",
+    "placeholder": "staging",
+    "submit": "Stvori namespace",
+    "submitting": "Stvaranje...",
+    "cancel": "Odustani",
+    "hint": "Koristi mala slova prema DNS pravilima. Sistemski namespace-i s kube- prefiksom ne mogu se obrisati."
+  },
+  "table": {
+    "name": "Naziv",
+    "status": "Status",
+    "created": "Stvoren",
+    "actions": "Radnje"
+  },
+  "actions": {
+    "delete": "Obriši"
+  },
+  "delete": {
+    "title": "Obriši namespace",
+    "message": "Obrisati namespace {{name}}? Svi resursi unutar njega bit će uklonjeni."
+  }
+}

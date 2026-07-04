@@ -1,0 +1,29 @@
+{
+  "title": "Namespaces",
+  "subtitle": "Kubernetes namespace-ek létrehozása és törlése az aktív clusterben",
+  "loading": "Namespace-ek betöltése...",
+  "error": "Nem sikerült betölteni a namespace-eket",
+  "protected": "Védett",
+  "create": {
+    "title": "Új namespace",
+    "label": "Név",
+    "placeholder": "staging",
+    "submit": "Namespace létrehozása",
+    "submitting": "Létrehozás...",
+    "cancel": "Mégse",
+    "hint": "Használj kisbetűs DNS neveket. A kube- előtagú rendszer namespace-ek nem törölhetők."
+  },
+  "table": {
+    "name": "Név",
+    "status": "Állapot",
+    "created": "Létrehozva",
+    "actions": "Műveletek"
+  },
+  "actions": {
+    "delete": "Törlés"
+  },
+  "delete": {
+    "title": "Namespace törlése",
+    "message": "Töröljük a {{name}} namespace-t? A benne lévő összes erőforrás törlődik."
+  }
+}

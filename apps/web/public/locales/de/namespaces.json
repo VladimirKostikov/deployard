@@ -1,0 +1,29 @@
+{
+  "title": "Namespaces",
+  "subtitle": "Kubernetes-Namespaces im aktiven Cluster anlegen und entfernen",
+  "loading": "Namespaces werden geladen...",
+  "error": "Namespaces konnten nicht geladen werden",
+  "protected": "Geschützt",
+  "create": {
+    "title": "Neuer Namespace",
+    "label": "Name",
+    "placeholder": "staging",
+    "submit": "Namespace erstellen",
+    "submitting": "Erstelle...",
+    "cancel": "Abbrechen",
+    "hint": "Kleinbuchstaben und DNS-Namen verwenden. System-Namespaces mit kube- sind geschützt."
+  },
+  "table": {
+    "name": "Name",
+    "status": "Status",
+    "created": "Erstellt",
+    "actions": "Aktionen"
+  },
+  "actions": {
+    "delete": "Löschen"
+  },
+  "delete": {
+    "title": "Namespace löschen",
+    "message": "Namespace {{name}} löschen? Alle enthaltenen Ressourcen werden entfernt."
+  }
+}

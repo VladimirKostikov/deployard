@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Eintök uppfærð",
+    "scaleError": "Tókst ekki að skala deployment",
+    "imageSuccess": "Container image uppfært",
+    "imageError": "Tókst ekki að uppfæra container image",
+    "deleteSuccess": "Deployment eytt",
+    "deleteError": "Tókst ekki að eyða deployment",
+    "createSuccess": "Deployment stofnað",
+    "createError": "Tókst ekki að stofna deployment",
+    "configSaved": "Stillingar vistaðar",
+    "configError": "Tókst ekki að vista stillingar",
+    "restartSuccess": "Deployment endurræst",
+    "restartError": "Tókst ekki að endurræsa deployment",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback lokið",
+    "rollbackError": "Rollback mistókst",
+    "projectGroupDeleteSuccess": "Verkefnahópi eytt",
+    "projectGroupDeleteError": "Tókst ekki að eyða verkefnahópi",
+    "projectGroupRestartSuccess": "Hópur endurræstur",
+    "projectGroupRestartError": "Ekki tókst að endurræsa hóp",
+    "projectGroupDisableSuccess": "Hópur slökktur",
+    "projectGroupDisableError": "Ekki tókst að slökkva á hóp",
+    "filesFolderCreated": "Mappa búin til",
+    "filesUploaded": "Skrá hlaðin upp",
+    "filesDeleted": "Eytt",
+    "filesRenamed": "Endurnefnt",
+    "filesError": "Skráaraðgerð mistókst"
+  },
+  "pod": {
+    "restartSuccess": "Pod endurræst",
+    "restartError": "Tókst ekki að endurræsa pod",
+    "deleteSuccess": "Pod eytt",
+    "deleteError": "Tókst ekki að eyða pod"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service stofnuð",
+    "serviceCreateError": "Tókst ekki að stofna service",
+    "serviceDeleteSuccess": "Service eytt",
+    "serviceDeleteError": "Tókst ekki að eyða service",
+    "serviceUpdateSuccess": "Service uppfærð",
+    "serviceUpdateError": "Tókst ekki að uppfæra service",
+    "tunnelError": "Tókst ekki að opna service-aðgang",
+    "openBlocked": "Vafrinn lokaði á nýja flipann. Leyfðu pop-up fyrir þessa síðu.",
+    "openError": "Gat ekki opnað {{name}}. Athugaðu að pod séu keyrandi.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Ingress-reglu eytt",
+    "ingressDeleteError": "Tókst ekki að eyða ingress-reglu"
+  },
+  "ingress": {
+    "createSuccess": "Ingress-regla stofnuð",
+    "createError": "Tókst ekki að stofna ingress-reglu",
+    "deleteSuccess": "Ingress-reglu eytt",
+    "deleteError": "Tókst ekki að eyða ingress-reglu"
+  },
+  "namespace": {
+    "createSuccess": "Namespace stofnað",
+    "createError": "Tókst ekki að stofna namespace",
+    "deleteSuccess": "Namespace eytt",
+    "deleteError": "Tókst ekki að eyða namespace"
+  },
+  "import": {
+    "buildSuccess": "Images byggð",
+    "buildError": "Tókst ekki að byggja images",
+    "rebuildSuccess": "Docker Compose endurbyggt og ræst",
+    "rebuildError": "Tókst ekki að endurbyggja verkefni",
+    "loadSuccess": "Images hlaðin inn í cluster",
+    "loadError": "Tókst ekki að hlaða images inn í cluster",
+    "applySuccess": "Verkefni flutt inn í Kubernetes",
+    "applyWithImages": "Verkefni flutt inn, {{count}} images hlaðin inn í kind",
+    "openImportedApp": "Opna forrit á {{url}}",
+    "openUnavailable": "Import lokið, en URL er ekki tilbúin enn. Opnaðu hana í Network → web.",
+    "applyError": "Tókst ekki að flytja inn verkefni",
+    "previewError": "Tókst ekki að búa til forsýn"
+  },
+  "admin": {
+    "userSaveSuccess": "Notandi vistaður",
+    "userSaveError": "Tókst ekki að vista notanda",
+    "userDeleteSuccess": "Notanda eytt",
+    "userDeleteError": "Tókst ekki að eyða notanda",
+    "roleSaveSuccess": "Hlutverk vistað",
+    "roleSaveError": "Tókst ekki að vista hlutverk",
+    "roleDeleteSuccess": "Hlutverki eytt",
+    "roleDeleteError": "Tókst ekki að eyða hlutverki",
+    "permissionSaveSuccess": "Heimild vistuð",
+    "permissionSaveError": "Tókst ekki að vista heimild",
+    "permissionDeleteSuccess": "Heimild eytt",
+    "permissionDeleteError": "Tókst ekki að eyða heimild"
+  }
+}

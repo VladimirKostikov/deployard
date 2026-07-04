@@ -1,0 +1,71 @@
+{
+  "title": "Haldus",
+  "subtitle": "Kasutajad, rollid ja deployment-õigused",
+  "back": "Tagasi deployments juurde",
+  "actions": {
+    "label": "Toimingud",
+    "create": "Loo",
+    "edit": "Muuda",
+    "delete": "Kustuta",
+    "save": "Salvesta",
+    "cancel": "Tühista",
+    "saving": "Salvestan...",
+    "deleting": "Kustutan..."
+  },
+  "users": {
+    "title": "Kasutajad",
+    "subtitle": "Halda dashboardi kontosid ja rollide määramist",
+    "create": "Lisa kasutaja",
+    "createTitle": "Loo kasutaja",
+    "editTitle": "Muuda kasutajat",
+    "deleteTitle": "Kustuta kasutaja",
+    "deleteMessage": "Kustutada {{email}}? Seda ei saa tagasi võtta.",
+    "email": "E-post",
+    "name": "Nimi",
+    "password": "Parool",
+    "newPassword": "Uus parool (valikuline)",
+    "roles": "Rollid",
+    "status": "Olek",
+    "active": "Aktiivne",
+    "inactive": "Mitteaktiivne"
+  },
+  "roles": {
+    "title": "Rollid",
+    "subtitle": "Rollide definitsioonid ja seotud õigused",
+    "create": "Lisa roll",
+    "createTitle": "Loo roll",
+    "editTitle": "Muuda rolli",
+    "deleteTitle": "Kustuta roll",
+    "deleteMessage": "Kustutada roll \"{{name}}\"? Seda ei tohi olla ühelegi kasutajale määratud.",
+    "name": "Nimi",
+    "permissions": "Õigused"
+  },
+  "permissions": {
+    "title": "Õigused",
+    "subtitle": "Detailsed juurdepääsureeglid deploymentide jaoks",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Jaotis",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Võrk",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Mõõdikud",
+      "admin": "Haldus"
+    },
+    "level": "Juurdepääs",
+    "levels": {
+      "none": "Juurdepääs puudub",
+      "view": "Vaade",
+      "operate": "Kasutamine",
+      "manage": "Haldamine"
+    },
+    "hints": {
+      "view": "Ava jaotis, loe nimekirju ja üksikasju",
+      "operate": "Taaskäivitus, keelamine, rollback, logid, terminal",
+      "manage": "Loomine, kustutamine, import ja haldusmuudatused"
+    }
+  }
+}

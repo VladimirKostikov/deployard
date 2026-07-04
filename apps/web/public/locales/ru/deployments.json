@@ -1,0 +1,318 @@
+{
+  "title": "Деплои",
+  "subtitle": "Приложения в выбранном namespace",
+  "subtitleAll": "Приложения во всех доступных namespace",
+  "loading": "Загрузка деплоев...",
+  "error": "Не удалось загрузить деплои",
+  "empty": "В этом namespace нет деплоев",
+  "emptyAll": "Нет деплоев в доступных namespace",
+  "projectGroups": {
+    "standalone": "Без группы",
+    "services_one": "{{count}} сервис",
+    "services_other": "{{count}} сервисов",
+    "health": "{{healthy}}/{{total}} здоровы",
+    "restarting": "{{count}}/{{total}} перезапускаются",
+    "restartingBanner": "Перезапуск {{count}} из {{total}} деплоев в группе",
+    "settings": "Настройки",
+    "settingsTitle": "Настройки группы",
+    "settingsGroupLabel": "Группа проекта",
+    "settingsDockerReady": "Docker доступен",
+    "settingsDockerUnavailable": "Docker недоступен",
+    "settingsRebuildHint": "Пересобирает compose, повторно применяет manifest в Kubernetes, загружает образы в kind и запускает rollout деплоев этой группы.",
+    "settingsLoading": "Проверка окружения...",
+    "settingsClose": "Закрыть",
+    "settingsNoCompose": "Compose-проект с таким именем не найден. Пересборка доступна только для групп, импортированных из Docker Compose.",
+    "delete": "Удалить группу",
+    "restart": "Перезапустить группу",
+    "disable": "Отключить группу",
+    "deleteTitle": "Удалить группу проекта",
+    "deleteMessage": "Удалить все деплои, сервисы и секреты группы «{{name}}»?",
+    "services_few": "{{count}} сервиса",
+    "services_many": "{{count}} сервисов"
+  },
+  "table": {
+    "name": "Имя",
+    "namespace": "Namespace",
+    "image": "Образ",
+    "replicas": "Готово / Всего",
+    "revision": "Ревизия",
+    "status": "Статус"
+  },
+  "status": {
+    "healthy": "Здоров",
+    "starting": "Запуск",
+    "restarting": "Перезапуск",
+    "degraded": "Проблемы",
+    "scaledToZero": "0 реплик",
+    "disabled": "Отключён"
+  },
+  "statusModal": {
+    "open": "Подробнее о статусе",
+    "title": "Статус деплоя",
+    "summary": {
+      "healthy": "Все pod'ы готовы.",
+      "starting": "Деплой запускается. После создания это нормально.",
+      "degraded": "Часть pod'ов не готова. Откройте детали, чтобы увидеть причину.",
+      "scaledToZero": "Реплик 0, pod'ы не запущены.",
+      "disabled": "Деплой отключён. Pod'ы остановлены до повторного включения.",
+      "restarting": "Идёт rolling restart: готово {{ready}}/{{desired}}, обновлено {{updated}}/{{desired}}."
+    },
+    "reasonsTitle": "Почему такой статус",
+    "desired": "Желаемо",
+    "ready": "Готово",
+    "available": "Доступно",
+    "updated": "Обновлено",
+    "reasons": {
+      "healthy": "Готово {{ready}} из {{desired}} реплик.",
+      "starting": "Деплой только что создан или обновляется.",
+      "scaledToZero": "Масштабирован до 0, pod'ы не запущены.",
+      "disabled": "Отключён через Deployard. Включите, чтобы вернуть {{replicas}} реплик(и).",
+      "podsNotReady": "Готово {{ready}} из {{desired}}, не все pod'ы прошли readiness probe.",
+      "podsNotAvailable": "Доступно {{available}} из {{desired}}, pod'ы еще не готовы.",
+      "rolloutInProgress": "Обновлено {{updated}} из {{desired}}, идет rollout.",
+      "rolloutStalled": "Обновление завершено, но pod'ы не становятся ready. Смотрите таблицу ниже.",
+      "restarting": "Pod'ы пересоздаются: готово {{ready}}/{{desired}}, обновлено {{updated}}/{{desired}}."
+    },
+    "podsTitle": "Состояние pod'ов",
+    "podsLoading": "Загрузка pod'ов...",
+    "podsEmpty": "Pod'ы не найдены для этого деплоя.",
+    "podsHint": "Образ может отсутствовать в кластере. Соберите его локально и загрузите в kind, либо укажите registry.",
+    "podsColumns": {
+      "pod": "Pod",
+      "phase": "Фаза",
+      "container": "Контейнер",
+      "state": "Состояние"
+    },
+    "containerStates": {
+      "ImagePullBackOff": "Не удается скачать образ",
+      "ErrImagePull": "Ошибка при скачивании образа",
+      "CrashLoopBackOff": "Контейнер падает и перезапускается",
+      "ContainerCreating": "Контейнер создается",
+      "PodInitializing": "Инициализация pod'а",
+      "CreateContainerConfigError": "Ошибка конфигурации контейнера",
+      "InvalidImageName": "Некорректное имя образа",
+      "CreateContainerError": "Не удалось создать контейнер",
+      "RunContainerError": "Не удалось запустить контейнер",
+      "waiting": "Ожидание",
+      "running": "Запущен, но не ready",
+      "terminated": "Завершен",
+      "pending": "Ожидает планирования"
+    }
+  },
+  "actions": {
+    "label": "Действия",
+    "view": "Просмотр",
+    "pods": "Pod'ы",
+    "logs": "Логи",
+    "history": "История ревизий",
+    "console": "Консоль",
+    "restart": "Перезапустить деплой",
+    "delete": "Удалить деплой",
+    "disable": "Отключить деплой",
+    "enable": "Включить деплой",
+    "enableAfterError": "Включить снова - при отключении были ошибки",
+    "error": "Не удалось выполнить действие"
+  },
+  "tabs": {
+    "ariaLabel": "Разделы деплоя",
+    "overview": "Обзор",
+    "health": "Health probes",
+    "config": "Конфиг",
+    "history": "История",
+    "pods": "Pod'ы",
+    "files": "Файлы",
+    "logs": "Логи",
+    "console": "Консоль"
+  },
+  "files": {
+    "podLabel": "Pod",
+    "loading": "Загрузка файлов...",
+    "error": "Не удалось загрузить файлы",
+    "empty": "Папка пуста",
+    "noPods": "Нет pod'ов для этого деплоя",
+    "refresh": "Обновить",
+    "newFolder": "Новая папка",
+    "upload": "Загрузить файл",
+    "download": "Скачать",
+    "rename": "Переименовать",
+    "delete": "Удалить",
+    "folderPrompt": "Имя папки",
+    "renamePrompt": "Новое имя",
+    "deleteConfirm": "Удалить «{{name}}»?",
+    "previewEmpty": "Файл пустой",
+    "breadcrumbs": "Путь",
+    "root": "Корень",
+    "pod": "Pod",
+    "columns": {
+      "name": "Имя",
+      "size": "Размер",
+      "modified": "Изменён",
+      "actions": "Действия"
+    }
+  },
+  "scale": {
+    "label": "Реплики",
+    "submit": "Применить",
+    "submitting": "Масштабирование...",
+    "hint": "Сколько копий pod'ов должен держать deployment."
+  },
+  "disable": {
+    "disable": "Отключить деплой",
+    "disabling": "Отключение...",
+    "disableHint": "Останавливает все pod'ы и сохраняет текущее число реплик для быстрого включения.",
+    "enable": "Включить деплой",
+    "enabling": "Включение...",
+    "enableHint": "Восстанавливает {{replicas}} реплик(и) и снова запускает pod'ы.",
+    "enableErrorHint": "При отключении были ошибки. Исправьте образ или конфиг, затем включите снова ({{replicas}} реплик)."
+  },
+  "console": {
+    "connect": "Подключиться",
+    "connecting": "Подключение...",
+    "disconnect": "Отключиться",
+    "connected": "Подключено к {{pod}}",
+    "disconnected": "Сессия закрыта",
+    "statusConnected": "Подключено",
+    "statusDisconnected": "Отключено",
+    "empty": "Подключитесь, чтобы открыть shell в выбранном pod'е.",
+    "inputPlaceholder": "Введите команды...",
+    "inputDisabled": "Сначала подключитесь к pod'у"
+  },
+  "detail": {
+    "subtitle": "Namespace: {{namespace}}",
+    "loading": "Загрузка деплоя...",
+    "error": "Не удалось загрузить деплой",
+    "historyTitle": "История ревизий",
+    "podsTitle": "Pod'ы",
+    "logsTitle": "Логи",
+    "logsEmpty": "Нет pod'ов для просмотра логов"
+  },
+  "history": {
+    "loading": "Загрузка истории ревизий...",
+    "error": "Не удалось загрузить историю",
+    "empty": "Ревизии не найдены",
+    "current": "Текущая",
+    "rollback": "Откатить",
+    "table": {
+      "revision": "Ревизия",
+      "image": "Образ",
+      "replicas": "Реплики",
+      "created": "Создана",
+      "actions": "Действия"
+    }
+  },
+  "rollback": {
+    "title": "Подтвердите откат",
+    "subtitle": "Деплой: {{name}}",
+    "targetRevision": "Целевая ревизия",
+    "targetImage": "Целевой образ",
+    "cancel": "Отмена",
+    "confirm": "Откатить",
+    "submitting": "Откат..."
+  },
+  "create": {
+    "title": "Новый деплой",
+    "namePlaceholder": "my-api",
+    "imagePlaceholder": "Выберите из каталога или введите свой",
+    "replicasPlaceholder": "Реплики",
+    "portPlaceholder": "Порт контейнера",
+    "projectLabel": "Группа проекта",
+    "projectHint": "Деплои с одной меткой показываются вместе в списке.",
+    "projectNone": "Без группы",
+    "projectExisting": "Добавить в существующую",
+    "projectNew": "Создать новую группу",
+    "projectNewPlaceholder": "my-project",
+    "submit": "Создать деплой",
+    "submitting": "Создание...",
+    "cancel": "Отмена"
+  },
+  "image": {
+    "label": "Образ контейнера",
+    "submit": "Задеплоить новую версию",
+    "submitting": "Деплой...",
+    "hint": "Обновляет шаблон деплоя и запускает rolling rollout.",
+    "error": "Не удалось обновить образ контейнера.",
+    "unchanged": "Этот образ уже задеплоен."
+  },
+  "imagePicker": {
+    "placeholder": "nginx:1.27-alpine, redis:7-alpine, postgres:16-alpine...",
+    "browse": "Каталог образов",
+    "catalogHint": "{{count}} образов: Web server, Database, Runtime и др.",
+    "customTitle": "Свой образ",
+    "customHint": "Любой registry/repository:tag",
+    "empty": "Ничего не найдено. Введите свой образ вручную."
+  },
+  "delete": {
+    "title": "Удалить деплой",
+    "message": "Удалить деплой {{name}}? Все поды будут удалены.",
+    "submit": "Удалить деплой"
+  },
+  "restart": {
+    "submit": "Перезапустить деплой",
+    "submitting": "Перезапуск...",
+    "hint": "Rolling restart пересоздает все pod'ы с тем же образом (как kubectl rollout restart).",
+    "bannerTitle": "Идёт перезапуск",
+    "bannerProgress": "Готово {{ready}}/{{desired}}, обновлено {{updated}}/{{desired}}",
+    "bannerHint": "Pod'ы пересоздаются. Следите за статусом на вкладке Pod'ы.",
+    "rowProgress": "({{ready}}/{{desired}} готово)",
+    "error": "Не удалось перезапустить деплой.",
+    "done": "Деплой перезапускается"
+  },
+  "config": {
+    "title": "Переменные окружения",
+    "loading": "Загрузка конфигурации...",
+    "error": "Не удалось загрузить конфигурацию",
+    "empty": "Переменные не заданы",
+    "namePlaceholder": "MYSQL_ROOT_PASSWORD",
+    "valuePlaceholder": "значение",
+    "add": "Добавить переменную",
+    "remove": "Удалить",
+    "submit": "Сохранить",
+    "submitting": "Сохранение...",
+    "portHint": "Порт контейнера: {{port}}",
+    "createHint": "Для образов из каталога подставляются dev-значения. Проверьте перед созданием."
+  },
+  "healthProbes": {
+    "title": "Health probes",
+    "loading": "Загрузка конфигурации probes...",
+    "error": "Не удалось загрузить health probes",
+    "empty": "Для основного контейнера probes не настроены",
+    "configTitle": "Настроенные probes",
+    "podsTitle": "Readiness pod'ов",
+    "podsEmpty": "Нет pod'ов для проверки",
+    "podReady": "Готов",
+    "podNotReady": "Не готов",
+    "podStates": {
+      "ready": "Готов",
+      "runningNotReady": "Запущен, не ready",
+      "pending": "Ожидание",
+      "failed": "Ошибка",
+      "notReady": "Не готов"
+    },
+    "types": {
+      "readiness": "Readiness",
+      "liveness": "Liveness",
+      "startup": "Startup"
+    },
+    "mechanisms": {
+      "http": "HTTP",
+      "tcp": "TCP",
+      "exec": "Exec",
+      "grpc": "gRPC",
+      "none": "Нет"
+    },
+    "columns": {
+      "type": "Тип",
+      "mechanism": "Механизм",
+      "target": "Цель",
+      "timing": "Интервалы",
+      "pod": "Pod",
+      "phase": "Фаза",
+      "podStatus": "Readiness"
+    },
+    "timing": {
+      "start": "старт {{seconds}}с",
+      "every": "каждые {{seconds}}с",
+      "timeout": "таймаут {{seconds}}с"
+    }
+  }
+}

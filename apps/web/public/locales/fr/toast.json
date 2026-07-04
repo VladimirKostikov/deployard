@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Replicas mises à jour",
+    "scaleError": "Impossible de mettre à l'échelle le deployment",
+    "imageSuccess": "Image du conteneur mise à jour",
+    "imageError": "Impossible de mettre à jour l'image du conteneur",
+    "deleteSuccess": "Deployment supprimé",
+    "deleteError": "Impossible de supprimer le deployment",
+    "createSuccess": "Deployment créé",
+    "createError": "Impossible de créer le deployment",
+    "configSaved": "Configuration enregistrée",
+    "configError": "Impossible d'enregistrer la configuration",
+    "restartSuccess": "Deployment redémarré",
+    "restartError": "Impossible de redémarrer le deployment",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback terminé",
+    "rollbackError": "Échec du rollback",
+    "projectGroupDeleteSuccess": "Groupe de projet supprimé",
+    "projectGroupDeleteError": "Impossible de supprimer le groupe de projet",
+    "projectGroupRestartSuccess": "Groupe redémarré",
+    "projectGroupRestartError": "Échec du redémarrage du groupe",
+    "projectGroupDisableSuccess": "Groupe désactivé",
+    "projectGroupDisableError": "Échec de la désactivation du groupe",
+    "filesFolderCreated": "Dossier créé",
+    "filesUploaded": "Fichier envoyé",
+    "filesDeleted": "Supprimé",
+    "filesRenamed": "Renommé",
+    "filesError": "L'opération sur le fichier a échoué"
+  },
+  "pod": {
+    "restartSuccess": "Pod redémarré",
+    "restartError": "Impossible de redémarrer le pod",
+    "deleteSuccess": "Pod supprimé",
+    "deleteError": "Impossible de supprimer le pod"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service créé",
+    "serviceCreateError": "Impossible de créer le service",
+    "serviceDeleteSuccess": "Service supprimé",
+    "serviceDeleteError": "Impossible de supprimer le service",
+    "serviceUpdateSuccess": "Service mis à jour",
+    "serviceUpdateError": "Impossible de mettre à jour le service",
+    "tunnelError": "Impossible d'ouvrir l'accès au service",
+    "openBlocked": "Le navigateur a bloqué le nouvel onglet. Autorisez les pop-ups pour ce site.",
+    "openError": "Impossible d'ouvrir {{name}}. Vérifiez que les pod tournent.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Règle ingress supprimée",
+    "ingressDeleteError": "Impossible de supprimer la règle ingress"
+  },
+  "ingress": {
+    "createSuccess": "Règle ingress créée",
+    "createError": "Impossible de créer la règle ingress",
+    "deleteSuccess": "Règle ingress supprimée",
+    "deleteError": "Impossible de supprimer la règle ingress"
+  },
+  "namespace": {
+    "createSuccess": "Namespace créé",
+    "createError": "Impossible de créer le namespace",
+    "deleteSuccess": "Namespace supprimé",
+    "deleteError": "Impossible de supprimer le namespace"
+  },
+  "import": {
+    "buildSuccess": "Images construites",
+    "buildError": "Impossible de construire les images",
+    "rebuildSuccess": "Docker Compose reconstruit et démarré",
+    "rebuildError": "Impossible de reconstruire le projet",
+    "loadSuccess": "Images chargées dans le cluster",
+    "loadError": "Impossible de charger les images dans le cluster",
+    "applySuccess": "Projet importé dans Kubernetes",
+    "applyWithImages": "Projet importé, {{count}} images chargées dans kind",
+    "openImportedApp": "Ouverture de l'app sur {{url}}",
+    "openUnavailable": "Import terminé, mais l'URL n'est pas encore prête. Ouvrez-la depuis Network → web.",
+    "applyError": "Impossible d'importer le projet",
+    "previewError": "Impossible de générer l'aperçu"
+  },
+  "admin": {
+    "userSaveSuccess": "Utilisateur enregistré",
+    "userSaveError": "Impossible d'enregistrer l'utilisateur",
+    "userDeleteSuccess": "Utilisateur supprimé",
+    "userDeleteError": "Impossible de supprimer l'utilisateur",
+    "roleSaveSuccess": "Rôle enregistré",
+    "roleSaveError": "Impossible d'enregistrer le rôle",
+    "roleDeleteSuccess": "Rôle supprimé",
+    "roleDeleteError": "Impossible de supprimer le rôle",
+    "permissionSaveSuccess": "Permission enregistrée",
+    "permissionSaveError": "Impossible d'enregistrer la permission",
+    "permissionDeleteSuccess": "Permission supprimée",
+    "permissionDeleteError": "Impossible de supprimer la permission"
+  }
+}

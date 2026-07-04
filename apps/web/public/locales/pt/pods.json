@@ -1,0 +1,26 @@
+{
+  "loading": "A carregar pods...",
+  "error": "Falha ao carregar pods",
+  "empty": "Nenhum pod para este deployment",
+  "yes": "Sim",
+  "no": "Não",
+  "table": {
+    "name": "Pod",
+    "phase": "Phase",
+    "ready": "Ready",
+    "restarts": "Reinícios",
+    "node": "Node",
+    "podIp": "IP do pod",
+    "ports": "Portas",
+    "actions": "Ações"
+  },
+  "actions": {
+    "restart": "Reiniciar pod",
+    "delete": "Eliminar pod",
+    "console": "Abrir consola"
+  },
+  "delete": {
+    "title": "Eliminar pod",
+    "message": "Eliminar o pod {{name}}? O controller do deployment pode recriá-lo."
+  }
+}

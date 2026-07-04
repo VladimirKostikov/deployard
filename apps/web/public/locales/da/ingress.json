@@ -1,0 +1,32 @@
+{
+  "title": "Ingress",
+  "subtitle": "HTTP-routingregler i det valgte namespace",
+  "loading": "Indlæser ingress-regler...",
+  "error": "Kunne ikke indlæse ingress-regler",
+  "empty": "Ingen ingress-regler i dette namespace",
+  "create": {
+    "title": "Ny ingress",
+    "name": "Navn",
+    "host": "Host (f.eks. api.local)",
+    "path": "Sti",
+    "service": "Service-navn",
+    "port": "Service-port",
+    "submit": "Opret ingress",
+    "submitting": "Opretter...",
+    "cancel": "Annuller"
+  },
+  "table": {
+    "name": "Navn",
+    "host": "Host",
+    "path": "Sti",
+    "service": "Backend",
+    "actions": "Handlinger"
+  },
+  "actions": {
+    "delete": "Slet"
+  },
+  "delete": {
+    "title": "Slet ingress",
+    "message": "Slet ingress {{name}}?"
+  }
+}

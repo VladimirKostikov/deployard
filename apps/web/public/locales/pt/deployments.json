@@ -1,0 +1,316 @@
+{
+  "title": "Deployments",
+  "subtitle": "Aplicações no namespace selecionado",
+  "subtitleAll": "Aplicações em todos os namespaces acessíveis",
+  "loading": "A carregar deployments...",
+  "error": "Falha ao carregar deployments",
+  "empty": "Nenhum deployment neste namespace",
+  "emptyAll": "Nenhum deployment nos namespaces acessíveis",
+  "projectGroups": {
+    "standalone": "Autónomo",
+    "services_one": "{{count}} serviço",
+    "services_other": "{{count}} serviços",
+    "health": "{{healthy}}/{{total}} em bom estado",
+    "restarting": "{{count}}/{{total}} a reiniciar",
+    "restartingBanner": "A reiniciar {{count}} de {{total}} deployments neste grupo",
+    "settings": "Definições",
+    "settingsTitle": "Definições do grupo",
+    "settingsGroupLabel": "Grupo de projeto",
+    "settingsDockerReady": "Docker disponível",
+    "settingsDockerUnavailable": "Docker indisponível",
+    "settingsRebuildHint": "Reconstrói compose, carrega imagens no kind e faz rollout dos deployments deste grupo.",
+    "settingsLoading": "A verificar ambiente...",
+    "settingsClose": "Fechar",
+    "settingsNoCompose": "Nenhum projeto compose com este nome. Rebuild só está disponível para grupos importados do Docker Compose.",
+    "delete": "Eliminar grupo",
+    "restart": "Reiniciar grupo",
+    "disable": "Desativar grupo",
+    "deleteTitle": "Eliminar grupo de projeto",
+    "deleteMessage": "Eliminar todos os deployments, serviços e secrets do grupo \"{{name}}\"?"
+  },
+  "table": {
+    "name": "Nome",
+    "namespace": "Namespace",
+    "image": "Imagem",
+    "replicas": "Ready / Total",
+    "revision": "Revision",
+    "status": "Estado"
+  },
+  "status": {
+    "healthy": "Em bom estado",
+    "starting": "A iniciar",
+    "restarting": "A reiniciar",
+    "degraded": "Degradado",
+    "scaledToZero": "Escalado a zero",
+    "disabled": "Disabled"
+  },
+  "statusModal": {
+    "open": "Ver detalhes do estado",
+    "title": "Estado do deployment",
+    "summary": {
+      "healthy": "Todos os pods estão prontos.",
+      "starting": "O deployment está a iniciar. Normal logo após a criação.",
+      "degraded": "Alguns pods não estão prontos. Abra os detalhes para ver porquê.",
+      "scaledToZero": "O número de réplicas é 0, nenhum pod está a correr.",
+      "disabled": "Deployment is disabled. Pods are stopped until you enable it again.",
+      "restarting": "Rolling restart em curso: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} atualizados."
+    },
+    "reasonsTitle": "Porque este estado",
+    "desired": "Desejado",
+    "ready": "Ready",
+    "available": "Disponível",
+    "updated": "Atualizado",
+    "reasons": {
+      "healthy": "{{ready}} de {{desired}} réplicas estão prontas.",
+      "starting": "O deployment foi criado agora ou está a atualizar.",
+      "scaledToZero": "Escalado a zero, nenhum pod está a correr.",
+      "disabled": "Disabled via Deployard. Enable to restore {{replicas}} replica(s).",
+      "podsNotReady": "{{ready}} de {{desired}} prontos, nem todos os pods passaram as readiness probes.",
+      "podsNotAvailable": "{{available}} de {{desired}} disponíveis, os pods ainda não estão prontos.",
+      "rolloutInProgress": "{{updated}} de {{desired}} atualizados, rollout em curso.",
+      "rolloutStalled": "A atualização terminou mas os pods não ficam prontos. Veja a tabela abaixo.",
+      "restarting": "Os pod estão a ser recriados: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} atualizados."
+    },
+    "podsTitle": "Estado dos pods",
+    "podsLoading": "A carregar pods...",
+    "podsEmpty": "Nenhum pod para este deployment.",
+    "podsHint": "A imagem pode faltar no cluster. Construa localmente e carregue no kind, ou use um registry.",
+    "podsColumns": {
+      "pod": "Pod",
+      "phase": "Phase",
+      "container": "Container",
+      "state": "Estado"
+    },
+    "containerStates": {
+      "ImagePullBackOff": "Não foi possível obter a imagem",
+      "ErrImagePull": "Erro ao obter imagem",
+      "CrashLoopBackOff": "O container está a falhar e a reiniciar",
+      "ContainerCreating": "A criar container",
+      "PodInitializing": "A inicializar pod",
+      "CreateContainerConfigError": "Erro de configuração do container",
+      "InvalidImageName": "Nome de imagem inválido",
+      "CreateContainerError": "Falha ao criar container",
+      "RunContainerError": "Falha ao executar container",
+      "waiting": "À espera",
+      "running": "A correr mas não pronto",
+      "terminated": "Terminado",
+      "pending": "Agendamento pendente"
+    }
+  },
+  "actions": {
+    "label": "Ações",
+    "view": "Ver",
+    "pods": "Ver pods",
+    "logs": "Ver logs",
+    "history": "Histórico de revisions",
+    "console": "Abrir consola",
+    "restart": "Reiniciar deployment",
+    "delete": "Eliminar deployment",
+    "disable": "Disable deployment",
+    "enable": "Enable deployment",
+    "enableAfterError": "Ativar novamente. Houve erros ao desativar",
+    "error": "Ação falhou"
+  },
+  "tabs": {
+    "ariaLabel": "Secções do deployment",
+    "overview": "Visão geral",
+    "health": "Health probes",
+    "config": "Config",
+    "history": "Histórico",
+    "pods": "Pods",
+    "files": "Ficheiros",
+    "logs": "Logs",
+    "console": "Consola"
+  },
+  "files": {
+    "podLabel": "Pod",
+    "loading": "A carregar ficheiros...",
+    "error": "Falha ao carregar ficheiros",
+    "empty": "Esta pasta está vazia",
+    "noPods": "Sem pod disponíveis para este deployment",
+    "refresh": "Atualizar",
+    "newFolder": "Nova pasta",
+    "upload": "Enviar ficheiro",
+    "download": "Transferir",
+    "rename": "Renomear",
+    "delete": "Eliminar",
+    "folderPrompt": "Nome da pasta",
+    "renamePrompt": "Novo nome",
+    "deleteConfirm": "Eliminar \"{{name}}\"?",
+    "previewEmpty": "O ficheiro está vazio",
+    "breadcrumbs": "Caminho",
+    "root": "Raiz",
+    "pod": "Pod",
+    "columns": {
+      "name": "Nome",
+      "size": "Tamanho",
+      "modified": "Modificado",
+      "actions": "Ações"
+    }
+  },
+  "scale": {
+    "label": "Replicas",
+    "submit": "Aplicar scale",
+    "submitting": "A escalar...",
+    "hint": "Altera quantas cópias de pod o deployment deve manter a correr."
+  },
+  "disable": {
+    "disable": "Disable deployment",
+    "disabling": "Disabling...",
+    "disableHint": "Stops all pods and saves the current replica count for quick restore.",
+    "enable": "Enable deployment",
+    "enabling": "Enabling...",
+    "enableHint": "Restores {{replicas}} replica(s) and starts pods again.",
+    "enableErrorHint": "Houve erros ao desativar. Corrija a imagem ou config e ative novamente ({{replicas}} réplicas)."
+  },
+  "console": {
+    "connect": "Ligar",
+    "connecting": "A ligar...",
+    "disconnect": "Desligar",
+    "connected": "Ligado a {{pod}}",
+    "disconnected": "Sessão fechada",
+    "statusConnected": "Ligado",
+    "statusDisconnected": "Desligado",
+    "empty": "Ligue para iniciar uma shell interativa no pod selecionado.",
+    "inputPlaceholder": "Escreva comandos aqui...",
+    "inputDisabled": "Ligue primeiro ao pod"
+  },
+  "detail": {
+    "subtitle": "Namespace: {{namespace}}",
+    "loading": "A carregar deployment...",
+    "error": "Falha ao carregar deployment",
+    "historyTitle": "Histórico de revisions",
+    "podsTitle": "Pods",
+    "logsTitle": "Logs",
+    "logsEmpty": "Nenhum pod disponível para streaming de logs"
+  },
+  "history": {
+    "loading": "A carregar histórico...",
+    "error": "Falha ao carregar histórico",
+    "empty": "Nenhuma revision encontrada",
+    "current": "Atual",
+    "rollback": "Rollback",
+    "table": {
+      "revision": "Revision",
+      "image": "Imagem",
+      "replicas": "Replicas",
+      "created": "Criado",
+      "actions": "Ações"
+    }
+  },
+  "rollback": {
+    "title": "Confirmar rollback",
+    "subtitle": "Deployment: {{name}}",
+    "targetRevision": "Revision alvo",
+    "targetImage": "Imagem alvo",
+    "cancel": "Cancelar",
+    "confirm": "Rollback",
+    "submitting": "Rollback em curso..."
+  },
+  "create": {
+    "title": "Novo deployment",
+    "namePlaceholder": "my-api",
+    "imagePlaceholder": "Escolha do catálogo ou escreva",
+    "replicasPlaceholder": "Replicas",
+    "portPlaceholder": "Porta do container",
+    "projectLabel": "Grupo de projeto",
+    "projectHint": "Deployments com a mesma etiqueta aparecem juntos na lista.",
+    "projectNone": "Sem grupo",
+    "projectExisting": "Adicionar a grupo existente",
+    "projectNew": "Criar novo grupo",
+    "projectNewPlaceholder": "my-project",
+    "submit": "Criar deployment",
+    "submitting": "A criar...",
+    "cancel": "Cancelar"
+  },
+  "image": {
+    "label": "Imagem do container",
+    "submit": "Implementar nova versão",
+    "submitting": "A implementar...",
+    "hint": "Atualiza o template do deployment e inicia um rolling rollout.",
+    "error": "Falha ao atualizar a imagem do container.",
+    "unchanged": "A imagem já está implementada."
+  },
+  "imagePicker": {
+    "placeholder": "nginx:1.27-alpine, redis:7-alpine, postgres:16-alpine...",
+    "browse": "Catálogo de imagens",
+    "catalogHint": "{{count}} imagens: web server, base de dados, runtime e mais",
+    "customTitle": "Imagem personalizada",
+    "customHint": "Escreva registry/repository:tag",
+    "empty": "Sem correspondências. Escreva uma imagem personalizada acima."
+  },
+  "delete": {
+    "title": "Eliminar deployment",
+    "message": "Eliminar o deployment {{name}}? Todos os pods serão removidos.",
+    "submit": "Eliminar deployment"
+  },
+  "restart": {
+    "submit": "Reiniciar deployment",
+    "submitting": "A reiniciar...",
+    "hint": "O restart rolling recria todos os pods com a mesma imagem (como kubectl rollout restart).",
+    "bannerTitle": "Atualização em curso",
+    "bannerProgress": "{{ready}}/{{desired}} prontos, {{updated}}/{{desired}} atualizados",
+    "bannerHint": "Os pods estão a ser recriados. Siga o separador Pods para o estado em tempo real.",
+    "rowProgress": "({{ready}}/{{desired}} ready)",
+    "error": "Falha ao reiniciar deployment.",
+    "done": "O deployment está a reiniciar"
+  },
+  "config": {
+    "title": "Variáveis de ambiente",
+    "loading": "A carregar configuração...",
+    "error": "Falha ao carregar configuração",
+    "empty": "Nenhuma variável definida",
+    "namePlaceholder": "MYSQL_ROOT_PASSWORD",
+    "valuePlaceholder": "valor",
+    "add": "Adicionar variável",
+    "remove": "Remover",
+    "submit": "Guardar",
+    "submitting": "A guardar...",
+    "portHint": "Porta do container: {{port}}",
+    "createHint": "Imagens do catálogo têm defaults de dev. Revise antes de criar."
+  },
+  "healthProbes": {
+    "title": "Health probes",
+    "loading": "A carregar configuração de probes...",
+    "error": "Falha ao carregar health probes",
+    "empty": "Nenhuma probe configurada para o container principal",
+    "configTitle": "Probes configuradas",
+    "podsTitle": "Readiness dos pods",
+    "podsEmpty": "Nenhum pod para inspecionar",
+    "podReady": "Ready",
+    "podNotReady": "Não pronto",
+    "podStates": {
+      "ready": "Ready",
+      "runningNotReady": "A correr, não ready",
+      "pending": "Pendente",
+      "failed": "Falhou",
+      "notReady": "Não ready"
+    },
+    "types": {
+      "readiness": "Readiness",
+      "liveness": "Liveness",
+      "startup": "Startup"
+    },
+    "mechanisms": {
+      "http": "HTTP",
+      "tcp": "TCP",
+      "exec": "Exec",
+      "grpc": "gRPC",
+      "none": "Nenhum"
+    },
+    "columns": {
+      "type": "Tipo",
+      "mechanism": "Mecanismo",
+      "target": "Alvo",
+      "timing": "Timing",
+      "pod": "Pod",
+      "phase": "Phase",
+      "podStatus": "Readiness"
+    },
+    "timing": {
+      "start": "início {{seconds}}s",
+      "every": "a cada {{seconds}}s",
+      "timeout": "timeout {{seconds}}s"
+    }
+  }
+}

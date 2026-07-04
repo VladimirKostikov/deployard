@@ -1,0 +1,71 @@
+{
+  "title": "Amministrazione",
+  "subtitle": "Utenti, ruoli e permessi sui deployment",
+  "back": "Torna ai deployment",
+  "actions": {
+    "label": "Azioni",
+    "create": "Crea",
+    "edit": "Modifica",
+    "delete": "Elimina",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "saving": "Salvataggio...",
+    "deleting": "Eliminazione..."
+  },
+  "users": {
+    "title": "Utenti",
+    "subtitle": "Gestisci account della dashboard e assegnazione ruoli",
+    "create": "Aggiungi utente",
+    "createTitle": "Crea utente",
+    "editTitle": "Modifica utente",
+    "deleteTitle": "Elimina utente",
+    "deleteMessage": "Eliminare {{email}}? L'operazione non può essere annullata.",
+    "email": "Email",
+    "name": "Nome",
+    "password": "Password",
+    "newPassword": "Nuova password (opzionale)",
+    "roles": "Ruoli",
+    "status": "Stato",
+    "active": "Attivo",
+    "inactive": "Inattivo"
+  },
+  "roles": {
+    "title": "Ruoli",
+    "subtitle": "Definizioni dei ruoli e permessi collegati",
+    "create": "Aggiungi ruolo",
+    "createTitle": "Crea ruolo",
+    "editTitle": "Modifica ruolo",
+    "deleteTitle": "Elimina ruolo",
+    "deleteMessage": "Eliminare il ruolo \"{{name}}\"? Non deve essere assegnato a nessun utente.",
+    "name": "Nome",
+    "permissions": "Permessi"
+  },
+  "permissions": {
+    "title": "Permessi",
+    "subtitle": "Regole di accesso granulari per i deployment",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Sezione",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Rete",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Metriche",
+      "admin": "Amministrazione"
+    },
+    "level": "Accesso",
+    "levels": {
+      "none": "Nessun accesso",
+      "view": "Visualizza",
+      "operate": "Opera",
+      "manage": "Gestisci"
+    },
+    "hints": {
+      "view": "Apri sezione, leggi elenchi e dettagli",
+      "operate": "Riavvio, disattivazione, rollback, log, terminale",
+      "manage": "Creazione, eliminazione, import e modifiche admin"
+    }
+  }
+}

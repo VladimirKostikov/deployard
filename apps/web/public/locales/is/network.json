@@ -1,0 +1,81 @@
+{
+  "title": "Net",
+  "subtitle": "Services, Endpoints og Ingress: hvernig pods ná hvort öðru í cluster",
+  "tabs": {
+    "ariaLabel": "Nethluti",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Hleður services...",
+    "error": "Tókst ekki að hlaða services",
+    "empty": "Engar services í þessu namespace",
+    "table": {
+      "name": "Nafn",
+      "type": "Tegund",
+      "clusterIp": "Cluster IP",
+      "ports": "Portar",
+      "selector": "Selector",
+      "actions": "Aðgerðir"
+    },
+    "actions": {
+      "delete": "Eyða",
+      "open": "Opna {{name}} í vafra",
+      "openTooltip": "{{url}}: ef síðan hleðst ekki, keyrðu í skjáhermi: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Afrita port-forward-skipun fyrir {{name}}",
+      "copied": "Skipun afrituð",
+      "edit": "Breyta portum",
+      "editShort": "Portar"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Tegund",
+      "portsLabel": "Portar",
+      "port": "Service-port",
+      "targetPort": "Markport",
+      "nodePort": "NodePort",
+      "cancel": "Hætta við",
+      "save": "Vista",
+      "saving": "Vistar..."
+    },
+    "delete": {
+      "title": "Eyða service",
+      "message": "Eyða service {{name}}? Pods halda áfram að keyra en DNS-nafnið hættir að virka."
+    },
+    "create": {
+      "title": "Stofna service",
+      "name": "Service-nafn",
+      "deployment": "Deployment",
+      "port": "Service-port",
+      "targetPort": "Target port (valfrjálst)",
+      "submit": "Stofna service",
+      "submitting": "Stofnar...",
+      "cancel": "Hætta við"
+    }
+  },
+  "endpoints": {
+    "subtitle": "Pod IP-tölur á bak við hverja service (stjórnað sjálfkrafa af Kubernetes)",
+    "loading": "Hleður endpoints...",
+    "error": "Tókst ekki að hlaða endpoints",
+    "empty": "Engin endpoints enn: stofnaðu service fyrir deployment",
+    "table": {
+      "name": "Service",
+      "ports": "Portar",
+      "addresses": "Pod IP / nafn"
+    }
+  },
+  "deployment": {
+    "title": "Tengdar services",
+    "loading": "Hleður services...",
+    "error": "Tókst ekki að hlaða services",
+    "empty": "Engin service fyrir þetta deployment. Stofnaðu eina á Net-síðunni.",
+    "openNetwork": "Opna net",
+    "viewEndpoints": "Pod IP-tölur →"
+  }
+}

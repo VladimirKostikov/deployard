@@ -1,0 +1,81 @@
+{
+  "title": "Netwerk",
+  "subtitle": "Services, Endpoints en Ingress: hoe pods elkaar bereiken in het cluster",
+  "tabs": {
+    "ariaLabel": "Netwerksecties",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Services laden...",
+    "error": "Services laden mislukt",
+    "empty": "Geen services in deze namespace",
+    "table": {
+      "name": "Naam",
+      "type": "Type",
+      "clusterIp": "Cluster IP",
+      "ports": "Poorten",
+      "selector": "Selector",
+      "actions": "Acties"
+    },
+    "actions": {
+      "delete": "Verwijderen",
+      "open": "{{name}} openen in browser",
+      "openTooltip": "{{url}}: als de pagina niet laadt, voer uit in terminal: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Port-forward commando kopiëren voor {{name}}",
+      "copied": "Commando gekopieerd",
+      "edit": "Poorten bewerken",
+      "editShort": "Poorten"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Type",
+      "portsLabel": "Poorten",
+      "port": "Servicepoort",
+      "targetPort": "Doelpoort",
+      "nodePort": "NodePort",
+      "cancel": "Annuleren",
+      "save": "Opslaan",
+      "saving": "Opslaan..."
+    },
+    "delete": {
+      "title": "Service verwijderen",
+      "message": "Service {{name}} verwijderen? Pods blijven draaien maar de DNS-naam werkt niet meer."
+    },
+    "create": {
+      "title": "Service aanmaken",
+      "name": "Servicenaam",
+      "deployment": "Deployment",
+      "port": "Servicepoort",
+      "targetPort": "Doelpoort (optioneel)",
+      "submit": "Service aanmaken",
+      "submitting": "Aanmaken...",
+      "cancel": "Annuleren"
+    }
+  },
+  "endpoints": {
+    "subtitle": "Pod IP's achter elke service (automatisch beheerd door Kubernetes)",
+    "loading": "Endpoints laden...",
+    "error": "Endpoints laden mislukt",
+    "empty": "Nog geen endpoints: maak een service voor een deployment",
+    "table": {
+      "name": "Service",
+      "ports": "Poorten",
+      "addresses": "Pod IP / naam"
+    }
+  },
+  "deployment": {
+    "title": "Gekoppelde services",
+    "loading": "Services laden...",
+    "error": "Services laden mislukt",
+    "empty": "Geen service voor deze deployment. Maak er een op de Netwerk-pagina.",
+    "openNetwork": "Netwerk openen",
+    "viewEndpoints": "Pod IP's →"
+  }
+}

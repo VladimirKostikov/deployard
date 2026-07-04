@@ -1,0 +1,316 @@
+{
+  "title": "Deployments",
+  "subtitle": "Applikazzjonijiet fin-Namespace magħżul",
+  "subtitleAll": "Applikazzjonijiet fil-Namespaces kollha aċċessibbli",
+  "loading": "Qed jillowdja l-Deployments...",
+  "error": "Ma rnexxiex jillowdja l-Deployments",
+  "empty": "Ma nstabx Deployment f'dan in-Namespace",
+  "emptyAll": "Ma nstabx Deployment fin-Namespaces aċċessibbli",
+  "projectGroups": {
+    "standalone": "Indipendenti",
+    "services_one": "{{count}} service",
+    "services_other": "{{count}} services",
+    "health": "{{healthy}}/{{total}} b'saħħtu",
+    "restarting": "{{count}}/{{total}} qed jerġa' jibda",
+    "restartingBanner": "Qed jerġa' jibda {{count}} minn {{total}} deployments f'din il-grupp",
+    "settings": "Settings",
+    "settingsTitle": "Settings tal-grupp",
+    "settingsGroupLabel": "Grupp tal-proġett",
+    "settingsDockerReady": "Docker disponibbli",
+    "settingsDockerUnavailable": "Docker mhux disponibbli",
+    "settingsRebuildHint": "Jerġa' jibni compose, jillowdja images f'kind, u jagħmel rollout tal-Deployments f'dan il-grupp.",
+    "settingsLoading": "Qed jiċċekkja l-ambjent...",
+    "settingsClose": "Agħlaq",
+    "settingsNoCompose": "Ma nstabx proġett compose b'dan l-isem. Rebuild disponibbli biss għal gruppi importati minn Docker Compose.",
+    "delete": "Ħassar grupp",
+    "restart": "Erġa' ibda l-grupp",
+    "disable": "Iddiżattiva l-grupp",
+    "deleteTitle": "Ħassar grupp tal-proġett",
+    "deleteMessage": "Ħassar l-Deployments, services, u secrets kollha fil-grupp \"{{name}}\"?"
+  },
+  "table": {
+    "name": "Isem",
+    "namespace": "Namespace",
+    "image": "Image",
+    "replicas": "Lest / Total",
+    "revision": "Revision",
+    "status": "Status"
+  },
+  "status": {
+    "healthy": "B'saħħtu",
+    "starting": "Qed jibda",
+    "restarting": "Qed jerġa' jibda",
+    "degraded": "Degradat",
+    "scaledToZero": "Skalat għal zero",
+    "disabled": "Disabled"
+  },
+  "statusModal": {
+    "open": "Ara d-dettalji tal-status",
+    "title": "Status tad-Deployment",
+    "summary": {
+      "healthy": "Il-pods kollha lesti.",
+      "starting": "Id-Deployment qed jibda. Normali immedjatament wara l-ħolqien.",
+      "degraded": "Xi pods mhumiex lesti. Iftaħ id-dettalji biex tara għaliex.",
+      "scaledToZero": "In-numru ta' replicas huwa 0, m'hemmx pods attivi.",
+      "disabled": "Deployment is disabled. Pods are stopped until you enable it again.",
+      "restarting": "Rolling restart għaddej: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} aġġornati."
+    },
+    "reasonsTitle": "Għaliex dan l-istatus",
+    "desired": "Mixtieq",
+    "ready": "Lest",
+    "available": "Disponibbli",
+    "updated": "Aġġornat",
+    "reasons": {
+      "healthy": "{{ready}} minn {{desired}} replicas lesti.",
+      "starting": "Id-Deployment ġie maħluq jew qed jiġi aġġornat.",
+      "scaledToZero": "Skalat għal zero, m'hemmx pods attivi.",
+      "disabled": "Disabled via Deployard. Enable to restore {{replicas}} replica(s).",
+      "podsNotReady": "{{ready}} minn {{desired}} lesti, mhux il-pods kollha għaddew readiness probes.",
+      "podsNotAvailable": "{{available}} minn {{desired}} disponibbli, pods għadhom mhumiex lesti.",
+      "rolloutInProgress": "{{updated}} minn {{desired}} aġġornati, rollout għaddej.",
+      "rolloutStalled": "Rolling update temm imma pods mhumiex qed isiru lesti. Ara t-tabella hawn taħt.",
+      "restarting": "Pod qed jiġu riformati: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} aġġornati."
+    },
+    "podsTitle": "Status tal-pod",
+    "podsLoading": "Qed jillowdja l-pods...",
+    "podsEmpty": "Ma nstabux pods għal dan id-Deployment.",
+    "podsHint": "L-image jista' jkun nieqes fil-cluster. Ibnu lokali u llowdja f'kind, jew uża registry.",
+    "podsColumns": {
+      "pod": "Pod",
+      "phase": "Fażi",
+      "container": "Container",
+      "state": "Stat"
+    },
+    "containerStates": {
+      "ImagePullBackOff": "Ma jistax iġbed l-image",
+      "ErrImagePull": "Żball fl-ġbid tal-image",
+      "CrashLoopBackOff": "Il-container qed jikras u jerġa' jibda",
+      "ContainerCreating": "Il-container qed jinħoloq",
+      "PodInitializing": "Il-pod qed jinizjalizza",
+      "CreateContainerConfigError": "Żball fil-konfigurazzjoni tal-container",
+      "InvalidImageName": "Isem image invalidu",
+      "CreateContainerError": "Ma rnexxiex joħolq il-container",
+      "RunContainerError": "Ma rnexxiex iħaddem il-container",
+      "waiting": "Qed jistenna",
+      "running": "Qed jaħdem imma mhux lest",
+      "terminated": "Terminat",
+      "pending": "Skedazzjoni pendenti"
+    }
+  },
+  "actions": {
+    "label": "Azzjonijiet",
+    "view": "Ara",
+    "pods": "Ara l-pods",
+    "logs": "Ara l-logs",
+    "history": "Storja tar-revision",
+    "console": "Iftaħ console",
+    "restart": "Erġa' ibda Deployment",
+    "delete": "Ħassar Deployment",
+    "disable": "Disable deployment",
+    "enable": "Enable deployment",
+    "enableAfterError": "Attiva mill-ġdid. Kien hemm żbalji meta ddiżattivat",
+    "error": "L-azzjoni falliet"
+  },
+  "tabs": {
+    "ariaLabel": "Sezzjonijiet tad-Deployment",
+    "overview": "Overview",
+    "health": "Health probes",
+    "config": "Konfigurazzjoni",
+    "history": "Storja",
+    "pods": "Pods",
+    "files": "Fajls",
+    "logs": "Logs",
+    "console": "Console"
+  },
+  "files": {
+    "podLabel": "Pod",
+    "loading": "Qed jitgħabbew il-fajls...",
+    "error": "Ma rnexxilniex nitgħabbew il-fajls",
+    "empty": "Din id-direttorja hija vojta",
+    "noPods": "L-ebda pod disponibbli għal dan id-deployment",
+    "refresh": "Aġġorna",
+    "newFolder": "Folder ġdid",
+    "upload": "Tella' fajl",
+    "download": "Niżżel",
+    "rename": "Semmi mill-ġdid",
+    "delete": "Ħassar",
+    "folderPrompt": "Isem tal-folder",
+    "renamePrompt": "Isem ġdid",
+    "deleteConfirm": "Ħassar \"{{name}}\"?",
+    "previewEmpty": "Il-fajl huwa vojt",
+    "breadcrumbs": "Triq",
+    "root": "Għeruq",
+    "pod": "Pod",
+    "columns": {
+      "name": "Isem",
+      "size": "Daqs",
+      "modified": "Modifikat",
+      "actions": "Azzjonijiet"
+    }
+  },
+  "scale": {
+    "label": "Replicas",
+    "submit": "Applika skala",
+    "submitting": "Qed jiskala...",
+    "hint": "Biddel kemm kopji ta' pod id-Deployment għandu jżomm attivi."
+  },
+  "disable": {
+    "disable": "Disable deployment",
+    "disabling": "Disabling...",
+    "disableHint": "Stops all pods and saves the current replica count for quick restore.",
+    "enable": "Enable deployment",
+    "enabling": "Enabling...",
+    "enableHint": "Restores {{replicas}} replica(s) and starts pods again.",
+    "enableErrorHint": "Kien hemm żbalji meta ddiżattivat. Issewwi l-image jew il-config u attiva mill-ġdid ({{replicas}} repliki)."
+  },
+  "console": {
+    "connect": "Qabbad",
+    "connecting": "Qed jqabbad...",
+    "disconnect": "Aqta'",
+    "connected": "Konness ma' {{pod}}",
+    "disconnected": "Sessjoni magħluqa",
+    "statusConnected": "Konness",
+    "statusDisconnected": "Maqsum",
+    "empty": "Qabbad biex tibda shell interattiva fil-pod magħżul.",
+    "inputPlaceholder": "Ikteb kmandi hawn...",
+    "inputDisabled": "Qabbad mal-pod l-ewwel"
+  },
+  "detail": {
+    "subtitle": "Namespace: {{namespace}}",
+    "loading": "Qed jillowdja d-Deployment...",
+    "error": "Ma rnexxiex jillowdja d-Deployment",
+    "historyTitle": "Storja tar-revision",
+    "podsTitle": "Pods",
+    "logsTitle": "Logs",
+    "logsEmpty": "M'hemmx pod disponibbli għal streaming tal-logs"
+  },
+  "history": {
+    "loading": "Qed jillowdja storja tar-revision...",
+    "error": "Ma rnexxiex jillowdja storja tar-revision",
+    "empty": "Ma nstabx revision",
+    "current": "Attwali",
+    "rollback": "Rollback",
+    "table": {
+      "revision": "Revision",
+      "image": "Image",
+      "replicas": "Replicas",
+      "created": "Maħluq",
+      "actions": "Azzjonijiet"
+    }
+  },
+  "rollback": {
+    "title": "Ikkonferma rollback",
+    "subtitle": "Deployment: {{name}}",
+    "targetRevision": "Revision fil-mira",
+    "targetImage": "Image fil-mira",
+    "cancel": "Ikkanċella",
+    "confirm": "Rollback",
+    "submitting": "Qed jagħmel rollback..."
+  },
+  "create": {
+    "title": "Deployment ġdid",
+    "namePlaceholder": "my-api",
+    "imagePlaceholder": "Agħżel mill-katalog jew ikteb tiegħek",
+    "replicasPlaceholder": "Replicas",
+    "portPlaceholder": "Port tal-container",
+    "projectLabel": "Grupp tal-proġett",
+    "projectHint": "Deployments bl-istess label jidhru flimkien fil-lista.",
+    "projectNone": "L-ebda grupp",
+    "projectExisting": "Żid ma' grupp eżistenti",
+    "projectNew": "Oħloq grupp ġdid",
+    "projectNewPlaceholder": "my-project",
+    "submit": "Oħloq Deployment",
+    "submitting": "Qed joħolqu...",
+    "cancel": "Ikkanċella"
+  },
+  "image": {
+    "label": "Image tal-container",
+    "submit": "Deploy verżjoni ġdida",
+    "submitting": "Qed jdeployja...",
+    "hint": "Jaġġorna t-template tad-Deployment u jisparkja rolling rollout.",
+    "error": "Ma rnexxiex jaġġorna l-image tal-container.",
+    "unchanged": "L-image diġà deployed."
+  },
+  "imagePicker": {
+    "placeholder": "nginx:1.27-alpine, redis:7-alpine, postgres:16-alpine...",
+    "browse": "Katalog ta' images",
+    "catalogHint": "{{count}} images: web server, database, Runtime, u aktar",
+    "customTitle": "Image custom",
+    "customHint": "Ikteb kwalunkwe registry/repository:tag",
+    "empty": "L-ebda match. Ikteb image custom hawn fuq."
+  },
+  "delete": {
+    "title": "Ħassar Deployment",
+    "message": "Ħassar Deployment {{name}}? Il-pods kollha se jitneħħew.",
+    "submit": "Ħassar Deployment"
+  },
+  "restart": {
+    "submit": "Erġa' ibda Deployment",
+    "submitting": "Qed jerġa' jibda...",
+    "hint": "Restart rolling jerġa' joħloq il-pods kollha bl-istess image (bħal kubectl rollout restart).",
+    "bannerTitle": "Aġġornament għaddej",
+    "bannerProgress": "{{ready}}/{{desired}} lesti, {{updated}}/{{desired}} aġġornati",
+    "bannerHint": "Pods qed jerġa' jinħolqu. Ara t-tab Pods għal status live.",
+    "rowProgress": "({{ready}}/{{desired}} ready)",
+    "error": "Ma rnexxiex jerġa' jibda d-Deployment.",
+    "done": "Id-Deployment qed jerġa' jibda"
+  },
+  "config": {
+    "title": "Variabbli tal-ambjent",
+    "loading": "Qed jillowdja l-konfigurazzjoni...",
+    "error": "Ma rnexxiex jillowdja l-konfigurazzjoni",
+    "empty": "M'hemmx variabbli stabbiliti",
+    "namePlaceholder": "MYSQL_ROOT_PASSWORD",
+    "valuePlaceholder": "valur",
+    "add": "Żid varjabbli",
+    "remove": "Neħħi",
+    "submit": "Issejvja",
+    "submitting": "Qed jissejvja...",
+    "portHint": "Port tal-container: {{port}}",
+    "createHint": "Images tal-katalog jirċevu defaults għall-dev. Irrevedi qabel ma toħloq."
+  },
+  "healthProbes": {
+    "title": "Health probes",
+    "loading": "Qed jillowdja konfigurazzjoni tal-probe...",
+    "error": "Ma rnexxiex jillowdja health probes",
+    "empty": "M'hemmx probes konfigurati għall-container prinċipali",
+    "configTitle": "Probes konfigurati",
+    "podsTitle": "Readiness tal-pod",
+    "podsEmpty": "M'hemmx pods biex tiċċekkja",
+    "podReady": "Lest",
+    "podNotReady": "Mhux lest",
+    "podStates": {
+      "ready": "Ready",
+      "runningNotReady": "Qed jaħdem, mhux ready",
+      "pending": "Pending",
+      "failed": "Fallut",
+      "notReady": "Mhux ready"
+    },
+    "types": {
+      "readiness": "Readiness",
+      "liveness": "Liveness",
+      "startup": "Startup"
+    },
+    "mechanisms": {
+      "http": "HTTP",
+      "tcp": "TCP",
+      "exec": "Exec",
+      "grpc": "gRPC",
+      "none": "Xejn"
+    },
+    "columns": {
+      "type": "Tip",
+      "mechanism": "Meċkaniżmu",
+      "target": "Mira",
+      "timing": "Timing",
+      "pod": "Pod",
+      "phase": "Fażi",
+      "podStatus": "Readiness"
+    },
+    "timing": {
+      "start": "start {{seconds}}s",
+      "every": "kull {{seconds}}s",
+      "timeout": "timeout {{seconds}}s"
+    }
+  }
+}

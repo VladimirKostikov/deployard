@@ -1,0 +1,26 @@
+{
+  "loading": "Podok betöltése...",
+  "error": "Nem sikerült betölteni a podokat",
+  "empty": "Nem található pod ehhez a deploymenthez",
+  "yes": "Igen",
+  "no": "Nem",
+  "table": {
+    "name": "Pod",
+    "phase": "Phase",
+    "ready": "Ready",
+    "restarts": "Restarts",
+    "node": "Node",
+    "podIp": "Pod IP",
+    "ports": "Ports",
+    "actions": "Műveletek"
+  },
+  "actions": {
+    "restart": "Pod újraindítása",
+    "delete": "Pod törlése",
+    "console": "Konzol megnyitása"
+  },
+  "delete": {
+    "title": "Pod törlése",
+    "message": "Töröljük a {{name}} podot? A deployment controller újra létrehozhatja."
+  }
+}

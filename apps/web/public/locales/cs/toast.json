@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Repliky aktualizovány",
+    "scaleError": "Nepodařilo se škálovat deployment",
+    "imageSuccess": "Image containeru aktualizován",
+    "imageError": "Nepodařilo se aktualizovat image containeru",
+    "deleteSuccess": "Deployment smazán",
+    "deleteError": "Nepodařilo se smazat deployment",
+    "createSuccess": "Deployment vytvořen",
+    "createError": "Nepodařilo se vytvořit deployment",
+    "configSaved": "Konfigurace uložena",
+    "configError": "Nepodařilo se uložit konfiguraci",
+    "restartSuccess": "Deployment restartován",
+    "restartError": "Nepodařilo se restartovat deployment",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback dokončen",
+    "rollbackError": "Rollback selhal",
+    "projectGroupDeleteSuccess": "Skupina projektu smazána",
+    "projectGroupDeleteError": "Nepodařilo se smazat skupinu projektu",
+    "projectGroupRestartSuccess": "Skupina byla restartována",
+    "projectGroupRestartError": "Skupinu se nepodařilo restartovat",
+    "projectGroupDisableSuccess": "Skupina byla vypnuta",
+    "projectGroupDisableError": "Skupinu se nepodařilo vypnout",
+    "filesFolderCreated": "Složka vytvořena",
+    "filesUploaded": "Soubor nahrán",
+    "filesDeleted": "Smazáno",
+    "filesRenamed": "Přejmenováno",
+    "filesError": "Operace se souborem selhala"
+  },
+  "pod": {
+    "restartSuccess": "Pod restartován",
+    "restartError": "Nepodařilo se restartovat pod",
+    "deleteSuccess": "Pod smazán",
+    "deleteError": "Nepodařilo se smazat pod"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service vytvořen",
+    "serviceCreateError": "Nepodařilo se vytvořit service",
+    "serviceDeleteSuccess": "Service smazán",
+    "serviceDeleteError": "Nepodařilo se smazat service",
+    "serviceUpdateSuccess": "Service aktualizován",
+    "serviceUpdateError": "Nepodařilo se aktualizovat service",
+    "tunnelError": "Nepodařilo se otevřít přístup k service",
+    "openBlocked": "Prohlížeč zablokoval nový tab. Povolte pop-up okna pro tento web.",
+    "openError": "Nepodařilo se otevřít {{name}}. Zkontrolujte, zda pody běží.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Ingress pravidlo smazáno",
+    "ingressDeleteError": "Nepodařilo se smazat ingress pravidlo"
+  },
+  "ingress": {
+    "createSuccess": "Ingress pravidlo vytvořeno",
+    "createError": "Nepodařilo se vytvořit ingress pravidlo",
+    "deleteSuccess": "Ingress pravidlo smazáno",
+    "deleteError": "Nepodařilo se smazat ingress pravidlo"
+  },
+  "namespace": {
+    "createSuccess": "Namespace vytvořen",
+    "createError": "Nepodařilo se vytvořit namespace",
+    "deleteSuccess": "Namespace smazán",
+    "deleteError": "Nepodařilo se smazat namespace"
+  },
+  "import": {
+    "buildSuccess": "Images sestaveny",
+    "buildError": "Nepodařilo se sestavit images",
+    "rebuildSuccess": "Docker Compose přestavěn a spuštěn",
+    "rebuildError": "Nepodařilo se přestavět projekt",
+    "loadSuccess": "Images načteny do clusteru",
+    "loadError": "Nepodařilo se načíst images do clusteru",
+    "applySuccess": "Projekt importován do Kubernetes",
+    "applyWithImages": "Projekt importován, {{count}} images načteno do kind",
+    "openImportedApp": "Otevírání aplikace na {{url}}",
+    "openUnavailable": "Import dokončen, ale URL aplikace ještě není připravena. Otevřete ji v Network → web.",
+    "applyError": "Nepodařilo se importovat projekt",
+    "previewError": "Nepodařilo se vytvořit náhled"
+  },
+  "admin": {
+    "userSaveSuccess": "Uživatel uložen",
+    "userSaveError": "Nepodařilo se uložit uživatele",
+    "userDeleteSuccess": "Uživatel smazán",
+    "userDeleteError": "Nepodařilo se smazat uživatele",
+    "roleSaveSuccess": "Role uložena",
+    "roleSaveError": "Nepodařilo se uložit roli",
+    "roleDeleteSuccess": "Role smazána",
+    "roleDeleteError": "Nepodařilo se smazat roli",
+    "permissionSaveSuccess": "Oprávnění uloženo",
+    "permissionSaveError": "Nepodařilo se uložit oprávnění",
+    "permissionDeleteSuccess": "Oprávnění smazáno",
+    "permissionDeleteError": "Nepodařilo se smazat oprávnění"
+  }
+}

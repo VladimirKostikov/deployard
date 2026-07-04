@@ -1,0 +1,29 @@
+{
+  "title": "Namespaces",
+  "subtitle": "Vytváření a mazání Kubernetes namespaces v aktivním clusteru",
+  "loading": "Načítání namespaces...",
+  "error": "Nepodařilo se načíst namespaces",
+  "protected": "Chráněný",
+  "create": {
+    "title": "Nový namespace",
+    "label": "Název",
+    "placeholder": "staging",
+    "submit": "Vytvořit namespace",
+    "submitting": "Vytváření...",
+    "cancel": "Zrušit",
+    "hint": "Používejte malá písmena podle DNS. Systémové namespaces s prefixem kube- nelze smazat."
+  },
+  "table": {
+    "name": "Název",
+    "status": "Stav",
+    "created": "Vytvořeno",
+    "actions": "Akce"
+  },
+  "actions": {
+    "delete": "Smazat"
+  },
+  "delete": {
+    "title": "Smazat namespace",
+    "message": "Smazat namespace {{name}}? Všechny resources uvnitř budou odstraněny."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "DEPLOYMENT_NOT_FOUND": "Nie znaleziono deploymentu",
+  "POD_NOT_FOUND": "Nie znaleziono poda",
+  "NAMESPACE_NOT_FOUND": "Nie znaleziono namespace",
+  "ROLLBACK_FAILED": "Rollback nie powiódł się",
+  "K8S_API_ERROR": "Błąd Kubernetes API",
+  "FORBIDDEN": "Niewystarczające uprawnienia",
+  "VALIDATION_ERROR": "Błąd walidacji",
+  "INTERNAL_ERROR": "Wewnętrzny błąd serwera"
+}

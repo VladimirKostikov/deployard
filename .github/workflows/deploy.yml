@@ -1,0 +1,46 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      namespace:
+        description: Kubernetes namespace
+        required: true
+        default: default
+      deployment:
+        description: Deployment name
+        required: true
+        default: demo-api
+      image:
+        description: Container image tag
+        required: true
+        default: nginx:1.27-alpine
+      action:
+        description: update_image or create
+        required: true
+        default: update_image
+      cluster:
+        description: Optional k8s cluster context (X-K8s-Cluster)
+        required: false
+        default: ''
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Apply deployment via Deployard webhook
+        env:
+          DEPLOY_WEBHOOK_URL: ${{ secrets.DEPLOY_WEBHOOK_URL }}
+          DEPLOY_WEBHOOK_SECRET: ${{ secrets.DEPLOY_WEBHOOK_SECRET }}
+          DEPLOY_CLUSTER: ${{ inputs.cluster }}
+        run: |
+          chmod +x scripts/deploy/apply-image.sh
+          ./scripts/deploy/apply-image.sh \
+            --namespace "${{ inputs.namespace }}" \
+            --deployment "${{ inputs.deployment }}" \
+            --image "${{ inputs.image }}" \
+            --action "${{ inputs.action }}" \
+            ${DEPLOY_CLUSTER:+--cluster "$DEPLOY_CLUSTER"}

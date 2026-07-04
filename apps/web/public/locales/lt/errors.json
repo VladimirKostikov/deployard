@@ -1,0 +1,10 @@
+{
+  "DEPLOYMENT_NOT_FOUND": "Deployment nerastas",
+  "POD_NOT_FOUND": "Pod nerastas",
+  "NAMESPACE_NOT_FOUND": "Namespace nerastas",
+  "ROLLBACK_FAILED": "Rollback nepavyko",
+  "K8S_API_ERROR": "Kubernetes API klaida",
+  "FORBIDDEN": "Nepakankamos teisės",
+  "VALIDATION_ERROR": "Validacijos klaida",
+  "INTERNAL_ERROR": "Vidinė serverio klaida"
+}

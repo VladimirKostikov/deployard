@@ -1,0 +1,29 @@
+{
+  "title": "Namespaces",
+  "subtitle": "Kurti ir šalinti Kubernetes namespaces aktyviame cluster",
+  "loading": "Kraunami namespaces...",
+  "error": "Nepavyko įkelti namespaces",
+  "protected": "Apsaugotas",
+  "create": {
+    "title": "Naujas namespace",
+    "label": "Pavadinimas",
+    "placeholder": "staging",
+    "submit": "Sukurti namespace",
+    "submitting": "Kuriama...",
+    "cancel": "Atšaukti",
+    "hint": "Naudokite mažąsias raides DNS pavadinimuose. Sistemos namespaces su kube- prefiksu negalima ištrinti."
+  },
+  "table": {
+    "name": "Pavadinimas",
+    "status": "Būsena",
+    "created": "Sukurta",
+    "actions": "Veiksmai"
+  },
+  "actions": {
+    "delete": "Ištrinti"
+  },
+  "delete": {
+    "title": "Ištrinti namespace",
+    "message": "Ištrinti namespace {{name}}? Visi resursai jame bus pašalinti."
+  }
+}

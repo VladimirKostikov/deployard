@@ -1,0 +1,71 @@
+{
+  "title": "Administration",
+  "subtitle": "Brugere, roller og deployment-tilladelser",
+  "back": "Tilbage til deployments",
+  "actions": {
+    "label": "Handlinger",
+    "create": "Opret",
+    "edit": "Rediger",
+    "delete": "Slet",
+    "save": "Gem",
+    "cancel": "Annuller",
+    "saving": "Gemmer...",
+    "deleting": "Sletter..."
+  },
+  "users": {
+    "title": "Brugere",
+    "subtitle": "Administrer dashboard-konti og rolletildelinger",
+    "create": "Tilføj bruger",
+    "createTitle": "Opret bruger",
+    "editTitle": "Rediger bruger",
+    "deleteTitle": "Slet bruger",
+    "deleteMessage": "Slet {{email}}? Dette kan ikke fortrydes.",
+    "email": "E-mail",
+    "name": "Navn",
+    "password": "Adgangskode",
+    "newPassword": "Ny adgangskode (valgfri)",
+    "roles": "Roller",
+    "status": "Status",
+    "active": "Aktiv",
+    "inactive": "Inaktiv"
+  },
+  "roles": {
+    "title": "Roller",
+    "subtitle": "Rolledefinitioner og tilknyttede tilladelser",
+    "create": "Tilføj rolle",
+    "createTitle": "Opret rolle",
+    "editTitle": "Rediger rolle",
+    "deleteTitle": "Slet rolle",
+    "deleteMessage": "Slet rolle \"{{name}}\"? Den må ikke være tildelt nogen bruger.",
+    "name": "Navn",
+    "permissions": "Tilladelser"
+  },
+  "permissions": {
+    "title": "Tilladelser",
+    "subtitle": "Detaljerede adgangsregler for deployments",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Sektion",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Netværk",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Metrics",
+      "admin": "Administration"
+    },
+    "level": "Adgang",
+    "levels": {
+      "none": "Ingen adgang",
+      "view": "Vis",
+      "operate": "Betjen",
+      "manage": "Administrer"
+    },
+    "hints": {
+      "view": "Åbn sektion, læs lister og detaljer",
+      "operate": "Genstart, deaktiver, rollback, logs, terminal",
+      "manage": "Opret, slet, import og admin-ændringer"
+    }
+  }
+}

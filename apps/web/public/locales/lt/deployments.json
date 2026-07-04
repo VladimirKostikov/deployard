@@ -1,0 +1,316 @@
+{
+  "title": "Deployments",
+  "subtitle": "Programos pasirinktame namespace",
+  "subtitleAll": "Programos visuose pasiekiamuose namespaces",
+  "loading": "Kraunami deployments...",
+  "error": "Nepavyko įkelti deployments",
+  "empty": "Šiame namespace nėra deployments",
+  "emptyAll": "Pasiekiamuose namespaces nėra deployments",
+  "projectGroups": {
+    "standalone": "Atskiri",
+    "services_one": "{{count}} paslauga",
+    "services_other": "{{count}} paslaugos",
+    "health": "{{healthy}}/{{total}} sveikos",
+    "restarting": "{{count}}/{{total}} perkraunama",
+    "restartingBanner": "Perkraunama {{count}} iš {{total}} deployment šioje grupėje",
+    "settings": "Nustatymai",
+    "settingsTitle": "Grupės nustatymai",
+    "settingsGroupLabel": "Projekto grupė",
+    "settingsDockerReady": "Docker pasiekiamas",
+    "settingsDockerUnavailable": "Docker nepasiekiamas",
+    "settingsRebuildHint": "Perkuria compose, įkelia images į kind ir išveda deployments šioje grupėje.",
+    "settingsLoading": "Tikrinama aplinka...",
+    "settingsClose": "Uždaryti",
+    "settingsNoCompose": "Compose projekto su šiuo pavadinimu nerasta. Perkūrimas galimas tik grupėms, importuotoms iš Docker Compose.",
+    "delete": "Ištrinti grupę",
+    "restart": "Perkrauti grupę",
+    "disable": "Išjungti grupę",
+    "deleteTitle": "Ištrinti projekto grupę",
+    "deleteMessage": "Ištrinti visus deployments, services ir secrets grupėje \"{{name}}\"?"
+  },
+  "table": {
+    "name": "Pavadinimas",
+    "namespace": "Namespace",
+    "image": "Image",
+    "replicas": "Paruošta / Iš viso",
+    "revision": "Revision",
+    "status": "Būsena"
+  },
+  "status": {
+    "healthy": "Healthy",
+    "starting": "Paleidžiama",
+    "restarting": "Perkrovimas",
+    "degraded": "Degraded",
+    "scaledToZero": "Sumažinta iki nulio",
+    "disabled": "Disabled"
+  },
+  "statusModal": {
+    "open": "Peržiūrėti būsenos detales",
+    "title": "Deployment būsena",
+    "summary": {
+      "healthy": "Visi podai paruošti.",
+      "starting": "Deployment paleidžiamas. Tai normalu iškart po sukūrimo.",
+      "degraded": "Kai kurie podai neparuošti. Atidarykite detales, kad pamatytumėte kodėl.",
+      "scaledToZero": "Replikų skaičius yra 0, jokie podai neveikia.",
+      "disabled": "Deployment is disabled. Pods are stopped until you enable it again.",
+      "restarting": "Rolling restart vyksta: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} atnaujinta."
+    },
+    "reasonsTitle": "Kodėl ši būsena",
+    "desired": "Norima",
+    "ready": "Ready",
+    "available": "Available",
+    "updated": "Updated",
+    "reasons": {
+      "healthy": "{{ready}} iš {{desired}} replikų paruoštos.",
+      "starting": "Deployment ką tik sukurtas arba atnaujinamas.",
+      "scaledToZero": "Sumažinta iki nulio, jokie podai neveikia.",
+      "disabled": "Disabled via Deployard. Enable to restore {{replicas}} replica(s).",
+      "podsNotReady": "{{ready}} iš {{desired}} paruošta, ne visi podai praėjo readiness probes.",
+      "podsNotAvailable": "{{available}} iš {{desired}} available, podai dar neparuošti.",
+      "rolloutInProgress": "{{updated}} iš {{desired}} atnaujinta, rollout vyksta.",
+      "rolloutStalled": "Rolling update baigtas, bet podai netampa paruošti. Žiūrėkite lentelę žemiau.",
+      "restarting": "Pod kuriami iš naujo: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} atnaujinta."
+    },
+    "podsTitle": "Pod būsena",
+    "podsLoading": "Kraunami podai...",
+    "podsEmpty": "Šiam deployment nerasta podų.",
+    "podsHint": "Image gali trūkti klasteryje. Sukurkite vietoje ir įkelkite į kind arba naudokite registry.",
+    "podsColumns": {
+      "pod": "Pod",
+      "phase": "Phase",
+      "container": "Container",
+      "state": "State"
+    },
+    "containerStates": {
+      "ImagePullBackOff": "Nepavyko atsisiųsti image",
+      "ErrImagePull": "Image pull klaida",
+      "CrashLoopBackOff": "Container lūžta ir perkraunasi",
+      "ContainerCreating": "Container kuriamas",
+      "PodInitializing": "Pod inicijuojamas",
+      "CreateContainerConfigError": "Container konfigūracijos klaida",
+      "InvalidImageName": "Neteisingas image pavadinimas",
+      "CreateContainerError": "Nepavyko sukurti container",
+      "RunContainerError": "Nepavyko paleisti container",
+      "waiting": "Laukiama",
+      "running": "Veikia, bet neparuošta",
+      "terminated": "Nutraukta",
+      "pending": "Laukiama planavimo"
+    }
+  },
+  "actions": {
+    "label": "Veiksmai",
+    "view": "Peržiūrėti",
+    "pods": "Peržiūrėti podus",
+    "logs": "Peržiūrėti žurnalus",
+    "history": "Revision istorija",
+    "console": "Atidaryti konsolę",
+    "restart": "Perkrauti deployment",
+    "delete": "Ištrinti deployment",
+    "disable": "Disable deployment",
+    "enable": "Enable deployment",
+    "enableAfterError": "Įjungti vėl. Išjungiant buvo klaidų",
+    "error": "Veiksmas nepavyko"
+  },
+  "tabs": {
+    "ariaLabel": "Deployment skiltys",
+    "overview": "Apžvalga",
+    "health": "Sveikatos tikrinimai",
+    "config": "Config",
+    "history": "Istorija",
+    "pods": "Pods",
+    "files": "Failai",
+    "logs": "Žurnalai",
+    "console": "Konsolė"
+  },
+  "files": {
+    "podLabel": "Pod",
+    "loading": "Kraunami failai...",
+    "error": "Nepavyko įkelti failų",
+    "empty": "Šis katalogas tuščias",
+    "noPods": "Nėra pod šiam deployment",
+    "refresh": "Atnaujinti",
+    "newFolder": "Naujas aplankas",
+    "upload": "Įkelti failą",
+    "download": "Atsisiųsti",
+    "rename": "Pervardyti",
+    "delete": "Ištrinti",
+    "folderPrompt": "Aplanko pavadinimas",
+    "renamePrompt": "Naujas pavadinimas",
+    "deleteConfirm": "Ištrinti \"{{name}}\"?",
+    "previewEmpty": "Failas tuščias",
+    "breadcrumbs": "Kelias",
+    "root": "Šaknis",
+    "pod": "Pod",
+    "columns": {
+      "name": "Pavadinimas",
+      "size": "Dydis",
+      "modified": "Pakeista",
+      "actions": "Veiksmai"
+    }
+  },
+  "scale": {
+    "label": "Replikos",
+    "submit": "Taikyti mastelį",
+    "submitting": "Keičiamas mastelis...",
+    "hint": "Pakeiskite, kiek pod kopijų deployment turi laikyti veikiančias."
+  },
+  "disable": {
+    "disable": "Disable deployment",
+    "disabling": "Disabling...",
+    "disableHint": "Stops all pods and saves the current replica count for quick restore.",
+    "enable": "Enable deployment",
+    "enabling": "Enabling...",
+    "enableHint": "Restores {{replicas}} replica(s) and starts pods again.",
+    "enableErrorHint": "Išjungiant buvo klaidų. Pataisykite image arba config ir įjunkite vėl ({{replicas}} replikų)."
+  },
+  "console": {
+    "connect": "Prisijungti",
+    "connecting": "Jungiamasi...",
+    "disconnect": "Atsijungti",
+    "connected": "Prisijungta prie {{pod}}",
+    "disconnected": "Sesija uždaryta",
+    "statusConnected": "Prisijungta",
+    "statusDisconnected": "Atsijungta",
+    "empty": "Prisijunkite, kad pradėtumėte interaktyvų shell pasirinktame pode.",
+    "inputPlaceholder": "Įveskite komandas čia...",
+    "inputDisabled": "Pirmiausia prisijunkite prie pod"
+  },
+  "detail": {
+    "subtitle": "Namespace: {{namespace}}",
+    "loading": "Kraunamas deployment...",
+    "error": "Nepavyko įkelti deployment",
+    "historyTitle": "Revision istorija",
+    "podsTitle": "Pods",
+    "logsTitle": "Žurnalai",
+    "logsEmpty": "Nėra podų žurnalų srautui"
+  },
+  "history": {
+    "loading": "Kraunama revision istorija...",
+    "error": "Nepavyko įkelti revision istorijos",
+    "empty": "Revision nerasta",
+    "current": "Dabartinė",
+    "rollback": "Rollback",
+    "table": {
+      "revision": "Revision",
+      "image": "Image",
+      "replicas": "Replikos",
+      "created": "Sukurta",
+      "actions": "Veiksmai"
+    }
+  },
+  "rollback": {
+    "title": "Patvirtinti rollback",
+    "subtitle": "Deployment: {{name}}",
+    "targetRevision": "Tikslinė revision",
+    "targetImage": "Tikslinis image",
+    "cancel": "Atšaukti",
+    "confirm": "Rollback",
+    "submitting": "Grąžinama..."
+  },
+  "create": {
+    "title": "Naujas deployment",
+    "namePlaceholder": "my-api",
+    "imagePlaceholder": "Pasirinkite iš katalogo arba įveskite savo",
+    "replicasPlaceholder": "Replikos",
+    "portPlaceholder": "Container prievadas",
+    "projectLabel": "Projekto grupė",
+    "projectHint": "Deployments su ta pačia label rodomi kartu sąraše.",
+    "projectNone": "Be grupės",
+    "projectExisting": "Pridėti prie esamos grupės",
+    "projectNew": "Sukurti naują grupę",
+    "projectNewPlaceholder": "my-project",
+    "submit": "Sukurti deployment",
+    "submitting": "Kuriama...",
+    "cancel": "Atšaukti"
+  },
+  "image": {
+    "label": "Container image",
+    "submit": "Deploy naują versiją",
+    "submitting": "Deployinama...",
+    "hint": "Atnaujina deployment šabloną ir paleidžia rolling rollout.",
+    "error": "Nepavyko atnaujinti container image.",
+    "unchanged": "Image jau deployintas."
+  },
+  "imagePicker": {
+    "placeholder": "nginx:1.27-alpine, redis:7-alpine, postgres:16-alpine...",
+    "browse": "Image katalogas",
+    "catalogHint": "{{count}} images: Web server, Database, Runtime ir kt.",
+    "customTitle": "Pasirinktinis image",
+    "customHint": "Įveskite registry/repository:tag",
+    "empty": "Atitikmenų nėra. Įveskite pasirinktinį image aukščiau."
+  },
+  "delete": {
+    "title": "Ištrinti deployment",
+    "message": "Ištrinti deployment {{name}}? Visi podai bus pašalinti.",
+    "submit": "Ištrinti deployment"
+  },
+  "restart": {
+    "submit": "Perkrauti deployment",
+    "submitting": "Perkraunama...",
+    "hint": "Rolling restart atkuria visus podus su tuo pačiu image (kaip kubectl rollout restart).",
+    "bannerTitle": "Atnaujinimas vyksta",
+    "bannerProgress": "{{ready}}/{{desired}} paruošta, {{updated}}/{{desired}} atnaujinta",
+    "bannerHint": "Podai atkūriami. Stebėkite Pods skirtuką gyvai būsenai.",
+    "rowProgress": "({{ready}}/{{desired}} ready)",
+    "error": "Nepavyko perkrauti deployment.",
+    "done": "Deployment perkraunamas"
+  },
+  "config": {
+    "title": "Aplinkos kintamieji",
+    "loading": "Kraunama konfigūracija...",
+    "error": "Nepavyko įkelti konfigūracijos",
+    "empty": "Kintamųjų nenustatyta",
+    "namePlaceholder": "MYSQL_ROOT_PASSWORD",
+    "valuePlaceholder": "reikšmė",
+    "add": "Pridėti kintamąjį",
+    "remove": "Pašalinti",
+    "submit": "Išsaugoti",
+    "submitting": "Saugoma...",
+    "portHint": "Container prievadas: {{port}}",
+    "createHint": "Katalogo images gauna dev numatytąsias reikšmes. Peržiūrėkite prieš kurdami."
+  },
+  "healthProbes": {
+    "title": "Sveikatos tikrinimai",
+    "loading": "Kraunama probe konfigūracija...",
+    "error": "Nepavyko įkelti health probes",
+    "empty": "Pagrindiniam container nenustatytos probes",
+    "configTitle": "Konfigūruotos probes",
+    "podsTitle": "Pod pasirengimas",
+    "podsEmpty": "Nėra podų tikrinimui",
+    "podReady": "Ready",
+    "podNotReady": "Nepasiruošęs",
+    "podStates": {
+      "ready": "Ready",
+      "runningNotReady": "Veikia, bet ne ready",
+      "pending": "Laukia",
+      "failed": "Nepavyko",
+      "notReady": "Ne ready"
+    },
+    "types": {
+      "readiness": "Readiness",
+      "liveness": "Liveness",
+      "startup": "Startup"
+    },
+    "mechanisms": {
+      "http": "HTTP",
+      "tcp": "TCP",
+      "exec": "Exec",
+      "grpc": "gRPC",
+      "none": "Nėra"
+    },
+    "columns": {
+      "type": "Tipas",
+      "mechanism": "Mechanizmas",
+      "target": "Tikslas",
+      "timing": "Laikas",
+      "pod": "Pod",
+      "phase": "Phase",
+      "podStatus": "Readiness"
+    },
+    "timing": {
+      "start": "start {{seconds}}s",
+      "every": "kas {{seconds}}s",
+      "timeout": "timeout {{seconds}}s"
+    }
+  }
+}

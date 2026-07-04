@@ -1,0 +1,26 @@
+{
+  "appTitle": "Deployard",
+  "language": "Jezik",
+  "theme": {
+    "label": "Tema",
+    "light": "Svijetlo",
+    "dark": "Tamno",
+    "system": "Auto"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "admin": "Admin",
+    "logout": "Odjava"
+  },
+  "status": {
+    "connected": "API povezan",
+    "checking": "Provjera API-ja..."
+  },
+  "cluster": {
+    "label": "Cluster"
+  },
+  "namespace": {
+    "label": "Namespace",
+    "all": "Svi namespace-i"
+  }
+}

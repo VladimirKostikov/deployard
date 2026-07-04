@@ -1,0 +1,10 @@
+{
+  "DEPLOYMENT_NOT_FOUND": "Deployment не е намерен",
+  "POD_NOT_FOUND": "Pod не е намерен",
+  "NAMESPACE_NOT_FOUND": "Namespace не е намерен",
+  "ROLLBACK_FAILED": "Rollback неуспешен",
+  "K8S_API_ERROR": "Грешка в Kubernetes API",
+  "FORBIDDEN": "Недостатъчни права",
+  "VALIDATION_ERROR": "Грешка при валидация",
+  "INTERNAL_ERROR": "Вътрешна грешка на сървъра"
+}

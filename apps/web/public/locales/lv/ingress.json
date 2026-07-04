@@ -1,0 +1,32 @@
+{
+  "title": "Ingress",
+  "subtitle": "HTTP maršrutēšanas noteikumi izvēlētajā namespace",
+  "loading": "Ielādē ingress noteikumus...",
+  "error": "Neizdevās ielādēt ingress noteikumus",
+  "empty": "Šajā namespace nav ingress noteikumu",
+  "create": {
+    "title": "Jauns ingress",
+    "name": "Nosaukums",
+    "host": "Host (piem. api.local)",
+    "path": "Ceļš",
+    "service": "Service nosaukums",
+    "port": "Service ports",
+    "submit": "Izveidot ingress",
+    "submitting": "Izveido...",
+    "cancel": "Atcelt"
+  },
+  "table": {
+    "name": "Nosaukums",
+    "host": "Host",
+    "path": "Ceļš",
+    "service": "Backend",
+    "actions": "Darbības"
+  },
+  "actions": {
+    "delete": "Dzēst"
+  },
+  "delete": {
+    "title": "Dzēst ingress",
+    "message": "Dzēst ingress {{name}}?"
+  }
+}

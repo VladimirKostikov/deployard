@@ -1,0 +1,211 @@
+{
+  "title": "FAQ",
+  "subtitle": "Short notes on Kubernetes terms and how Deployard maps them to the UI. Open a section when something in the cluster or on the import page is unclear.",
+  "labels": {
+    "inApp": "Where in the app",
+    "example": "Example"
+  },
+  "sections": {
+    "basics": "Basics",
+    "workloads": "Workloads",
+    "operations": "Day-to-day work",
+    "import": "Compose import",
+    "network": "Network and access",
+    "dev": "Local development",
+    "admin": "Administration"
+  },
+  "items": {
+    "namespace": {
+      "question": "What is a namespace?",
+      "answer": "A namespace is a named slice of one cluster. Objects in default and objects in staging share the same nodes, but they have different names and RBAC can limit who sees what.\n\nYou do not need many namespaces for a demo. One default namespace is enough until you want to split teams or environments.",
+      "inApp": "On Deployments and Network, pick the namespace in the selector near the page title. Lists and detail pages always use that value.\n\nSidebar -> Namespaces: create or delete namespaces if your role allows it.",
+      "example": "After make seed-demo, demo-api and demo-web usually sit in default.\n\nYou can import weather-station into default as well. Same cluster, same namespace, different deployment names."
+    },
+    "cluster": {
+      "question": "What is a cluster?",
+      "answer": "A cluster is the Kubernetes control plane plus the nodes that run pods. Deployard uses kubeconfig contexts and the Kubernetes API.\n\nOne kubeconfig file can list several contexts. Each context is one cluster.",
+      "inApp": "Top bar -> cluster selector when more than one context is registered.\n\nLocal kind is often kind-dpd-local.",
+      "example": "Only kind-dpd-local visible: all pages use that cluster."
+    },
+    "deployment": {
+      "question": "What is a deployment?",
+      "answer": "A deployment keeps a set of identical pods running. It stores the container image, replica count, env vars, probes, and rollout strategy.\n\nWhen you change the image tag, Kubernetes creates a new ReplicaSet and rolls pods forward. Old pods are replaced, not edited in place.",
+      "inApp": "Sidebar -> Deployments: table of workloads in the selected namespace.\n\nClick a name: Overview, Health probes, Config, History, Pods, Logs, Console.",
+      "example": "demo-api deployment: image demo-shop-api:local, 1 replica, HTTP probe on /health port 3000.\n\nScale to 3 replicas on Overview -> Replicas -> Apply scale."
+    },
+    "metrics": {
+      "question": "What does the Metrics page show?",
+      "answer": "Metrics is about the Deployard API process, not about pod CPU in the cluster. Counters come from Prometheus instrumentation inside the NestJS app.\n\nYou see request volume, latency percentiles, error rate, and Node.js memory. Useful when the UI feels slow or returns 500.",
+      "inApp": "Sidebar -> Metrics. Refreshes every few seconds.\n\nCards: total requests, req/s, 5xx rate, p95 latency, RSS memory, uptime. Below that: breakdown by status and route.",
+      "example": "After clicking through Deployments for a minute, Top routes lists GET /api/deployments.\n\np95 spikes after a heavy import: normal for a big compose apply. Flat error rate means API is fine even if pods are failing."
+    },
+    "pod": {
+      "question": "What is a pod?",
+      "answer": "A pod is one or more containers that share an IP address and volumes. Deployments create and replace pods. You rarely create pods by hand.\n\nThe random suffix in the name (demo-api-7d4f8b9c-xk2lm) is normal. A new pod gets a new name after restart or rollout.",
+      "inApp": "Deployment detail -> Pods tab: name, phase, ready, restarts, node, IP, ports.\n\nLogs and Console pick a pod from this list.",
+      "example": "weather-api-78cc9f79b9-ab12c: one running instance.\n\nDelete the pod in kubectl and the deployment creates a replacement with a new suffix."
+    },
+    "node": {
+      "question": "What is a node?",
+      "answer": "A node is a machine (or VM) where the scheduler places pods. Local kind often uses one node for everything.\n\nIf a pod stays Pending and events mention insufficient CPU, the node may be full. For demos this is rare.",
+      "inApp": "Pods table -> Node column.\n\nShows which node runs each pod. Handy when you run multi-node kind later.",
+      "example": "dpd-local-control-plane: single node in make cluster-up.\n\nAll demo-shop pods show the same node name."
+    },
+    "replica": {
+      "question": "What do Ready and Total mean?",
+      "answer": "Total is how many pod copies the deployment should run. Ready is how many passed readiness checks and can receive traffic.\n\n1/1 means one desired and one ready. 0/3 means three pods should exist but none are ready yet. That is a problem state if it lasts more than a short startup.",
+      "inApp": "Deployments table: Ready/Total column.\n\nDeployment overview shows the same numbers and status badge.",
+      "example": "3/3 after scale-up: rollout finished.\n\n0/1 right after import: often missing image in kind. Check Pods tab for ImagePullBackOff before blaming the app code."
+    },
+    "image": {
+      "question": "What is a container image?",
+      "answer": "An image is a read-only template for a container: repository:tag or registry/repository:tag. The tag is not auto-updated. demo-api:local and demo-api:v2 are two different images.\n\nCompose build services produce images on the Docker host. kind must load them before Kubernetes can run them.",
+      "inApp": "Deployments table -> Image column.\n\nImport preview and image override fields before apply. Rebuild dialog shows suggested tags per service.",
+      "example": "nginx:1.27 pulls from Docker Hub.\n\ndemo-shop-api:local is built on the host and loaded into kind. Without :local override the cluster may try weather-api:latest and fail."
+    },
+    "phase": {
+      "question": "What is pod phase?",
+      "answer": "Phase is the coarse lifecycle state: Pending, Running, Succeeded, Failed, Unknown.\n\nRunning does not mean the app is healthy. Check Ready and the status dialog for probe failures. Pending often means waiting for image pull or scheduling.",
+      "inApp": "Pods tab -> Phase column.\n\nClick status on the deployments list for pod-level reasons (waiting, crash loop, probe fail).",
+      "example": "Running + 0/1 Ready: container started but readiness probe fails. DB not up yet is a common case.\n\nPending + ImagePullBackOff: fix image tag or run Rebuild."
+    },
+    "restarts": {
+      "question": "What are restarts?",
+      "answer": "Restarts count how many times the main container in a pod exited and was started again. A few restarts during rollout is fine. A number that climbs every minute means crash loop.\n\nRead logs right after a restart. The last lines before exit usually show the error.",
+      "inApp": "Pods tab -> Restarts column.\n\nThen Logs tab for that pod.",
+      "example": "Restarts 0 after stable run.\n\nRestarts 20 in 10 minutes: missing env var often shows in logs as a stack trace on boot."
+    },
+    "ready": {
+      "question": "What does Ready mean for a pod?",
+      "answer": "Ready is yes when every container passed its readiness probe. Until then the pod may be Running but not Ready.\n\nServices only send traffic to ready pods. During deploy old ready pods keep serving until new ones pass checks.",
+      "inApp": "Pods tab -> Ready column (yes/no).\n\nHealth probes tab shows probe config and last results per pod.",
+      "example": "0/1 Ready for 30s while Postgres starts: wait.\n\n0/1 Ready for 10 min on demo-api: open logs, then check probe path and port on Overview."
+    },
+    "revision": {
+      "question": "What is a revision?",
+      "answer": "Each change to the pod template (usually image or env) bumps the deployment revision. Kubernetes keeps old ReplicaSets for rollback.\n\nRevision number is not the same as git commit. It is per deployment in the cluster.",
+      "inApp": "Deployment detail -> History tab: revision, image, replica count, created time.\n\nCurrent revision is marked. Older rows are rollback targets.",
+      "example": "Rev 1: weather-api:latest (broken pull).\n\nRev 2 after Rebuild: weather-api:local, rollout completes, Rev 2 marked current."
+    },
+    "rollback": {
+      "question": "How does rollback work?",
+      "answer": "Rollback tells the deployment controller to use an older ReplicaSet template again. It is faster than rebuilding an image when you know the previous revision worked.\n\nRollback does not revert changes outside Kubernetes (database migrations, external config). It only changes the deployment spec in the cluster.",
+      "inApp": "History tab -> Rollback on a non-current row -> confirm dialog shows target image.\n\nWatch Pods tab while old template pods come back.",
+      "example": "Rev 3 deploys bad tag :broken. Pods crash.\n\nRollback to Rev 2 with :local. Ready goes back to 1/1 without re-importing compose."
+    },
+    "scale": {
+      "question": "How do I change replica count?",
+      "answer": "Scaling updates spec.replicas. Kubernetes creates or removes pods. No new image build is required.\n\nScale to 0 stops pods but keeps the deployment object. Scale back up when you want traffic again.",
+      "inApp": "Deployment detail -> Overview -> Replicas field -> Apply scale.\n\nTable shows new Ready/Total as pods start or terminate.",
+      "example": "demo-api at 1/1. Set replicas to 3, Apply scale. Wait for 3/3.\n\nSet to 0 for maintenance. Set to 1 before demo."
+    },
+    "logs": {
+      "question": "How do I read logs?",
+      "answer": "Logs are stdout/stderr from the container. Deployard streams them through the API. You do not need kubectl on your laptop for basic tail.\n\nIf a pod restarted, enable previous container if the UI offers it, or check Events in status. Fresh pod may have empty logs until the app prints something.",
+      "inApp": "Deployment detail -> Logs tab -> pick pod from dropdown.\n\nStream updates while the tab is open.",
+      "example": "demo-api log line: Listening on 3000 means the server bound the port.\n\nError: connect ECONNREFUSED postgres:5432 means the app started before the database service was ready."
+    },
+    "console": {
+      "question": "What is the Console tab?",
+      "answer": "Console opens an interactive shell in the container when the image includes a shell and your role has exec permission. Not every minimal image has /bin/sh.\n\nUse it for quick checks (ls, env, wget localhost). For production debugging prefer logs and probes.",
+      "inApp": "Deployment detail -> Console tab -> select pod -> connect.\n\nRequires exec permission on your user role.",
+      "example": "In demo-api container: wget -qO- http://127.0.0.1:3000/health to test probe path from inside.\n\nAlpine-based images: try sh. Distroless images may not support console at all."
+    },
+    "status": {
+      "question": "What do Healthy and Degraded mean?",
+      "answer": "Healthy: desired replicas match ready replicas. Degraded: at least one pod is missing or not ready.\n\nDegraded after import is common until images load. Degraded after a long stable run means investigate pods, not the badge alone.",
+      "inApp": "Deployments list and project groups show status with ready count.\n\nClick status for pod list and last events.",
+      "example": "Healthy 1/1 on demo-web after seed.\n\nDegraded 0/1 on weather-api: open Pods, see ImagePullBackOff, fix override, Rebuild."
+    },
+    "healthProbes": {
+      "question": "What are health probes?",
+      "answer": "Probes are HTTP, TCP, or exec checks Kubernetes runs on a schedule. Liveness: restart if failing. Readiness: remove from service endpoints if failing. Startup: give slow apps extra time before liveness kicks in.\n\nWrong port or path keeps pods Not Ready forever even when the app works on another port.",
+      "inApp": "Deployment detail -> Health probes tab: configured probes and per-pod status.\n\nCompare with env and ports on Overview and Config.",
+      "example": "HTTP GET /health on port 3000 every 10s.\n\nApp listens on 8080 but probe still targets 3000: pod stays 0/1 Ready. Fix deployment env or import template."
+    },
+    "composeImport": {
+      "question": "How does Compose import work?",
+      "answer": "Import reads docker-compose.yml and maps services to Deployments and Services. Volumes become PVCs where supported. Secrets and env files are translated when present.\n\nServices with build: need a concrete image tag via override. The cluster cannot run docker compose build for you.",
+      "inApp": "Deployments -> Import Compose (or sidebar Import).\n\nPick a discovered project, paste YAML, or scan Docker. Preview objects, set overrides, then Apply.",
+      "example": "Import demo/weather-station creates weather-api and weather-web deployments plus ClusterIP services.\n\nPreview shows replica 1 and image names before anything hits the cluster."
+    },
+    "projectGroup": {
+      "question": "What is a project group?",
+      "answer": "Deployments from one compose file share a part-of label (compose project name). The UI collapses them under one header.\n\nGroup actions (rebuild, stop, delete) affect every deployment in that group. Single-deployment actions stay on each row.",
+      "inApp": "Deployments list: expand group header for weather-station, demo-shop, etc.\n\nGroup menu: Rebuild, delete group, settings.",
+      "example": "Group weather-station contains weather-api and weather-web.\n\nRebuild on the group rebuilds both images and updates both deployments."
+    },
+    "imageOverride": {
+      "question": "What are image overrides?",
+      "answer": "Overrides map compose service name to the image reference Kubernetes should use. Required for build services because compose only says build: . without a stable tag.\n\nConvention in this repo for local demos: servicename:local after make demo-load or Rebuild.",
+      "inApp": "Import options panel before Apply.\n\nRebuild dialog pre-fills overrides from last import.",
+      "example": "Service weather-api in compose -> override weather-api:local.\n\nLeave web on nginx:1.27 if compose uses a public image without build."
+    },
+    "rebuild": {
+      "question": "What does Rebuild do?",
+      "answer": "Rebuild runs docker compose build (and up --build) for the project on the Docker host, loads new images into kind, then patches deployments in the group to the configured tags.\n\nUse after code changes on the host. Import alone does not rebuild images.",
+      "inApp": "Import page -> Rebuild section for local projects.\n\nOr project group menu -> Rebuild on Deployments list.",
+      "example": "Edit demo/weather-station/api, then Rebuild on group weather-station.\n\nNew image tag rolls out. History tab shows new revision with updated image digest or tag."
+    },
+    "kindLoad": {
+      "question": "Why load images into kind?",
+      "answer": "kind nodes run inside Docker containers. They do not see images you build on the host unless you import them.\n\nWithout load, Kubernetes pulls from a registry. Tags like myapp:local only exist on the host, so pull fails.",
+      "inApp": "Automatic on local import and Rebuild.\n\nImport page -> Load images to cluster for manual retry.",
+      "example": "make demo-load builds demo-shop images and runs kind load docker-image against dpd-local.\n\nkubectl describe pod shows ErrImagePull before load, Running after."
+    },
+    "service": {
+      "question": "What is a Kubernetes Service?",
+      "answer": "A Service is a stable DNS name and port for a set of pods matched by labels. ClusterIP is internal only. NodePort opens a port on each node. Ingress adds HTTP routing by host and path.\n\nPod IPs change. Service name demo-api.default.svc.cluster.local stays the same while selectors match.",
+      "inApp": "Sidebar -> Network: services in namespace, type, cluster IP, ports, selectors.\n\nDeployment detail -> Overview may link related services.",
+      "example": "demo-api ClusterIP 10.96.x.x port 3000 targets pods with label app.kubernetes.io/name=demo-api.\n\nOther pods connect to http://demo-api:3000 inside the cluster."
+    },
+    "portForward": {
+      "question": "What is port-forward?",
+      "answer": "Port-forward tunnels a port from your machine to a pod or service. Deployard starts kubectl port-forward on the server and proxies HTTP for the Open button.\n\nThe tunnel lives while the request or session runs. It is for dev, not a permanent public URL.",
+      "inApp": "Network -> row action Open on a service port.\n\nBrowser opens the proxied URL through the Deployard API.",
+      "example": "Open demo-api port 3000 -> /health returns JSON in the browser.\n\nSame as kubectl port-forward svc/demo-api 3000:3000 but without typing it yourself."
+    },
+    "nodePort": {
+      "question": "What is NodePort?",
+      "answer": "NodePort publishes the service on a fixed port between 30000 and 32767 on every node IP. On kind you often map that to localhost via extraPortMappings in kind config.\n\nGood for quick demos without ingress controller.",
+      "inApp": "Import option Expose host ports when compose maps host ports in that range.\n\nNetwork lists NodePort column when type is NodePort.",
+      "example": "demo-web NodePort 30081 -> http://localhost:30081 after make seed-demo.\n\nClusterIP alone is not reachable from the host without port-forward."
+    },
+    "dockerCompose": {
+      "question": "Docker Compose vs Kubernetes here",
+      "answer": "Compose defines and builds on a Docker host. Kubernetes runs workloads after import. Typical loop: edit code -> Rebuild (compose build + kind load) -> rollout updates pods.\n\nYou can still docker compose up locally for debugging, but the dashboard tracks the cluster copy after import.",
+      "inApp": "Compose sources: demo/ in the repo and Docker Desktop projects.\n\nCluster view: Deployments, Network, Metrics.",
+      "example": "docker compose up in demo/weather-station runs on the host only.\n\nImport + Rebuild is what makes weather-api show on Deployments and get health checks in the cluster."
+    },
+    "errImagePull": {
+      "question": "ErrImagePull or ImagePullBackOff. What now?",
+      "answer": "The node cannot start the container because the image is missing or pull failed. On kind the usual cause is tag not loaded (:local still only on host) or override left as :latest for a custom build.\n\nLess common: private registry without imagePullSecrets, typo in repository name.",
+      "inApp": "Deployment -> Pods -> status column or describe via status dialog.\n\nFix overrides on Import or Rebuild. Load images manually if needed. Restart deployment from lifecycle controls on Overview.",
+      "example": "weather-api:latest fails: no such tag on Docker Hub.\n\nSet override weather-api:local, Rebuild, wait for kind load. Pod phase Running, pull error gone."
+    },
+    "demoProjects": {
+      "question": "Which demo projects ship with the repo?",
+      "answer": "demo-shop: Postgres + API + web, seeded with make seed-demo, good first import.\n\nweather-station, todo-board: smaller stacks for import practice.",
+      "inApp": "Import lists projects under /workspace/demo when API runs in Docker.",
+      "example": "make docker-up && make seed-demo -> open Deployments, see demo-api Healthy."
+    },
+    "users": {
+      "question": "Users",
+      "answer": "A user is a login account (email + password). Each user gets one or more roles. Admin seed creates admin@dpd.local and user@dpd.local with different rights.\n\nDisable access by removing roles or deactivating the user, not by deleting cluster resources.",
+      "inApp": "Administration -> Users: list, create, edit, assign roles.\n\nSidebar -> Sign out ends the session.",
+      "example": "Operator user: can rollback and import, cannot open Administration -> Users.\n\nadmin@dpd.local: full access including permissions."
+    },
+    "roles": {
+      "question": "Roles",
+      "answer": "A role is a named bundle of permissions. Users get roles, not individual checks in the UI code. Changing a role affects every user who has it.\n\nSeed data usually includes admin and viewer-like roles. You can add custom roles for your team.",
+      "inApp": "Administration -> Roles: create role, attach permissions.\n\nUsers form -> pick roles when creating or editing a user.",
+      "example": "Role viewer: view + logs on all namespaces.\n\nRole operator: adds rollback, scale, import on selected namespaces."
+    },
+    "permissions": {
+      "question": "Permissions",
+      "answer": "A permission is one allowed action, optionally scoped to a namespace or deployment name. Examples: view deployments, read logs, apply import.\n\nThe API checks permissions on every write. Missing permission returns 403 in the UI as a generic error.",
+      "inApp": "Administration -> Permissions lists all actions.\n\nRole edit screen toggles which permissions the role grants.",
+      "example": "import:apply lets you press Apply on compose preview."
+    }
+  }
+}

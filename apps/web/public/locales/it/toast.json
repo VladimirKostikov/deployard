@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Replicas aggiornate",
+    "scaleError": "Impossibile scalare il deployment",
+    "imageSuccess": "Immagine container aggiornata",
+    "imageError": "Impossibile aggiornare l'immagine container",
+    "deleteSuccess": "Deployment eliminato",
+    "deleteError": "Impossibile eliminare il deployment",
+    "createSuccess": "Deployment creato",
+    "createError": "Impossibile creare il deployment",
+    "configSaved": "Configurazione salvata",
+    "configError": "Impossibile salvare la configurazione",
+    "restartSuccess": "Deployment riavviato",
+    "restartError": "Impossibile riavviare il deployment",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback completato",
+    "rollbackError": "Rollback fallito",
+    "projectGroupDeleteSuccess": "Gruppo di progetto eliminato",
+    "projectGroupDeleteError": "Impossibile eliminare il gruppo di progetto",
+    "projectGroupRestartSuccess": "Gruppo riavviato",
+    "projectGroupRestartError": "Impossibile riavviare il gruppo",
+    "projectGroupDisableSuccess": "Gruppo disattivato",
+    "projectGroupDisableError": "Impossibile disattivare il gruppo",
+    "filesFolderCreated": "Cartella creata",
+    "filesUploaded": "File caricato",
+    "filesDeleted": "Eliminato",
+    "filesRenamed": "Rinominato",
+    "filesError": "Operazione sul file non riuscita"
+  },
+  "pod": {
+    "restartSuccess": "Pod riavviato",
+    "restartError": "Impossibile riavviare il pod",
+    "deleteSuccess": "Pod eliminato",
+    "deleteError": "Impossibile eliminare il pod"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service creato",
+    "serviceCreateError": "Impossibile creare il service",
+    "serviceDeleteSuccess": "Service eliminato",
+    "serviceDeleteError": "Impossibile eliminare il service",
+    "serviceUpdateSuccess": "Service aggiornato",
+    "serviceUpdateError": "Impossibile aggiornare il service",
+    "tunnelError": "Impossibile aprire l'accesso al service",
+    "openBlocked": "Il browser ha bloccato la nuova scheda. Consenti i pop-up per questo sito.",
+    "openError": "Impossibile aprire {{name}}. Verifica che i pod siano in esecuzione.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Regola ingress eliminata",
+    "ingressDeleteError": "Impossibile eliminare la regola ingress"
+  },
+  "ingress": {
+    "createSuccess": "Regola ingress creata",
+    "createError": "Impossibile creare la regola ingress",
+    "deleteSuccess": "Regola ingress eliminata",
+    "deleteError": "Impossibile eliminare la regola ingress"
+  },
+  "namespace": {
+    "createSuccess": "Namespace creato",
+    "createError": "Impossibile creare il namespace",
+    "deleteSuccess": "Namespace eliminato",
+    "deleteError": "Impossibile eliminare il namespace"
+  },
+  "import": {
+    "buildSuccess": "Immagini costruite",
+    "buildError": "Impossibile costruire le immagini",
+    "rebuildSuccess": "Docker Compose ricostruito e avviato",
+    "rebuildError": "Impossibile ricostruire il progetto",
+    "loadSuccess": "Immagini caricate nel cluster",
+    "loadError": "Impossibile caricare le immagini nel cluster",
+    "applySuccess": "Progetto importato in Kubernetes",
+    "applyWithImages": "Progetto importato, {{count}} immagini caricate in kind",
+    "openImportedApp": "Apertura app su {{url}}",
+    "openUnavailable": "Import completato, ma l'URL non è ancora pronto. Aprilo da Network → web.",
+    "applyError": "Impossibile importare il progetto",
+    "previewError": "Impossibile generare l'anteprima"
+  },
+  "admin": {
+    "userSaveSuccess": "Utente salvato",
+    "userSaveError": "Impossibile salvare l'utente",
+    "userDeleteSuccess": "Utente eliminato",
+    "userDeleteError": "Impossibile eliminare l'utente",
+    "roleSaveSuccess": "Ruolo salvato",
+    "roleSaveError": "Impossibile salvare il ruolo",
+    "roleDeleteSuccess": "Ruolo eliminato",
+    "roleDeleteError": "Impossibile eliminare il ruolo",
+    "permissionSaveSuccess": "Permesso salvato",
+    "permissionSaveError": "Impossibile salvare il permesso",
+    "permissionDeleteSuccess": "Permesso eliminato",
+    "permissionDeleteError": "Impossibile eliminare il permesso"
+  }
+}

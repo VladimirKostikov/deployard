@@ -1,0 +1,29 @@
+{
+  "title": "Namespaces",
+  "subtitle": "Loo ja eemalda Kubernetes namespaces aktiivses clusteris",
+  "loading": "Laadin namespaces...",
+  "error": "Namespaces laadimine ebaõnnestus",
+  "protected": "Kaitstud",
+  "create": {
+    "title": "Uus namespace",
+    "label": "Nimi",
+    "placeholder": "staging",
+    "submit": "Loo namespace",
+    "submitting": "Loon...",
+    "cancel": "Tühista",
+    "hint": "Kasuta väiketähti DNS nimedes. Süsteemi namespaces kube- eesliitega ei saa kustutada."
+  },
+  "table": {
+    "name": "Nimi",
+    "status": "Olek",
+    "created": "Loodud",
+    "actions": "Toimingud"
+  },
+  "actions": {
+    "delete": "Kustuta"
+  },
+  "delete": {
+    "title": "Kustuta namespace",
+    "message": "Kustutada namespace {{name}}? Kõik selle ressursid eemaldatakse."
+  }
+}

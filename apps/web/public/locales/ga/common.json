@@ -1,0 +1,26 @@
+{
+  "appTitle": "Deployard",
+  "language": "Teanga",
+  "theme": {
+    "label": "Téama",
+    "light": "Geal",
+    "dark": "Dorcha",
+    "system": "Uathoibríoch"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "admin": "Admin",
+    "logout": "Síniú amach"
+  },
+  "status": {
+    "connected": "API nasctha",
+    "checking": "API á sheiceáil..."
+  },
+  "cluster": {
+    "label": "Cluster"
+  },
+  "namespace": {
+    "label": "Namespace",
+    "all": "Gach namespace"
+  }
+}

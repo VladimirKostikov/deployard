@@ -1,0 +1,32 @@
+{
+  "title": "Ingress",
+  "subtitle": "HTTP-routingregels in de geselecteerde namespace",
+  "loading": "Ingress-regels laden...",
+  "error": "Ingress-regels laden mislukt",
+  "empty": "Geen ingress-regels in deze namespace",
+  "create": {
+    "title": "Nieuwe ingress",
+    "name": "Naam",
+    "host": "Host (bijv. api.local)",
+    "path": "Path",
+    "service": "Servicenaam",
+    "port": "Servicepoort",
+    "submit": "Ingress aanmaken",
+    "submitting": "Aanmaken...",
+    "cancel": "Annuleren"
+  },
+  "table": {
+    "name": "Naam",
+    "host": "Host",
+    "path": "Path",
+    "service": "Backend",
+    "actions": "Acties"
+  },
+  "actions": {
+    "delete": "Verwijderen"
+  },
+  "delete": {
+    "title": "Ingress verwijderen",
+    "message": "Ingress {{name}} verwijderen?"
+  }
+}

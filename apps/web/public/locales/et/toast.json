@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Replikad uuendatud",
+    "scaleError": "Deploymenti skaleerimine ebaõnnestus",
+    "imageSuccess": "Container image uuendatud",
+    "imageError": "Container image uuendamine ebaõnnestus",
+    "deleteSuccess": "Deployment kustutatud",
+    "deleteError": "Deploymenti kustutamine ebaõnnestus",
+    "createSuccess": "Deployment loodud",
+    "createError": "Deploymenti loomine ebaõnnestus",
+    "configSaved": "Konfiguratsioon salvestatud",
+    "configError": "Konfiguratsiooni salvestamine ebaõnnestus",
+    "restartSuccess": "Deployment taaskäivitatud",
+    "restartError": "Deploymenti taaskäivitamine ebaõnnestus",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback lõpetatud",
+    "rollbackError": "Rollback ebaõnnestus",
+    "projectGroupDeleteSuccess": "Projektigrupp kustutatud",
+    "projectGroupDeleteError": "Projektigrupi kustutamine ebaõnnestus",
+    "projectGroupRestartSuccess": "Grupp taaskäivitatud",
+    "projectGroupRestartError": "Grupi taaskäivitamine ebaõnnestus",
+    "projectGroupDisableSuccess": "Grupp keelatud",
+    "projectGroupDisableError": "Grupi keelamine ebaõnnestus",
+    "filesFolderCreated": "Kaust loodud",
+    "filesUploaded": "Fail üles laetud",
+    "filesDeleted": "Kustutatud",
+    "filesRenamed": "Ümber nimetatud",
+    "filesError": "Failitoiming ebaõnnestus"
+  },
+  "pod": {
+    "restartSuccess": "Pod taaskäivitatud",
+    "restartError": "Podi taaskäivitamine ebaõnnestus",
+    "deleteSuccess": "Pod kustutatud",
+    "deleteError": "Podi kustutamine ebaõnnestus"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service loodud",
+    "serviceCreateError": "Service loomine ebaõnnestus",
+    "serviceDeleteSuccess": "Service kustutatud",
+    "serviceDeleteError": "Service kustutamine ebaõnnestus",
+    "serviceUpdateSuccess": "Service uuendatud",
+    "serviceUpdateError": "Service uuendamine ebaõnnestus",
+    "tunnelError": "Service juurdepääsu avamine ebaõnnestus",
+    "openBlocked": "Brauser blokeeris uue vahelehe. Luba sellel saidil pop-up-id.",
+    "openError": "Ei saanud avada {{name}}. Kontrolli, et pod-id töötavad.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Ingress reegel kustutatud",
+    "ingressDeleteError": "Ingress reegli kustutamine ebaõnnestus"
+  },
+  "ingress": {
+    "createSuccess": "Ingress reegel loodud",
+    "createError": "Ingress reegli loomine ebaõnnestus",
+    "deleteSuccess": "Ingress reegel kustutatud",
+    "deleteError": "Ingress reegli kustutamine ebaõnnestus"
+  },
+  "namespace": {
+    "createSuccess": "Namespace loodud",
+    "createError": "Namespace loomine ebaõnnestus",
+    "deleteSuccess": "Namespace kustutatud",
+    "deleteError": "Namespace kustutamine ebaõnnestus"
+  },
+  "import": {
+    "buildSuccess": "Images ehitatud",
+    "buildError": "Images ehitamine ebaõnnestus",
+    "rebuildSuccess": "Docker Compose uuesti ehitatud ja käivitatud",
+    "rebuildError": "Projekti uuesti ehitamine ebaõnnestus",
+    "loadSuccess": "Images laaditud clusterisse",
+    "loadError": "Images clusterisse laadimine ebaõnnestus",
+    "applySuccess": "Projekt imporditud Kubernetesesse",
+    "applyWithImages": "Projekt imporditud, {{count}} images laaditud kind'i",
+    "openImportedApp": "Rakenduse avamine aadressil {{url}}",
+    "openUnavailable": "Import valmis, aga URL pole veel valmis. Ava see Network → web kaudu.",
+    "applyError": "Projekti import ebaõnnestus",
+    "previewError": "Eelvaate loomine ebaõnnestus"
+  },
+  "admin": {
+    "userSaveSuccess": "Kasutaja salvestatud",
+    "userSaveError": "Kasutaja salvestamine ebaõnnestus",
+    "userDeleteSuccess": "Kasutaja kustutatud",
+    "userDeleteError": "Kasutaja kustutamine ebaõnnestus",
+    "roleSaveSuccess": "Roll salvestatud",
+    "roleSaveError": "Rolli salvestamine ebaõnnestus",
+    "roleDeleteSuccess": "Roll kustutatud",
+    "roleDeleteError": "Rolli kustutamine ebaõnnestus",
+    "permissionSaveSuccess": "Õigus salvestatud",
+    "permissionSaveError": "Õiguse salvestamine ebaõnnestus",
+    "permissionDeleteSuccess": "Õigus kustutatud",
+    "permissionDeleteError": "Õiguse kustutamine ebaõnnestus"
+  }
+}

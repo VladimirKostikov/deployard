@@ -1,0 +1,318 @@
+{
+  "title": "Deployments",
+  "subtitle": "Застосунки у вибраному namespace",
+  "subtitleAll": "Застосунки у всіх доступних namespace",
+  "loading": "Завантаження deployments...",
+  "error": "Не вдалося завантажити deployments",
+  "empty": "У цьому namespace немає deployments",
+  "emptyAll": "Немає deployments у доступних namespace",
+  "projectGroups": {
+    "standalone": "Без групи",
+    "services_one": "{{count}} сервіс",
+    "services_other": "{{count}} сервісів",
+    "health": "{{healthy}}/{{total}} здорові",
+    "restarting": "{{count}}/{{total}} перезапускаються",
+    "restartingBanner": "Перезапуск {{count}} з {{total}} deployments у цій групі",
+    "settings": "Налаштування",
+    "settingsTitle": "Налаштування групи",
+    "settingsGroupLabel": "Група проєкту",
+    "settingsDockerReady": "Docker доступний",
+    "settingsDockerUnavailable": "Docker недоступний",
+    "settingsRebuildHint": "Перезбирає compose, завантажує образи в kind і запускає rollout deployments цієї групи.",
+    "settingsLoading": "Перевірка середовища...",
+    "settingsClose": "Закрити",
+    "settingsNoCompose": "Compose-проєкт з такою назвою не знайдено. Перезбірка доступна лише для груп, імпортованих з Docker Compose.",
+    "delete": "Видалити групу",
+    "restart": "Перезапустити групу",
+    "disable": "Вимкнути групу",
+    "deleteTitle": "Видалити групу проєкту",
+    "deleteMessage": "Видалити всі deployments, services і secrets групи \"{{name}}\"?",
+    "services_few": "{{count}} сервіси",
+    "services_many": "{{count}} сервісів"
+  },
+  "table": {
+    "name": "Назва",
+    "namespace": "Namespace",
+    "image": "Образ",
+    "replicas": "Готово / Усього",
+    "revision": "Ревізія",
+    "status": "Статус"
+  },
+  "status": {
+    "healthy": "Здоровий",
+    "starting": "Запуск",
+    "restarting": "Перезапуск",
+    "degraded": "Проблеми",
+    "scaledToZero": "Вимкнено",
+    "disabled": "Disabled"
+  },
+  "statusModal": {
+    "open": "Деталі статусу",
+    "title": "Статус deployment",
+    "summary": {
+      "healthy": "Усі pod'и готові.",
+      "starting": "Deployment запускається. Одразу після створення це нормально.",
+      "degraded": "Частина pod'ів не готова. Відкрийте деталі, щоб побачити причину.",
+      "scaledToZero": "Реплік 0, pod'и не запущені.",
+      "disabled": "Deployment is disabled. Pods are stopped until you enable it again.",
+      "restarting": "Rolling restart триває: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} оновлено."
+    },
+    "reasonsTitle": "Чому такий статус",
+    "desired": "Бажано",
+    "ready": "Готово",
+    "available": "Доступно",
+    "updated": "Оновлено",
+    "reasons": {
+      "healthy": "Готово {{ready}} з {{desired}} реплік.",
+      "starting": "Deployment щойно створено або оновлюється.",
+      "scaledToZero": "Масштабовано до 0, pod'и не запущені.",
+      "disabled": "Disabled via Deployard. Enable to restore {{replicas}} replica(s).",
+      "podsNotReady": "Готово {{ready}} з {{desired}}, не всі pod'и пройшли readiness probes.",
+      "podsNotAvailable": "Доступно {{available}} з {{desired}}, pod'и ще не готові.",
+      "rolloutInProgress": "Оновлено {{updated}} з {{desired}}, триває rollout.",
+      "rolloutStalled": "Оновлення завершено, але pod'и не стають ready. Дивіться таблицю нижче.",
+      "restarting": "Pod створюються знову: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} оновлено."
+    },
+    "podsTitle": "Статус pod'ів",
+    "podsLoading": "Завантаження pod'ів...",
+    "podsEmpty": "Pod'и для цього deployment не знайдено.",
+    "podsHint": "Образ може бути відсутній у кластері. Зберіть його локально і завантажте в kind, або використайте registry.",
+    "podsColumns": {
+      "pod": "Pod",
+      "phase": "Фаза",
+      "container": "Контейнер",
+      "state": "Стан"
+    },
+    "containerStates": {
+      "ImagePullBackOff": "Не вдається завантажити образ",
+      "ErrImagePull": "Помилка завантаження образу",
+      "CrashLoopBackOff": "Контейнер падає і перезапускається",
+      "ContainerCreating": "Контейнер створюється",
+      "PodInitializing": "Ініціалізація pod'а",
+      "CreateContainerConfigError": "Помилка конфігурації контейнера",
+      "InvalidImageName": "Некоректна назва образу",
+      "CreateContainerError": "Не вдалося створити контейнер",
+      "RunContainerError": "Не вдалося запустити контейнер",
+      "waiting": "Очікування",
+      "running": "Працює, але не ready",
+      "terminated": "Завершено",
+      "pending": "Очікує планування"
+    }
+  },
+  "actions": {
+    "label": "Дії",
+    "view": "Перегляд",
+    "pods": "Pod'и",
+    "logs": "Логи",
+    "history": "Історія ревізій",
+    "console": "Консоль",
+    "restart": "Перезапустити deployment",
+    "delete": "Видалити deployment",
+    "disable": "Disable deployment",
+    "enable": "Enable deployment",
+    "enableAfterError": "Увімкнути знову. Під час вимкнення були помилки",
+    "error": "Не вдалося виконати дію"
+  },
+  "tabs": {
+    "ariaLabel": "Розділи deployment",
+    "overview": "Огляд",
+    "health": "Health probes",
+    "config": "Конфіг",
+    "history": "Історія",
+    "pods": "Pod'и",
+    "files": "Файли",
+    "logs": "Логи",
+    "console": "Консоль"
+  },
+  "files": {
+    "podLabel": "Pod",
+    "loading": "Завантаження файлів...",
+    "error": "Не вдалося завантажити файли",
+    "empty": "Ця папка порожня",
+    "noPods": "Немає pod для цього deployment",
+    "refresh": "Оновити",
+    "newFolder": "Нова папка",
+    "upload": "Завантажити файл",
+    "download": "Завантажити",
+    "rename": "Перейменувати",
+    "delete": "Видалити",
+    "folderPrompt": "Назва папки",
+    "renamePrompt": "Нова назва",
+    "deleteConfirm": "Видалити \"{{name}}\"?",
+    "previewEmpty": "Файл порожній",
+    "breadcrumbs": "Шлях",
+    "root": "Корінь",
+    "pod": "Pod",
+    "columns": {
+      "name": "Назва",
+      "size": "Розмір",
+      "modified": "Змінено",
+      "actions": "Дії"
+    }
+  },
+  "scale": {
+    "label": "Репліки",
+    "submit": "Застосувати",
+    "submitting": "Масштабування...",
+    "hint": "Скільки копій pod'ів має тримати deployment."
+  },
+  "disable": {
+    "disable": "Disable deployment",
+    "disabling": "Disabling...",
+    "disableHint": "Stops all pods and saves the current replica count for quick restore.",
+    "enable": "Enable deployment",
+    "enabling": "Enabling...",
+    "enableHint": "Restores {{replicas}} replica(s) and starts pods again.",
+    "enableErrorHint": "Під час вимкнення були помилки. Виправ image або config і увімкни знову ({{replicas}} реплік)."
+  },
+  "console": {
+    "connect": "Підключитися",
+    "connecting": "Підключення...",
+    "disconnect": "Відключитися",
+    "connected": "Підключено до {{pod}}",
+    "disconnected": "Сесію закрито",
+    "statusConnected": "Підключено",
+    "statusDisconnected": "Відключено",
+    "empty": "Підключіться, щоб відкрити shell у вибраному pod'і.",
+    "inputPlaceholder": "Введіть команди...",
+    "inputDisabled": "Спочатку підключіться до pod'а"
+  },
+  "detail": {
+    "subtitle": "Namespace: {{namespace}}",
+    "loading": "Завантаження deployment...",
+    "error": "Не вдалося завантажити deployment",
+    "historyTitle": "Історія ревізій",
+    "podsTitle": "Pod'и",
+    "logsTitle": "Логи",
+    "logsEmpty": "Немає pod'ів для перегляду логів"
+  },
+  "history": {
+    "loading": "Завантаження історії ревізій...",
+    "error": "Не вдалося завантажити історію",
+    "empty": "Ревізії не знайдено",
+    "current": "Поточна",
+    "rollback": "Rollback",
+    "table": {
+      "revision": "Ревізія",
+      "image": "Образ",
+      "replicas": "Репліки",
+      "created": "Створено",
+      "actions": "Дії"
+    }
+  },
+  "rollback": {
+    "title": "Підтвердіть rollback",
+    "subtitle": "Deployment: {{name}}",
+    "targetRevision": "Цільова ревізія",
+    "targetImage": "Цільовий образ",
+    "cancel": "Скасувати",
+    "confirm": "Rollback",
+    "submitting": "Rollback..."
+  },
+  "create": {
+    "title": "Новий deployment",
+    "namePlaceholder": "my-api",
+    "imagePlaceholder": "Оберіть з каталогу або введіть свій",
+    "replicasPlaceholder": "Репліки",
+    "portPlaceholder": "Порт контейнера",
+    "projectLabel": "Група проєкту",
+    "projectHint": "Deployments з однаковою міткою показуються разом у списку.",
+    "projectNone": "Без групи",
+    "projectExisting": "Додати до існуючої",
+    "projectNew": "Створити нову групу",
+    "projectNewPlaceholder": "my-project",
+    "submit": "Створити deployment",
+    "submitting": "Створення...",
+    "cancel": "Скасувати"
+  },
+  "image": {
+    "label": "Образ контейнера",
+    "submit": "Задеплоїти нову версію",
+    "submitting": "Деплой...",
+    "hint": "Оновлює шаблон deployment і запускає rolling rollout.",
+    "error": "Не вдалося оновити образ контейнера.",
+    "unchanged": "Цей образ уже задеплоєно."
+  },
+  "imagePicker": {
+    "placeholder": "nginx:1.27-alpine, redis:7-alpine, postgres:16-alpine...",
+    "browse": "Каталог образів",
+    "catalogHint": "{{count}} образів: Web server, Database, Runtime та ін.",
+    "customTitle": "Свій образ",
+    "customHint": "Будь-який registry/repository:tag",
+    "empty": "Нічого не знайдено. Введіть свій образ вище."
+  },
+  "delete": {
+    "title": "Видалити deployment",
+    "message": "Видалити deployment {{name}}? Усі pod'и буде видалено.",
+    "submit": "Видалити deployment"
+  },
+  "restart": {
+    "submit": "Перезапустити deployment",
+    "submitting": "Перезапуск...",
+    "hint": "Rolling restart перестворює всі pod'и з тим самим образом (як kubectl rollout restart).",
+    "bannerTitle": "Триває rollout",
+    "bannerProgress": "Готово {{ready}}/{{desired}}, оновлено {{updated}}/{{desired}}",
+    "bannerHint": "Pod'и перестворюються. Стежте за статусом на вкладці Pod'и.",
+    "rowProgress": "({{ready}}/{{desired}} ready)",
+    "error": "Не вдалося перезапустити deployment.",
+    "done": "Deployment перезапускається"
+  },
+  "config": {
+    "title": "Змінні середовища",
+    "loading": "Завантаження конфігурації...",
+    "error": "Не вдалося завантажити конфігурацію",
+    "empty": "Змінні не задано",
+    "namePlaceholder": "MYSQL_ROOT_PASSWORD",
+    "valuePlaceholder": "значення",
+    "add": "Додати змінну",
+    "remove": "Видалити",
+    "submit": "Зберегти",
+    "submitting": "Збереження...",
+    "portHint": "Порт контейнера: {{port}}",
+    "createHint": "Для образів з каталогу підставляються dev-значення. Перевірте перед створенням."
+  },
+  "healthProbes": {
+    "title": "Health probes",
+    "loading": "Завантаження конфігурації probes...",
+    "error": "Не вдалося завантажити health probes",
+    "empty": "Для основного контейнера probes не налаштовано",
+    "configTitle": "Налаштовані probes",
+    "podsTitle": "Readiness pod'ів",
+    "podsEmpty": "Немає pod'ів для перевірки",
+    "podReady": "Готовий",
+    "podNotReady": "Не готовий",
+    "podStates": {
+      "ready": "Ready",
+      "runningNotReady": "Працює, але не ready",
+      "pending": "Очікує",
+      "failed": "Помилка",
+      "notReady": "Не ready"
+    },
+    "types": {
+      "readiness": "Readiness",
+      "liveness": "Liveness",
+      "startup": "Startup"
+    },
+    "mechanisms": {
+      "http": "HTTP",
+      "tcp": "TCP",
+      "exec": "Exec",
+      "grpc": "gRPC",
+      "none": "Немає"
+    },
+    "columns": {
+      "type": "Тип",
+      "mechanism": "Механізм",
+      "target": "Ціль",
+      "timing": "Інтервали",
+      "pod": "Pod",
+      "phase": "Фаза",
+      "podStatus": "Readiness"
+    },
+    "timing": {
+      "start": "старт {{seconds}}с",
+      "every": "кожні {{seconds}}с",
+      "timeout": "таймаут {{seconds}}с"
+    }
+  }
+}

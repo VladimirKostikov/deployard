@@ -1,0 +1,13 @@
+node_modules
+**/node_modules
+**/dist
+.git
+.cursor
+.env
+**/.env
+*.log
+.DS_Store
+coverage
+apps/web/node_modules/.vite
+pnpm-debug.log
+**/*.tsbuildinfo

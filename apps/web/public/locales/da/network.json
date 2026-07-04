@@ -1,0 +1,81 @@
+{
+  "title": "Netværk",
+  "subtitle": "Services, Endpoints og Ingress: hvordan pods når hinanden i clustret",
+  "tabs": {
+    "ariaLabel": "Netværkssektioner",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Indlæser services...",
+    "error": "Kunne ikke indlæse services",
+    "empty": "Ingen services i dette namespace",
+    "table": {
+      "name": "Navn",
+      "type": "Type",
+      "clusterIp": "Cluster IP",
+      "ports": "Porte",
+      "selector": "Selector",
+      "actions": "Handlinger"
+    },
+    "actions": {
+      "delete": "Slet",
+      "open": "Åbn {{name}} i browser",
+      "openTooltip": "{{url}}: hvis siden ikke indlæses, kør i terminal: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Kopiér port-forward-kommando for {{name}}",
+      "copied": "Kommando kopieret",
+      "edit": "Rediger porte",
+      "editShort": "Porte"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Type",
+      "portsLabel": "Porte",
+      "port": "Service-port",
+      "targetPort": "Målport",
+      "nodePort": "NodePort",
+      "cancel": "Annuller",
+      "save": "Gem",
+      "saving": "Gemmer..."
+    },
+    "delete": {
+      "title": "Slet service",
+      "message": "Slet service {{name}}? Pods fortsætter med at køre, men DNS-navnet stopper med at virke."
+    },
+    "create": {
+      "title": "Opret service",
+      "name": "Service-navn",
+      "deployment": "Deployment",
+      "port": "Service-port",
+      "targetPort": "Target port (valgfri)",
+      "submit": "Opret service",
+      "submitting": "Opretter...",
+      "cancel": "Annuller"
+    }
+  },
+  "endpoints": {
+    "subtitle": "Pod IP'er bag hver service (administreres automatisk af Kubernetes)",
+    "loading": "Indlæser endpoints...",
+    "error": "Kunne ikke indlæse endpoints",
+    "empty": "Ingen endpoints endnu: opret en service for et deployment",
+    "table": {
+      "name": "Service",
+      "ports": "Porte",
+      "addresses": "Pod IP / navn"
+    }
+  },
+  "deployment": {
+    "title": "Tilknyttede services",
+    "loading": "Indlæser services...",
+    "error": "Kunne ikke indlæse services",
+    "empty": "Ingen service for dette deployment. Opret en på Netværk-siden.",
+    "openNetwork": "Åbn netværk",
+    "viewEndpoints": "Pod IP'er →"
+  }
+}

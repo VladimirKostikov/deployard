@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Worker nodes του cluster και pods που τρέχουν σε αυτά",
+  "loading": "Φόρτωση nodes...",
+  "error": "Αποτυχία φόρτωσης nodes",
+  "podsTitle": "Pods στο {{node}}",
+  "podsLoading": "Φόρτωση pods...",
+  "podsError": "Αποτυχία φόρτωσης pods για αυτό το node",
+  "podsEmpty": "Δεν υπάρχουν pods σε αυτό το node",
+  "table": {
+    "name": "Node",
+    "status": "Κατάσταση",
+    "roles": "Ρόλοι",
+    "pods": "Pods",
+    "version": "Kubelet",
+    "actions": "Ενέργειες"
+  },
+  "actions": {
+    "viewPods": "Προβολή pods"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Phase",
+    "ready": "Ready",
+    "yes": "Ναι",
+    "no": "Όχι"
+  }
+}

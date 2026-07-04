@@ -1,0 +1,32 @@
+{
+  "title": "Ingress",
+  "subtitle": "HTTP routing pravidla ve vybraném namespace",
+  "loading": "Načítání ingress pravidel...",
+  "error": "Nepodařilo se načíst ingress pravidla",
+  "empty": "V tomto namespace nejsou žádná ingress pravidla",
+  "create": {
+    "title": "Nový ingress",
+    "name": "Název",
+    "host": "Host (např. api.local)",
+    "path": "Path",
+    "service": "Název service",
+    "port": "Port service",
+    "submit": "Vytvořit ingress",
+    "submitting": "Vytváření...",
+    "cancel": "Zrušit"
+  },
+  "table": {
+    "name": "Název",
+    "host": "Host",
+    "path": "Path",
+    "service": "Backend",
+    "actions": "Akce"
+  },
+  "actions": {
+    "delete": "Smazat"
+  },
+  "delete": {
+    "title": "Smazat ingress",
+    "message": "Smazat ingress {{name}}?"
+  }
+}

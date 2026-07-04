@@ -1,0 +1,10 @@
+{
+  "DEPLOYMENT_NOT_FOUND": "Deploymenti ei leitud",
+  "POD_NOT_FOUND": "Podi ei leitud",
+  "NAMESPACE_NOT_FOUND": "Namespace'i ei leitud",
+  "ROLLBACK_FAILED": "Rollback ebaõnnestus",
+  "K8S_API_ERROR": "Kubernetes API viga",
+  "FORBIDDEN": "Ebapiisavad õigused",
+  "VALIDATION_ERROR": "Valideerimisviga",
+  "INTERNAL_ERROR": "Sisemine serveri viga"
+}

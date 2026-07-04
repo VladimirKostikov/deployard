@@ -1,0 +1,81 @@
+{
+  "title": "Hálózat",
+  "subtitle": "Services, Endpoints és Ingress: hogyan érik el egymást a podok a clusterben",
+  "tabs": {
+    "ariaLabel": "Hálózati szekciók",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Service-ek betöltése...",
+    "error": "Nem sikerült betölteni a service-eket",
+    "empty": "Nincsenek service-ek ebben a namespace-ben",
+    "table": {
+      "name": "Név",
+      "type": "Típus",
+      "clusterIp": "Cluster IP",
+      "ports": "Ports",
+      "selector": "Selector",
+      "actions": "Műveletek"
+    },
+    "actions": {
+      "delete": "Törlés",
+      "open": "{{name}} megnyitása böngészőben",
+      "openTooltip": "{{url}}: ha az oldal nem tölt be, futtasd terminálban: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Port-forward parancs másolása: {{name}}",
+      "copied": "Parancs másolva",
+      "edit": "Portok szerkesztése",
+      "editShort": "Ports"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Típus",
+      "portsLabel": "Ports",
+      "port": "Service port",
+      "targetPort": "Target port",
+      "nodePort": "NodePort",
+      "cancel": "Mégse",
+      "save": "Mentés",
+      "saving": "Mentés..."
+    },
+    "delete": {
+      "title": "Service törlése",
+      "message": "Töröljük a {{name}} service-t? A podok tovább futnak, de a DNS név nem fog működni."
+    },
+    "create": {
+      "title": "Service létrehozása",
+      "name": "Service neve",
+      "deployment": "Deployment",
+      "port": "Service port",
+      "targetPort": "Target port (opcionális)",
+      "submit": "Service létrehozása",
+      "submitting": "Létrehozás...",
+      "cancel": "Mégse"
+    }
+  },
+  "endpoints": {
+    "subtitle": "Pod IP-k minden service mögött (Kubernetes automatikusan kezeli)",
+    "loading": "Endpointok betöltése...",
+    "error": "Nem sikerült betölteni az endpointokat",
+    "empty": "Még nincsenek endpointok: hozz létre service-t egy deploymenthez",
+    "table": {
+      "name": "Service",
+      "ports": "Ports",
+      "addresses": "Pod IP / név"
+    }
+  },
+  "deployment": {
+    "title": "Kapcsolt service-ek",
+    "loading": "Service-ek betöltése...",
+    "error": "Nem sikerült betölteni a service-eket",
+    "empty": "Nincs service ehhez a deploymenthez. Hozz létre egyet a Hálózat oldalon.",
+    "openNetwork": "Hálózat megnyitása",
+    "viewEndpoints": "Pod IP-k →"
+  }
+}

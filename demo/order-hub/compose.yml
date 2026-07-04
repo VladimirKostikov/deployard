@@ -1,0 +1,104 @@
+name: order-hub
+
+services:
+
+  order-redis:
+    image: redis:7-alpine
+    ports:
+      - "3311:6379"
+    healthcheck:
+      test: ['CMD', 'redis-cli', 'ping']
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  catalog-svc:
+    build:
+      context: .
+      dockerfile: docker/catalog.Dockerfile
+    environment:
+      APP_NAME: catalog-svc
+      PORT: 3000
+    ports:
+      - "3000"
+    healthcheck:
+      test: ['CMD-SHELL', 'wget -qO- http://127.0.0.1:3000/health >/dev/null || exit 1']
+      interval: 5s
+      timeout: 5s
+      retries: 8
+
+  inventory-svc:
+    build:
+      context: .
+      dockerfile: docker/inventory.Dockerfile
+    environment:
+      APP_NAME: inventory-svc
+      PORT: 3000
+    ports:
+      - "3000"
+    healthcheck:
+      test: ['CMD-SHELL', 'wget -qO- http://127.0.0.1:3000/health >/dev/null || exit 1']
+      interval: 5s
+      timeout: 5s
+      retries: 8
+
+  orders-svc:
+    build:
+      context: .
+      dockerfile: docker/orders.Dockerfile
+    environment:
+      APP_NAME: orders-svc
+      CATALOG_URL: http://catalog-svc:3000
+      INVENTORY_URL: http://inventory-svc:3000
+      PORT: 3000
+    ports:
+      - "3000"
+    depends_on:
+      catalog-svc:
+        condition: service_healthy
+      inventory-svc:
+        condition: service_healthy
+    healthcheck:
+      test: ['CMD-SHELL', 'wget -qO- http://127.0.0.1:3000/health >/dev/null || exit 1']
+      interval: 5s
+      timeout: 5s
+      retries: 8
+
+  hub-gateway:
+    build:
+      context: .
+      dockerfile: docker/gateway.Dockerfile
+    environment:
+      APP_NAME: hub-gateway
+      REDIS_HOST: order-redis
+      REDIS_PORT: 6379
+      CATALOG_URL: http://catalog-svc:3000
+      INVENTORY_URL: http://inventory-svc:3000
+      ORDERS_URL: http://orders-svc:3000
+      PORT: 3000
+    ports:
+      - "3000"
+    depends_on:
+      order-redis:
+        condition: service_healthy
+      catalog-svc:
+        condition: service_healthy
+      inventory-svc:
+        condition: service_healthy
+      orders-svc:
+        condition: service_healthy
+    healthcheck:
+      test: ['CMD-SHELL', 'wget -qO- http://127.0.0.1:3000/health >/dev/null || exit 1']
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  web:
+    build:
+      context: .
+      dockerfile: docker/web.Dockerfile
+    ports:
+      - "3310:80"
+    depends_on:
+      hub-gateway:
+        condition: service_healthy

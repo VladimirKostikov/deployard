@@ -1,0 +1,26 @@
+{
+  "loading": "Laddar pods...",
+  "error": "Kunde inte ladda pods",
+  "empty": "Inga pods hittades för detta deployment",
+  "yes": "Ja",
+  "no": "Nej",
+  "table": {
+    "name": "Pod",
+    "phase": "Phase",
+    "ready": "Ready",
+    "restarts": "Omstarter",
+    "node": "Node",
+    "podIp": "Pod IP",
+    "ports": "Portar",
+    "actions": "Åtgärder"
+  },
+  "actions": {
+    "restart": "Starta om pod",
+    "delete": "Ta bort pod",
+    "console": "Öppna konsol"
+  },
+  "delete": {
+    "title": "Ta bort pod",
+    "message": "Ta bort pod {{name}}? Deployment-controllern kan skapa den igen."
+  }
+}

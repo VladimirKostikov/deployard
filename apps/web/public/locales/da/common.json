@@ -1,0 +1,26 @@
+{
+  "appTitle": "Deployard",
+  "language": "Sprog",
+  "theme": {
+    "label": "Tema",
+    "light": "Lys",
+    "dark": "Mørk",
+    "system": "Auto"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "admin": "Admin",
+    "logout": "Log ud"
+  },
+  "status": {
+    "connected": "API forbundet",
+    "checking": "Tjekker API..."
+  },
+  "cluster": {
+    "label": "Cluster"
+  },
+  "namespace": {
+    "label": "Namespace",
+    "all": "Alle namespaces"
+  }
+}

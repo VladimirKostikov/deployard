@@ -1,0 +1,29 @@
+{
+  "title": "Namespaces",
+  "subtitle": "Créer et supprimer des namespaces Kubernetes dans le cluster actif",
+  "loading": "Chargement des namespaces...",
+  "error": "Impossible de charger les namespaces",
+  "protected": "Protégé",
+  "create": {
+    "title": "Nouveau namespace",
+    "label": "Nom",
+    "placeholder": "staging",
+    "submit": "Créer le namespace",
+    "submitting": "Création...",
+    "cancel": "Annuler",
+    "hint": "Utilisez des noms DNS en minuscules. Les namespaces système avec le préfixe kube- ne peuvent pas être supprimés."
+  },
+  "table": {
+    "name": "Nom",
+    "status": "Statut",
+    "created": "Créé",
+    "actions": "Actions"
+  },
+  "actions": {
+    "delete": "Supprimer"
+  },
+  "delete": {
+    "title": "Supprimer le namespace",
+    "message": "Supprimer le namespace {{name}} ? Toutes les ressources qu'il contient seront supprimées."
+  }
+}

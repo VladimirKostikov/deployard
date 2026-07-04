@@ -1,0 +1,7 @@
+{
+  "title": "Logy",
+  "streaming": "Streamovanie logov...",
+  "error": "Nepodarilo sa streamovať logy",
+  "empty": "Zatiaľ žiadne riadky logu",
+  "autoScroll": "Automatický scroll"
+}

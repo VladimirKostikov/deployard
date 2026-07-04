@@ -1,0 +1,37 @@
+name: todo-board
+
+services:
+
+  todo-redis:
+    image: redis:7-alpine
+    ports:
+      - "6380:6379"
+    healthcheck:
+      test: ['CMD', 'redis-cli', 'ping']
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  todo-api:
+    build:
+      context: .
+      dockerfile: docker/api.Dockerfile
+    environment:
+      APP_NAME: todo-board
+      REDIS_HOST: todo-redis
+      REDIS_PORT: 6379
+      PORT: 3000
+    ports:
+      - "3210:3000"
+    depends_on:
+      todo-redis:
+        condition: service_healthy
+
+  todo-web:
+    build:
+      context: .
+      dockerfile: docker/web.Dockerfile
+    ports:
+      - "3211:80"
+    depends_on:
+      - todo-api

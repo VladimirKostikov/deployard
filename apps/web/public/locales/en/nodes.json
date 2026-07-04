@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Cluster worker nodes and pods scheduled on them",
+  "loading": "Loading nodes...",
+  "error": "Failed to load nodes",
+  "podsTitle": "Pods on {{node}}",
+  "podsLoading": "Loading pods...",
+  "podsError": "Failed to load pods for this node",
+  "podsEmpty": "No pods on this node",
+  "table": {
+    "name": "Node",
+    "status": "Status",
+    "roles": "Roles",
+    "pods": "Pods",
+    "version": "Kubelet",
+    "actions": "Actions"
+  },
+  "actions": {
+    "viewPods": "View pods"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Phase",
+    "ready": "Ready",
+    "yes": "Yes",
+    "no": "No"
+  }
+}

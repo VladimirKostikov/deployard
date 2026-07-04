@@ -1,0 +1,66 @@
+{
+  "title": "Metriken",
+  "subtitle": "Live-Statistiken vom API-Prozess",
+  "scopeNote": "HTTP-Verkehr, Latenz und Node.js-Runtime. Cluster-Metriken sind nicht enthalten.",
+  "loading": "Metriken werden geladen...",
+  "error": "Metriken-Dashboard konnte nicht geladen werden",
+  "updatedAt": "Aktualisiert um {{time}}",
+  "empty": "Noch keine Daten",
+  "header": {
+    "healthy": "Keine Serverfehler im aktuellen Fenster",
+    "errors": "{{count}} Serverfehler ({{rate}})"
+  },
+  "cards": {
+    "requests": "HTTP-Anfragen",
+    "requestsHint": "Gesamt seit Prozessstart",
+    "throughput": "Durchsatz",
+    "throughputHint": "Durchschnittliche Anfragen pro Sekunde",
+    "errorRate": "Fehlerrate",
+    "errorRateHint": "{{count}} Antworten mit Status 5xx",
+    "p95": "Latenz p95",
+    "p95Hint": "95% der Anfragen waren schneller",
+    "memory": "Speicher (RSS)",
+    "memoryHint": "Resident Set Size des API-Prozesses",
+    "uptime": "Laufzeit",
+    "uptimeHint": "Zeit seit Prozessstart"
+  },
+  "sections": {
+    "latency": "Antwortlatenz",
+    "byStatus": "Anfragen nach Status",
+    "byMethod": "Anfragen nach Methode",
+    "routes": "Top-Routen",
+    "process": "Prozessressourcen"
+  },
+  "latency": {
+    "subtitle": "Histogramm-Perzentile aus Request-Dauer",
+    "samples": "{{count}} Stichproben",
+    "p50": "p50",
+    "p95": "p95",
+    "p99": "p99",
+    "avg": "Durchschnitt"
+  },
+  "routes": {
+    "subtitle": "Meistgenutzte API-Routen mit Durchschnittsdauer und 5xx",
+    "columns": {
+      "route": "Route",
+      "requests": "Anfragen",
+      "avgDuration": "Ø Zeit",
+      "errors": "5xx"
+    }
+  },
+  "process": {
+    "subtitle": "Node.js-Runtime-Zähler aus Prometheus-Standardmetriken",
+    "rss": "RSS-Speicher",
+    "heap": "Heap genutzt",
+    "cpuUser": "CPU User-Zeit",
+    "cpuSystem": "CPU System-Zeit",
+    "eventLoopLag": "Event-Loop-Lag",
+    "uptime": "Prozesslaufzeit"
+  },
+  "units": {
+    "seconds": "Sek",
+    "minutes": "Min",
+    "hours": "Std",
+    "perSecond": "Anfr/s"
+  }
+}

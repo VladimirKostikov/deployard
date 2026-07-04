@@ -1,0 +1,29 @@
+{
+  "title": "Namespaces",
+  "subtitle": "Δημιουργία και διαγραφή Kubernetes namespaces στο ενεργό cluster",
+  "loading": "Φόρτωση namespaces...",
+  "error": "Αποτυχία φόρτωσης namespaces",
+  "protected": "Προστατευμένο",
+  "create": {
+    "title": "Νέο namespace",
+    "label": "Όνομα",
+    "placeholder": "staging",
+    "submit": "Δημιουργία namespace",
+    "submitting": "Δημιουργία...",
+    "cancel": "Ακύρωση",
+    "hint": "Χρησιμοποιήστε DNS ονόματα με πεζά. Τα system namespaces με πρόθεμα kube- δεν μπορούν να διαγραφούν."
+  },
+  "table": {
+    "name": "Όνομα",
+    "status": "Κατάσταση",
+    "created": "Δημιουργήθηκε",
+    "actions": "Ενέργειες"
+  },
+  "actions": {
+    "delete": "Διαγραφή"
+  },
+  "delete": {
+    "title": "Διαγραφή namespace",
+    "message": "Διαγραφή namespace {{name}}; Όλοι οι πόροι μέσα του θα αφαιρεθούν."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Ingress",
+  "subtitle": "HTTP routing szabályok a kiválasztott namespace-ben",
+  "loading": "Ingress szabályok betöltése...",
+  "error": "Nem sikerült betölteni az ingress szabályokat",
+  "empty": "Nincsenek ingress szabályok ebben a namespace-ben",
+  "create": {
+    "title": "Új ingress",
+    "name": "Név",
+    "host": "Host (pl. api.local)",
+    "path": "Path",
+    "service": "Service neve",
+    "port": "Service port",
+    "submit": "Ingress létrehozása",
+    "submitting": "Létrehozás...",
+    "cancel": "Mégse"
+  },
+  "table": {
+    "name": "Név",
+    "host": "Host",
+    "path": "Path",
+    "service": "Backend",
+    "actions": "Műveletek"
+  },
+  "actions": {
+    "delete": "Törlés"
+  },
+  "delete": {
+    "title": "Ingress törlése",
+    "message": "Töröljük a {{name}} ingress-t?"
+  }
+}

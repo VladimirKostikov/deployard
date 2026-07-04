@@ -1,0 +1,8 @@
+{
+  "name": "order-hub-catalog",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

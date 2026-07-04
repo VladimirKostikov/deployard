@@ -1,0 +1,26 @@
+{
+  "appTitle": "Deployard",
+  "language": "Kalba",
+  "theme": {
+    "label": "Tema",
+    "light": "Šviesi",
+    "dark": "Tamsi",
+    "system": "Auto"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "admin": "Admin",
+    "logout": "Atsijungti"
+  },
+  "status": {
+    "connected": "API prijungtas",
+    "checking": "Tikrinama API..."
+  },
+  "cluster": {
+    "label": "Cluster"
+  },
+  "namespace": {
+    "label": "Namespace",
+    "all": "Visi namespaces"
+  }
+}

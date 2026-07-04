@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Replikaer opdateret",
+    "scaleError": "Kunne ikke skalere deployment",
+    "imageSuccess": "Container image opdateret",
+    "imageError": "Kunne ikke opdatere container image",
+    "deleteSuccess": "Deployment slettet",
+    "deleteError": "Kunne ikke slette deployment",
+    "createSuccess": "Deployment oprettet",
+    "createError": "Kunne ikke oprette deployment",
+    "configSaved": "Konfiguration gemt",
+    "configError": "Kunne ikke gemme konfiguration",
+    "restartSuccess": "Deployment genstartet",
+    "restartError": "Kunne ikke genstarte deployment",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback gennemført",
+    "rollbackError": "Rollback mislykkedes",
+    "projectGroupDeleteSuccess": "Projektgruppe slettet",
+    "projectGroupDeleteError": "Kunne ikke slette projektgruppe",
+    "projectGroupRestartSuccess": "Projektgruppe genstartet",
+    "projectGroupRestartError": "Kunne ikke genstarte projektgruppe",
+    "projectGroupDisableSuccess": "Projektgruppe deaktiveret",
+    "projectGroupDisableError": "Kunne ikke deaktivere projektgruppe",
+    "filesFolderCreated": "Mappe oprettet",
+    "filesUploaded": "Fil uploadet",
+    "filesDeleted": "Slettet",
+    "filesRenamed": "Omdøbt",
+    "filesError": "Filhandling mislykkedes"
+  },
+  "pod": {
+    "restartSuccess": "Pod genstartet",
+    "restartError": "Kunne ikke genstarte pod",
+    "deleteSuccess": "Pod slettet",
+    "deleteError": "Kunne ikke slette pod"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service oprettet",
+    "serviceCreateError": "Kunne ikke oprette service",
+    "serviceDeleteSuccess": "Service slettet",
+    "serviceDeleteError": "Kunne ikke slette service",
+    "serviceUpdateSuccess": "Service opdateret",
+    "serviceUpdateError": "Kunne ikke opdatere service",
+    "tunnelError": "Kunne ikke åbne service-adgang",
+    "openBlocked": "Browseren blokerede den nye fane. Tillad pop-ups for dette site.",
+    "openError": "Kunne ikke åbne {{name}}. Tjek at pods kører.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Ingress-regel slettet",
+    "ingressDeleteError": "Kunne ikke slette ingress-regel"
+  },
+  "ingress": {
+    "createSuccess": "Ingress-regel oprettet",
+    "createError": "Kunne ikke oprette ingress-regel",
+    "deleteSuccess": "Ingress-regel slettet",
+    "deleteError": "Kunne ikke slette ingress-regel"
+  },
+  "namespace": {
+    "createSuccess": "Namespace oprettet",
+    "createError": "Kunne ikke oprette namespace",
+    "deleteSuccess": "Namespace slettet",
+    "deleteError": "Kunne ikke slette namespace"
+  },
+  "import": {
+    "buildSuccess": "Images bygget",
+    "buildError": "Kunne ikke bygge images",
+    "rebuildSuccess": "Docker Compose genopbygget og startet",
+    "rebuildError": "Kunne ikke genopbygge projekt",
+    "loadSuccess": "Images indlæst i cluster",
+    "loadError": "Kunne ikke indlæse images i cluster",
+    "applySuccess": "Projekt importeret til Kubernetes",
+    "applyWithImages": "Projekt importeret, {{count}} images indlæst i kind",
+    "openImportedApp": "Åbner app på {{url}}",
+    "openUnavailable": "Import færdig, men app-URL er ikke klar endnu. Åbn den fra Network → web.",
+    "applyError": "Kunne ikke importere projekt",
+    "previewError": "Kunne ikke bygge preview"
+  },
+  "admin": {
+    "userSaveSuccess": "Bruger gemt",
+    "userSaveError": "Kunne ikke gemme bruger",
+    "userDeleteSuccess": "Bruger slettet",
+    "userDeleteError": "Kunne ikke slette bruger",
+    "roleSaveSuccess": "Rolle gemt",
+    "roleSaveError": "Kunne ikke gemme rolle",
+    "roleDeleteSuccess": "Rolle slettet",
+    "roleDeleteError": "Kunne ikke slette rolle",
+    "permissionSaveSuccess": "Tilladelse gemt",
+    "permissionSaveError": "Kunne ikke gemme tilladelse",
+    "permissionDeleteSuccess": "Tilladelse slettet",
+    "permissionDeleteError": "Kunne ikke slette tilladelse"
+  }
+}

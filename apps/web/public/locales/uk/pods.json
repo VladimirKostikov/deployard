@@ -1,0 +1,26 @@
+{
+  "loading": "Завантаження pod'ів...",
+  "error": "Не вдалося завантажити pod'и",
+  "empty": "Pod'ів для цього deployment не знайдено",
+  "yes": "Так",
+  "no": "Ні",
+  "table": {
+    "name": "Pod",
+    "phase": "Фаза",
+    "ready": "Ready",
+    "restarts": "Перезапуски",
+    "node": "Вузол",
+    "podIp": "IP pod'а",
+    "ports": "Порти",
+    "actions": "Дії"
+  },
+  "actions": {
+    "restart": "Перезапустити pod",
+    "delete": "Видалити pod",
+    "console": "Відкрити консоль"
+  },
+  "delete": {
+    "title": "Видалити pod",
+    "message": "Видалити pod {{name}}? Контролер deployment може створити його знову."
+  }
+}

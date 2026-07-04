@@ -1,0 +1,29 @@
+{
+  "title": "Namespaces",
+  "subtitle": "Skapa och ta bort Kubernetes namespaces i det aktiva clustret",
+  "loading": "Laddar namespaces...",
+  "error": "Kunde inte ladda namespaces",
+  "protected": "Skyddad",
+  "create": {
+    "title": "Nytt namespace",
+    "label": "Namn",
+    "placeholder": "staging",
+    "submit": "Skapa namespace",
+    "submitting": "Skapar...",
+    "cancel": "Avbryt",
+    "hint": "Använd gemener enligt DNS. System-namespaces med kube- prefix kan inte tas bort."
+  },
+  "table": {
+    "name": "Namn",
+    "status": "Status",
+    "created": "Skapad",
+    "actions": "Åtgärder"
+  },
+  "actions": {
+    "delete": "Ta bort"
+  },
+  "delete": {
+    "title": "Ta bort namespace",
+    "message": "Ta bort namespace {{name}}? Alla resurser i det tas bort."
+  }
+}

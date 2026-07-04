@@ -1,0 +1,79 @@
+nameOverride: ""
+fullnameOverride: ""
+
+imagePullPolicy: IfNotPresent
+
+namespace: dpd
+
+api:
+  replicaCount: 1
+  image:
+    repository: docker-api
+    tag: latest
+  port: 3000
+  secrets:
+    create: true
+    jwtSecret: ""
+    databaseUrl: ""
+    webhookSecret: ""
+  env:
+    appEnv: production
+    k8sConfigMode: cluster
+    k8sSkipTlsVerify: auto
+    corsOrigin: http://localhost:30080
+    swaggerEnabled: false
+    metricsPublic: false
+    dbSeed: false
+    dbSynchronize: false
+    dbMigrate: true
+    cookieSecure: false
+    webhookAllowedNamespaces: ""
+  resources: {}
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 1000
+    readOnlyRootFilesystem: false
+    allowPrivilegeEscalation: false
+
+web:
+  replicaCount: 1
+  image:
+    repository: docker-web
+    tag: latest
+  port: 80
+  service:
+    type: NodePort
+    nodePort: 30080
+  resources: {}
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 101
+    readOnlyRootFilesystem: false
+    allowPrivilegeEscalation: false
+
+ingress:
+  enabled: false
+  className: nginx
+  host: dpd.local
+  tls: false
+
+serviceAccount:
+  create: true
+  name: dpd-api
+
+rbac:
+  create: true
+  clusterScoped: false
+
+prometheus:
+  serviceMonitor:
+    enabled: false
+    interval: 30s
+
+postgres:
+  enabled: true
+  image: postgres:16-alpine
+  database: dpd
+  user: dpd
+  password: ""
+  storage: 1Gi

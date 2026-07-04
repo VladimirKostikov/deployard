@@ -1,0 +1,32 @@
+{
+  "title": "Ingress",
+  "subtitle": "HTTP marsruutimisreeglid valitud namespace'is",
+  "loading": "Laadin ingress reegleid...",
+  "error": "Ingress reeglite laadimine ebaõnnestus",
+  "empty": "Selles namespace'is pole ingress reegleid",
+  "create": {
+    "title": "Uus ingress",
+    "name": "Nimi",
+    "host": "Host (nt api.local)",
+    "path": "Tee",
+    "service": "Service nimi",
+    "port": "Service port",
+    "submit": "Loo ingress",
+    "submitting": "Loon...",
+    "cancel": "Tühista"
+  },
+  "table": {
+    "name": "Nimi",
+    "host": "Host",
+    "path": "Tee",
+    "service": "Backend",
+    "actions": "Toimingud"
+  },
+  "actions": {
+    "delete": "Kustuta"
+  },
+  "delete": {
+    "title": "Kustuta ingress",
+    "message": "Kustutada ingress {{name}}?"
+  }
+}

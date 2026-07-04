@@ -1,0 +1,81 @@
+{
+  "title": "Мережа",
+  "subtitle": "Services, Endpoints та Ingress: як pod'и спілкуються в кластері",
+  "tabs": {
+    "ariaLabel": "Розділи мережі",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Завантаження services...",
+    "error": "Не вдалося завантажити services",
+    "empty": "У цьому namespace немає services",
+    "table": {
+      "name": "Назва",
+      "type": "Тип",
+      "clusterIp": "Cluster IP",
+      "ports": "Порти",
+      "selector": "Selector",
+      "actions": "Дії"
+    },
+    "actions": {
+      "delete": "Видалити",
+      "open": "Відкрити {{name}} у браузері",
+      "openTooltip": "{{url}}: якщо сторінка не відкривається, виконай у терміналі: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Скопіювати команду port-forward для {{name}}",
+      "copied": "Команду скопійовано",
+      "edit": "Редагувати порти",
+      "editShort": "Порти"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Тип",
+      "portsLabel": "Порти",
+      "port": "Порт service",
+      "targetPort": "Target port",
+      "nodePort": "NodePort",
+      "cancel": "Скасувати",
+      "save": "Зберегти",
+      "saving": "Збереження..."
+    },
+    "delete": {
+      "title": "Видалити service",
+      "message": "Видалити service {{name}}? Pod'и залишаться, але DNS-ім'я перестане працювати."
+    },
+    "create": {
+      "title": "Створити service",
+      "name": "Назва service",
+      "deployment": "Deployment",
+      "port": "Порт service",
+      "targetPort": "Target port (необов'язково)",
+      "submit": "Створити service",
+      "submitting": "Створення...",
+      "cancel": "Скасувати"
+    }
+  },
+  "endpoints": {
+    "subtitle": "IP pod'ів за кожним service (керується Kubernetes автоматично)",
+    "loading": "Завантаження endpoints...",
+    "error": "Не вдалося завантажити endpoints",
+    "empty": "Endpoints ще немає: створіть service для deployment",
+    "table": {
+      "name": "Service",
+      "ports": "Порти",
+      "addresses": "IP pod'а / назва"
+    }
+  },
+  "deployment": {
+    "title": "Пов'язані services",
+    "loading": "Завантаження services...",
+    "error": "Не вдалося завантажити services",
+    "empty": "Для цього deployment немає service. Створіть його на сторінці Мережа.",
+    "openNetwork": "Відкрити мережу",
+    "viewEndpoints": "IP pod'ів →"
+  }
+}

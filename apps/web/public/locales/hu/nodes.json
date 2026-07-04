@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Cluster worker node-jai és a rajtuk ütemezett podok",
+  "loading": "Node-ok betöltése...",
+  "error": "Nem sikerült betölteni a node-okat",
+  "podsTitle": "Podok a {{node}} node-on",
+  "podsLoading": "Podok betöltése...",
+  "podsError": "Nem sikerült betölteni a podokat ehhez a node-hoz",
+  "podsEmpty": "Nincsenek podok ezen a node-on",
+  "table": {
+    "name": "Node",
+    "status": "Állapot",
+    "roles": "Szerepkörök",
+    "pods": "Pods",
+    "version": "Kubelet",
+    "actions": "Műveletek"
+  },
+  "actions": {
+    "viewPods": "Podok megtekintése"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Phase",
+    "ready": "Ready",
+    "yes": "Igen",
+    "no": "Nem"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Logovi",
+  "streaming": "Streamanje logova...",
+  "error": "Streamanje logova nije uspjelo",
+  "empty": "Još nema redaka logova",
+  "autoScroll": "Automatski scroll"
+}

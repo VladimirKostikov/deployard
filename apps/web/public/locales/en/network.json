@@ -1,0 +1,81 @@
+{
+  "title": "Network",
+  "subtitle": "Services, Endpoints, and Ingress: how pods reach each other in the cluster",
+  "tabs": {
+    "ariaLabel": "Network sections",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Loading services...",
+    "error": "Failed to load services",
+    "empty": "No services in this namespace",
+    "table": {
+      "name": "Name",
+      "type": "Type",
+      "clusterIp": "Cluster IP",
+      "ports": "Ports",
+      "selector": "Selector",
+      "actions": "Actions"
+    },
+    "actions": {
+      "delete": "Delete",
+      "open": "Open {{name}} in browser",
+      "openTooltip": "Open in a new tab via dashboard. Manual port-forward: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Copy port-forward command for {{name}}",
+      "copied": "Command copied",
+      "edit": "Edit ports",
+      "editShort": "Ports"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Type",
+      "portsLabel": "Ports",
+      "port": "Service port",
+      "targetPort": "Target port",
+      "nodePort": "NodePort",
+      "cancel": "Cancel",
+      "save": "Save",
+      "saving": "Saving..."
+    },
+    "delete": {
+      "title": "Delete service",
+      "message": "Delete service {{name}}? Pods stay running but the DNS name will stop working."
+    },
+    "create": {
+      "title": "Create service",
+      "name": "Service name",
+      "deployment": "Deployment",
+      "port": "Service port",
+      "targetPort": "Target port (optional)",
+      "submit": "Create service",
+      "submitting": "Creating...",
+      "cancel": "Cancel"
+    }
+  },
+  "endpoints": {
+    "subtitle": "Pod IPs behind each service (managed automatically by Kubernetes)",
+    "loading": "Loading endpoints...",
+    "error": "Failed to load endpoints",
+    "empty": "No endpoints yet: create a service for a deployment",
+    "table": {
+      "name": "Service",
+      "ports": "Ports",
+      "addresses": "Pod IP / name"
+    }
+  },
+  "deployment": {
+    "title": "Linked services",
+    "loading": "Loading services...",
+    "error": "Failed to load services",
+    "empty": "No service for this deployment. Create one on the Network page.",
+    "openNetwork": "Open network",
+    "viewEndpoints": "Pod IPs →"
+  }
+}

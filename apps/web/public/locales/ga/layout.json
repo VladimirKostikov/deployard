@@ -1,0 +1,32 @@
+{
+  "appTitle": "Deployard",
+  "sections": {
+    "main": "Príomh",
+    "admin": "Rialú rochtana",
+    "settings": "Socruithe"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "import": "Iompórtáil",
+    "faq": "Ceisteanna coitianta",
+    "nodes": "Nóid",
+    "namespaces": "Namespaces",
+    "ingress": "Ingress",
+    "network": "Líonra",
+    "metrics": "Meastacháin",
+    "admin": "Riarachán",
+    "users": "Úsáideoirí",
+    "roles": "Róil",
+    "permissions": "Ceadanna",
+    "backToApp": "Ar ais chuig an aip",
+    "logout": "Sínigh amach"
+  },
+  "topbar": {
+    "connected": "API ceangailte",
+    "checking": "Ag seiceáil an API..."
+  },
+  "mobileMenu": {
+    "open": "Oscail an roghchlár",
+    "close": "Dún an roghchlár"
+  }
+}

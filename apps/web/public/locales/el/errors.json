@@ -1,0 +1,10 @@
+{
+  "DEPLOYMENT_NOT_FOUND": "Το deployment δεν βρέθηκε",
+  "POD_NOT_FOUND": "Το pod δεν βρέθηκε",
+  "NAMESPACE_NOT_FOUND": "Το namespace δεν βρέθηκε",
+  "ROLLBACK_FAILED": "Το rollback απέτυχε",
+  "K8S_API_ERROR": "Σφάλμα Kubernetes API",
+  "FORBIDDEN": "Ανεπαρκή δικαιώματα",
+  "VALIDATION_ERROR": "Σφάλμα επικύρωσης",
+  "INTERNAL_ERROR": "Εσωτερικό σφάλμα διακομιστή"
+}

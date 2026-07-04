@@ -1,0 +1,87 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "dpd.api.fullname" . }}
+  namespace: {{ .Values.namespace }}
+  labels:
+    {{- include "dpd.labels" . | nindent 4 }}
+    app.kubernetes.io/component: api
+spec:
+  replicas: {{ .Values.api.replicaCount }}
+  selector:
+    matchLabels:
+      {{- include "dpd.selectorLabels" . | nindent 6 }}
+      app.kubernetes.io/component: api
+  template:
+    metadata:
+      labels:
+        {{- include "dpd.selectorLabels" . | nindent 8 }}
+        app.kubernetes.io/component: api
+    spec:
+      serviceAccountName: {{ .Values.serviceAccount.name }}
+      securityContext:
+        runAsNonRoot: {{ .Values.api.securityContext.runAsNonRoot }}
+        runAsUser: {{ .Values.api.securityContext.runAsUser }}
+      containers:
+        - name: api
+          image: "{{ .Values.api.image.repository }}:{{ .Values.api.image.tag }}"
+          imagePullPolicy: {{ .Values.imagePullPolicy }}
+          securityContext:
+            allowPrivilegeEscalation: {{ .Values.api.securityContext.allowPrivilegeEscalation }}
+            readOnlyRootFilesystem: {{ .Values.api.securityContext.readOnlyRootFilesystem }}
+          ports:
+            - containerPort: {{ .Values.api.port }}
+          env:
+            - name: PORT
+              value: "{{ .Values.api.port }}"
+            - name: APP_ENV
+              value: {{ .Values.api.env.appEnv | quote }}
+            - name: K8S_CONFIG_MODE
+              value: {{ .Values.api.env.k8sConfigMode | quote }}
+            - name: K8S_SKIP_TLS_VERIFY
+              value: {{ .Values.api.env.k8sSkipTlsVerify | quote }}
+            - name: CORS_ORIGIN
+              value: {{ .Values.api.env.corsOrigin | quote }}
+            - name: SWAGGER_ENABLED
+              value: {{ .Values.api.env.swaggerEnabled | quote }}
+            - name: METRICS_PUBLIC
+              value: {{ .Values.api.env.metricsPublic | quote }}
+            - name: DB_SEED
+              value: {{ .Values.api.env.dbSeed | quote }}
+            - name: DB_SYNCHRONIZE
+              value: {{ .Values.api.env.dbSynchronize | quote }}
+            - name: DB_MIGRATE
+              value: {{ .Values.api.env.dbMigrate | quote }}
+            - name: COOKIE_SECURE
+              value: {{ .Values.api.env.cookieSecure | quote }}
+            - name: WEBHOOK_ALLOWED_NAMESPACES
+              value: {{ .Values.api.env.webhookAllowedNamespaces | quote }}
+            {{- if .Values.api.secrets.create }}
+            - name: JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "dpd.api.fullname" . }}-secrets
+                  key: JWT_SECRET
+            - name: DATABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "dpd.api.fullname" . }}-secrets
+                  key: DATABASE_URL
+            - name: DEPLOY_WEBHOOK_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "dpd.api.fullname" . }}-secrets
+                  key: DEPLOY_WEBHOOK_SECRET
+            {{- end }}
+          readinessProbe:
+            httpGet:
+              path: /api/health/ready
+              port: {{ .Values.api.port }}
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /api/health
+              port: {{ .Values.api.port }}
+            initialDelaySeconds: 10
+            periodSeconds: 20

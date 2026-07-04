@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Replicas atualizadas",
+    "scaleError": "Falha ao escalar deployment",
+    "imageSuccess": "Imagem do container atualizada",
+    "imageError": "Falha ao atualizar imagem do container",
+    "deleteSuccess": "Deployment eliminado",
+    "deleteError": "Falha ao eliminar deployment",
+    "createSuccess": "Deployment criado",
+    "createError": "Falha ao criar deployment",
+    "configSaved": "Configuração guardada",
+    "configError": "Falha ao guardar configuração",
+    "restartSuccess": "Deployment reiniciado",
+    "restartError": "Falha ao reiniciar deployment",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback concluído",
+    "rollbackError": "Rollback falhou",
+    "projectGroupDeleteSuccess": "Grupo de projeto eliminado",
+    "projectGroupDeleteError": "Falha ao eliminar grupo de projeto",
+    "projectGroupRestartSuccess": "Grupo reiniciado",
+    "projectGroupRestartError": "Falha ao reiniciar o grupo",
+    "projectGroupDisableSuccess": "Grupo desativado",
+    "projectGroupDisableError": "Falha ao desativar o grupo",
+    "filesFolderCreated": "Pasta criada",
+    "filesUploaded": "Ficheiro enviado",
+    "filesDeleted": "Eliminado",
+    "filesRenamed": "Renomeado",
+    "filesError": "Operação de ficheiro falhou"
+  },
+  "pod": {
+    "restartSuccess": "Pod reiniciado",
+    "restartError": "Falha ao reiniciar pod",
+    "deleteSuccess": "Pod eliminado",
+    "deleteError": "Falha ao eliminar pod"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service criado",
+    "serviceCreateError": "Falha ao criar service",
+    "serviceDeleteSuccess": "Service eliminado",
+    "serviceDeleteError": "Falha ao eliminar service",
+    "serviceUpdateSuccess": "Service atualizado",
+    "serviceUpdateError": "Falha ao atualizar service",
+    "tunnelError": "Falha ao abrir acesso ao service",
+    "openBlocked": "O browser bloqueou o novo separador. Permita pop-ups neste site.",
+    "openError": "Não foi possível abrir {{name}}. Verifique se os pod estão a correr.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Regra ingress eliminada",
+    "ingressDeleteError": "Falha ao eliminar regra ingress"
+  },
+  "ingress": {
+    "createSuccess": "Regra ingress criada",
+    "createError": "Falha ao criar regra ingress",
+    "deleteSuccess": "Regra ingress eliminada",
+    "deleteError": "Falha ao eliminar regra ingress"
+  },
+  "namespace": {
+    "createSuccess": "Namespace criado",
+    "createError": "Falha ao criar namespace",
+    "deleteSuccess": "Namespace eliminado",
+    "deleteError": "Falha ao eliminar namespace"
+  },
+  "import": {
+    "buildSuccess": "Imagens construídas",
+    "buildError": "Falha ao construir imagens",
+    "rebuildSuccess": "Docker Compose reconstruído e iniciado",
+    "rebuildError": "Falha ao reconstruir projeto",
+    "loadSuccess": "Imagens carregadas no cluster",
+    "loadError": "Falha ao carregar imagens no cluster",
+    "applySuccess": "Projeto importado para Kubernetes",
+    "applyWithImages": "Projeto importado, {{count}} imagens carregadas no kind",
+    "openImportedApp": "A abrir app em {{url}}",
+    "openUnavailable": "Import concluído, mas o URL ainda não está pronto. Abra-o em Network → web.",
+    "applyError": "Falha ao importar projeto",
+    "previewError": "Falha ao gerar pré-visualização"
+  },
+  "admin": {
+    "userSaveSuccess": "Utilizador guardado",
+    "userSaveError": "Falha ao guardar utilizador",
+    "userDeleteSuccess": "Utilizador eliminado",
+    "userDeleteError": "Falha ao eliminar utilizador",
+    "roleSaveSuccess": "Função guardada",
+    "roleSaveError": "Falha ao guardar função",
+    "roleDeleteSuccess": "Função eliminada",
+    "roleDeleteError": "Falha ao eliminar função",
+    "permissionSaveSuccess": "Permissão guardada",
+    "permissionSaveError": "Falha ao guardar permissão",
+    "permissionDeleteSuccess": "Permissão eliminada",
+    "permissionDeleteError": "Falha ao eliminar permissão"
+  }
+}

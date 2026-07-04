@@ -1,0 +1,32 @@
+{
+  "title": "Ingress",
+  "subtitle": "Правила HTTP-маршрутизації у вибраному namespace",
+  "loading": "Завантаження ingress-правил...",
+  "error": "Не вдалося завантажити ingress-правила",
+  "empty": "У цьому namespace немає ingress-правил",
+  "create": {
+    "title": "Новий ingress",
+    "name": "Назва",
+    "host": "Host (напр. api.local)",
+    "path": "Path",
+    "service": "Назва service",
+    "port": "Порт service",
+    "submit": "Створити ingress",
+    "submitting": "Створення...",
+    "cancel": "Скасувати"
+  },
+  "table": {
+    "name": "Назва",
+    "host": "Host",
+    "path": "Path",
+    "service": "Backend",
+    "actions": "Дії"
+  },
+  "actions": {
+    "delete": "Видалити"
+  },
+  "delete": {
+    "title": "Видалити ingress",
+    "message": "Видалити ingress {{name}}?"
+  }
+}

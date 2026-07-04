@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Τα replicas ενημερώθηκαν",
+    "scaleError": "Αποτυχία scale deployment",
+    "imageSuccess": "Το container image ενημερώθηκε",
+    "imageError": "Αποτυχία ενημέρωσης container image",
+    "deleteSuccess": "Το deployment διαγράφηκε",
+    "deleteError": "Αποτυχία διαγραφής deployment",
+    "createSuccess": "Το deployment δημιουργήθηκε",
+    "createError": "Αποτυχία δημιουργίας deployment",
+    "configSaved": "Η ρύθμιση αποθηκεύτηκε",
+    "configError": "Αποτυχία αποθήκευσης ρύθμισης",
+    "restartSuccess": "Το deployment επανεκκινήθηκε",
+    "restartError": "Αποτυχία επανεκκίνησης deployment",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Το rollback ολοκληρώθηκε",
+    "rollbackError": "Το rollback απέτυχε",
+    "projectGroupDeleteSuccess": "Η ομάδα project διαγράφηκε",
+    "projectGroupDeleteError": "Αποτυχία διαγραφής ομάδας project",
+    "projectGroupRestartSuccess": "Η ομάδα επανεκκινήθηκε",
+    "projectGroupRestartError": "Αποτυχία επανεκκίνησης ομάδας",
+    "projectGroupDisableSuccess": "Η ομάδα απενεργοποιήθηκε",
+    "projectGroupDisableError": "Αποτυχία απενεργοποίησης ομάδας",
+    "filesFolderCreated": "Ο φάκελος δημιουργήθηκε",
+    "filesUploaded": "Το αρχείο μεταφορτώθηκε",
+    "filesDeleted": "Διαγράφηκε",
+    "filesRenamed": "Μετονομάστηκε",
+    "filesError": "Η λειτουργία αρχείου απέτυχε"
+  },
+  "pod": {
+    "restartSuccess": "Το pod επανεκκινήθηκε",
+    "restartError": "Αποτυχία επανεκκίνησης pod",
+    "deleteSuccess": "Το pod διαγράφηκε",
+    "deleteError": "Αποτυχία διαγραφής pod"
+  },
+  "network": {
+    "serviceCreateSuccess": "Το service δημιουργήθηκε",
+    "serviceCreateError": "Αποτυχία δημιουργίας service",
+    "serviceDeleteSuccess": "Το service διαγράφηκε",
+    "serviceDeleteError": "Αποτυχία διαγραφής service",
+    "serviceUpdateSuccess": "Το service ενημερώθηκε",
+    "serviceUpdateError": "Αποτυχία ενημέρωσης service",
+    "tunnelError": "Αποτυχία ανοίγματος πρόσβασης service",
+    "openBlocked": "Ο browser μπλόκαρε τη νέα καρτέλα. Επίτρεψε pop-up για αυτόν τον ιστότοπο.",
+    "openError": "Δεν ήταν δυνατό το άνοιγμα του {{name}}. Έλεγξε ότι τα pod τρέχουν.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Ο κανόνας ingress διαγράφηκε",
+    "ingressDeleteError": "Αποτυχία διαγραφής κανόνα ingress"
+  },
+  "ingress": {
+    "createSuccess": "Ο κανόνας ingress δημιουργήθηκε",
+    "createError": "Αποτυχία δημιουργίας κανόνα ingress",
+    "deleteSuccess": "Ο κανόνας ingress διαγράφηκε",
+    "deleteError": "Αποτυχία διαγραφής κανόνα ingress"
+  },
+  "namespace": {
+    "createSuccess": "Το namespace δημιουργήθηκε",
+    "createError": "Αποτυχία δημιουργίας namespace",
+    "deleteSuccess": "Το namespace διαγράφηκε",
+    "deleteError": "Αποτυχία διαγραφής namespace"
+  },
+  "import": {
+    "buildSuccess": "Τα images χτίστηκαν",
+    "buildError": "Αποτυχία build images",
+    "rebuildSuccess": "Το Docker Compose ξαναχτίστηκε και ξεκίνησε",
+    "rebuildError": "Αποτυχία rebuild project",
+    "loadSuccess": "Τα images φορτώθηκαν στο cluster",
+    "loadError": "Αποτυχία φόρτωσης images στο cluster",
+    "applySuccess": "Το project εισήχθη στο Kubernetes",
+    "applyWithImages": "Το project εισήχθη, {{count}} images φορτώθηκαν στο kind",
+    "openImportedApp": "Άνοιγμα εφαρμογής στο {{url}}",
+    "openUnavailable": "Το import ολοκληρώθηκε, αλλά το URL δεν είναι ακόμα έτοιμο. Άνοιξέ το από Network → web.",
+    "applyError": "Αποτυχία εισαγωγής project",
+    "previewError": "Αποτυχία δημιουργίας preview"
+  },
+  "admin": {
+    "userSaveSuccess": "Ο χρήστης αποθηκεύτηκε",
+    "userSaveError": "Αποτυχία αποθήκευσης χρήστη",
+    "userDeleteSuccess": "Ο χρήστης διαγράφηκε",
+    "userDeleteError": "Αποτυχία διαγραφής χρήστη",
+    "roleSaveSuccess": "Ο ρόλος αποθηκεύτηκε",
+    "roleSaveError": "Αποτυχία αποθήκευσης ρόλου",
+    "roleDeleteSuccess": "Ο ρόλος διαγράφηκε",
+    "roleDeleteError": "Αποτυχία διαγραφής ρόλου",
+    "permissionSaveSuccess": "Το δικαίωμα αποθηκεύτηκε",
+    "permissionSaveError": "Αποτυχία αποθήκευσης δικαιώματος",
+    "permissionDeleteSuccess": "Το δικαίωμα διαγράφηκε",
+    "permissionDeleteError": "Αποτυχία διαγραφής δικαιώματος"
+  }
+}

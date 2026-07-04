@@ -1,0 +1,29 @@
+{
+  "title": "Namespaces",
+  "subtitle": "Izveidot un noņemt Kubernetes namespaces aktīvajā cluster",
+  "loading": "Ielādē namespaces...",
+  "error": "Neizdevās ielādēt namespaces",
+  "protected": "Aizsargāts",
+  "create": {
+    "title": "Jauns namespace",
+    "label": "Nosaukums",
+    "placeholder": "staging",
+    "submit": "Izveidot namespace",
+    "submitting": "Izveido...",
+    "cancel": "Atcelt",
+    "hint": "Izmantojiet mazos burtus DNS nosaukumos. Sistēmas namespaces ar kube- prefiksu nevar dzēst."
+  },
+  "table": {
+    "name": "Nosaukums",
+    "status": "Statuss",
+    "created": "Izveidots",
+    "actions": "Darbības"
+  },
+  "actions": {
+    "delete": "Dzēst"
+  },
+  "delete": {
+    "title": "Dzēst namespace",
+    "message": "Dzēst namespace {{name}}? Visi resursi tajā tiks noņemti."
+  }
+}

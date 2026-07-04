@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Replikor uppdaterade",
+    "scaleError": "Kunde inte skala deployment",
+    "imageSuccess": "Container image uppdaterad",
+    "imageError": "Kunde inte uppdatera container image",
+    "deleteSuccess": "Deployment borttaget",
+    "deleteError": "Kunde inte ta bort deployment",
+    "createSuccess": "Deployment skapat",
+    "createError": "Kunde inte skapa deployment",
+    "configSaved": "Konfiguration sparad",
+    "configError": "Kunde inte spara konfiguration",
+    "restartSuccess": "Deployment omstartat",
+    "restartError": "Kunde inte starta om deployment",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback slutförd",
+    "rollbackError": "Rollback misslyckades",
+    "projectGroupDeleteSuccess": "Projektgrupp borttagen",
+    "projectGroupDeleteError": "Kunde inte ta bort projektgrupp",
+    "projectGroupRestartSuccess": "Grupp omstartad",
+    "projectGroupRestartError": "Kunde inte starta om gruppen",
+    "projectGroupDisableSuccess": "Grupp inaktiverad",
+    "projectGroupDisableError": "Kunde inte inaktivera gruppen",
+    "filesFolderCreated": "Mapp skapad",
+    "filesUploaded": "Fil uppladdad",
+    "filesDeleted": "Borttagen",
+    "filesRenamed": "Omdöpt",
+    "filesError": "Filåtgärden misslyckades"
+  },
+  "pod": {
+    "restartSuccess": "Pod omstartad",
+    "restartError": "Kunde inte starta om pod",
+    "deleteSuccess": "Pod borttagen",
+    "deleteError": "Kunde inte ta bort pod"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service skapad",
+    "serviceCreateError": "Kunde inte skapa service",
+    "serviceDeleteSuccess": "Service borttagen",
+    "serviceDeleteError": "Kunde inte ta bort service",
+    "serviceUpdateSuccess": "Service uppdaterad",
+    "serviceUpdateError": "Kunde inte uppdatera service",
+    "tunnelError": "Kunde inte öppna service-åtkomst",
+    "openBlocked": "Webbläsaren blockerade den nya fliken. Tillåt pop-ups för denna webbplats.",
+    "openError": "Kunde inte öppna {{name}}. Kontrollera att pod kör.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Ingress-regel borttagen",
+    "ingressDeleteError": "Kunde inte ta bort ingress-regel"
+  },
+  "ingress": {
+    "createSuccess": "Ingress-regel skapad",
+    "createError": "Kunde inte skapa ingress-regel",
+    "deleteSuccess": "Ingress-regel borttagen",
+    "deleteError": "Kunde inte ta bort ingress-regel"
+  },
+  "namespace": {
+    "createSuccess": "Namespace skapat",
+    "createError": "Kunde inte skapa namespace",
+    "deleteSuccess": "Namespace borttaget",
+    "deleteError": "Kunde inte ta bort namespace"
+  },
+  "import": {
+    "buildSuccess": "Images byggda",
+    "buildError": "Kunde inte bygga images",
+    "rebuildSuccess": "Docker Compose ombyggd och startad",
+    "rebuildError": "Kunde inte bygga om projektet",
+    "loadSuccess": "Images laddade till cluster",
+    "loadError": "Kunde inte ladda images till cluster",
+    "applySuccess": "Projekt importerat till Kubernetes",
+    "applyWithImages": "Projekt importerat, {{count}} images laddade till kind",
+    "openImportedApp": "Öppnar app på {{url}}",
+    "openUnavailable": "Import klar, men URL är inte redo än. Öppna den från Network → web.",
+    "applyError": "Kunde inte importera projekt",
+    "previewError": "Kunde inte skapa förhandsvisning"
+  },
+  "admin": {
+    "userSaveSuccess": "Användare sparad",
+    "userSaveError": "Kunde inte spara användare",
+    "userDeleteSuccess": "Användare borttagen",
+    "userDeleteError": "Kunde inte ta bort användare",
+    "roleSaveSuccess": "Roll sparad",
+    "roleSaveError": "Kunde inte spara roll",
+    "roleDeleteSuccess": "Roll borttagen",
+    "roleDeleteError": "Kunde inte ta bort roll",
+    "permissionSaveSuccess": "Behörighet sparad",
+    "permissionSaveError": "Kunde inte spara behörighet",
+    "permissionDeleteSuccess": "Behörighet borttagen",
+    "permissionDeleteError": "Kunde inte ta bort behörighet"
+  }
+}

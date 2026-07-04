@@ -1,0 +1,71 @@
+{
+  "title": "Hallinta",
+  "subtitle": "Käyttäjät, roolit ja deployment-oikeudet",
+  "back": "Takaisin deploymenteihin",
+  "actions": {
+    "label": "Toiminnot",
+    "create": "Luo",
+    "edit": "Muokkaa",
+    "delete": "Poista",
+    "save": "Tallenna",
+    "cancel": "Peruuta",
+    "saving": "Tallennetaan...",
+    "deleting": "Poistetaan..."
+  },
+  "users": {
+    "title": "Käyttäjät",
+    "subtitle": "Hallitse dashboard-tilejä ja rooliliitoksia",
+    "create": "Lisää käyttäjä",
+    "createTitle": "Luo käyttäjä",
+    "editTitle": "Muokkaa käyttäjää",
+    "deleteTitle": "Poista käyttäjä",
+    "deleteMessage": "Poistetaanko {{email}}? Tätä ei voi perua.",
+    "email": "Sähköposti",
+    "name": "Nimi",
+    "password": "Salasana",
+    "newPassword": "Uusi salasana (valinnainen)",
+    "roles": "Roolit",
+    "status": "Status",
+    "active": "Aktiivinen",
+    "inactive": "Ei aktiivinen"
+  },
+  "roles": {
+    "title": "Roolit",
+    "subtitle": "Roolimäärittelyt ja liitetyt oikeudet",
+    "create": "Lisää rooli",
+    "createTitle": "Luo rooli",
+    "editTitle": "Muokkaa roolia",
+    "deleteTitle": "Poista rooli",
+    "deleteMessage": "Poistetaanko rooli \"{{name}}\"? Sitä ei saa olla liitettynä käyttäjään.",
+    "name": "Nimi",
+    "permissions": "Oikeudet"
+  },
+  "permissions": {
+    "title": "Oikeudet",
+    "subtitle": "Tarkat pääsäännöt deploymenteille",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Osio",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Verkko",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Mittarit",
+      "admin": "Hallinta"
+    },
+    "level": "Pääsy",
+    "levels": {
+      "none": "Ei pääsyä",
+      "view": "Katselu",
+      "operate": "Käyttö",
+      "manage": "Hallinta"
+    },
+    "hints": {
+      "view": "Avaa osio, lue listat ja tiedot",
+      "operate": "Uudelleenkäynnistys, poisto käytöstä, rollback, lokit, terminaali",
+      "manage": "Luonti, poisto, import ja hallintamuutokset"
+    }
+  }
+}

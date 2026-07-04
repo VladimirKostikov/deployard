@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Cluster worker nodes un uz tiem plānotie podi",
+  "loading": "Ielādē nodes...",
+  "error": "Neizdevās ielādēt nodes",
+  "podsTitle": "Podi uz {{node}}",
+  "podsLoading": "Ielādē podus...",
+  "podsError": "Neizdevās ielādēt podus šai node",
+  "podsEmpty": "Šajā node nav podu",
+  "table": {
+    "name": "Node",
+    "status": "Statuss",
+    "roles": "Lomas",
+    "pods": "Pods",
+    "version": "Kubelet",
+    "actions": "Darbības"
+  },
+  "actions": {
+    "viewPods": "Skatīt podus"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Phase",
+    "ready": "Ready",
+    "yes": "Jā",
+    "no": "Nē"
+  }
+}

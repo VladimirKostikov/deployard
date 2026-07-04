@@ -1,0 +1,318 @@
+{
+  "title": "Deployments",
+  "subtitle": "Aplikácie vo vybranom namespace",
+  "subtitleAll": "Aplikácie vo všetkých dostupných namespaces",
+  "loading": "Načítavanie deployments...",
+  "error": "Nepodarilo sa načítať deployments",
+  "empty": "V tomto namespace nie sú žiadne deployments",
+  "emptyAll": "V dostupných namespaces nie sú žiadne deployments",
+  "projectGroups": {
+    "standalone": "Samostatné",
+    "services_one": "{{count}} služba",
+    "services_other": "{{count}} služieb",
+    "health": "{{healthy}}/{{total}} v poriadku",
+    "restarting": "{{count}}/{{total}} sa reštartuje",
+    "restartingBanner": "Reštart {{count}} z {{total}} deploymentov v tejto skupine",
+    "settings": "Nastavenia",
+    "settingsTitle": "Nastavenia skupiny",
+    "settingsGroupLabel": "Skupina projektu",
+    "settingsDockerReady": "Docker je dostupný",
+    "settingsDockerUnavailable": "Docker nie je dostupný",
+    "settingsRebuildHint": "Prebuduje compose, načíta images do kind a nasadí deployments v tejto skupine.",
+    "settingsLoading": "Kontrola prostredia...",
+    "settingsClose": "Zavrieť",
+    "settingsNoCompose": "Compose projekt s týmto názvom sa nenašiel. Prebudovanie je dostupné len pre skupiny importované z Docker Compose.",
+    "delete": "Zmazať skupinu",
+    "restart": "Reštartovať skupinu",
+    "disable": "Vypnúť skupinu",
+    "deleteTitle": "Zmazať skupinu projektu",
+    "deleteMessage": "Zmazať všetky deployments, services a secrets v skupine \"{{name}}\"?",
+    "services_few": "{{count}} služby",
+    "services_many": "{{count}} služieb"
+  },
+  "table": {
+    "name": "Názov",
+    "namespace": "Namespace",
+    "image": "Image",
+    "replicas": "Ready / Spolu",
+    "revision": "Revízia",
+    "status": "Stav"
+  },
+  "status": {
+    "healthy": "V poriadku",
+    "starting": "Spúšťa sa",
+    "restarting": "Reštart",
+    "degraded": "Degradovaný",
+    "scaledToZero": "Škálované na nulu",
+    "disabled": "Disabled"
+  },
+  "statusModal": {
+    "open": "Zobraziť detail stavu",
+    "title": "Stav deploymentu",
+    "summary": {
+      "healthy": "Všetky pody sú ready.",
+      "starting": "Deployment sa spúšťa. To je normálne hneď po vytvorení.",
+      "degraded": "Niektoré pody nie sú ready. Otvorte detail a zistite prečo.",
+      "scaledToZero": "Počet replík je 0, žiadne pody nebežia.",
+      "disabled": "Deployment is disabled. Pods are stopped until you enable it again.",
+      "restarting": "Rolling restart prebieha: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} aktualizované."
+    },
+    "reasonsTitle": "Prečo tento stav",
+    "desired": "Požadované",
+    "ready": "Ready",
+    "available": "Dostupné",
+    "updated": "Aktualizované",
+    "reasons": {
+      "healthy": "{{ready}} z {{desired}} replík je ready.",
+      "starting": "Deployment bol práve vytvorený alebo sa aktualizuje.",
+      "scaledToZero": "Škálované na nulu, žiadne pody nebežia.",
+      "disabled": "Disabled via Deployard. Enable to restore {{replicas}} replica(s).",
+      "podsNotReady": "{{ready}} z {{desired}} ready, nie všetky pody prešli readiness probes.",
+      "podsNotAvailable": "{{available}} z {{desired}} dostupných, pody ešte nie sú ready.",
+      "rolloutInProgress": "{{updated}} z {{desired}} aktualizovaných, rollout prebieha.",
+      "rolloutStalled": "Rolling update skončil, ale pody sa nestávajú ready. Pozrite sa na tabuľku nižšie.",
+      "restarting": "Pody sa znova vytvárajú: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} aktualizované."
+    },
+    "podsTitle": "Stav podov",
+    "podsLoading": "Načítavanie podov...",
+    "podsEmpty": "Pre tento deployment sa nenašli žiadne pody.",
+    "podsHint": "Image možno chýba v clusteri. Zostavte ho lokálne a načítajte do kind, alebo použite registry.",
+    "podsColumns": {
+      "pod": "Pod",
+      "phase": "Phase",
+      "container": "Container",
+      "state": "Stav"
+    },
+    "containerStates": {
+      "ImagePullBackOff": "Nedá sa stiahnuť image",
+      "ErrImagePull": "Chyba pri sťahovaní image",
+      "CrashLoopBackOff": "Container padá a reštartuje sa",
+      "ContainerCreating": "Container sa vytvára",
+      "PodInitializing": "Pod sa inicializuje",
+      "CreateContainerConfigError": "Chyba konfigurácie containeru",
+      "InvalidImageName": "Neplatný názov image",
+      "CreateContainerError": "Nepodarilo sa vytvoriť container",
+      "RunContainerError": "Nepodarilo sa spustiť container",
+      "waiting": "Čaká",
+      "running": "Beží, ale nie je ready",
+      "terminated": "Ukončený",
+      "pending": "Čaká na scheduling"
+    }
+  },
+  "actions": {
+    "label": "Akcie",
+    "view": "Zobraziť",
+    "pods": "Zobraziť pody",
+    "logs": "Zobraziť logy",
+    "history": "História revízií",
+    "console": "Otvoriť konzolu",
+    "restart": "Reštartovať deployment",
+    "delete": "Zmazať deployment",
+    "disable": "Disable deployment",
+    "enable": "Enable deployment",
+    "enableAfterError": "Znova zapnúť. Pri vypnutí boli chyby",
+    "error": "Akcia zlyhala"
+  },
+  "tabs": {
+    "ariaLabel": "Sekcie deploymentu",
+    "overview": "Prehľad",
+    "health": "Health probes",
+    "config": "Konfigurácia",
+    "history": "História",
+    "pods": "Pody",
+    "files": "Súbory",
+    "logs": "Logy",
+    "console": "Konzola"
+  },
+  "files": {
+    "podLabel": "Pod",
+    "loading": "Načítavanie súborov...",
+    "error": "Súbory sa nepodarilo načítať",
+    "empty": "Tento adresár je prázdny",
+    "noPods": "Pre tento deployment nie sú dostupné pody",
+    "refresh": "Obnoviť",
+    "newFolder": "Nový priečinok",
+    "upload": "Nahrať súbor",
+    "download": "Stiahnuť",
+    "rename": "Premenovať",
+    "delete": "Zmazať",
+    "folderPrompt": "Názov priečinka",
+    "renamePrompt": "Nový názov",
+    "deleteConfirm": "Zmazať \"{{name}}\"?",
+    "previewEmpty": "Súbor je prázdny",
+    "breadcrumbs": "Cesta",
+    "root": "Koreň",
+    "pod": "Pod",
+    "columns": {
+      "name": "Názov",
+      "size": "Veľkosť",
+      "modified": "Upravené",
+      "actions": "Akcie"
+    }
+  },
+  "scale": {
+    "label": "Repliky",
+    "submit": "Použiť škálovanie",
+    "submitting": "Škálovanie...",
+    "hint": "Zmeňte, koľko kópií podov má deployment udržiavať v prevádzke."
+  },
+  "disable": {
+    "disable": "Disable deployment",
+    "disabling": "Disabling...",
+    "disableHint": "Stops all pods and saves the current replica count for quick restore.",
+    "enable": "Enable deployment",
+    "enabling": "Enabling...",
+    "enableHint": "Restores {{replicas}} replica(s) and starts pods again.",
+    "enableErrorHint": "Pri vypnutí boli chyby. Opravte image alebo config a znova zapnite ({{replicas}} replík)."
+  },
+  "console": {
+    "connect": "Pripojiť",
+    "connecting": "Pripájanie...",
+    "disconnect": "Odpojiť",
+    "connected": "Pripojené k {{pod}}",
+    "disconnected": "Relácia ukončená",
+    "statusConnected": "Pripojené",
+    "statusDisconnected": "Odpojené",
+    "empty": "Pripojte sa a spustite interaktívny shell vo vybranom pode.",
+    "inputPlaceholder": "Píšte príkazy sem...",
+    "inputDisabled": "Najprv sa pripojte k podu"
+  },
+  "detail": {
+    "subtitle": "Namespace: {{namespace}}",
+    "loading": "Načítavanie deploymentu...",
+    "error": "Nepodarilo sa načítať deployment",
+    "historyTitle": "História revízií",
+    "podsTitle": "Pody",
+    "logsTitle": "Logy",
+    "logsEmpty": "Žiadne pody na streamovanie logov"
+  },
+  "history": {
+    "loading": "Načítavanie histórie revízií...",
+    "error": "Nepodarilo sa načítať históriu revízií",
+    "empty": "Nenašli sa žiadne revízie",
+    "current": "Aktuálna",
+    "rollback": "Rollback",
+    "table": {
+      "revision": "Revízia",
+      "image": "Image",
+      "replicas": "Repliky",
+      "created": "Vytvorené",
+      "actions": "Akcie"
+    }
+  },
+  "rollback": {
+    "title": "Potvrdiť rollback",
+    "subtitle": "Deployment: {{name}}",
+    "targetRevision": "Cieľová revízia",
+    "targetImage": "Cieľový image",
+    "cancel": "Zrušiť",
+    "confirm": "Rollback",
+    "submitting": "Prebieha rollback..."
+  },
+  "create": {
+    "title": "Nový deployment",
+    "namePlaceholder": "my-api",
+    "imagePlaceholder": "Vyberte z katalógu alebo zadajte vlastný",
+    "replicasPlaceholder": "Repliky",
+    "portPlaceholder": "Port containeru",
+    "projectLabel": "Skupina projektu",
+    "projectHint": "Deployments s rovnakým labelom sa v zozname zobrazujú spolu.",
+    "projectNone": "Bez skupiny",
+    "projectExisting": "Pridať do existujúcej skupiny",
+    "projectNew": "Vytvoriť novú skupinu",
+    "projectNewPlaceholder": "my-project",
+    "submit": "Vytvoriť deployment",
+    "submitting": "Vytváranie...",
+    "cancel": "Zrušiť"
+  },
+  "image": {
+    "label": "Image containeru",
+    "submit": "Nasadiť novú verziu",
+    "submitting": "Nasadzovanie...",
+    "hint": "Aktualizuje šablónu deploymentu a spustí rolling rollout.",
+    "error": "Nepodarilo sa aktualizovať image containeru.",
+    "unchanged": "Image je už nasadený."
+  },
+  "imagePicker": {
+    "placeholder": "nginx:1.27-alpine, redis:7-alpine, postgres:16-alpine...",
+    "browse": "Katalóg images",
+    "catalogHint": "{{count}} images: Web server, Database, Runtime a ďalšie",
+    "customTitle": "Vlastný image",
+    "customHint": "Zadajte ľubovoľný registry/repository:tag",
+    "empty": "Žiadne zhody. Zadajte vlastný image vyššie."
+  },
+  "delete": {
+    "title": "Zmazať deployment",
+    "message": "Zmazať deployment {{name}}? Všetky pody budú odstránené.",
+    "submit": "Zmazať deployment"
+  },
+  "restart": {
+    "submit": "Reštartovať deployment",
+    "submitting": "Reštartovanie...",
+    "hint": "Rolling restart znova vytvorí všetky pody s rovnakým image (ako kubectl rollout restart).",
+    "bannerTitle": "Prebieha aktualizácia",
+    "bannerProgress": "{{ready}}/{{desired}} ready, {{updated}}/{{desired}} aktualizovaných",
+    "bannerHint": "Pody sa znova vytvárajú. Sledujte záložku Pody pre aktuálny stav.",
+    "rowProgress": "({{ready}}/{{desired}} ready)",
+    "error": "Nepodarilo sa reštartovať deployment.",
+    "done": "Deployment sa reštartuje"
+  },
+  "config": {
+    "title": "Premenné prostredia",
+    "loading": "Načítavanie konfigurácie...",
+    "error": "Nepodarilo sa načítať konfiguráciu",
+    "empty": "Žiadne premenné nie sú nastavené",
+    "namePlaceholder": "MYSQL_ROOT_PASSWORD",
+    "valuePlaceholder": "hodnota",
+    "add": "Pridať premennú",
+    "remove": "Odstrániť",
+    "submit": "Uložiť",
+    "submitting": "Ukladanie...",
+    "portHint": "Port containeru: {{port}}",
+    "createHint": "Images z katalógu dostanú predvolené hodnoty pre vývoj. Pred vytvorením skontrolujte."
+  },
+  "healthProbes": {
+    "title": "Health probes",
+    "loading": "Načítavanie konfigurácie probes...",
+    "error": "Nepodarilo sa načítať health probes",
+    "empty": "Pre primárny container nie sú nastavené žiadne probes",
+    "configTitle": "Nastavené probes",
+    "podsTitle": "Readiness podov",
+    "podsEmpty": "Žiadne pody na kontrolu",
+    "podReady": "Ready",
+    "podNotReady": "Nie je ready",
+    "podStates": {
+      "ready": "Ready",
+      "runningNotReady": "Beží, ale nie je ready",
+      "pending": "Čaká na naplánovanie",
+      "failed": "Zlyhalo",
+      "notReady": "Nie je ready"
+    },
+    "types": {
+      "readiness": "Readiness",
+      "liveness": "Liveness",
+      "startup": "Startup"
+    },
+    "mechanisms": {
+      "http": "HTTP",
+      "tcp": "TCP",
+      "exec": "Exec",
+      "grpc": "gRPC",
+      "none": "Žiadny"
+    },
+    "columns": {
+      "type": "Typ",
+      "mechanism": "Mechanizmus",
+      "target": "Cieľ",
+      "timing": "Časovanie",
+      "pod": "Pod",
+      "phase": "Phase",
+      "podStatus": "Readiness"
+    },
+    "timing": {
+      "start": "start {{seconds}}s",
+      "every": "každých {{seconds}}s",
+      "timeout": "timeout {{seconds}}s"
+    }
+  }
+}

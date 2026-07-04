@@ -1,0 +1,71 @@
+{
+  "title": "Stjórnun",
+  "subtitle": "Notendur, hlutverk og deployment-heimildir",
+  "back": "Til baka í deployments",
+  "actions": {
+    "label": "Aðgerðir",
+    "create": "Búa til",
+    "edit": "Breyta",
+    "delete": "Eyða",
+    "save": "Vista",
+    "cancel": "Hætta við",
+    "saving": "Vistar...",
+    "deleting": "Eyðir..."
+  },
+  "users": {
+    "title": "Notendur",
+    "subtitle": "Stjórna dashboard-aðgöngum og hlutverkum",
+    "create": "Bæta við notanda",
+    "createTitle": "Búa til notanda",
+    "editTitle": "Breyta notanda",
+    "deleteTitle": "Eyða notanda",
+    "deleteMessage": "Eyða {{email}}? Ekki er hægt að afturkalla.",
+    "email": "Netfang",
+    "name": "Nafn",
+    "password": "Lykilorð",
+    "newPassword": "Nýtt lykilorð (valfrjálst)",
+    "roles": "Hlutverk",
+    "status": "Staða",
+    "active": "Virkur",
+    "inactive": "Óvirkur"
+  },
+  "roles": {
+    "title": "Hlutverk",
+    "subtitle": "Skilgreiningar hlutverka og tengdar heimildir",
+    "create": "Bæta við hlutverki",
+    "createTitle": "Búa til hlutverk",
+    "editTitle": "Breyta hlutverki",
+    "deleteTitle": "Eyða hlutverki",
+    "deleteMessage": "Eyða hlutverki \"{{name}}\"? Það má ekki vera úthlutað neinum notanda.",
+    "name": "Nafn",
+    "permissions": "Heimildir"
+  },
+  "permissions": {
+    "title": "Heimildir",
+    "subtitle": "Nákvæmar aðgangsreglur fyrir deployments",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Hluti",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Net",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Mælingar",
+      "admin": "Stjórnun"
+    },
+    "level": "Aðgangur",
+    "levels": {
+      "none": "Enginn aðgangur",
+      "view": "Skoða",
+      "operate": "Reka",
+      "manage": "Stjórna"
+    },
+    "hints": {
+      "view": "Opna hluta, lesa lista og upplýsingar",
+      "operate": "Endurræsa, slökkva, rollback, loggar, terminal",
+      "manage": "Búa til, eyða, import og stjórnunarbreytingar"
+    }
+  }
+}

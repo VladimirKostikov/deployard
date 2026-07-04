@@ -1,0 +1,32 @@
+{
+  "title": "Ingress",
+  "subtitle": "Κανόνες HTTP routing στο επιλεγμένο namespace",
+  "loading": "Φόρτωση κανόνων ingress...",
+  "error": "Αποτυχία φόρτωσης κανόνων ingress",
+  "empty": "Δεν υπάρχουν κανόνες ingress σε αυτό το namespace",
+  "create": {
+    "title": "Νέο ingress",
+    "name": "Όνομα",
+    "host": "Host (π.χ. api.local)",
+    "path": "Path",
+    "service": "Όνομα service",
+    "port": "Port service",
+    "submit": "Δημιουργία ingress",
+    "submitting": "Δημιουργία...",
+    "cancel": "Ακύρωση"
+  },
+  "table": {
+    "name": "Όνομα",
+    "host": "Host",
+    "path": "Path",
+    "service": "Backend",
+    "actions": "Ενέργειες"
+  },
+  "actions": {
+    "delete": "Διαγραφή"
+  },
+  "delete": {
+    "title": "Διαγραφή ingress",
+    "message": "Διαγραφή ingress {{name}};"
+  }
+}

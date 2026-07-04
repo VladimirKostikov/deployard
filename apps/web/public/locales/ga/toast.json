@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Replicas nuashonraithe",
+    "scaleError": "Theip ar scálú an Deployment",
+    "imageSuccess": "Íomhá coimeádáin nuashonraithe",
+    "imageError": "Theip ar nuashonrú na híomhá coimeádáin",
+    "deleteSuccess": "Deployment scriosta",
+    "deleteError": "Theip ar scriosadh an Deployment",
+    "createSuccess": "Deployment cruthaithe",
+    "createError": "Theip ar chruthú an Deployment",
+    "configSaved": "Cumraíocht sábháilte",
+    "configError": "Theip ar shábháil na cumraíochta",
+    "restartSuccess": "Deployment atosaithe",
+    "restartError": "Theip ar atosú an Deployment",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback críochnaithe",
+    "rollbackError": "Theip ar an rollback",
+    "projectGroupDeleteSuccess": "Grúpa tionscadail scriosta",
+    "projectGroupDeleteError": "Theip ar scriosadh an ghrúpa tionscadail",
+    "projectGroupRestartSuccess": "Grúpa atosaithe",
+    "projectGroupRestartError": "Theip ar atosú an ghrúpa",
+    "projectGroupDisableSuccess": "Grúpa díchumasaithe",
+    "projectGroupDisableError": "Theip ar dhíchumasú an ghrúpa",
+    "filesFolderCreated": "Fillteán cruthaithe",
+    "filesUploaded": "Comhad uaslódáilte",
+    "filesDeleted": "Scriosta",
+    "filesRenamed": "Athainmnithe",
+    "filesError": "Theip ar oibríocht comhaid"
+  },
+  "pod": {
+    "restartSuccess": "Pod atosaithe",
+    "restartError": "Theip ar atosú an pod",
+    "deleteSuccess": "Pod scriosta",
+    "deleteError": "Theip ar scriosadh an pod"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service cruthaithe",
+    "serviceCreateError": "Theip ar chruthú Service",
+    "serviceDeleteSuccess": "Service scriosta",
+    "serviceDeleteError": "Theip ar scriosadh Service",
+    "serviceUpdateSuccess": "Service nuashonraithe",
+    "serviceUpdateError": "Theip ar nuashonrú Service",
+    "tunnelError": "Theip ar rochtain seirbhíse a oscailt",
+    "openBlocked": "Chuir an brabhsálaí bac ar an gcluaisín nua. Ceadaigh pop-ups don suíomh seo.",
+    "openError": "Níorbh fhéidir {{name}} a oscailt. Seiceáil go bhfuil pod ag rith.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Riail Ingress scriosta",
+    "ingressDeleteError": "Theip ar scriosadh riail Ingress"
+  },
+  "ingress": {
+    "createSuccess": "Riail Ingress cruthaithe",
+    "createError": "Theip ar chruthú riail Ingress",
+    "deleteSuccess": "Riail Ingress scriosta",
+    "deleteError": "Theip ar scriosadh riail Ingress"
+  },
+  "namespace": {
+    "createSuccess": "Namespace cruthaithe",
+    "createError": "Theip ar chruthú Namespace",
+    "deleteSuccess": "Namespace scriosta",
+    "deleteError": "Theip ar scriosadh Namespace"
+  },
+  "import": {
+    "buildSuccess": "Íomhánna tógtha",
+    "buildError": "Theip ar thógáil íomhánna",
+    "rebuildSuccess": "Docker Compose athchóirithe agus tosaithe",
+    "rebuildError": "Theip ar athchóiriú an tionscadail",
+    "loadSuccess": "Íomhánna lódáilte isteach sa chlustar",
+    "loadError": "Theip ar lódáil íomhánna isteach sa chlustar",
+    "applySuccess": "Tionscadal iompórtáilte go Kubernetes",
+    "applyWithImages": "Tionscadal iompórtáilte, {{count}} íomhá lódáilte isteach i kind",
+    "openImportedApp": "Ag oscailt an aip ag {{url}}",
+    "openUnavailable": "Críochnaíodh an import, ach níl an URL réidh fós. Oscail é ó Network → web.",
+    "applyError": "Theip ar iompórtáil an tionscadail",
+    "previewError": "Theip ar thógáil réamhamharc"
+  },
+  "admin": {
+    "userSaveSuccess": "Úsáideoir sábháilte",
+    "userSaveError": "Theip ar shábháil an úsáideora",
+    "userDeleteSuccess": "Úsáideoir scriosta",
+    "userDeleteError": "Theip ar scriosadh an úsáideora",
+    "roleSaveSuccess": "Ról sábháilte",
+    "roleSaveError": "Theip ar shábháil an róil",
+    "roleDeleteSuccess": "Ról scriosta",
+    "roleDeleteError": "Theip ar scriosadh an róil",
+    "permissionSaveSuccess": "Cead sábháilte",
+    "permissionSaveError": "Theip ar shábháil an chead",
+    "permissionDeleteSuccess": "Cead scriosta",
+    "permissionDeleteError": "Theip ar scriosadh an chead"
+  }
+}

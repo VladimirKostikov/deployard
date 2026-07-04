@@ -1,0 +1,71 @@
+{
+  "title": "Adminisztráció",
+  "subtitle": "Felhasználók, szerepkörök és deployment jogosultságok",
+  "back": "Vissza a deploymentekhez",
+  "actions": {
+    "label": "Műveletek",
+    "create": "Létrehozás",
+    "edit": "Szerkesztés",
+    "delete": "Törlés",
+    "save": "Mentés",
+    "cancel": "Mégse",
+    "saving": "Mentés...",
+    "deleting": "Törlés..."
+  },
+  "users": {
+    "title": "Felhasználók",
+    "subtitle": "Dashboard fiókok és szerepkör-hozzárendelések kezelése",
+    "create": "Felhasználó hozzáadása",
+    "createTitle": "Felhasználó létrehozása",
+    "editTitle": "Felhasználó szerkesztése",
+    "deleteTitle": "Felhasználó törlése",
+    "deleteMessage": "Töröljük a {{email}} felhasználót? Ez nem vonható vissza.",
+    "email": "Email",
+    "name": "Név",
+    "password": "Jelszó",
+    "newPassword": "Új jelszó (opcionális)",
+    "roles": "Szerepkörök",
+    "status": "Állapot",
+    "active": "Aktív",
+    "inactive": "Inaktív"
+  },
+  "roles": {
+    "title": "Szerepkörök",
+    "subtitle": "Szerepkör-definíciók és hozzárendelt jogosultságok",
+    "create": "Szerepkör hozzáadása",
+    "createTitle": "Szerepkör létrehozása",
+    "editTitle": "Szerepkör szerkesztése",
+    "deleteTitle": "Szerepkör törlése",
+    "deleteMessage": "Töröljük a \"{{name}}\" szerepkört? Nem lehet hozzárendelve egyetlen felhasználóhoz sem.",
+    "name": "Név",
+    "permissions": "Jogosultságok"
+  },
+  "permissions": {
+    "title": "Jogosultságok",
+    "subtitle": "Részletes hozzáférési szabályok deploymentekhez",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Szakasz",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Hálózat",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Metrikák",
+      "admin": "Adminisztráció"
+    },
+    "level": "Hozzáférés",
+    "levels": {
+      "none": "Nincs hozzáférés",
+      "view": "Megtekintés",
+      "operate": "Kezelés",
+      "manage": "Adminisztrálás"
+    },
+    "hints": {
+      "view": "Szakasz megnyitása, listák és részletek olvasása",
+      "operate": "Újraindítás, letiltás, rollback, logok, terminál",
+      "manage": "Létrehozás, törlés, import és admin módosítások"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Cluster worker-nodes och pods schemalagda på dem",
+  "loading": "Laddar nodes...",
+  "error": "Kunde inte ladda nodes",
+  "podsTitle": "Pods på {{node}}",
+  "podsLoading": "Laddar pods...",
+  "podsError": "Kunde inte ladda pods för denna node",
+  "podsEmpty": "Inga pods på denna node",
+  "table": {
+    "name": "Node",
+    "status": "Status",
+    "roles": "Roller",
+    "pods": "Pods",
+    "version": "Kubelet",
+    "actions": "Åtgärder"
+  },
+  "actions": {
+    "viewPods": "Visa pods"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Phase",
+    "ready": "Ready",
+    "yes": "Ja",
+    "no": "Nej"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "title": "Administracja",
+  "subtitle": "Użytkownicy, role i uprawnienia do deploymentów",
+  "back": "Wróć do deploymentów",
+  "actions": {
+    "label": "Akcje",
+    "create": "Utwórz",
+    "edit": "Edytuj",
+    "delete": "Usuń",
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "saving": "Zapisywanie...",
+    "deleting": "Usuwanie..."
+  },
+  "users": {
+    "title": "Użytkownicy",
+    "subtitle": "Zarządzaj kontami w panelu i przypisaniami ról",
+    "create": "Dodaj użytkownika",
+    "createTitle": "Utwórz użytkownika",
+    "editTitle": "Edytuj użytkownika",
+    "deleteTitle": "Usuń użytkownika",
+    "deleteMessage": "Usunąć {{email}}? Tej operacji nie można cofnąć.",
+    "email": "E-mail",
+    "name": "Imię",
+    "password": "Hasło",
+    "newPassword": "Nowe hasło (opcjonalnie)",
+    "roles": "Role",
+    "status": "Status",
+    "active": "Aktywny",
+    "inactive": "Nieaktywny"
+  },
+  "roles": {
+    "title": "Role",
+    "subtitle": "Definicje ról i przypisane uprawnienia",
+    "create": "Dodaj rolę",
+    "createTitle": "Utwórz rolę",
+    "editTitle": "Edytuj rolę",
+    "deleteTitle": "Usuń rolę",
+    "deleteMessage": "Usunąć rolę \"{{name}}\"? Nie może być przypisana do żadnego użytkownika.",
+    "name": "Nazwa",
+    "permissions": "Uprawnienia"
+  },
+  "permissions": {
+    "title": "Uprawnienia",
+    "subtitle": "Szczegółowe reguły dostępu do deploymentów",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Sekcja",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Sieć",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Metryki",
+      "admin": "Administracja"
+    },
+    "level": "Dostęp",
+    "levels": {
+      "none": "Brak dostępu",
+      "view": "Podgląd",
+      "operate": "Obsługa",
+      "manage": "Zarządzanie"
+    },
+    "hints": {
+      "view": "Otwórz sekcję, czytaj listy i szczegóły",
+      "operate": "Restart, wyłączenie, rollback, logi, terminal",
+      "manage": "Tworzenie, usuwanie, import i zmiany admin"
+    }
+  }
+}

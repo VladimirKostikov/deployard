@@ -1,0 +1,81 @@
+{
+  "title": "Réseau",
+  "subtitle": "Services, Endpoints et Ingress: comment les pods se joignent dans le cluster",
+  "tabs": {
+    "ariaLabel": "Sections réseau",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Chargement des services...",
+    "error": "Impossible de charger les services",
+    "empty": "Aucun service dans ce namespace",
+    "table": {
+      "name": "Nom",
+      "type": "Type",
+      "clusterIp": "IP du cluster",
+      "ports": "Ports",
+      "selector": "Sélecteur",
+      "actions": "Actions"
+    },
+    "actions": {
+      "delete": "Supprimer",
+      "open": "Ouvrir {{name}} dans le navigateur",
+      "openTooltip": "{{url}}: si la page ne charge pas, exécutez dans le terminal: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Copier la commande port-forward pour {{name}}",
+      "copied": "Commande copiée",
+      "edit": "Modifier les ports",
+      "editShort": "Ports"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Type",
+      "portsLabel": "Ports",
+      "port": "Port du service",
+      "targetPort": "Port cible",
+      "nodePort": "NodePort",
+      "cancel": "Annuler",
+      "save": "Enregistrer",
+      "saving": "Enregistrement..."
+    },
+    "delete": {
+      "title": "Supprimer le service",
+      "message": "Supprimer le service {{name}} ? Les pods continuent de tourner mais le nom DNS ne fonctionnera plus."
+    },
+    "create": {
+      "title": "Créer un service",
+      "name": "Nom du service",
+      "deployment": "Deployment",
+      "port": "Port du service",
+      "targetPort": "Port cible (optionnel)",
+      "submit": "Créer le service",
+      "submitting": "Création...",
+      "cancel": "Annuler"
+    }
+  },
+  "endpoints": {
+    "subtitle": "IPs des pods derrière chaque service (gérées automatiquement par Kubernetes)",
+    "loading": "Chargement des endpoints...",
+    "error": "Impossible de charger les endpoints",
+    "empty": "Pas encore d'endpoints: créez un service pour un deployment",
+    "table": {
+      "name": "Service",
+      "ports": "Ports",
+      "addresses": "IP / nom du pod"
+    }
+  },
+  "deployment": {
+    "title": "Services liés",
+    "loading": "Chargement des services...",
+    "error": "Impossible de charger les services",
+    "empty": "Aucun service pour ce deployment. Créez-en un sur la page Réseau.",
+    "openNetwork": "Ouvrir le réseau",
+    "viewEndpoints": "IPs des pods →"
+  }
+}

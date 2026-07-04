@@ -1,0 +1,81 @@
+{
+  "title": "Rețea",
+  "subtitle": "Services, Endpoints și Ingress: cum se ajung pod-urile unele la altele în cluster",
+  "tabs": {
+    "ariaLabel": "Secțiuni rețea",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Se încarcă service-urile...",
+    "error": "Nu s-au putut încărca service-urile",
+    "empty": "Nu există service-uri în acest namespace",
+    "table": {
+      "name": "Nume",
+      "type": "Tip",
+      "clusterIp": "Cluster IP",
+      "ports": "Ports",
+      "selector": "Selector",
+      "actions": "Acțiuni"
+    },
+    "actions": {
+      "delete": "Șterge",
+      "open": "Deschide {{name}} în browser",
+      "openTooltip": "{{url}}: dacă pagina nu se încarcă, rulează în terminal: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Copiază comanda port-forward pentru {{name}}",
+      "copied": "Comandă copiată",
+      "edit": "Editează porturi",
+      "editShort": "Ports"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Tip",
+      "portsLabel": "Ports",
+      "port": "Port service",
+      "targetPort": "Target port",
+      "nodePort": "NodePort",
+      "cancel": "Anulează",
+      "save": "Salvează",
+      "saving": "Se salvează..."
+    },
+    "delete": {
+      "title": "Șterge service",
+      "message": "Ștergi service {{name}}? Pod-urile continuă să ruleze dar numele DNS nu va mai funcționa."
+    },
+    "create": {
+      "title": "Creează service",
+      "name": "Nume service",
+      "deployment": "Deployment",
+      "port": "Port service",
+      "targetPort": "Target port (opțional)",
+      "submit": "Creează service",
+      "submitting": "Se creează...",
+      "cancel": "Anulează"
+    }
+  },
+  "endpoints": {
+    "subtitle": "IP-uri pod în spatele fiecărui service (gestionate automat de Kubernetes)",
+    "loading": "Se încarcă endpoint-urile...",
+    "error": "Nu s-au putut încărca endpoint-urile",
+    "empty": "Încă nu există endpoint-uri: creează un service pentru un deployment",
+    "table": {
+      "name": "Service",
+      "ports": "Ports",
+      "addresses": "Pod IP / nume"
+    }
+  },
+  "deployment": {
+    "title": "Service-uri legate",
+    "loading": "Se încarcă service-urile...",
+    "error": "Nu s-au putut încărca service-urile",
+    "empty": "Nu există service pentru acest deployment. Creează unul pe pagina Rețea.",
+    "openNetwork": "Deschide rețeaua",
+    "viewEndpoints": "Pod IP →"
+  }
+}

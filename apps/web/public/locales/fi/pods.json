@@ -1,0 +1,26 @@
+{
+  "loading": "Ladataan podeja...",
+  "error": "Podien lataus epäonnistui",
+  "empty": "Ei podeja tälle deploymentille",
+  "yes": "Kyllä",
+  "no": "Ei",
+  "table": {
+    "name": "Pod",
+    "phase": "Phase",
+    "ready": "Ready",
+    "restarts": "Uudelleenkäynnistykset",
+    "node": "Node",
+    "podIp": "Pod IP",
+    "ports": "Portit",
+    "actions": "Toiminnot"
+  },
+  "actions": {
+    "restart": "Käynnistä pod uudelleen",
+    "delete": "Poista pod",
+    "console": "Avaa konsoli"
+  },
+  "delete": {
+    "title": "Poista pod",
+    "message": "Poistetaanko pod {{name}}? Deployment-controller voi luoda sen uudelleen."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Namespaces",
+  "subtitle": "Створення та видалення Kubernetes namespace у активному кластері",
+  "loading": "Завантаження namespaces...",
+  "error": "Не вдалося завантажити namespaces",
+  "protected": "Захищений",
+  "create": {
+    "title": "Новий namespace",
+    "label": "Назва",
+    "placeholder": "staging",
+    "submit": "Створити namespace",
+    "submitting": "Створення...",
+    "cancel": "Скасувати",
+    "hint": "Використовуйте DNS-імена в нижньому регістрі. Системні namespace з префіксом kube- не можна видалити."
+  },
+  "table": {
+    "name": "Назва",
+    "status": "Статус",
+    "created": "Створено",
+    "actions": "Дії"
+  },
+  "actions": {
+    "delete": "Видалити"
+  },
+  "delete": {
+    "title": "Видалити namespace",
+    "message": "Видалити namespace {{name}}? Усі ресурси всередині буде прибрано."
+  }
+}

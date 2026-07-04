@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Реплики обновлены",
+    "scaleError": "Не удалось масштабировать деплой",
+    "imageSuccess": "Образ контейнера обновлён",
+    "imageError": "Не удалось обновить образ",
+    "deleteSuccess": "Деплой удалён",
+    "deleteError": "Не удалось удалить деплой",
+    "createSuccess": "Деплой создан",
+    "createError": "Не удалось создать деплой",
+    "configSaved": "Конфигурация сохранена",
+    "configError": "Не удалось сохранить конфигурацию",
+    "restartSuccess": "Деплой перезапущен",
+    "restartError": "Не удалось перезапустить деплой",
+    "disableSuccess": "Деплой отключён",
+    "disableError": "Не удалось отключить деплой",
+    "enableSuccess": "Деплой включён",
+    "enableError": "Не удалось включить деплой",
+    "rollbackSuccess": "Откат выполнен",
+    "rollbackError": "Не удалось выполнить откат",
+    "projectGroupDeleteSuccess": "Группа проекта удалена",
+    "projectGroupDeleteError": "Не удалось удалить группу проекта",
+    "projectGroupRestartSuccess": "Группа проекта перезапущена",
+    "projectGroupRestartError": "Не удалось перезапустить группу проекта",
+    "projectGroupDisableSuccess": "Группа проекта отключена",
+    "projectGroupDisableError": "Не удалось отключить группу проекта",
+    "filesFolderCreated": "Папка создана",
+    "filesUploaded": "Файл загружен",
+    "filesDeleted": "Удалено",
+    "filesRenamed": "Переименовано",
+    "filesError": "Ошибка операции с файлом"
+  },
+  "pod": {
+    "restartSuccess": "Pod перезапущен",
+    "restartError": "Не удалось перезапустить pod",
+    "deleteSuccess": "Pod удалён",
+    "deleteError": "Не удалось удалить pod"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service создан",
+    "serviceCreateError": "Не удалось создать service",
+    "serviceDeleteSuccess": "Service удалён",
+    "serviceDeleteError": "Не удалось удалить service",
+    "serviceUpdateSuccess": "Service обновлён",
+    "serviceUpdateError": "Не удалось обновить service",
+    "tunnelError": "Не удалось открыть доступ к service",
+    "openBlocked": "Браузер заблокировал новую вкладку. Разрешите всплывающие окна для этого сайта.",
+    "openError": "Не удалось открыть {{name}}. Проверьте, что pod'ы запущены.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Правило Ingress удалено",
+    "ingressDeleteError": "Не удалось удалить Ingress"
+  },
+  "ingress": {
+    "createSuccess": "Правило Ingress создано",
+    "createError": "Не удалось создать Ingress",
+    "deleteSuccess": "Правило Ingress удалено",
+    "deleteError": "Не удалось удалить Ingress"
+  },
+  "namespace": {
+    "createSuccess": "Namespace создан",
+    "createError": "Не удалось создать namespace",
+    "deleteSuccess": "Namespace удалён",
+    "deleteError": "Не удалось удалить namespace"
+  },
+  "import": {
+    "buildSuccess": "Образы собраны",
+    "buildError": "Не удалось собрать образы",
+    "rebuildSuccess": "Docker Compose пересобран",
+    "rebuildError": "Не удалось пересобрать проект",
+    "loadSuccess": "Образы загружены в кластер",
+    "loadError": "Не удалось загрузить образы в кластер",
+    "applySuccess": "Проект импортирован в Kubernetes",
+    "applyWithImages": "Проект импортирован, в kind загружено образов: {{count}}",
+    "openImportedApp": "Открываем приложение: {{url}}",
+    "openUnavailable": "Импорт завершён, но URL приложения ещё не готов. Откройте его в Сеть → web.",
+    "applyError": "Не удалось импортировать проект",
+    "previewError": "Не удалось построить предпросмотр"
+  },
+  "admin": {
+    "userSaveSuccess": "Пользователь сохранён",
+    "userSaveError": "Не удалось сохранить пользователя",
+    "userDeleteSuccess": "Пользователь удалён",
+    "userDeleteError": "Не удалось удалить пользователя",
+    "roleSaveSuccess": "Роль сохранена",
+    "roleSaveError": "Не удалось сохранить роль",
+    "roleDeleteSuccess": "Роль удалена",
+    "roleDeleteError": "Не удалось удалить роль",
+    "permissionSaveSuccess": "Право сохранено",
+    "permissionSaveError": "Не удалось сохранить право",
+    "permissionDeleteSuccess": "Право удалено",
+    "permissionDeleteError": "Не удалось удалить право"
+  }
+}

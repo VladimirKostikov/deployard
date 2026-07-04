@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Worker nodes í cluster og pods áætlaðar á þær",
+  "loading": "Hleður nodes...",
+  "error": "Tókst ekki að hlaða nodes",
+  "podsTitle": "Pods á {{node}}",
+  "podsLoading": "Hleður pods...",
+  "podsError": "Tókst ekki að hlaða pods fyrir þessa node",
+  "podsEmpty": "Engar pods á þessari node",
+  "table": {
+    "name": "Node",
+    "status": "Staða",
+    "roles": "Hlutverk",
+    "pods": "Pods",
+    "version": "Kubelet",
+    "actions": "Aðgerðir"
+  },
+  "actions": {
+    "viewPods": "Skoða pods"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Phase",
+    "ready": "Ready",
+    "yes": "Já",
+    "no": "Nei"
+  }
+}

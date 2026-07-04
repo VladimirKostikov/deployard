@@ -1,0 +1,81 @@
+{
+  "title": "Mreža",
+  "subtitle": "Services, Endpoints i Ingress: kako podovi komuniciraju u clusteru",
+  "tabs": {
+    "ariaLabel": "Mrežne sekcije",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Učitavanje service-a...",
+    "error": "Učitavanje service-a nije uspjelo",
+    "empty": "Nema service-a u ovom namespace-u",
+    "table": {
+      "name": "Naziv",
+      "type": "Tip",
+      "clusterIp": "Cluster IP",
+      "ports": "Portovi",
+      "selector": "Selector",
+      "actions": "Radnje"
+    },
+    "actions": {
+      "delete": "Obriši",
+      "open": "Otvori {{name}} u pregledniku",
+      "openTooltip": "{{url}}: ako se stranica ne učita, pokreni u terminalu: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Kopiraj port-forward naredbu za {{name}}",
+      "copied": "Naredba kopirana",
+      "edit": "Uredi portove",
+      "editShort": "Portovi"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Tip",
+      "portsLabel": "Portovi",
+      "port": "Port service-a",
+      "targetPort": "Target port",
+      "nodePort": "NodePort",
+      "cancel": "Odustani",
+      "save": "Spremi",
+      "saving": "Spremanje..."
+    },
+    "delete": {
+      "title": "Obriši service",
+      "message": "Obrisati service {{name}}? Podovi nastavljaju raditi, ali DNS naziv prestaje raditi."
+    },
+    "create": {
+      "title": "Stvori service",
+      "name": "Naziv service-a",
+      "deployment": "Deployment",
+      "port": "Port service-a",
+      "targetPort": "Target port (opcionalno)",
+      "submit": "Stvori service",
+      "submitting": "Stvaranje...",
+      "cancel": "Odustani"
+    }
+  },
+  "endpoints": {
+    "subtitle": "Pod IP adrese iza svakog service-a (automatski upravlja Kubernetes)",
+    "loading": "Učitavanje endpoint-a...",
+    "error": "Učitavanje endpoint-a nije uspjelo",
+    "empty": "Još nema endpoint-a: stvori service za deployment",
+    "table": {
+      "name": "Service",
+      "ports": "Portovi",
+      "addresses": "Pod IP / naziv"
+    }
+  },
+  "deployment": {
+    "title": "Povezani service-i",
+    "loading": "Učitavanje service-a...",
+    "error": "Učitavanje service-a nije uspjelo",
+    "empty": "Nema service-a za ovaj deployment. Stvori ga na stranici Mreža.",
+    "openNetwork": "Otvori mrežu",
+    "viewEndpoints": "Pod IP ->"
+  }
+}

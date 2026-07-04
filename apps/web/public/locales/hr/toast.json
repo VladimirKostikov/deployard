@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Replike ažurirane",
+    "scaleError": "Skaliranje deploymenta nije uspjelo",
+    "imageSuccess": "Container image ažuriran",
+    "imageError": "Ažuriranje container image-a nije uspjelo",
+    "deleteSuccess": "Deployment obrisan",
+    "deleteError": "Brisanje deploymenta nije uspjelo",
+    "createSuccess": "Deployment stvoren",
+    "createError": "Stvaranje deploymenta nije uspjelo",
+    "configSaved": "Konfiguracija spremljena",
+    "configError": "Spremanje konfiguracije nije uspjelo",
+    "restartSuccess": "Deployment restartiran",
+    "restartError": "Restart deploymenta nije uspio",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback završen",
+    "rollbackError": "Rollback nije uspio",
+    "projectGroupDeleteSuccess": "Grupa projekta obrisana",
+    "projectGroupDeleteError": "Brisanje grupe projekta nije uspjelo",
+    "projectGroupRestartSuccess": "Grupa je ponovno pokrenuta",
+    "projectGroupRestartError": "Ponovno pokretanje grupe nije uspjelo",
+    "projectGroupDisableSuccess": "Grupa je onemogućena",
+    "projectGroupDisableError": "Onemogućavanje grupe nije uspjelo",
+    "filesFolderCreated": "Mapa stvorena",
+    "filesUploaded": "Datoteka prenesena",
+    "filesDeleted": "Obrisano",
+    "filesRenamed": "Preimenovano",
+    "filesError": "Operacija s datotekom nije uspjela"
+  },
+  "pod": {
+    "restartSuccess": "Pod restartiran",
+    "restartError": "Restart poda nije uspio",
+    "deleteSuccess": "Pod obrisan",
+    "deleteError": "Brisanje poda nije uspjelo"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service stvoren",
+    "serviceCreateError": "Stvaranje service-a nije uspjelo",
+    "serviceDeleteSuccess": "Service obrisan",
+    "serviceDeleteError": "Brisanje service-a nije uspjelo",
+    "serviceUpdateSuccess": "Service ažuriran",
+    "serviceUpdateError": "Ažuriranje service-a nije uspjelo",
+    "tunnelError": "Otvaranje pristupa service-u nije uspjelo",
+    "openBlocked": "Preglednik je blokirao novi tab. Dozvoli pop-up prozore za ovu stranicu.",
+    "openError": "Nije moguće otvoriti {{name}}. Provjeri rade li podovi.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Ingress pravilo obrisano",
+    "ingressDeleteError": "Brisanje ingress pravila nije uspjelo"
+  },
+  "ingress": {
+    "createSuccess": "Ingress pravilo stvoreno",
+    "createError": "Stvaranje ingress pravila nije uspjelo",
+    "deleteSuccess": "Ingress pravilo obrisano",
+    "deleteError": "Brisanje ingress pravila nije uspjelo"
+  },
+  "namespace": {
+    "createSuccess": "Namespace stvoren",
+    "createError": "Stvaranje namespace-a nije uspjelo",
+    "deleteSuccess": "Namespace obrisan",
+    "deleteError": "Brisanje namespace-a nije uspjelo"
+  },
+  "import": {
+    "buildSuccess": "Image-i izgrađeni",
+    "buildError": "Gradnja image-a nije uspjela",
+    "rebuildSuccess": "Docker Compose rebuildan i pokrenut",
+    "rebuildError": "Rebuild projekta nije uspio",
+    "loadSuccess": "Image-i učitani u cluster",
+    "loadError": "Učitavanje image-a u cluster nije uspjelo",
+    "applySuccess": "Projekt uvezen u Kubernetes",
+    "applyWithImages": "Projekt uvezen, {{count}} image-a učitano u kind",
+    "openImportedApp": "Otvaranje aplikacije na {{url}}",
+    "openUnavailable": "Import završen, ali URL još nije spreman. Otvori ga iz Network → web.",
+    "applyError": "Import projekta nije uspio",
+    "previewError": "Generiranje pregleda nije uspjelo"
+  },
+  "admin": {
+    "userSaveSuccess": "Korisnik spremljen",
+    "userSaveError": "Spremanje korisnika nije uspjelo",
+    "userDeleteSuccess": "Korisnik obrisan",
+    "userDeleteError": "Brisanje korisnika nije uspjelo",
+    "roleSaveSuccess": "Uloga spremljena",
+    "roleSaveError": "Spremanje uloge nije uspjelo",
+    "roleDeleteSuccess": "Uloga obrisana",
+    "roleDeleteError": "Brisanje uloge nije uspjelo",
+    "permissionSaveSuccess": "Dozvola spremljena",
+    "permissionSaveError": "Spremanje dozvole nije uspjelo",
+    "permissionDeleteSuccess": "Dozvola obrisana",
+    "permissionDeleteError": "Brisanje dozvole nije uspjelo"
+  }
+}

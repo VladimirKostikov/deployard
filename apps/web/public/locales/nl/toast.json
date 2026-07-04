@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Replicas bijgewerkt",
+    "scaleError": "Deployment schalen mislukt",
+    "imageSuccess": "Containerimage bijgewerkt",
+    "imageError": "Containerimage bijwerken mislukt",
+    "deleteSuccess": "Deployment verwijderd",
+    "deleteError": "Deployment verwijderen mislukt",
+    "createSuccess": "Deployment aangemaakt",
+    "createError": "Deployment aanmaken mislukt",
+    "configSaved": "Configuratie opgeslagen",
+    "configError": "Configuratie opslaan mislukt",
+    "restartSuccess": "Deployment herstart",
+    "restartError": "Deployment herstarten mislukt",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback voltooid",
+    "rollbackError": "Rollback mislukt",
+    "projectGroupDeleteSuccess": "Projectgroep verwijderd",
+    "projectGroupDeleteError": "Projectgroep verwijderen mislukt",
+    "projectGroupRestartSuccess": "Groep herstart",
+    "projectGroupRestartError": "Groep herstarten mislukt",
+    "projectGroupDisableSuccess": "Groep uitgeschakeld",
+    "projectGroupDisableError": "Groep uitschakelen mislukt",
+    "filesFolderCreated": "Map aangemaakt",
+    "filesUploaded": "Bestand geüpload",
+    "filesDeleted": "Verwijderd",
+    "filesRenamed": "Hernoemd",
+    "filesError": "Bestandsbewerking mislukt"
+  },
+  "pod": {
+    "restartSuccess": "Pod herstart",
+    "restartError": "Pod herstarten mislukt",
+    "deleteSuccess": "Pod verwijderd",
+    "deleteError": "Pod verwijderen mislukt"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service aangemaakt",
+    "serviceCreateError": "Service aanmaken mislukt",
+    "serviceDeleteSuccess": "Service verwijderd",
+    "serviceDeleteError": "Service verwijderen mislukt",
+    "serviceUpdateSuccess": "Service bijgewerkt",
+    "serviceUpdateError": "Service bijwerken mislukt",
+    "tunnelError": "Service-toegang openen mislukt",
+    "openBlocked": "Browser blokkeerde het nieuwe tabblad. Sta pop-ups toe voor deze site.",
+    "openError": "Kon {{name}} niet openen. Controleer of pod draaien.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Ingress-regel verwijderd",
+    "ingressDeleteError": "Ingress-regel verwijderen mislukt"
+  },
+  "ingress": {
+    "createSuccess": "Ingress-regel aangemaakt",
+    "createError": "Ingress-regel aanmaken mislukt",
+    "deleteSuccess": "Ingress-regel verwijderd",
+    "deleteError": "Ingress-regel verwijderen mislukt"
+  },
+  "namespace": {
+    "createSuccess": "Namespace aangemaakt",
+    "createError": "Namespace aanmaken mislukt",
+    "deleteSuccess": "Namespace verwijderd",
+    "deleteError": "Namespace verwijderen mislukt"
+  },
+  "import": {
+    "buildSuccess": "Images gebouwd",
+    "buildError": "Images bouwen mislukt",
+    "rebuildSuccess": "Docker Compose gerebuild en gestart",
+    "rebuildError": "Project rebuilden mislukt",
+    "loadSuccess": "Images geladen in cluster",
+    "loadError": "Images laden in cluster mislukt",
+    "applySuccess": "Project geimporteerd naar Kubernetes",
+    "applyWithImages": "Project geimporteerd, {{count}} images geladen in kind",
+    "openImportedApp": "App openen op {{url}}",
+    "openUnavailable": "Import voltooid, maar URL is nog niet klaar. Open via Network → web.",
+    "applyError": "Project importeren mislukt",
+    "previewError": "Preview genereren mislukt"
+  },
+  "admin": {
+    "userSaveSuccess": "Gebruiker opgeslagen",
+    "userSaveError": "Gebruiker opslaan mislukt",
+    "userDeleteSuccess": "Gebruiker verwijderd",
+    "userDeleteError": "Gebruiker verwijderen mislukt",
+    "roleSaveSuccess": "Rol opgeslagen",
+    "roleSaveError": "Rol opslaan mislukt",
+    "roleDeleteSuccess": "Rol verwijderd",
+    "roleDeleteError": "Rol verwijderen mislukt",
+    "permissionSaveSuccess": "Recht opgeslagen",
+    "permissionSaveError": "Recht opslaan mislukt",
+    "permissionDeleteSuccess": "Recht verwijderd",
+    "permissionDeleteError": "Recht verwijderen mislukt"
+  }
+}

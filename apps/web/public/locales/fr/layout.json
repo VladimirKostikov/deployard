@@ -1,0 +1,32 @@
+{
+  "appTitle": "Deployard",
+  "sections": {
+    "main": "Principal",
+    "admin": "Contrôle d'accès",
+    "settings": "Paramètres"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "import": "Import",
+    "faq": "FAQ",
+    "nodes": "Nodes",
+    "namespaces": "Namespaces",
+    "ingress": "Ingress",
+    "network": "Réseau",
+    "metrics": "Métriques",
+    "admin": "Administration",
+    "users": "Utilisateurs",
+    "roles": "Rôles",
+    "permissions": "Permissions",
+    "backToApp": "Retour à l'app",
+    "logout": "Se déconnecter"
+  },
+  "topbar": {
+    "connected": "API connectée",
+    "checking": "Vérification de l'API..."
+  },
+  "mobileMenu": {
+    "open": "Ouvrir le menu",
+    "close": "Fermer le menu"
+  }
+}

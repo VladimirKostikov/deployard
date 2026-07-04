@@ -1,0 +1,66 @@
+{
+  "title": "Метрики",
+  "subtitle": "Живые показатели процесса API",
+  "scopeNote": "HTTP-трафик, задержки и runtime Node.js. Метрики кластера не включены.",
+  "loading": "Загрузка метрик...",
+  "error": "Не удалось загрузить дашборд метрик",
+  "updatedAt": "Обновлено в {{time}}",
+  "empty": "Пока нет данных",
+  "header": {
+    "healthy": "Нет серверных ошибок в текущем окне",
+    "errors": "{{count}} серверных ошибок ({{rate}})"
+  },
+  "cards": {
+    "requests": "HTTP-запросы",
+    "requestsHint": "Всего обработано с запуска процесса",
+    "throughput": "Пропускная способность",
+    "throughputHint": "Среднее число запросов в секунду",
+    "errorRate": "Доля ошибок",
+    "errorRateHint": "{{count}} ответов со статусом 5xx",
+    "p95": "Задержка p95",
+    "p95Hint": "95% запросов были быстрее этого значения",
+    "memory": "Память (RSS)",
+    "memoryHint": "Resident set size процесса API",
+    "uptime": "Аптайм",
+    "uptimeHint": "Время с момента запуска процесса API"
+  },
+  "sections": {
+    "latency": "Задержка ответа",
+    "byStatus": "Запросы по статусу",
+    "byMethod": "Запросы по методу",
+    "routes": "Топ маршрутов",
+    "process": "Ресурсы процесса"
+  },
+  "latency": {
+    "subtitle": "Перцентили гистограммы длительности запросов",
+    "samples": "{{count}} выборок",
+    "p50": "p50",
+    "p95": "p95",
+    "p99": "p99",
+    "avg": "Среднее"
+  },
+  "routes": {
+    "subtitle": "Самые частые маршруты API со средним временем и числом 5xx",
+    "columns": {
+      "route": "Маршрут",
+      "requests": "Запросы",
+      "avgDuration": "Сред. время",
+      "errors": "5xx"
+    }
+  },
+  "process": {
+    "subtitle": "Счётчики runtime Node.js из стандартных метрик Prometheus",
+    "rss": "RSS память",
+    "heap": "Heap used",
+    "cpuUser": "CPU user time",
+    "cpuSystem": "CPU system time",
+    "eventLoopLag": "Event loop lag",
+    "uptime": "Аптайм процесса"
+  },
+  "units": {
+    "seconds": "сек",
+    "minutes": "мин",
+    "hours": "ч",
+    "perSecond": "зап/с"
+  }
+}

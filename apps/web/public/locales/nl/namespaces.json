@@ -1,0 +1,29 @@
+{
+  "title": "Namespaces",
+  "subtitle": "Kubernetes namespaces aanmaken en verwijderen in het actieve cluster",
+  "loading": "Namespaces laden...",
+  "error": "Namespaces laden mislukt",
+  "protected": "Beschermd",
+  "create": {
+    "title": "Nieuwe namespace",
+    "label": "Naam",
+    "placeholder": "staging",
+    "submit": "Namespace aanmaken",
+    "submitting": "Aanmaken...",
+    "cancel": "Annuleren",
+    "hint": "Gebruik kleine DNS-namen. Systeem-namespaces met het kube- prefix kunnen niet worden verwijderd."
+  },
+  "table": {
+    "name": "Naam",
+    "status": "Status",
+    "created": "Aangemaakt",
+    "actions": "Acties"
+  },
+  "actions": {
+    "delete": "Verwijderen"
+  },
+  "delete": {
+    "title": "Namespace verwijderen",
+    "message": "Namespace {{name}} verwijderen? Alle resources erin worden verwijderd."
+  }
+}

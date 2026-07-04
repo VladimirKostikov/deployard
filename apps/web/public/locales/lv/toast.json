@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Replikas atjauninātas",
+    "scaleError": "Neizdevās mērogot deployment",
+    "imageSuccess": "Container image atjaunināts",
+    "imageError": "Neizdevās atjaunināt container image",
+    "deleteSuccess": "Deployment dzēsts",
+    "deleteError": "Neizdevās dzēst deployment",
+    "createSuccess": "Deployment izveidots",
+    "createError": "Neizdevās izveidot deployment",
+    "configSaved": "Konfigurācija saglabāta",
+    "configError": "Neizdevās saglabāt konfigurāciju",
+    "restartSuccess": "Deployment pārstartēts",
+    "restartError": "Neizdevās pārstartēt deployment",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback pabeigts",
+    "rollbackError": "Rollback neizdevās",
+    "projectGroupDeleteSuccess": "Projekta grupa dzēsta",
+    "projectGroupDeleteError": "Neizdevās dzēst projekta grupu",
+    "projectGroupRestartSuccess": "Grupa restartēta",
+    "projectGroupRestartError": "Neizdevās restartēt grupu",
+    "projectGroupDisableSuccess": "Grupa atspējota",
+    "projectGroupDisableError": "Neizdevās atspējot grupu",
+    "filesFolderCreated": "Mape izveidota",
+    "filesUploaded": "Fails augšupielādēts",
+    "filesDeleted": "Dzēsts",
+    "filesRenamed": "Pārdēvēts",
+    "filesError": "Faila darbība neizdevās"
+  },
+  "pod": {
+    "restartSuccess": "Pod pārstartēts",
+    "restartError": "Neizdevās pārstartēt pod",
+    "deleteSuccess": "Pod dzēsts",
+    "deleteError": "Neizdevās dzēst pod"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service izveidots",
+    "serviceCreateError": "Neizdevās izveidot service",
+    "serviceDeleteSuccess": "Service dzēsts",
+    "serviceDeleteError": "Neizdevās dzēst service",
+    "serviceUpdateSuccess": "Service atjaunināts",
+    "serviceUpdateError": "Neizdevās atjaunināt service",
+    "tunnelError": "Neizdevās atvērt service piekļuvi",
+    "openBlocked": "Pārlūks bloķēja jauno cilni. Atļaujiet pop-up šai vietnei.",
+    "openError": "Neizdevās atvērt {{name}}. Pārbaudiet, vai pod darbojas.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Ingress noteikums dzēsts",
+    "ingressDeleteError": "Neizdevās dzēst ingress noteikumu"
+  },
+  "ingress": {
+    "createSuccess": "Ingress noteikums izveidots",
+    "createError": "Neizdevās izveidot ingress noteikumu",
+    "deleteSuccess": "Ingress noteikums dzēsts",
+    "deleteError": "Neizdevās dzēst ingress noteikumu"
+  },
+  "namespace": {
+    "createSuccess": "Namespace izveidots",
+    "createError": "Neizdevās izveidot namespace",
+    "deleteSuccess": "Namespace dzēsts",
+    "deleteError": "Neizdevās dzēst namespace"
+  },
+  "import": {
+    "buildSuccess": "Images uzbūvēti",
+    "buildError": "Neizdevās uzbūvēt images",
+    "rebuildSuccess": "Docker Compose pārbūvēts un palaists",
+    "rebuildError": "Neizdevās pārbūvēt projektu",
+    "loadSuccess": "Images ielādēti klasterī",
+    "loadError": "Neizdevās ielādēt images klasterī",
+    "applySuccess": "Projekts importēts Kubernetes",
+    "applyWithImages": "Projekts importēts, {{count}} images ielādēti kind",
+    "openImportedApp": "Atver lietotni {{url}}",
+    "openUnavailable": "Import pabeigts, bet URL vēl nav gatavs. Atveriet to no Network → web.",
+    "applyError": "Neizdevās importēt projektu",
+    "previewError": "Neizdevās izveidot priekšskatījumu"
+  },
+  "admin": {
+    "userSaveSuccess": "Lietotājs saglabāts",
+    "userSaveError": "Neizdevās saglabāt lietotāju",
+    "userDeleteSuccess": "Lietotājs dzēsts",
+    "userDeleteError": "Neizdevās dzēst lietotāju",
+    "roleSaveSuccess": "Loma saglabāta",
+    "roleSaveError": "Neizdevās saglabāt lomu",
+    "roleDeleteSuccess": "Loma dzēsta",
+    "roleDeleteError": "Neizdevās dzēst lomu",
+    "permissionSaveSuccess": "Atļauja saglabāta",
+    "permissionSaveError": "Neizdevās saglabāt atļauju",
+    "permissionDeleteSuccess": "Atļauja dzēsta",
+    "permissionDeleteError": "Neizdevās dzēst atļauju"
+  }
+}

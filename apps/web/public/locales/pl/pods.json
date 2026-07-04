@@ -1,0 +1,26 @@
+{
+  "loading": "Ładowanie podów...",
+  "error": "Nie udało się załadować podów",
+  "empty": "Brak podów dla tego deploymentu",
+  "yes": "Tak",
+  "no": "Nie",
+  "table": {
+    "name": "Pod",
+    "phase": "Phase",
+    "ready": "Ready",
+    "restarts": "Restarty",
+    "node": "Node",
+    "podIp": "Pod IP",
+    "ports": "Porty",
+    "actions": "Akcje"
+  },
+  "actions": {
+    "restart": "Restart poda",
+    "delete": "Usuń pod",
+    "console": "Otwórz konsolę"
+  },
+  "delete": {
+    "title": "Usuń pod",
+    "message": "Usunąć pod {{name}}? Kontroler deploymentu może go odtworzyć."
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "title": "Deployments",
+  "subtitle": "Lietotnes izvēlētajā namespace",
+  "subtitleAll": "Lietotnes visos pieejamos namespaces",
+  "loading": "Ielādē deployments...",
+  "error": "Neizdevās ielādēt deployments",
+  "empty": "Šajā namespace nav deployments",
+  "emptyAll": "Pieejamos namespaces nav deployments",
+  "projectGroups": {
+    "standalone": "Atsevišķi",
+    "services_one": "{{count}} pakalpojums",
+    "services_other": "{{count}} pakalpojumi",
+    "health": "{{healthy}}/{{total}} veseli",
+    "restarting": "{{count}}/{{total}} restartē",
+    "restartingBanner": "Restartē {{count}} no {{total}} deployments šajā grupā",
+    "settings": "Iestatījumi",
+    "settingsTitle": "Grupas iestatījumi",
+    "settingsGroupLabel": "Projekta grupa",
+    "settingsDockerReady": "Docker pieejams",
+    "settingsDockerUnavailable": "Docker nav pieejams",
+    "settingsRebuildHint": "Pārbūvē compose, ielādē images kind un izvieto deployments šajā grupā.",
+    "settingsLoading": "Pārbauda vidi...",
+    "settingsClose": "Aizvērt",
+    "settingsNoCompose": "Compose projekts ar šo nosaukumu nav atrasts. Pārbūve pieejama tikai grupām, importētām no Docker Compose.",
+    "delete": "Dzēst grupu",
+    "restart": "Restartēt grupu",
+    "disable": "Atspējot grupu",
+    "deleteTitle": "Dzēst projekta grupu",
+    "deleteMessage": "Dzēst visus deployments, services un secrets grupā \"{{name}}\"?"
+  },
+  "table": {
+    "name": "Nosaukums",
+    "namespace": "Namespace",
+    "image": "Image",
+    "replicas": "Gatavs / Kopā",
+    "revision": "Revision",
+    "status": "Statuss"
+  },
+  "status": {
+    "healthy": "Healthy",
+    "starting": "Palaiž",
+    "restarting": "Restartēšana",
+    "degraded": "Degraded",
+    "scaledToZero": "Samazināts līdz null",
+    "disabled": "Disabled"
+  },
+  "statusModal": {
+    "open": "Skatīt statusa detaļas",
+    "title": "Deployment statuss",
+    "summary": {
+      "healthy": "Visi podi ir gatavi.",
+      "starting": "Deployment tiek palaists. Tas ir normāli uzreiz pēc izveides.",
+      "degraded": "Daži podi nav gatavi. Atveriet detaļas, lai redzētu iemeslu.",
+      "scaledToZero": "Repliku skaits ir 0, nav darbojošu podu.",
+      "disabled": "Deployment is disabled. Pods are stopped until you enable it again.",
+      "restarting": "Rolling restart notiek: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} atjaunināti."
+    },
+    "reasonsTitle": "Kāpēc šis statuss",
+    "desired": "Vēlamais",
+    "ready": "Ready",
+    "available": "Available",
+    "updated": "Updated",
+    "reasons": {
+      "healthy": "{{ready}} no {{desired}} replikām ir gatavas.",
+      "starting": "Deployment tikko izveidots vai tiek atjaunināts.",
+      "scaledToZero": "Samazināts līdz null, nav darbojošu podu.",
+      "disabled": "Disabled via Deployard. Enable to restore {{replicas}} replica(s).",
+      "podsNotReady": "{{ready}} no {{desired}} gatavi, ne visi podi izturēja readiness probes.",
+      "podsNotAvailable": "{{available}} no {{desired}} available, podi vēl nav gatavi.",
+      "rolloutInProgress": "{{updated}} no {{desired}} atjaunināti, rollout notiek.",
+      "rolloutStalled": "Rolling update pabeigts, bet podi nekļūst gatavi. Skatiet tabulu zemāk.",
+      "restarting": "Pod tiek izveidoti no jauna: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} atjaunināti."
+    },
+    "podsTitle": "Pod statuss",
+    "podsLoading": "Ielādē podus...",
+    "podsEmpty": "Šim deployment nav atrasti podi.",
+    "podsHint": "Image var trūkt klasterī. Uzbūvējiet lokāli un ielādējiet kind vai izmantojiet registry.",
+    "podsColumns": {
+      "pod": "Pod",
+      "phase": "Phase",
+      "container": "Container",
+      "state": "State"
+    },
+    "containerStates": {
+      "ImagePullBackOff": "Nevar lejupielādēt image",
+      "ErrImagePull": "Image pull kļūda",
+      "CrashLoopBackOff": "Container avāriju ciklā un pārstartējas",
+      "ContainerCreating": "Container tiek veidots",
+      "PodInitializing": "Pod tiek inicializēts",
+      "CreateContainerConfigError": "Container konfigurācijas kļūda",
+      "InvalidImageName": "Nederīgs image nosaukums",
+      "CreateContainerError": "Neizdevās izveidot container",
+      "RunContainerError": "Neizdevās palaist container",
+      "waiting": "Gaida",
+      "running": "Darbojas, bet nav gatavs",
+      "terminated": "Beigts",
+      "pending": "Gaida plānošanu"
+    }
+  },
+  "actions": {
+    "label": "Darbības",
+    "view": "Skatīt",
+    "pods": "Skatīt podus",
+    "logs": "Skatīt žurnālus",
+    "history": "Revision vēsture",
+    "console": "Atvērt konsoli",
+    "restart": "Pārstartēt deployment",
+    "delete": "Dzēst deployment",
+    "disable": "Disable deployment",
+    "enable": "Enable deployment",
+    "enableAfterError": "Iespējot vēlreiz. Atspējojot bija kļūdas",
+    "error": "Darbība neizdevās"
+  },
+  "tabs": {
+    "ariaLabel": "Deployment sadaļas",
+    "overview": "Pārskats",
+    "health": "Veselības pārbaudes",
+    "config": "Config",
+    "history": "Vēsture",
+    "pods": "Pods",
+    "files": "Faili",
+    "logs": "Žurnāli",
+    "console": "Konsole"
+  },
+  "files": {
+    "podLabel": "Pod",
+    "loading": "Ielādē failus...",
+    "error": "Neizdevās ielādēt failus",
+    "empty": "Šī mape ir tukša",
+    "noPods": "Nav pod šim deployment",
+    "refresh": "Atjaunināt",
+    "newFolder": "Jauna mape",
+    "upload": "Augšupielādēt failu",
+    "download": "Lejupielādēt",
+    "rename": "Pārdēvēt",
+    "delete": "Dzēst",
+    "folderPrompt": "Mapes nosaukums",
+    "renamePrompt": "Jauns nosaukums",
+    "deleteConfirm": "Dzēst \"{{name}}\"?",
+    "previewEmpty": "Fails ir tukšs",
+    "breadcrumbs": "Ceļš",
+    "root": "Sakne",
+    "pod": "Pod",
+    "columns": {
+      "name": "Nosaukums",
+      "size": "Izmērs",
+      "modified": "Mainīts",
+      "actions": "Darbības"
+    }
+  },
+  "scale": {
+    "label": "Replikas",
+    "submit": "Lietot mērogošanu",
+    "submitting": "Mērogo...",
+    "hint": "Mainiet, cik pod kopiju deployment jāuztur darbībā."
+  },
+  "disable": {
+    "disable": "Disable deployment",
+    "disabling": "Disabling...",
+    "disableHint": "Stops all pods and saves the current replica count for quick restore.",
+    "enable": "Enable deployment",
+    "enabling": "Enabling...",
+    "enableHint": "Restores {{replicas}} replica(s) and starts pods again.",
+    "enableErrorHint": "Atspējojot bija kļūdas. Labojiet image vai config un iespējojiet vēlreiz ({{replicas}} replikas)."
+  },
+  "console": {
+    "connect": "Savienoties",
+    "connecting": "Savienojas...",
+    "disconnect": "Atvienoties",
+    "connected": "Savienots ar {{pod}}",
+    "disconnected": "Sesija aizvērta",
+    "statusConnected": "Savienots",
+    "statusDisconnected": "Atvienots",
+    "empty": "Savienojieties, lai sāktu interaktīvu shell izvēlētajā pod.",
+    "inputPlaceholder": "Ievadiet komandas šeit...",
+    "inputDisabled": "Vispirms savienojieties ar pod"
+  },
+  "detail": {
+    "subtitle": "Namespace: {{namespace}}",
+    "loading": "Ielādē deployment...",
+    "error": "Neizdevās ielādēt deployment",
+    "historyTitle": "Revision vēsture",
+    "podsTitle": "Pods",
+    "logsTitle": "Žurnāli",
+    "logsEmpty": "Nav podu žurnālu straumēšanai"
+  },
+  "history": {
+    "loading": "Ielādē revision vēsturi...",
+    "error": "Neizdevās ielādēt revision vēsturi",
+    "empty": "Revision nav atrastas",
+    "current": "Pašreizējā",
+    "rollback": "Rollback",
+    "table": {
+      "revision": "Revision",
+      "image": "Image",
+      "replicas": "Replikas",
+      "created": "Izveidots",
+      "actions": "Darbības"
+    }
+  },
+  "rollback": {
+    "title": "Apstiprināt rollback",
+    "subtitle": "Deployment: {{name}}",
+    "targetRevision": "Mērķa revision",
+    "targetImage": "Mērķa image",
+    "cancel": "Atcelt",
+    "confirm": "Rollback",
+    "submitting": "Atgriež..."
+  },
+  "create": {
+    "title": "Jauns deployment",
+    "namePlaceholder": "my-api",
+    "imagePlaceholder": "Izvēlieties no kataloga vai ievadiet savu",
+    "replicasPlaceholder": "Replikas",
+    "portPlaceholder": "Container ports",
+    "projectLabel": "Projekta grupa",
+    "projectHint": "Deployments ar vienu label tiek rādīti kopā sarakstā.",
+    "projectNone": "Bez grupas",
+    "projectExisting": "Pievienot esošajai grupai",
+    "projectNew": "Izveidot jaunu grupu",
+    "projectNewPlaceholder": "my-project",
+    "submit": "Izveidot deployment",
+    "submitting": "Izveido...",
+    "cancel": "Atcelt"
+  },
+  "image": {
+    "label": "Container image",
+    "submit": "Deploy jaunu versiju",
+    "submitting": "Deploy...",
+    "hint": "Atjaunina deployment veidni un sāk rolling rollout.",
+    "error": "Neizdevās atjaunināt container image.",
+    "unchanged": "Image jau ir deployots."
+  },
+  "imagePicker": {
+    "placeholder": "nginx:1.27-alpine, redis:7-alpine, postgres:16-alpine...",
+    "browse": "Image katalogs",
+    "catalogHint": "{{count}} images: Web server, Database, Runtime un citi",
+    "customTitle": "Pielāgots image",
+    "customHint": "Ievadiet registry/repository:tag",
+    "empty": "Nav atbilstību. Ievadiet pielāgotu image augšā."
+  },
+  "delete": {
+    "title": "Dzēst deployment",
+    "message": "Dzēst deployment {{name}}? Visi podi tiks noņemti.",
+    "submit": "Dzēst deployment"
+  },
+  "restart": {
+    "submit": "Pārstartēt deployment",
+    "submitting": "Pārstartē...",
+    "hint": "Rolling restart atjauno visus podus ar to pašu image (kā kubectl rollout restart).",
+    "bannerTitle": "Atjaunināšana notiek",
+    "bannerProgress": "{{ready}}/{{desired}} gatavi, {{updated}}/{{desired}} atjaunināti",
+    "bannerHint": "Podi tiek atjaunoti. Sekojiet Pods cilnei reāllaika statusam.",
+    "rowProgress": "({{ready}}/{{desired}} ready)",
+    "error": "Neizdevās pārstartēt deployment.",
+    "done": "Deployment tiek pārstartēts"
+  },
+  "config": {
+    "title": "Vides mainīgie",
+    "loading": "Ielādē konfigurāciju...",
+    "error": "Neizdevās ielādēt konfigurāciju",
+    "empty": "Mainīgie nav iestatīti",
+    "namePlaceholder": "MYSQL_ROOT_PASSWORD",
+    "valuePlaceholder": "vērtība",
+    "add": "Pievienot mainīgo",
+    "remove": "Noņemt",
+    "submit": "Saglabāt",
+    "submitting": "Saglabā...",
+    "portHint": "Container ports: {{port}}",
+    "createHint": "Kataloga images saņem dev noklusējumus. Pārskatiet pirms izveides."
+  },
+  "healthProbes": {
+    "title": "Veselības pārbaudes",
+    "loading": "Ielādē probe konfigurāciju...",
+    "error": "Neizdevās ielādēt health probes",
+    "empty": "Galvenajam container nav konfigurētas probes",
+    "configTitle": "Konfigurētās probes",
+    "podsTitle": "Pod gatavība",
+    "podsEmpty": "Nav podu pārbaudei",
+    "podReady": "Ready",
+    "podNotReady": "Nav gatavs",
+    "podStates": {
+      "ready": "Ready",
+      "runningNotReady": "Darbojas, bet nav ready",
+      "pending": "Gaida",
+      "failed": "Neizdevās",
+      "notReady": "Nav ready"
+    },
+    "types": {
+      "readiness": "Readiness",
+      "liveness": "Liveness",
+      "startup": "Startup"
+    },
+    "mechanisms": {
+      "http": "HTTP",
+      "tcp": "TCP",
+      "exec": "Exec",
+      "grpc": "gRPC",
+      "none": "Nav"
+    },
+    "columns": {
+      "type": "Tips",
+      "mechanism": "Mehānisms",
+      "target": "Mērķis",
+      "timing": "Laiks",
+      "pod": "Pod",
+      "phase": "Phase",
+      "podStatus": "Readiness"
+    },
+    "timing": {
+      "start": "start {{seconds}}s",
+      "every": "katras {{seconds}}s",
+      "timeout": "timeout {{seconds}}s"
+    }
+  }
+}

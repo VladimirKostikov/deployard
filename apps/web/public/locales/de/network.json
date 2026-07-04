@@ -1,0 +1,81 @@
+{
+  "title": "Netzwerk",
+  "subtitle": "Services, Endpoints und Ingress: wie Pods im Cluster kommunizieren",
+  "tabs": {
+    "ariaLabel": "Netzwerk-Bereiche",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Services werden geladen...",
+    "error": "Services konnten nicht geladen werden",
+    "empty": "Keine Services in diesem Namespace",
+    "table": {
+      "name": "Name",
+      "type": "Typ",
+      "clusterIp": "Cluster-IP",
+      "ports": "Ports",
+      "selector": "Selector",
+      "actions": "Aktionen"
+    },
+    "actions": {
+      "delete": "Löschen",
+      "open": "{{name}} im Browser öffnen",
+      "openTooltip": "Im Browser über das Dashboard öffnen. Manueller Port-forward: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Port-forward-Befehl für {{name}} kopieren",
+      "copied": "Befehl kopiert",
+      "edit": "Ports bearbeiten",
+      "editShort": "Ports"
+    },
+    "groups": {
+      "count": "{{count}} Services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Typ",
+      "portsLabel": "Ports",
+      "port": "Service-Port",
+      "targetPort": "Target-Port",
+      "nodePort": "NodePort",
+      "cancel": "Abbrechen",
+      "save": "Speichern",
+      "saving": "Speichere..."
+    },
+    "delete": {
+      "title": "Service löschen",
+      "message": "Service {{name}} löschen? Pods bleiben, der DNS-Name funktioniert nicht mehr."
+    },
+    "create": {
+      "title": "Service erstellen",
+      "name": "Service-Name",
+      "deployment": "Deployment",
+      "port": "Service-Port",
+      "targetPort": "Target-Port (optional)",
+      "submit": "Service erstellen",
+      "submitting": "Erstelle...",
+      "cancel": "Abbrechen"
+    }
+  },
+  "endpoints": {
+    "subtitle": "Pod-IPs hinter jedem Service (automatisch von Kubernetes verwaltet)",
+    "loading": "Endpoints werden geladen...",
+    "error": "Endpoints konnten nicht geladen werden",
+    "empty": "Keine Endpoints: Service für ein Deployment anlegen",
+    "table": {
+      "name": "Service",
+      "ports": "Ports",
+      "addresses": "Pod-IP / Name"
+    }
+  },
+  "deployment": {
+    "title": "Verknüpfte Services",
+    "loading": "Services werden geladen...",
+    "error": "Services konnten nicht geladen werden",
+    "empty": "Kein Service für dieses Deployment. Auf der Seite Netzwerk anlegen.",
+    "openNetwork": "Netzwerk öffnen",
+    "viewEndpoints": "Pod-IPs →"
+  }
+}

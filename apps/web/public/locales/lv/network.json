@@ -1,0 +1,81 @@
+{
+  "title": "Tīkls",
+  "subtitle": "Services, Endpoints un Ingress: kā podi sasniedz viens otru klastrī",
+  "tabs": {
+    "ariaLabel": "Tīkla sadaļas",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Ielādē services...",
+    "error": "Neizdevās ielādēt services",
+    "empty": "Šajā namespace nav services",
+    "table": {
+      "name": "Nosaukums",
+      "type": "Tips",
+      "clusterIp": "Cluster IP",
+      "ports": "Porti",
+      "selector": "Selector",
+      "actions": "Darbības"
+    },
+    "actions": {
+      "delete": "Dzēst",
+      "open": "Atvērt {{name}} pārlūkā",
+      "openTooltip": "{{url}}: ja lapa neielādējas, terminālī palaidiet: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Kopēt port-forward komandu {{name}}",
+      "copied": "Komanda nokopēta",
+      "edit": "Rediģēt portus",
+      "editShort": "Porti"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Tips",
+      "portsLabel": "Porti",
+      "port": "Service ports",
+      "targetPort": "Target port",
+      "nodePort": "NodePort",
+      "cancel": "Atcelt",
+      "save": "Saglabāt",
+      "saving": "Saglabā..."
+    },
+    "delete": {
+      "title": "Dzēst service",
+      "message": "Dzēst service {{name}}? Podi turpinās darboties, bet DNS nosaukums vairs nestrādās."
+    },
+    "create": {
+      "title": "Izveidot service",
+      "name": "Service nosaukums",
+      "deployment": "Deployment",
+      "port": "Service ports",
+      "targetPort": "Target port (neobligāti)",
+      "submit": "Izveidot service",
+      "submitting": "Izveido...",
+      "cancel": "Atcelt"
+    }
+  },
+  "endpoints": {
+    "subtitle": "Pod IP aiz katra service (automātiski pārvalda Kubernetes)",
+    "loading": "Ielādē endpoints...",
+    "error": "Neizdevās ielādēt endpoints",
+    "empty": "Endpoints vēl nav: izveidojiet service deployment",
+    "table": {
+      "name": "Service",
+      "ports": "Porti",
+      "addresses": "Pod IP / nosaukums"
+    }
+  },
+  "deployment": {
+    "title": "Saistītie services",
+    "loading": "Ielādē services...",
+    "error": "Neizdevās ielādēt services",
+    "empty": "Šim deployment nav service. Izveidojiet to Tīkls lapā.",
+    "openNetwork": "Atvērt tīklu",
+    "viewEndpoints": "Pod IP →"
+  }
+}

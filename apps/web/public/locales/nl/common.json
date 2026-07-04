@@ -1,0 +1,26 @@
+{
+  "appTitle": "Deployard",
+  "language": "Taal",
+  "theme": {
+    "label": "Thema",
+    "light": "Licht",
+    "dark": "Donker",
+    "system": "Auto"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "admin": "Admin",
+    "logout": "Uitloggen"
+  },
+  "status": {
+    "connected": "API verbonden",
+    "checking": "API controleren..."
+  },
+  "cluster": {
+    "label": "Cluster"
+  },
+  "namespace": {
+    "label": "Namespace",
+    "all": "Alle namespaces"
+  }
+}

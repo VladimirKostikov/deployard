@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Worker nodes v clusterju in podi, načrtovani nanje",
+  "loading": "Nalaganje nodes...",
+  "error": "Nodes ni bilo mogoče naložiti",
+  "podsTitle": "Podi na {{node}}",
+  "podsLoading": "Nalaganje podov...",
+  "podsError": "Podov za ta node ni bilo mogoče naložiti",
+  "podsEmpty": "Na tem node ni podov",
+  "table": {
+    "name": "Node",
+    "status": "Status",
+    "roles": "Vloge",
+    "pods": "Podi",
+    "version": "Kubelet",
+    "actions": "Dejanja"
+  },
+  "actions": {
+    "viewPods": "Prikaži pode"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Phase",
+    "ready": "Ready",
+    "yes": "Da",
+    "no": "Ne"
+  }
+}

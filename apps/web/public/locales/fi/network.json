@@ -1,0 +1,81 @@
+{
+  "title": "Verkko",
+  "subtitle": "Services, Endpoints ja Ingress: miten podit tavoittavat toisensa clusterissa",
+  "tabs": {
+    "ariaLabel": "Verkko-osiot",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Ladataan serviceja...",
+    "error": "Servicejen lataus epäonnistui",
+    "empty": "Ei serviceja tässä namespacessa",
+    "table": {
+      "name": "Nimi",
+      "type": "Tyyppi",
+      "clusterIp": "Cluster IP",
+      "ports": "Portit",
+      "selector": "Selector",
+      "actions": "Toiminnot"
+    },
+    "actions": {
+      "delete": "Poista",
+      "open": "Avaa {{name}} selaimessa",
+      "openTooltip": "{{url}}: jos sivu ei lataudu, aja terminaalissa: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Kopioi port-forward-komento: {{name}}",
+      "copied": "Komento kopioitu",
+      "edit": "Muokkaa portteja",
+      "editShort": "Portit"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Tyyppi",
+      "portsLabel": "Portit",
+      "port": "Service-portti",
+      "targetPort": "Kohdeportti",
+      "nodePort": "NodePort",
+      "cancel": "Peruuta",
+      "save": "Tallenna",
+      "saving": "Tallennetaan..."
+    },
+    "delete": {
+      "title": "Poista service",
+      "message": "Poistetaanko service {{name}}? Podit jatkavat, mutta DNS-nimi lakkaa toimimasta."
+    },
+    "create": {
+      "title": "Luo service",
+      "name": "Service-nimi",
+      "deployment": "Deployment",
+      "port": "Service-portti",
+      "targetPort": "Kohdeportti (valinnainen)",
+      "submit": "Luo service",
+      "submitting": "Luodaan...",
+      "cancel": "Peruuta"
+    }
+  },
+  "endpoints": {
+    "subtitle": "Pod IP:t kunkin servicen takana (Kubernetes hallitsee automaattisesti)",
+    "loading": "Ladataan endpointseja...",
+    "error": "Endpointsien lataus epäonnistui",
+    "empty": "Ei endpointseja vielä: luo service deploymentille",
+    "table": {
+      "name": "Service",
+      "ports": "Portit",
+      "addresses": "Pod IP / nimi"
+    }
+  },
+  "deployment": {
+    "title": "Linkitetyt services",
+    "loading": "Ladataan serviceja...",
+    "error": "Servicejen lataus epäonnistui",
+    "empty": "Ei servicea tälle deploymentille. Luo se Verkko-sivulla.",
+    "openNetwork": "Avaa verkko",
+    "viewEndpoints": "Pod IP:t →"
+  }
+}

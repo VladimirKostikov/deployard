@@ -1,0 +1,316 @@
+{
+  "title": "Deployments",
+  "subtitle": "Feidhmchláir sa Namespace roghnaithe",
+  "subtitleAll": "Feidhmchláir ar fud gach Namespace inrochtana",
+  "loading": "Ag lódáil Deployments...",
+  "error": "Theip ar lódáil na Deployments",
+  "empty": "Níor aimsíodh Deployment sa Namespace seo",
+  "emptyAll": "Níor aimsíodh Deployment sna Namespaces inrochtana",
+  "projectGroups": {
+    "standalone": "Neamhspleách",
+    "services_one": "{{count}} seirbhís",
+    "services_other": "{{count}} seirbhís",
+    "health": "{{healthy}}/{{total}} sláintiúil",
+    "restarting": "{{count}}/{{total}} ag atosú",
+    "restartingBanner": "Ag atosú {{count}} as {{total}} deployments sa ghrúpa seo",
+    "settings": "Socruithe",
+    "settingsTitle": "Socruithe grúpa",
+    "settingsGroupLabel": "Grúpa tionscadail",
+    "settingsDockerReady": "Docker ar fáil",
+    "settingsDockerUnavailable": "Docker nach bhfuil ar fáil",
+    "settingsRebuildHint": "Athchódaíonn compose, lódálann íomhánna isteach i kind, agus déanann rollout ar Deployments sa ghrúpa seo.",
+    "settingsLoading": "Ag seiceáil an timpeallachta...",
+    "settingsClose": "Dún",
+    "settingsNoCompose": "Níor aimsíodh tionscadal compose leis an ainm seo. Níl athchóiriú ar fáil ach do ghrúpaí iompórtáilte ó Docker Compose.",
+    "delete": "Scrios grúpa",
+    "restart": "Atosaigh an grúpa",
+    "disable": "Díchumasaigh an grúpa",
+    "deleteTitle": "Scrios grúpa tionscadail",
+    "deleteMessage": "Scrios gach Deployment, seirbhís agus rún sa ghrúpa \"{{name}}\"?"
+  },
+  "table": {
+    "name": "Ainm",
+    "namespace": "Namespace",
+    "image": "Íomhá",
+    "replicas": "Réidh / Iomlán",
+    "revision": "Revision",
+    "status": "Stádas"
+  },
+  "status": {
+    "healthy": "Sláintiúil",
+    "starting": "Ag tosú",
+    "restarting": "Ag atosú",
+    "degraded": "Laghdaithe",
+    "scaledToZero": "Scálaithe go zero",
+    "disabled": "Disabled"
+  },
+  "statusModal": {
+    "open": "Féach ar shonraí stádais",
+    "title": "Stádas Deployment",
+    "summary": {
+      "healthy": "Tá gach pod réidh.",
+      "starting": "Tá an Deployment ag tosú. Is gnách é seo go díreach tar éis cruthú.",
+      "degraded": "Níl roinnt podanna réidh. Oscail sonraí chun an fáth a fheiceáil.",
+      "scaledToZero": "Tá líon na replicas 0, níl podanna ar siúl.",
+      "disabled": "Deployment is disabled. Pods are stopped until you enable it again.",
+      "restarting": "Rolling restart ar siúl: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} nuashonraithe."
+    },
+    "reasonsTitle": "Cén fáth an stádas seo",
+    "desired": "Ag teastáil",
+    "ready": "Réidh",
+    "available": "Ar fáil",
+    "updated": "Nuashonraithe",
+    "reasons": {
+      "healthy": "Tá {{ready}} as {{desired}} replicas réidh.",
+      "starting": "Cruthaíodh an Deployment díreach nó tá sé ag nuashonrú.",
+      "scaledToZero": "Scálaithe go zero, níl podanna ar siúl.",
+      "disabled": "Disabled via Deployard. Enable to restore {{replicas}} replica(s).",
+      "podsNotReady": "Tá {{ready}} as {{desired}} réidh, níor éirigh le gach pod readiness probes.",
+      "podsNotAvailable": "Tá {{available}} as {{desired}} ar fáil, níl podanna réidh fós.",
+      "rolloutInProgress": "Tá {{updated}} as {{desired}} nuashonraithe, rollout ar siúl.",
+      "rolloutStalled": "Críochnaigh an rolling update ach níl podanna ag éirí réidh. Féach ar an tábla thíos.",
+      "restarting": "Tá pod á athchruthú: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} nuashonraithe."
+    },
+    "podsTitle": "Stádas pod",
+    "podsLoading": "Ag lódáil podanna...",
+    "podsEmpty": "Níor aimsíodh podanna don Deployment seo.",
+    "podsHint": "D'fhéadfadh an íomhá a bheith ar iarraidh sa chlustar. Tóg í go háitiúil agus lódáil isteach i kind, nó úsáid clár.",
+    "podsColumns": {
+      "pod": "Pod",
+      "phase": "Céim",
+      "container": "Coimeádán",
+      "state": "Staid"
+    },
+    "containerStates": {
+      "ImagePullBackOff": "Ní féidir an íomhá a tharraingt",
+      "ErrImagePull": "Earráid tarraingthe íomhá",
+      "CrashLoopBackOff": "Tá an coimeádán ag tuairteáil agus ag atosú",
+      "ContainerCreating": "Tá an coimeádán á chruthú",
+      "PodInitializing": "Tá an pod á thúsú",
+      "CreateContainerConfigError": "Earráid cumraíochta coimeádáin",
+      "InvalidImageName": "Ainm íomhá neamhbhailí",
+      "CreateContainerError": "Theip ar chruthú an choimeádáin",
+      "RunContainerError": "Theip ar rith an choimeádáin",
+      "waiting": "Ag fanacht",
+      "running": "Ar siúl ach nach bhfuil réidh",
+      "terminated": "Críochnaithe",
+      "pending": "Sceidealú ar feitheamh"
+    }
+  },
+  "actions": {
+    "label": "Gníomhartha",
+    "view": "Féach",
+    "pods": "Féach ar podanna",
+    "logs": "Féach ar loganna",
+    "history": "Stair revision",
+    "console": "Oscail consól",
+    "restart": "Atosaigh Deployment",
+    "delete": "Scrios Deployment",
+    "disable": "Disable deployment",
+    "enable": "Enable deployment",
+    "enableAfterError": "Cumasaigh arís. Bhí earráidí ann nuair a díchumasaíodh é",
+    "error": "Theip ar an gníomh"
+  },
+  "tabs": {
+    "ariaLabel": "Rannáin Deployment",
+    "overview": "Forbhreathnú",
+    "health": "Health probes",
+    "config": "Cumraíocht",
+    "history": "Stair",
+    "pods": "Podanna",
+    "files": "Comhaid",
+    "logs": "Loganna",
+    "console": "Consól"
+  },
+  "files": {
+    "podLabel": "Pod",
+    "loading": "Comhaid á lódáil...",
+    "error": "Theip ar lódáil na gcomhad",
+    "empty": "Tá an eolaire seo folamh",
+    "noPods": "Níl pod ar fáil don deployment seo",
+    "refresh": "Athnuachan",
+    "newFolder": "Fillteán nua",
+    "upload": "Uaslódáil comhad",
+    "download": "Íoslódáil",
+    "rename": "Athainmnigh",
+    "delete": "Scrios",
+    "folderPrompt": "Ainm an fhillteáin",
+    "renamePrompt": "Ainm nua",
+    "deleteConfirm": "Scrios \"{{name}}\"?",
+    "previewEmpty": "Tá an comhad folamh",
+    "breadcrumbs": "Cosán",
+    "root": "Fréamh",
+    "pod": "Pod",
+    "columns": {
+      "name": "Ainm",
+      "size": "Méid",
+      "modified": "Athraithe",
+      "actions": "Gníomhartha"
+    }
+  },
+  "scale": {
+    "label": "Replicas",
+    "submit": "Cuir scála i bhfeidhm",
+    "submitting": "Ag scálú...",
+    "hint": "Athraigh cé mhéad cóip pod ba chóir don Deployment a choinneáil ar siúl."
+  },
+  "disable": {
+    "disable": "Disable deployment",
+    "disabling": "Disabling...",
+    "disableHint": "Stops all pods and saves the current replica count for quick restore.",
+    "enable": "Enable deployment",
+    "enabling": "Enabling...",
+    "enableHint": "Restores {{replicas}} replica(s) and starts pods again.",
+    "enableErrorHint": "Bhí earráidí ann nuair a díchumasaíodh é. Deisigh an image nó an config agus cumasaigh arís ({{replicas}} replice)."
+  },
+  "console": {
+    "connect": "Ceangail",
+    "connecting": "Ag ceangal...",
+    "disconnect": "Dícheangail",
+    "connected": "Ceangailte le {{pod}}",
+    "disconnected": "Seisiún dúnta",
+    "statusConnected": "Ceangailte",
+    "statusDisconnected": "Dícheangailte",
+    "empty": "Ceangail chun shell idirghníomhach a thosú sa pod roghnaithe.",
+    "inputPlaceholder": "Clóscríobh ordú anseo...",
+    "inputDisabled": "Ceangail leis an pod ar dtús"
+  },
+  "detail": {
+    "subtitle": "Namespace: {{namespace}}",
+    "loading": "Ag lódáil Deployment...",
+    "error": "Theip ar lódáil an Deployment",
+    "historyTitle": "Stair revision",
+    "podsTitle": "Podanna",
+    "logsTitle": "Loganna",
+    "logsEmpty": "Níl pod ar fáil le haghaidh sruthú loganna"
+  },
+  "history": {
+    "loading": "Ag lódáil stair revision...",
+    "error": "Theip ar lódáil stair revision",
+    "empty": "Níor aimsíodh revision",
+    "current": "Reatha",
+    "rollback": "Rollback",
+    "table": {
+      "revision": "Revision",
+      "image": "Íomhá",
+      "replicas": "Replicas",
+      "created": "Cruthaithe",
+      "actions": "Gníomhartha"
+    }
+  },
+  "rollback": {
+    "title": "Deimhnigh rollback",
+    "subtitle": "Deployment: {{name}}",
+    "targetRevision": "Revision sprice",
+    "targetImage": "Íomhá sprice",
+    "cancel": "Cealaigh",
+    "confirm": "Rollback",
+    "submitting": "Ag rollback..."
+  },
+  "create": {
+    "title": "Deployment nua",
+    "namePlaceholder": "my-api",
+    "imagePlaceholder": "Roghnaigh ón gcatálog nó clóscríobh do chuid féin",
+    "replicasPlaceholder": "Replicas",
+    "portPlaceholder": "Port coimeádáin",
+    "projectLabel": "Grúpa tionscadail",
+    "projectHint": "Taispeántar Deployments leis an lipéad céanna le chéile sa liosta.",
+    "projectNone": "Gan grúpa",
+    "projectExisting": "Cuir le grúpa atá ann",
+    "projectNew": "Cruthaigh grúpa nua",
+    "projectNewPlaceholder": "my-project",
+    "submit": "Cruthaigh Deployment",
+    "submitting": "Ag cruthú...",
+    "cancel": "Cealaigh"
+  },
+  "image": {
+    "label": "Íomhá coimeádáin",
+    "submit": "Déploy leagan nua",
+    "submitting": "Ag déploy...",
+    "hint": "Nuashonraíonn teimpléad an Deployment agus spreagann rollout rollach.",
+    "error": "Theip ar nuashonrú na híomhá coimeádáin.",
+    "unchanged": "Tá an íomhá déployte cheana."
+  },
+  "imagePicker": {
+    "placeholder": "nginx:1.27-alpine, redis:7-alpine, postgres:16-alpine...",
+    "browse": "Catálog íomhánna",
+    "catalogHint": "{{count}} íomhá: freastalaí gréasáin, bunachar sonraí, Runtime, agus tuilleadh",
+    "customTitle": "Íomhá saincheaptha",
+    "customHint": "Clóscríobh aon registry/repository:tag",
+    "empty": "Níl meaitseáil. Clóscríobh íomhá saincheaptha thuas."
+  },
+  "delete": {
+    "title": "Scrios Deployment",
+    "message": "Scrios Deployment {{name}}? Bainfear gach pod.",
+    "submit": "Scrios Deployment"
+  },
+  "restart": {
+    "submit": "Atosaigh Deployment",
+    "submitting": "Ag atosú...",
+    "hint": "Athchruthaíonn atosú rollach gach pod leis an íomhá céanna (cosúil le kubectl rollout restart).",
+    "bannerTitle": "Nuashonrú ar siúl",
+    "bannerProgress": "{{ready}}/{{desired}} réidh, {{updated}}/{{desired}} nuashonraithe",
+    "bannerHint": "Tá podanna á n-athchruthú. Féach ar an gcluaisín Podanna le haghaidh stádais bheo.",
+    "rowProgress": "({{ready}}/{{desired}} ready)",
+    "error": "Theip ar atosú an Deployment.",
+    "done": "Tá an Deployment ag atosú"
+  },
+  "config": {
+    "title": "Athróga timpeallachta",
+    "loading": "Ag lódáil cumraíochta...",
+    "error": "Theip ar lódáil na cumraíochta",
+    "empty": "Níl athróg socraithe",
+    "namePlaceholder": "MYSQL_ROOT_PASSWORD",
+    "valuePlaceholder": "luach",
+    "add": "Cuir athróg leis",
+    "remove": "Bain",
+    "submit": "Sábháil",
+    "submitting": "Ag sábháil...",
+    "portHint": "Port coimeádáin: {{port}}",
+    "createHint": "Faigheann íomhánna catálog réamhshocruithe forbartha. Athbhreithnigh sula gcruthaíonn tú."
+  },
+  "healthProbes": {
+    "title": "Health probes",
+    "loading": "Ag lódáil cumraíochta probe...",
+    "error": "Theip ar lódáil health probes",
+    "empty": "Níl probe cumraithe don phríomhchoimeádán",
+    "configTitle": "Probes cumraithe",
+    "podsTitle": "Readiness pod",
+    "podsEmpty": "Níl pod le hiniúchadh",
+    "podReady": "Réidh",
+    "podNotReady": "Níl réidh",
+    "podStates": {
+      "ready": "Ready",
+      "runningNotReady": "Ag rith, gan ready",
+      "pending": "Ar feitheamh",
+      "failed": "Theip",
+      "notReady": "Gan ready"
+    },
+    "types": {
+      "readiness": "Readiness",
+      "liveness": "Liveness",
+      "startup": "Startup"
+    },
+    "mechanisms": {
+      "http": "HTTP",
+      "tcp": "TCP",
+      "exec": "Exec",
+      "grpc": "gRPC",
+      "none": "Dada"
+    },
+    "columns": {
+      "type": "Cineál",
+      "mechanism": "Meicníocht",
+      "target": "Sprioc",
+      "timing": "Amú",
+      "pod": "Pod",
+      "phase": "Céim",
+      "podStatus": "Readiness"
+    },
+    "timing": {
+      "start": "tosú {{seconds}}s",
+      "every": "gach {{seconds}}s",
+      "timeout": "teorainn ama {{seconds}}s"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "DEPLOYMENT_NOT_FOUND": "Deployment nije pronađen",
+  "POD_NOT_FOUND": "Pod nije pronađen",
+  "NAMESPACE_NOT_FOUND": "Namespace nije pronađen",
+  "ROLLBACK_FAILED": "Rollback nije uspio",
+  "K8S_API_ERROR": "Greška Kubernetes API-ja",
+  "FORBIDDEN": "Nedovoljne dozvole",
+  "VALIDATION_ERROR": "Greška validacije",
+  "INTERNAL_ERROR": "Interna greška poslužitelja"
+}

@@ -1,0 +1,71 @@
+{
+  "title": "Διαχείριση",
+  "subtitle": "Χρήστες, ρόλοι και δικαιώματα deployments",
+  "back": "Πίσω στα deployments",
+  "actions": {
+    "label": "Ενέργειες",
+    "create": "Δημιουργία",
+    "edit": "Επεξεργασία",
+    "delete": "Διαγραφή",
+    "save": "Αποθήκευση",
+    "cancel": "Ακύρωση",
+    "saving": "Αποθήκευση...",
+    "deleting": "Διαγραφή..."
+  },
+  "users": {
+    "title": "Χρήστες",
+    "subtitle": "Διαχείριση λογαριασμών dashboard και ανάθεση ρόλων",
+    "create": "Προσθήκη χρήστη",
+    "createTitle": "Δημιουργία χρήστη",
+    "editTitle": "Επεξεργασία χρήστη",
+    "deleteTitle": "Διαγραφή χρήστη",
+    "deleteMessage": "Διαγραφή {{email}}; Αυτή η ενέργεια δεν αναιρείται.",
+    "email": "Email",
+    "name": "Όνομα",
+    "password": "Κωδικός",
+    "newPassword": "Νέος κωδικός (προαιρετικό)",
+    "roles": "Ρόλοι",
+    "status": "Κατάσταση",
+    "active": "Ενεργός",
+    "inactive": "Ανενεργός"
+  },
+  "roles": {
+    "title": "Ρόλοι",
+    "subtitle": "Ορισμοί ρόλων και συνδεδεμένα δικαιώματα",
+    "create": "Προσθήκη ρόλου",
+    "createTitle": "Δημιουργία ρόλου",
+    "editTitle": "Επεξεργασία ρόλου",
+    "deleteTitle": "Διαγραφή ρόλου",
+    "deleteMessage": "Διαγραφή ρόλου \"{{name}}\"; Δεν πρέπει να είναι ανατεθειμένος σε κανέναν χρήστη.",
+    "name": "Όνομα",
+    "permissions": "Δικαιώματα"
+  },
+  "permissions": {
+    "title": "Δικαιώματα",
+    "subtitle": "Λεπτομερείς κανόνες πρόσβασης για deployments",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Ενότητα",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Δίκτυο",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Μετρήσεις",
+      "admin": "Διαχείριση"
+    },
+    "level": "Πρόσβαση",
+    "levels": {
+      "none": "Χωρίς πρόσβαση",
+      "view": "Προβολή",
+      "operate": "Λειτουργία",
+      "manage": "Διαχείριση"
+    },
+    "hints": {
+      "view": "Άνοιγμα ενότητας, ανάγνωση λιστών και λεπτομερειών",
+      "operate": "Επανεκκίνηση, απενεργοποίηση, rollback, logs, terminal",
+      "manage": "Δημιουργία, διαγραφή, import και αλλαγές διαχείρισης"
+    }
+  }
+}

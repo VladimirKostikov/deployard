@@ -1,0 +1,10 @@
+{
+  "DEPLOYMENT_NOT_FOUND": "Deployment hittades inte",
+  "POD_NOT_FOUND": "Pod hittades inte",
+  "NAMESPACE_NOT_FOUND": "Namespace hittades inte",
+  "ROLLBACK_FAILED": "Rollback misslyckades",
+  "K8S_API_ERROR": "Kubernetes API-fel",
+  "FORBIDDEN": "Otillräckliga behörigheter",
+  "VALIDATION_ERROR": "Valideringsfel",
+  "INTERNAL_ERROR": "Internt serverfel"
+}

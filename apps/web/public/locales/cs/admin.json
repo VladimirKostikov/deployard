@@ -1,0 +1,71 @@
+{
+  "title": "Správa",
+  "subtitle": "Uživatelé, role a oprávnění k deployments",
+  "back": "Zpět na deployments",
+  "actions": {
+    "label": "Akce",
+    "create": "Vytvořit",
+    "edit": "Upravit",
+    "delete": "Smazat",
+    "save": "Uložit",
+    "cancel": "Zrušit",
+    "saving": "Ukládání...",
+    "deleting": "Mazání..."
+  },
+  "users": {
+    "title": "Uživatelé",
+    "subtitle": "Správa účtů dashboardu a přiřazení rolí",
+    "create": "Přidat uživatele",
+    "createTitle": "Vytvořit uživatele",
+    "editTitle": "Upravit uživatele",
+    "deleteTitle": "Smazat uživatele",
+    "deleteMessage": "Smazat {{email}}? Tuto akci nelze vrátit.",
+    "email": "E-mail",
+    "name": "Jméno",
+    "password": "Heslo",
+    "newPassword": "Nové heslo (volitelné)",
+    "roles": "Role",
+    "status": "Stav",
+    "active": "Aktivní",
+    "inactive": "Neaktivní"
+  },
+  "roles": {
+    "title": "Role",
+    "subtitle": "Definice rolí a přiřazená oprávnění",
+    "create": "Přidat roli",
+    "createTitle": "Vytvořit roli",
+    "editTitle": "Upravit roli",
+    "deleteTitle": "Smazat roli",
+    "deleteMessage": "Smazat roli \"{{name}}\"? Nesmí být přiřazena žádnému uživateli.",
+    "name": "Název",
+    "permissions": "Oprávnění"
+  },
+  "permissions": {
+    "title": "Oprávnění",
+    "subtitle": "Podrobná pravidla přístupu k deployments",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Sekce",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Síť",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Metriky",
+      "admin": "Administrace"
+    },
+    "level": "Přístup",
+    "levels": {
+      "none": "Bez přístupu",
+      "view": "Zobrazení",
+      "operate": "Obsluha",
+      "manage": "Správa"
+    },
+    "hints": {
+      "view": "Otevřít sekci, číst seznamy a detaily",
+      "operate": "Restart, vypnutí, rollback, logy, terminál",
+      "manage": "Vytváření, mazání, import a admin změny"
+    }
+  }
+}

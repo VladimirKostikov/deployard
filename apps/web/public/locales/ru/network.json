@@ -1,0 +1,81 @@
+{
+  "title": "Сеть",
+  "subtitle": "Services, Endpoints и Ingress: как pod'ы находят друг друга в кластере",
+  "tabs": {
+    "ariaLabel": "Разделы сети",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Загрузка services...",
+    "error": "Не удалось загрузить services",
+    "empty": "В этом namespace нет services",
+    "table": {
+      "name": "Имя",
+      "type": "Тип",
+      "clusterIp": "Cluster IP",
+      "ports": "Порты",
+      "selector": "Selector",
+      "actions": "Действия"
+    },
+    "actions": {
+      "delete": "Удалить",
+      "open": "Открыть {{name}} в браузере",
+      "openTooltip": "Открыть в новой вкладке через dashboard. Ручной port-forward: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Скопировать команду port-forward для {{name}}",
+      "copied": "Команда скопирована",
+      "edit": "Изменить порты",
+      "editShort": "Порты"
+    },
+    "groups": {
+      "count": "{{count}} сервисов"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Тип",
+      "portsLabel": "Порты",
+      "port": "Service port",
+      "targetPort": "Target port",
+      "nodePort": "NodePort",
+      "cancel": "Отмена",
+      "save": "Сохранить",
+      "saving": "Сохранение..."
+    },
+    "delete": {
+      "title": "Удалить service",
+      "message": "Удалить service {{name}}? Pod'ы останутся, но DNS-имя перестанет работать."
+    },
+    "create": {
+      "title": "Создать service",
+      "name": "Имя service",
+      "deployment": "Deployment",
+      "port": "Порт service",
+      "targetPort": "Target port (опционально)",
+      "submit": "Создать service",
+      "submitting": "Создание...",
+      "cancel": "Отмена"
+    }
+  },
+  "endpoints": {
+    "subtitle": "Pod IP за каждым service (обновляется Kubernetes автоматически)",
+    "loading": "Загрузка endpoints...",
+    "error": "Не удалось загрузить endpoints",
+    "empty": "Нет endpoints: создайте service для deployment",
+    "table": {
+      "name": "Service",
+      "ports": "Порты",
+      "addresses": "Pod IP / имя"
+    }
+  },
+  "deployment": {
+    "title": "Связанные services",
+    "loading": "Загрузка services...",
+    "error": "Не удалось загрузить services",
+    "empty": "Нет service для этого deployment. Создайте на странице «Сеть».",
+    "openNetwork": "Открыть сеть",
+    "viewEndpoints": "Pod IP →"
+  }
+}

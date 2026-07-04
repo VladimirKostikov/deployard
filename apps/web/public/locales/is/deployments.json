@@ -1,0 +1,316 @@
+{
+  "title": "Deployments",
+  "subtitle": "Forrit í völdu namespace",
+  "subtitleAll": "Forrit í öllum aðgengilegum namespaces",
+  "loading": "Hleður deployments...",
+  "error": "Tókst ekki að hlaða deployments",
+  "empty": "Engin deployments fundust í þessu namespace",
+  "emptyAll": "Engin deployments fundust í aðgengilegum namespaces",
+  "projectGroups": {
+    "standalone": "Sjálfstætt",
+    "services_one": "{{count}} þjónusta",
+    "services_other": "{{count}} þjónustur",
+    "health": "{{healthy}}/{{total}} heilbrigð",
+    "restarting": "{{count}}/{{total}} endurræsa",
+    "restartingBanner": "Endurræsi {{count}} af {{total}} deployments í þessum hópi",
+    "settings": "Stillingar",
+    "settingsTitle": "Hópstillingar",
+    "settingsGroupLabel": "Verkefnahópur",
+    "settingsDockerReady": "Docker tiltækt",
+    "settingsDockerUnavailable": "Docker ekki tiltækt",
+    "settingsRebuildHint": "Endurbyggir compose, hleður images inn í kind og rúllar út deployments í þessum hópi.",
+    "settingsLoading": "Athugar umhverfi...",
+    "settingsClose": "Loka",
+    "settingsNoCompose": "Ekkert compose-verkefni með þessu nafni fannst. Endurbygging er aðeins í boði fyrir hópa flutt inn úr Docker Compose.",
+    "delete": "Eyða hópi",
+    "restart": "Endurræsa hóp",
+    "disable": "Slökkva á hópi",
+    "deleteTitle": "Eyða verkefnahópi",
+    "deleteMessage": "Eyða öllum deployments, services og secrets í hópnum \"{{name}}\"?"
+  },
+  "table": {
+    "name": "Nafn",
+    "namespace": "Namespace",
+    "image": "Image",
+    "replicas": "Tilbún / Samtals",
+    "revision": "Revision",
+    "status": "Staða"
+  },
+  "status": {
+    "healthy": "Healthy",
+    "starting": "Ræsir",
+    "restarting": "Endurræsing",
+    "degraded": "Degraded",
+    "scaledToZero": "Skalað niður í núll",
+    "disabled": "Disabled"
+  },
+  "statusModal": {
+    "open": "Skoða stöðuupplýsingar",
+    "title": "Deployment-staða",
+    "summary": {
+      "healthy": "Allar pods eru tilbúnar.",
+      "starting": "Deployment er að ræsa. Það er eðlilegt rétt eftir stofnun.",
+      "degraded": "Sumar pods eru ekki tilbúnar. Opnaðu upplýsingar til að sjá hvers vegna.",
+      "scaledToZero": "Fjöldi eintaka er 0, engar pods keyra.",
+      "disabled": "Deployment is disabled. Pods are stopped until you enable it again.",
+      "restarting": "Rolling restart í gangi: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} uppfært."
+    },
+    "reasonsTitle": "Af hverju þessi staða",
+    "desired": "Óskað",
+    "ready": "Ready",
+    "available": "Available",
+    "updated": "Updated",
+    "reasons": {
+      "healthy": "{{ready}} af {{desired}} eintökum eru tilbún.",
+      "starting": "Deployment var nýlega stofnað eða er að uppfærast.",
+      "scaledToZero": "Skalað niður í núll, engar pods keyra.",
+      "disabled": "Disabled via Deployard. Enable to restore {{replicas}} replica(s).",
+      "podsNotReady": "{{ready}} af {{desired}} tilbúnar, ekki allar pods stóðust readiness probes.",
+      "podsNotAvailable": "{{available}} af {{desired}} available, pods eru ekki tilbúnar enn.",
+      "rolloutInProgress": "{{updated}} af {{desired}} uppfærðar, rollout í gangi.",
+      "rolloutStalled": "Rolling update lokið en pods verða ekki tilbúnar. Sjá töflu hér að neðan.",
+      "restarting": "Pod eru endurskapað: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} uppfært."
+    },
+    "podsTitle": "Pod-staða",
+    "podsLoading": "Hleður pods...",
+    "podsEmpty": "Engar pods fundust fyrir þetta deployment.",
+    "podsHint": "Image gæti vantað í cluster. Byggðu staðbundið og hlaðið inn í kind, eða notaðu registry.",
+    "podsColumns": {
+      "pod": "Pod",
+      "phase": "Phase",
+      "container": "Container",
+      "state": "State"
+    },
+    "containerStates": {
+      "ImagePullBackOff": "Get ekki sótt image",
+      "ErrImagePull": "Villa við image pull",
+      "CrashLoopBackOff": "Container hratur og endurræsir",
+      "ContainerCreating": "Container er að verða til",
+      "PodInitializing": "Pod er að frumstilla",
+      "CreateContainerConfigError": "Villa í container-stillingu",
+      "InvalidImageName": "Ógilt image-nafn",
+      "CreateContainerError": "Tókst ekki að búa til container",
+      "RunContainerError": "Tókst ekki að keyra container",
+      "waiting": "Bíður",
+      "running": "Keyrir en ekki tilbúin",
+      "terminated": "Lokið",
+      "pending": "Bíður eftir áætlun"
+    }
+  },
+  "actions": {
+    "label": "Aðgerðir",
+    "view": "Skoða",
+    "pods": "Skoða pods",
+    "logs": "Skoða logs",
+    "history": "Revision-saga",
+    "console": "Opna skjáhermi",
+    "restart": "Endurræsa deployment",
+    "delete": "Eyða deployment",
+    "disable": "Disable deployment",
+    "enable": "Enable deployment",
+    "enableAfterError": "Kveikja aftur. Villa kom upp við slökkvun",
+    "error": "Aðgerð mistókst"
+  },
+  "tabs": {
+    "ariaLabel": "Deployment-hluti",
+    "overview": "Yfirlit",
+    "health": "Heilsuprófanir",
+    "config": "Config",
+    "history": "Saga",
+    "pods": "Pods",
+    "files": "Skrár",
+    "logs": "Logs",
+    "console": "Skjáhermi"
+  },
+  "files": {
+    "podLabel": "Pod",
+    "loading": "Hleð skrám...",
+    "error": "Ekki tókst að hlaða skrám",
+    "empty": "Þessi mappa er tóm",
+    "noPods": "Engir pod tiltækir fyrir þetta deployment",
+    "refresh": "Endurnýja",
+    "newFolder": "Ný mappa",
+    "upload": "Hlaða upp skrá",
+    "download": "Sækja",
+    "rename": "Endurnefna",
+    "delete": "Eyða",
+    "folderPrompt": "Heiti möppu",
+    "renamePrompt": "Nýtt heiti",
+    "deleteConfirm": "Eyða \"{{name}}\"?",
+    "previewEmpty": "Skráin er tóm",
+    "breadcrumbs": "Slóð",
+    "root": "Rót",
+    "pod": "Pod",
+    "columns": {
+      "name": "Heiti",
+      "size": "Stærð",
+      "modified": "Breytt",
+      "actions": "Aðgerðir"
+    }
+  },
+  "scale": {
+    "label": "Eintök",
+    "submit": "Nota skölun",
+    "submitting": "Skalar...",
+    "hint": "Breyttu hversu margar pod-afrit deployment á að halda í gangi."
+  },
+  "disable": {
+    "disable": "Disable deployment",
+    "disabling": "Disabling...",
+    "disableHint": "Stops all pods and saves the current replica count for quick restore.",
+    "enable": "Enable deployment",
+    "enabling": "Enabling...",
+    "enableHint": "Restores {{replicas}} replica(s) and starts pods again.",
+    "enableErrorHint": "Villa kom upp við slökkvun. Lagaðu image eða config og kveiktu aftur ({{replicas}} eintök)."
+  },
+  "console": {
+    "connect": "Tengjast",
+    "connecting": "Tengist...",
+    "disconnect": "Aftengja",
+    "connected": "Tengt við {{pod}}",
+    "disconnected": "Lotu lokað",
+    "statusConnected": "Tengt",
+    "statusDisconnected": "Aftengt",
+    "empty": "Tengstu til að opna gagnvirkt shell í valinni pod.",
+    "inputPlaceholder": "Sláðu inn skipanir hér...",
+    "inputDisabled": "Tengstu við pod fyrst"
+  },
+  "detail": {
+    "subtitle": "Namespace: {{namespace}}",
+    "loading": "Hleður deployment...",
+    "error": "Tókst ekki að hlaða deployment",
+    "historyTitle": "Revision-saga",
+    "podsTitle": "Pods",
+    "logsTitle": "Logs",
+    "logsEmpty": "Engar pods tiltækar fyrir log-streymi"
+  },
+  "history": {
+    "loading": "Hleður revision-sögu...",
+    "error": "Tókst ekki að hlaða revision-sögu",
+    "empty": "Engar revision fundust",
+    "current": "Núverandi",
+    "rollback": "Rollback",
+    "table": {
+      "revision": "Revision",
+      "image": "Image",
+      "replicas": "Eintök",
+      "created": "Stofnað",
+      "actions": "Aðgerðir"
+    }
+  },
+  "rollback": {
+    "title": "Staðfesta rollback",
+    "subtitle": "Deployment: {{name}}",
+    "targetRevision": "Markrevision",
+    "targetImage": "Markimage",
+    "cancel": "Hætta við",
+    "confirm": "Rollback",
+    "submitting": "Rúllar til baka..."
+  },
+  "create": {
+    "title": "Nýtt deployment",
+    "namePlaceholder": "my-api",
+    "imagePlaceholder": "Veldu úr vörulista eða sláðu inn þitt eigið",
+    "replicasPlaceholder": "Eintök",
+    "portPlaceholder": "Container-port",
+    "projectLabel": "Verkefnahópur",
+    "projectHint": "Deployments með sama label birtast saman á listanum.",
+    "projectNone": "Enginn hópur",
+    "projectExisting": "Bæta við í fyrirliggjandi hóp",
+    "projectNew": "Búa til nýjan hóp",
+    "projectNewPlaceholder": "my-project",
+    "submit": "Búa til deployment",
+    "submitting": "Býr til...",
+    "cancel": "Hætta við"
+  },
+  "image": {
+    "label": "Container image",
+    "submit": "Deploy nýja útgáfu",
+    "submitting": "Deployar...",
+    "hint": "Uppfærir deployment-sniðmát og hefur rolling rollout af stað.",
+    "error": "Tókst ekki að uppfæra container image.",
+    "unchanged": "Image er þegar deployað."
+  },
+  "imagePicker": {
+    "placeholder": "nginx:1.27-alpine, redis:7-alpine, postgres:16-alpine...",
+    "browse": "Image-vörulisti",
+    "catalogHint": "{{count}} images: Web server, Database, Runtime og fleira",
+    "customTitle": "Eigið image",
+    "customHint": "Sláðu inn registry/repository:tag",
+    "empty": "Engar samsvaranir. Sláðu inn eigið image hér að ofan."
+  },
+  "delete": {
+    "title": "Eyða deployment",
+    "message": "Eyða deployment {{name}}? Allar pods verða fjarlægðar.",
+    "submit": "Eyða deployment"
+  },
+  "restart": {
+    "submit": "Endurræsa deployment",
+    "submitting": "Endurræsir...",
+    "hint": "Rolling restart endurskapar allar pods með sama image (eins og kubectl rollout restart).",
+    "bannerTitle": "Uppfærsla í gangi",
+    "bannerProgress": "{{ready}}/{{desired}} tilbúnar, {{updated}}/{{desired}} uppfærðar",
+    "bannerHint": "Pods eru að endurskapast. Fylgstu með Pods-flipanum fyrir lifandi stöðu.",
+    "rowProgress": "({{ready}}/{{desired}} ready)",
+    "error": "Tókst ekki að endurræsa deployment.",
+    "done": "Deployment er að endurræsa"
+  },
+  "config": {
+    "title": "Umhverfisbreytur",
+    "loading": "Hleður stillingum...",
+    "error": "Tókst ekki að hlaða stillingum",
+    "empty": "Engar breytur stilltar",
+    "namePlaceholder": "MYSQL_ROOT_PASSWORD",
+    "valuePlaceholder": "gildi",
+    "add": "Bæta við breytu",
+    "remove": "Fjarlægja",
+    "submit": "Vista",
+    "submitting": "Vistar...",
+    "portHint": "Container-port: {{port}}",
+    "createHint": "Vörulista-images fá dev-sjálfgefin. Farðu yfir áður en þú stofnar."
+  },
+  "healthProbes": {
+    "title": "Heilsuprófanir",
+    "loading": "Hleður probe-stillingu...",
+    "error": "Tókst ekki að hlaða health probes",
+    "empty": "Engar probes stilltar fyrir aðalcontainer",
+    "configTitle": "Stillaðar probes",
+    "podsTitle": "Pod-tilbúin",
+    "podsEmpty": "Engar pods til skoðunar",
+    "podReady": "Ready",
+    "podNotReady": "Ekki tilbúin",
+    "podStates": {
+      "ready": "Ready",
+      "runningNotReady": "Keyrir, ekki ready",
+      "pending": "Bíður",
+      "failed": "Mistókst",
+      "notReady": "Ekki ready"
+    },
+    "types": {
+      "readiness": "Readiness",
+      "liveness": "Liveness",
+      "startup": "Startup"
+    },
+    "mechanisms": {
+      "http": "HTTP",
+      "tcp": "TCP",
+      "exec": "Exec",
+      "grpc": "gRPC",
+      "none": "Ekkert"
+    },
+    "columns": {
+      "type": "Tegund",
+      "mechanism": "Aðferð",
+      "target": "Mark",
+      "timing": "Tímasetning",
+      "pod": "Pod",
+      "phase": "Phase",
+      "podStatus": "Readiness"
+    },
+    "timing": {
+      "start": "start {{seconds}}s",
+      "every": "á {{seconds}}s fresti",
+      "timeout": "timeout {{seconds}}s"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "appTitle": "Deployard",
+  "language": "Limbă",
+  "theme": {
+    "label": "Temă",
+    "light": "Deschis",
+    "dark": "Întunecat",
+    "system": "Automat"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "admin": "Admin",
+    "logout": "Deconectare"
+  },
+  "status": {
+    "connected": "API conectat",
+    "checking": "Se verifică API-ul..."
+  },
+  "cluster": {
+    "label": "Cluster"
+  },
+  "namespace": {
+    "label": "Namespace",
+    "all": "Toate namespace-urile"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "appTitle": "Deployard",
+  "language": "Nyelv",
+  "theme": {
+    "label": "Téma",
+    "light": "Világos",
+    "dark": "Sötét",
+    "system": "Automatikus"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "admin": "Admin",
+    "logout": "Kijelentkezés"
+  },
+  "status": {
+    "connected": "API csatlakozva",
+    "checking": "API ellenőrzése..."
+  },
+  "cluster": {
+    "label": "Cluster"
+  },
+  "namespace": {
+    "label": "Namespace",
+    "all": "Minden namespace"
+  }
+}

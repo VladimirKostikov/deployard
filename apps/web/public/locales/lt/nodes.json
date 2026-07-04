@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Cluster worker nodes ir ant jų planuoti podai",
+  "loading": "Kraunami nodes...",
+  "error": "Nepavyko įkelti nodes",
+  "podsTitle": "Podai ant {{node}}",
+  "podsLoading": "Kraunami podai...",
+  "podsError": "Nepavyko įkelti podų šiai node",
+  "podsEmpty": "Šioje node nėra podų",
+  "table": {
+    "name": "Node",
+    "status": "Būsena",
+    "roles": "Rolės",
+    "pods": "Pods",
+    "version": "Kubelet",
+    "actions": "Veiksmai"
+  },
+  "actions": {
+    "viewPods": "Peržiūrėti podus"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Phase",
+    "ready": "Ready",
+    "yes": "Taip",
+    "no": "Ne"
+  }
+}

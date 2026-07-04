@@ -1,0 +1,32 @@
+{
+  "title": "Ingress",
+  "subtitle": "HTTP maršrutizavimo taisyklės pasirinktame namespace",
+  "loading": "Kraunamos ingress taisyklės...",
+  "error": "Nepavyko įkelti ingress taisyklių",
+  "empty": "Šiame namespace nėra ingress taisyklių",
+  "create": {
+    "title": "Naujas ingress",
+    "name": "Pavadinimas",
+    "host": "Host (pvz. api.local)",
+    "path": "Kelias",
+    "service": "Service pavadinimas",
+    "port": "Service prievadas",
+    "submit": "Sukurti ingress",
+    "submitting": "Kuriama...",
+    "cancel": "Atšaukti"
+  },
+  "table": {
+    "name": "Pavadinimas",
+    "host": "Host",
+    "path": "Kelias",
+    "service": "Backend",
+    "actions": "Veiksmai"
+  },
+  "actions": {
+    "delete": "Ištrinti"
+  },
+  "delete": {
+    "title": "Ištrinti ingress",
+    "message": "Ištrinti ingress {{name}}?"
+  }
+}

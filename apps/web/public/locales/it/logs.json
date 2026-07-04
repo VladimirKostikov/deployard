@@ -1,0 +1,7 @@
+{
+  "title": "Logs",
+  "streaming": "Streaming log in corso...",
+  "error": "Impossibile leggere i log",
+  "empty": "Nessuna riga di log ancora",
+  "autoScroll": "Scorrimento automatico"
+}

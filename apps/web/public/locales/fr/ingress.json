@@ -1,0 +1,32 @@
+{
+  "title": "Ingress",
+  "subtitle": "Règles de routage HTTP dans le namespace sélectionné",
+  "loading": "Chargement des règles ingress...",
+  "error": "Impossible de charger les règles ingress",
+  "empty": "Aucune règle ingress dans ce namespace",
+  "create": {
+    "title": "Nouvel ingress",
+    "name": "Nom",
+    "host": "Hôte (ex. api.local)",
+    "path": "Chemin",
+    "service": "Nom du service",
+    "port": "Port du service",
+    "submit": "Créer l'ingress",
+    "submitting": "Création...",
+    "cancel": "Annuler"
+  },
+  "table": {
+    "name": "Nom",
+    "host": "Hôte",
+    "path": "Chemin",
+    "service": "Backend",
+    "actions": "Actions"
+  },
+  "actions": {
+    "delete": "Supprimer"
+  },
+  "delete": {
+    "title": "Supprimer l'ingress",
+    "message": "Supprimer l'ingress {{name}} ?"
+  }
+}

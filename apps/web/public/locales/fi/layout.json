@@ -1,0 +1,32 @@
+{
+  "appTitle": "Deployard",
+  "sections": {
+    "main": "Pää",
+    "admin": "Pääsynhallinta",
+    "settings": "Asetukset"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "import": "Import",
+    "faq": "FAQ",
+    "nodes": "Nodes",
+    "namespaces": "Namespaces",
+    "ingress": "Ingress",
+    "network": "Verkko",
+    "metrics": "Metrics",
+    "admin": "Hallinta",
+    "users": "Käyttäjät",
+    "roles": "Roolit",
+    "permissions": "Oikeudet",
+    "backToApp": "Takaisin sovellukseen",
+    "logout": "Kirjaudu ulos"
+  },
+  "topbar": {
+    "connected": "API yhdistetty",
+    "checking": "Tarkistetaan API..."
+  },
+  "mobileMenu": {
+    "open": "Avaa valikko",
+    "close": "Sulje valikko"
+  }
+}

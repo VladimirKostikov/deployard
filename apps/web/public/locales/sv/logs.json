@@ -1,0 +1,7 @@
+{
+  "title": "Loggar",
+  "streaming": "Strömmar loggar...",
+  "error": "Kunde inte strömma loggar",
+  "empty": "Inga loggrader ännu",
+  "autoScroll": "Autoscroll"
+}

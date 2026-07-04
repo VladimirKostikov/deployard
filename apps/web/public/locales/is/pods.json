@@ -1,0 +1,26 @@
+{
+  "loading": "Hleður pods...",
+  "error": "Tókst ekki að hlaða pods",
+  "empty": "Engar pods fundust fyrir þetta deployment",
+  "yes": "Já",
+  "no": "Nei",
+  "table": {
+    "name": "Pod",
+    "phase": "Phase",
+    "ready": "Ready",
+    "restarts": "Endurræsingar",
+    "node": "Node",
+    "podIp": "Pod IP",
+    "ports": "Portar",
+    "actions": "Aðgerðir"
+  },
+  "actions": {
+    "restart": "Endurræsa pod",
+    "delete": "Eyða pod",
+    "console": "Opna skjáhermi"
+  },
+  "delete": {
+    "title": "Eyða pod",
+    "message": "Eyða pod {{name}}? Deployment-stýringin getur endurskapað hana."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "DEPLOYMENT_NOT_FOUND": "Deployment-ul nu a fost găsit",
+  "POD_NOT_FOUND": "Pod-ul nu a fost găsit",
+  "NAMESPACE_NOT_FOUND": "Namespace-ul nu a fost găsit",
+  "ROLLBACK_FAILED": "Rollback-ul a eșuat",
+  "K8S_API_ERROR": "Eroare Kubernetes API",
+  "FORBIDDEN": "Permisiuni insuficiente",
+  "VALIDATION_ERROR": "Eroare de validare",
+  "INTERNAL_ERROR": "Eroare internă de server"
+}

@@ -1,0 +1,71 @@
+{
+  "title": "Administration",
+  "subtitle": "Benutzer, Rollen und Deployment-Berechtigungen",
+  "back": "Zurück zu Deployments",
+  "actions": {
+    "label": "Aktionen",
+    "create": "Erstellen",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "saving": "Speichern...",
+    "deleting": "Löschen..."
+  },
+  "users": {
+    "title": "Benutzer",
+    "subtitle": "Konten und zugewiesene Rollen verwalten",
+    "create": "Hinzufügen",
+    "createTitle": "Benutzer erstellen",
+    "editTitle": "Benutzer bearbeiten",
+    "deleteTitle": "Benutzer löschen",
+    "deleteMessage": "{{email}} löschen? Dies kann nicht rückgängig gemacht werden.",
+    "email": "E-Mail",
+    "name": "Name",
+    "password": "Passwort",
+    "newPassword": "Neues Passwort (optional)",
+    "roles": "Rollen",
+    "status": "Status",
+    "active": "Aktiv",
+    "inactive": "Inaktiv"
+  },
+  "roles": {
+    "title": "Rollen",
+    "subtitle": "Zugriff nach Bereich und Interaktionsstufe",
+    "create": "Hinzufügen",
+    "createTitle": "Rolle erstellen",
+    "editTitle": "Rolle bearbeiten",
+    "deleteTitle": "Rolle löschen",
+    "deleteMessage": "Rolle \"{{name}}\" löschen? Sie darf keinem Benutzer zugewiesen sein.",
+    "name": "Name",
+    "permissions": "Berechtigungen"
+  },
+  "permissions": {
+    "title": "Zugriffskatalog",
+    "subtitle": "Vordefinierte Bereichs- und Stufenrechte für Rollen",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Bereich",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Netzwerk",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Metriken",
+      "admin": "Administration"
+    },
+    "level": "Zugriff",
+    "levels": {
+      "none": "Kein Zugriff",
+      "view": "Ansehen",
+      "operate": "Bedienen",
+      "manage": "Verwalten"
+    },
+    "hints": {
+      "view": "Bereich öffnen, Listen und Details lesen",
+      "operate": "Neustart, Deaktivieren, Rollback, Logs, Terminal",
+      "manage": "Erstellen, Löschen, Import und Admin-Änderungen"
+    }
+  }
+}

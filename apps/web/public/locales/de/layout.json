@@ -1,0 +1,32 @@
+{
+  "appTitle": "Deployard",
+  "sections": {
+    "main": "Haupt",
+    "admin": "Zugriff",
+    "settings": "Einstellungen"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "import": "Import",
+    "faq": "FAQ",
+    "nodes": "Nodes",
+    "namespaces": "Namespaces",
+    "ingress": "Ingress",
+    "network": "Netzwerk",
+    "metrics": "Metriken",
+    "admin": "Administration",
+    "users": "Benutzer",
+    "roles": "Rollen",
+    "permissions": "Berechtigungen",
+    "backToApp": "Zur App",
+    "logout": "Abmelden"
+  },
+  "topbar": {
+    "connected": "API verbunden",
+    "checking": "API wird geprüft..."
+  },
+  "mobileMenu": {
+    "open": "Menü öffnen",
+    "close": "Menü schließen"
+  }
+}

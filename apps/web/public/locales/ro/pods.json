@@ -1,0 +1,26 @@
+{
+  "loading": "Se încarcă pod-urile...",
+  "error": "Nu s-au putut încărca pod-urile",
+  "empty": "Nu s-au găsit pod-uri pentru acest deployment",
+  "yes": "Da",
+  "no": "Nu",
+  "table": {
+    "name": "Pod",
+    "phase": "Phase",
+    "ready": "Ready",
+    "restarts": "Restarts",
+    "node": "Node",
+    "podIp": "Pod IP",
+    "ports": "Ports",
+    "actions": "Acțiuni"
+  },
+  "actions": {
+    "restart": "Repornește pod-ul",
+    "delete": "Șterge pod-ul",
+    "console": "Deschide consola"
+  },
+  "delete": {
+    "title": "Șterge pod-ul",
+    "message": "Ștergi pod-ul {{name}}? Controller-ul deployment-ului îl poate recrea."
+  }
+}

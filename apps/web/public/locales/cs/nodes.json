@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Worker nodes clusteru a pody naplánované na nich",
+  "loading": "Načítání nodes...",
+  "error": "Nepodařilo se načíst nodes",
+  "podsTitle": "Pody na {{node}}",
+  "podsLoading": "Načítání podů...",
+  "podsError": "Nepodařilo se načíst pody pro tento node",
+  "podsEmpty": "Na tomto node nejsou žádné pody",
+  "table": {
+    "name": "Node",
+    "status": "Stav",
+    "roles": "Role",
+    "pods": "Pody",
+    "version": "Kubelet",
+    "actions": "Akce"
+  },
+  "actions": {
+    "viewPods": "Zobrazit pody"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Phase",
+    "ready": "Ready",
+    "yes": "Ano",
+    "no": "Ne"
+  }
+}

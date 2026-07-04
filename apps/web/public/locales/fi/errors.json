@@ -1,0 +1,10 @@
+{
+  "DEPLOYMENT_NOT_FOUND": "Deploymentia ei löytynyt",
+  "POD_NOT_FOUND": "Podia ei löytynyt",
+  "NAMESPACE_NOT_FOUND": "Namespacea ei löytynyt",
+  "ROLLBACK_FAILED": "Rollback epäonnistui",
+  "K8S_API_ERROR": "Kubernetes API -virhe",
+  "FORBIDDEN": "Riittämättömät oikeudet",
+  "VALIDATION_ERROR": "Validointivirhe",
+  "INTERNAL_ERROR": "Sisäinen palvelinvirhe"
+}

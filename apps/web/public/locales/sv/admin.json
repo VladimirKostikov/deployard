@@ -1,0 +1,71 @@
+{
+  "title": "Administration",
+  "subtitle": "Användare, roller och deployment-behörigheter",
+  "back": "Tillbaka till deployments",
+  "actions": {
+    "label": "Åtgärder",
+    "create": "Skapa",
+    "edit": "Redigera",
+    "delete": "Ta bort",
+    "save": "Spara",
+    "cancel": "Avbryt",
+    "saving": "Sparar...",
+    "deleting": "Tar bort..."
+  },
+  "users": {
+    "title": "Användare",
+    "subtitle": "Hantera dashboard-konton och rolltilldelningar",
+    "create": "Lägg till användare",
+    "createTitle": "Skapa användare",
+    "editTitle": "Redigera användare",
+    "deleteTitle": "Ta bort användare",
+    "deleteMessage": "Ta bort {{email}}? Detta kan inte ångras.",
+    "email": "E-post",
+    "name": "Namn",
+    "password": "Lösenord",
+    "newPassword": "Nytt lösenord (valfritt)",
+    "roles": "Roller",
+    "status": "Status",
+    "active": "Aktiv",
+    "inactive": "Inaktiv"
+  },
+  "roles": {
+    "title": "Roller",
+    "subtitle": "Rolldefinitioner och kopplade behörigheter",
+    "create": "Lägg till roll",
+    "createTitle": "Skapa roll",
+    "editTitle": "Redigera roll",
+    "deleteTitle": "Ta bort roll",
+    "deleteMessage": "Ta bort rollen \"{{name}}\"? Den får inte vara tilldelad någon användare.",
+    "name": "Namn",
+    "permissions": "Behörigheter"
+  },
+  "permissions": {
+    "title": "Behörigheter",
+    "subtitle": "Detaljerade åtkomstregler för deployments",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Sektion",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Nätverk",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Mätvärden",
+      "admin": "Administration"
+    },
+    "level": "Åtkomst",
+    "levels": {
+      "none": "Ingen åtkomst",
+      "view": "Visa",
+      "operate": "Använd",
+      "manage": "Administrera"
+    },
+    "hints": {
+      "view": "Öppna sektion, läs listor och detaljer",
+      "operate": "Omstart, inaktivera, rollback, loggar, terminal",
+      "manage": "Skapa, ta bort, import och admin-ändringar"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "loading": "Pods werden geladen...",
+  "error": "Pods konnten nicht geladen werden",
+  "empty": "Keine Pods für dieses Deployment",
+  "yes": "Ja",
+  "no": "Nein",
+  "table": {
+    "name": "Pod",
+    "phase": "Phase",
+    "ready": "Bereit",
+    "restarts": "Neustarts",
+    "node": "Node",
+    "podIp": "Pod-IP",
+    "ports": "Ports",
+    "actions": "Aktionen"
+  },
+  "actions": {
+    "restart": "Pod neu starten",
+    "delete": "Pod löschen",
+    "console": "Konsole öffnen"
+  },
+  "delete": {
+    "title": "Pod löschen",
+    "message": "Pod {{name}} löschen? Das Deployment kann ihn neu erstellen."
+  }
+}

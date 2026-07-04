@@ -1,0 +1,316 @@
+{
+  "title": "Deployments",
+  "subtitle": "Applikationer i det valgte namespace",
+  "subtitleAll": "Applikationer på tværs af alle tilgængelige namespaces",
+  "loading": "Indlæser deployments...",
+  "error": "Kunne ikke indlæse deployments",
+  "empty": "Ingen deployments fundet i dette namespace",
+  "emptyAll": "Ingen deployments fundet i tilgængelige namespaces",
+  "projectGroups": {
+    "standalone": "Selvstændig",
+    "services_one": "{{count}} tjeneste",
+    "services_other": "{{count}} tjenester",
+    "health": "{{healthy}}/{{total}} sunde",
+    "restarting": "{{count}}/{{total}} genstarter",
+    "restartingBanner": "Genstarter {{count}} af {{total}} deployments i denne gruppe",
+    "settings": "Indstillinger",
+    "settingsTitle": "Gruppeindstillinger",
+    "settingsGroupLabel": "Projektgruppe",
+    "settingsDockerReady": "Docker tilgængelig",
+    "settingsDockerUnavailable": "Docker utilgængelig",
+    "settingsRebuildHint": "Genopbygger compose, indlæser images til kind og udruller deployments i denne gruppe.",
+    "settingsLoading": "Tjekker miljø...",
+    "settingsClose": "Luk",
+    "settingsNoCompose": "Intet compose-projekt med dette navn blev fundet. Genopbygning er kun tilgængelig for grupper importeret fra Docker Compose.",
+    "delete": "Slet gruppe",
+    "restart": "Genstart gruppe",
+    "disable": "Deaktiver gruppe",
+    "deleteTitle": "Slet projektgruppe",
+    "deleteMessage": "Slet alle deployments, services og secrets i gruppen \"{{name}}\"?"
+  },
+  "table": {
+    "name": "Navn",
+    "namespace": "Namespace",
+    "image": "Image",
+    "replicas": "Klar / I alt",
+    "revision": "Revision",
+    "status": "Status"
+  },
+  "status": {
+    "healthy": "Healthy",
+    "starting": "Starter",
+    "restarting": "Genstarter",
+    "degraded": "Degraded",
+    "scaledToZero": "Skaleret til nul",
+    "disabled": "Disabled"
+  },
+  "statusModal": {
+    "open": "Vis statusdetaljer",
+    "title": "Deployment-status",
+    "summary": {
+      "healthy": "Alle pods er klar.",
+      "starting": "Deploymentet starter. Det er normalt lige efter oprettelse.",
+      "degraded": "Nogle pods er ikke klar. Åbn detaljer for at se hvorfor.",
+      "scaledToZero": "Replikaantal er 0, ingen pods kører.",
+      "disabled": "Deployment is disabled. Pods are stopped until you enable it again.",
+      "restarting": "Rolling restart i gang: {{ready}}/{{desired}} klar, {{updated}}/{{desired}} opdateret."
+    },
+    "reasonsTitle": "Hvorfor denne status",
+    "desired": "Ønsket",
+    "ready": "Ready",
+    "available": "Available",
+    "updated": "Updated",
+    "reasons": {
+      "healthy": "{{ready}} af {{desired}} replikaer er klar.",
+      "starting": "Deploymentet blev lige oprettet eller opdateres.",
+      "scaledToZero": "Skaleret til nul, ingen pods kører.",
+      "disabled": "Disabled via Deployard. Enable to restore {{replicas}} replica(s).",
+      "podsNotReady": "{{ready}} af {{desired}} klar, ikke alle pods bestod readiness probes.",
+      "podsNotAvailable": "{{available}} af {{desired}} available, pods er ikke klar endnu.",
+      "rolloutInProgress": "{{updated}} af {{desired}} opdateret, rollout i gang.",
+      "rolloutStalled": "Rolling update afsluttet, men pods bliver ikke klar. Se tabellen nedenfor.",
+      "restarting": "Pods oprettes igen: {{ready}}/{{desired}} klar, {{updated}}/{{desired}} opdateret."
+    },
+    "podsTitle": "Pod-status",
+    "podsLoading": "Indlæser pods...",
+    "podsEmpty": "Ingen pods fundet for dette deployment.",
+    "podsHint": "Image kan mangle i clustret. Byg lokalt og indlæs til kind, eller brug et registry.",
+    "podsColumns": {
+      "pod": "Pod",
+      "phase": "Phase",
+      "container": "Container",
+      "state": "State"
+    },
+    "containerStates": {
+      "ImagePullBackOff": "Kan ikke hente image",
+      "ErrImagePull": "Fejl ved image pull",
+      "CrashLoopBackOff": "Container crasher og genstarter",
+      "ContainerCreating": "Container oprettes",
+      "PodInitializing": "Pod initialiseres",
+      "CreateContainerConfigError": "Fejl i containerkonfiguration",
+      "InvalidImageName": "Ugyldigt image-navn",
+      "CreateContainerError": "Kunne ikke oprette container",
+      "RunContainerError": "Kunne ikke køre container",
+      "waiting": "Venter",
+      "running": "Kører men ikke klar",
+      "terminated": "Afsluttet",
+      "pending": "Venter på planlægning"
+    }
+  },
+  "actions": {
+    "label": "Handlinger",
+    "view": "Vis",
+    "pods": "Vis pods",
+    "logs": "Vis logs",
+    "history": "Revisionshistorik",
+    "console": "Åbn konsol",
+    "restart": "Genstart deployment",
+    "delete": "Slet deployment",
+    "disable": "Disable deployment",
+    "enable": "Enable deployment",
+    "enableAfterError": "Aktiver igen. Der var fejl ved deaktivering",
+    "error": "Handling mislykkedes"
+  },
+  "tabs": {
+    "ariaLabel": "Deployment-sektioner",
+    "overview": "Oversigt",
+    "health": "Sundhedstjek",
+    "config": "Config",
+    "history": "Historik",
+    "pods": "Pods",
+    "files": "Filer",
+    "logs": "Logs",
+    "console": "Konsol"
+  },
+  "files": {
+    "podLabel": "Pod",
+    "loading": "Indlæser filer...",
+    "error": "Kunne ikke indlæse filer",
+    "empty": "Denne mappe er tom",
+    "noPods": "Ingen pods tilgængelige for dette deployment",
+    "refresh": "Opdater",
+    "newFolder": "Ny mappe",
+    "upload": "Upload fil",
+    "download": "Download",
+    "rename": "Omdøb",
+    "delete": "Slet",
+    "folderPrompt": "Mappenavn",
+    "renamePrompt": "Nyt navn",
+    "deleteConfirm": "Slet \"{{name}}\"?",
+    "previewEmpty": "Filen er tom",
+    "breadcrumbs": "Sti",
+    "root": "Rod",
+    "pod": "Pod",
+    "columns": {
+      "name": "Navn",
+      "size": "Størrelse",
+      "modified": "Ændret",
+      "actions": "Handlinger"
+    }
+  },
+  "scale": {
+    "label": "Replikaer",
+    "submit": "Anvend skalering",
+    "submitting": "Skalerer...",
+    "hint": "Skift hvor mange pod-kopier deploymentet skal holde kørende."
+  },
+  "disable": {
+    "disable": "Disable deployment",
+    "disabling": "Disabling...",
+    "disableHint": "Stops all pods and saves the current replica count for quick restore.",
+    "enable": "Enable deployment",
+    "enabling": "Enabling...",
+    "enableHint": "Restores {{replicas}} replica(s) and starts pods again.",
+    "enableErrorHint": "Der var fejl da deployment blev deaktiveret. Ret image eller config, og aktiver igen ({{replicas}} replikaer)."
+  },
+  "console": {
+    "connect": "Forbind",
+    "connecting": "Forbinder...",
+    "disconnect": "Afbryd",
+    "connected": "Forbundet til {{pod}}",
+    "disconnected": "Session lukket",
+    "statusConnected": "Forbundet",
+    "statusDisconnected": "Afbrudt",
+    "empty": "Forbind for at starte et interaktivt shell i den valgte pod.",
+    "inputPlaceholder": "Skriv kommandoer her...",
+    "inputDisabled": "Forbind til podden først"
+  },
+  "detail": {
+    "subtitle": "Namespace: {{namespace}}",
+    "loading": "Indlæser deployment...",
+    "error": "Kunne ikke indlæse deployment",
+    "historyTitle": "Revisionshistorik",
+    "podsTitle": "Pods",
+    "logsTitle": "Logs",
+    "logsEmpty": "Ingen pods tilgængelige til logstreaming"
+  },
+  "history": {
+    "loading": "Indlæser revisionshistorik...",
+    "error": "Kunne ikke indlæse revisionshistorik",
+    "empty": "Ingen revisioner fundet",
+    "current": "Nuværende",
+    "rollback": "Rollback",
+    "table": {
+      "revision": "Revision",
+      "image": "Image",
+      "replicas": "Replikaer",
+      "created": "Oprettet",
+      "actions": "Handlinger"
+    }
+  },
+  "rollback": {
+    "title": "Bekræft rollback",
+    "subtitle": "Deployment: {{name}}",
+    "targetRevision": "Målrevision",
+    "targetImage": "Målimage",
+    "cancel": "Annuller",
+    "confirm": "Rollback",
+    "submitting": "Ruller tilbage..."
+  },
+  "create": {
+    "title": "Nyt deployment",
+    "namePlaceholder": "my-api",
+    "imagePlaceholder": "Vælg fra katalog eller skriv dit eget",
+    "replicasPlaceholder": "Replikaer",
+    "portPlaceholder": "Container-port",
+    "projectLabel": "Projektgruppe",
+    "projectHint": "Deployments med samme label vises sammen i listen.",
+    "projectNone": "Ingen gruppe",
+    "projectExisting": "Tilføj til eksisterende gruppe",
+    "projectNew": "Opret ny gruppe",
+    "projectNewPlaceholder": "my-project",
+    "submit": "Opret deployment",
+    "submitting": "Opretter...",
+    "cancel": "Annuller"
+  },
+  "image": {
+    "label": "Containerimage",
+    "submit": "Deploy ny version",
+    "submitting": "Deployer...",
+    "hint": "Opdaterer deployment-skabelonen og starter rolling rollout.",
+    "error": "Kunne ikke opdatere container image.",
+    "unchanged": "Image er allerede deployet."
+  },
+  "imagePicker": {
+    "placeholder": "nginx:1.27-alpine, redis:7-alpine, postgres:16-alpine...",
+    "browse": "Image-katalog",
+    "catalogHint": "{{count}} images: Web server, Database, Runtime og mere",
+    "customTitle": "Eget image",
+    "customHint": "Skriv et registry/repository:tag",
+    "empty": "Ingen match. Skriv et eget image ovenfor."
+  },
+  "delete": {
+    "title": "Slet deployment",
+    "message": "Slet deployment {{name}}? Alle pods fjernes.",
+    "submit": "Slet deployment"
+  },
+  "restart": {
+    "submit": "Genstart deployment",
+    "submitting": "Genstarter...",
+    "hint": "Rolling restart genskaber alle pods med samme image (som kubectl rollout restart).",
+    "bannerTitle": "Opdatering i gang",
+    "bannerProgress": "{{ready}}/{{desired}} klar, {{updated}}/{{desired}} opdateret",
+    "bannerHint": "Pods genskabes. Følg Pods-fanen for live-status.",
+    "rowProgress": "({{ready}}/{{desired}} klar)",
+    "error": "Kunne ikke genstarte deployment.",
+    "done": "Deployment genstartes"
+  },
+  "config": {
+    "title": "Miljøvariabler",
+    "loading": "Indlæser konfiguration...",
+    "error": "Kunne ikke indlæse konfiguration",
+    "empty": "Ingen variabler sat",
+    "namePlaceholder": "MYSQL_ROOT_PASSWORD",
+    "valuePlaceholder": "værdi",
+    "add": "Tilføj variabel",
+    "remove": "Fjern",
+    "submit": "Gem",
+    "submitting": "Gemmer...",
+    "portHint": "Container-port: {{port}}",
+    "createHint": "Katalogimages får dev-defaults. Gennemgå før oprettelse."
+  },
+  "healthProbes": {
+    "title": "Sundhedstjek",
+    "loading": "Indlæser probe-konfiguration...",
+    "error": "Kunne ikke indlæse health probes",
+    "empty": "Ingen probes konfigureret for primær container",
+    "configTitle": "Konfigurerede probes",
+    "podsTitle": "Pod-klarhed",
+    "podsEmpty": "Ingen pods at inspicere",
+    "podReady": "Ready",
+    "podNotReady": "Ikke klar",
+    "podStates": {
+      "ready": "Klar",
+      "runningNotReady": "Kører, men ikke ready",
+      "pending": "Venter på planlægning",
+      "failed": "Fejlet",
+      "notReady": "Ikke klar"
+    },
+    "types": {
+      "readiness": "Readiness",
+      "liveness": "Liveness",
+      "startup": "Startup"
+    },
+    "mechanisms": {
+      "http": "HTTP",
+      "tcp": "TCP",
+      "exec": "Exec",
+      "grpc": "gRPC",
+      "none": "Ingen"
+    },
+    "columns": {
+      "type": "Type",
+      "mechanism": "Mekanisme",
+      "target": "Mål",
+      "timing": "Timing",
+      "pod": "Pod",
+      "phase": "Phase",
+      "podStatus": "Readiness"
+    },
+    "timing": {
+      "start": "start {{seconds}}s",
+      "every": "hver {{seconds}}s",
+      "timeout": "timeout {{seconds}}s"
+    }
+  }
+}

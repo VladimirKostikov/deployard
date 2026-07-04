@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Replicas aġġornati",
+    "scaleError": "Ma rnexxiex jiskala d-Deployment",
+    "imageSuccess": "Image tal-container aġġornata",
+    "imageError": "Ma rnexxiex jaġġorna l-image tal-container",
+    "deleteSuccess": "Deployment tħassar",
+    "deleteError": "Ma rnexxiex jħassar d-Deployment",
+    "createSuccess": "Deployment maħluq",
+    "createError": "Ma rnexxiex joħolq d-Deployment",
+    "configSaved": "Konfigurazzjoni ssejvjata",
+    "configError": "Ma rnexxiex jissejvja l-konfigurazzjoni",
+    "restartSuccess": "Deployment erġa' bdiet",
+    "restartError": "Ma rnexxiex jerġa' jibda d-Deployment",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback tlesta",
+    "rollbackError": "Rollback falla",
+    "projectGroupDeleteSuccess": "Grupp tal-proġett tħassar",
+    "projectGroupDeleteError": "Ma rnexxiex jħassar il-grupp tal-proġett",
+    "projectGroupRestartSuccess": "Grupp erġa' beda",
+    "projectGroupRestartError": "Ma rnexxilniex nerġa' nibdew il-grupp",
+    "projectGroupDisableSuccess": "Grupp diżattivat",
+    "projectGroupDisableError": "Ma rnexxilniex niddiżattivaw il-grupp",
+    "filesFolderCreated": "Folder maħluq",
+    "filesUploaded": "Fajl imtella'",
+    "filesDeleted": "Imħassar",
+    "filesRenamed": "Semmew mill-ġdid",
+    "filesError": "Operazzjoni tal-fajl falliet"
+  },
+  "pod": {
+    "restartSuccess": "Pod erġa' bdiet",
+    "restartError": "Ma rnexxiex jerġa' jibda l-pod",
+    "deleteSuccess": "Pod tħassar",
+    "deleteError": "Ma rnexxiex jħassar il-pod"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service maħluq",
+    "serviceCreateError": "Ma rnexxiex joħolq Service",
+    "serviceDeleteSuccess": "Service tħassar",
+    "serviceDeleteError": "Ma rnexxiex jħassar Service",
+    "serviceUpdateSuccess": "Service aġġornat",
+    "serviceUpdateError": "Ma rnexxiex jaġġorna Service",
+    "tunnelError": "Ma rnexxiex jiftaħ aċċess għas-service",
+    "openBlocked": "Il-browser blokka t-tab ġdida. Ħalli pop-ups għal dan is-sit.",
+    "openError": "Ma setax jiftaħ {{name}}. Iċċekkja li pod qed jaħdmu.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Regola Ingress tħassar",
+    "ingressDeleteError": "Ma rnexxiex jħassar regola Ingress"
+  },
+  "ingress": {
+    "createSuccess": "Regola Ingress maħluqa",
+    "createError": "Ma rnexxiex joħolq regola Ingress",
+    "deleteSuccess": "Regola Ingress tħassar",
+    "deleteError": "Ma rnexxiex jħassar regola Ingress"
+  },
+  "namespace": {
+    "createSuccess": "Namespace maħluq",
+    "createError": "Ma rnexxiex joħolq Namespace",
+    "deleteSuccess": "Namespace tħassar",
+    "deleteError": "Ma rnexxiex jħassar Namespace"
+  },
+  "import": {
+    "buildSuccess": "Images mibnija",
+    "buildError": "Ma rnexxiex jibni images",
+    "rebuildSuccess": "Docker Compose erġa' mibni u bdiet",
+    "rebuildError": "Ma rnexxiex jerġa' jibni l-proġett",
+    "loadSuccess": "Images llowdjati fil-cluster",
+    "loadError": "Ma rnexxiex jillowdja images fil-cluster",
+    "applySuccess": "Proġett importat f'Kubernetes",
+    "applyWithImages": "Proġett importat, {{count}} images llowdjati f'kind",
+    "openImportedApp": "Qed jiftaħ app fuq {{url}}",
+    "openUnavailable": "Import lesta, iżda l-URL għadu mhux lest. Iftaħha minn Network → web.",
+    "applyError": "Ma rnexxiex jimporta l-proġett",
+    "previewError": "Ma rnexxiex jibni preview"
+  },
+  "admin": {
+    "userSaveSuccess": "Utent ssejvjat",
+    "userSaveError": "Ma rnexxiex jissejvja l-utent",
+    "userDeleteSuccess": "Utent tħassar",
+    "userDeleteError": "Ma rnexxiex jħassar l-utent",
+    "roleSaveSuccess": "Rwol ssejvjat",
+    "roleSaveError": "Ma rnexxiex jissejvja r-rwol",
+    "roleDeleteSuccess": "Rwol tħassar",
+    "roleDeleteError": "Ma rnexxiex jħassar ir-rwol",
+    "permissionSaveSuccess": "Permess ssejvjat",
+    "permissionSaveError": "Ma rnexxiex jissejvja l-permess",
+    "permissionDeleteSuccess": "Permess tħassar",
+    "permissionDeleteError": "Ma rnexxiex jħassar il-permess"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Worker nodes van het cluster en pods die erop draaien",
+  "loading": "Nodes laden...",
+  "error": "Nodes laden mislukt",
+  "podsTitle": "Pods op {{node}}",
+  "podsLoading": "Pods laden...",
+  "podsError": "Pods voor deze node laden mislukt",
+  "podsEmpty": "Geen pods op deze node",
+  "table": {
+    "name": "Node",
+    "status": "Status",
+    "roles": "Rollen",
+    "pods": "Pods",
+    "version": "Kubelet",
+    "actions": "Acties"
+  },
+  "actions": {
+    "viewPods": "Pods bekijken"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Phase",
+    "ready": "Ready",
+    "yes": "Ja",
+    "no": "Nee"
+  }
+}

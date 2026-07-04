@@ -1,0 +1,10 @@
+{
+  "DEPLOYMENT_NOT_FOUND": "Deployment nenalezen",
+  "POD_NOT_FOUND": "Pod nenalezen",
+  "NAMESPACE_NOT_FOUND": "Namespace nenalezen",
+  "ROLLBACK_FAILED": "Rollback selhal",
+  "K8S_API_ERROR": "Chyba Kubernetes API",
+  "FORBIDDEN": "Nedostatečná oprávnění",
+  "VALIDATION_ERROR": "Chyba validace",
+  "INTERNAL_ERROR": "Interní chyba serveru"
+}

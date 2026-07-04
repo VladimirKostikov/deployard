@@ -1,0 +1,26 @@
+{
+  "appTitle": "Deployard",
+  "language": "Jazyk",
+  "theme": {
+    "label": "Téma",
+    "light": "Svetlý",
+    "dark": "Tmavý",
+    "system": "Auto"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "admin": "Admin",
+    "logout": "Odhlásiť sa"
+  },
+  "status": {
+    "connected": "API pripojené",
+    "checking": "Kontrola API..."
+  },
+  "cluster": {
+    "label": "Cluster"
+  },
+  "namespace": {
+    "label": "Namespace",
+    "all": "Všetky namespaces"
+  }
+}

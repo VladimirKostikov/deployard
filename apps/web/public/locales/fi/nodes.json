@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Clusterin worker-nodet ja niille ajoitetut podit",
+  "loading": "Ladataan nodeja...",
+  "error": "Nodejen lataus epäonnistui",
+  "podsTitle": "Podit nodella {{node}}",
+  "podsLoading": "Ladataan podeja...",
+  "podsError": "Podien lataus tälle nodelle epäonnistui",
+  "podsEmpty": "Ei podeja tällä nodella",
+  "table": {
+    "name": "Node",
+    "status": "Status",
+    "roles": "Roolit",
+    "pods": "Pods",
+    "version": "Kubelet",
+    "actions": "Toiminnot"
+  },
+  "actions": {
+    "viewPods": "Näytä podit"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Phase",
+    "ready": "Ready",
+    "yes": "Kyllä",
+    "no": "Ei"
+  }
+}

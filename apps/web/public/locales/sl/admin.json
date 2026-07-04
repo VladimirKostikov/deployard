@@ -1,0 +1,71 @@
+{
+  "title": "Upravljanje",
+  "subtitle": "Uporabniki, vloge in dovoljenja za deployments",
+  "back": "Nazaj na deployments",
+  "actions": {
+    "label": "Dejanja",
+    "create": "Ustvari",
+    "edit": "Uredi",
+    "delete": "Izbriši",
+    "save": "Shrani",
+    "cancel": "Prekliči",
+    "saving": "Shranjevanje...",
+    "deleting": "Brisanje..."
+  },
+  "users": {
+    "title": "Uporabniki",
+    "subtitle": "Upravljanje računov in dodelitev vlog",
+    "create": "Dodaj uporabnika",
+    "createTitle": "Ustvari uporabnika",
+    "editTitle": "Uredi uporabnika",
+    "deleteTitle": "Izbriši uporabnika",
+    "deleteMessage": "Izbrisati {{email}}? Tega ni mogoče razveljaviti.",
+    "email": "E-pošta",
+    "name": "Ime",
+    "password": "Geslo",
+    "newPassword": "Novo geslo (neobvezno)",
+    "roles": "Vloge",
+    "status": "Status",
+    "active": "Aktiven",
+    "inactive": "Neaktiven"
+  },
+  "roles": {
+    "title": "Vloge",
+    "subtitle": "Definicije vlog in povezana dovoljenja",
+    "create": "Dodaj vlogo",
+    "createTitle": "Ustvari vlogo",
+    "editTitle": "Uredi vlogo",
+    "deleteTitle": "Izbriši vlogo",
+    "deleteMessage": "Izbrisati vlogo \"{{name}}\"? Ne sme biti dodeljena nobenemu uporabniku.",
+    "name": "Ime",
+    "permissions": "Dovoljenja"
+  },
+  "permissions": {
+    "title": "Dovoljenja",
+    "subtitle": "Podrobna pravila dostopa do deployments",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Odsek",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Omrežje",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Metrike",
+      "admin": "Administracija"
+    },
+    "level": "Dostop",
+    "levels": {
+      "none": "Brez dostopa",
+      "view": "Ogled",
+      "operate": "Upravljanje",
+      "manage": "Administracija"
+    },
+    "hints": {
+      "view": "Odpri odsek, preberi sezname in podrobnosti",
+      "operate": "Ponovni zagon, onemogočanje, rollback, dnevniki, terminal",
+      "manage": "Ustvarjanje, brisanje, import in admin spremembe"
+    }
+  }
+}

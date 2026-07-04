@@ -1,0 +1,26 @@
+{
+  "loading": "Зареждане на pods...",
+  "error": "Неуспешно зареждане на pods",
+  "empty": "Няма pods за този deployment",
+  "yes": "Да",
+  "no": "Не",
+  "table": {
+    "name": "Pod",
+    "phase": "Phase",
+    "ready": "Ready",
+    "restarts": "Рестарти",
+    "node": "Node",
+    "podIp": "Pod IP",
+    "ports": "Портове",
+    "actions": "Действия"
+  },
+  "actions": {
+    "restart": "Рестартирай pod",
+    "delete": "Изтрий pod",
+    "console": "Отвори конзола"
+  },
+  "delete": {
+    "title": "Изтрий pod",
+    "message": "Изтрий pod {{name}}? Deployment контролерът може да го създаде отново."
+  }
+}

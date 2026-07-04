@@ -1,0 +1,32 @@
+{
+  "appTitle": "Deployard",
+  "sections": {
+    "main": "Κύρια",
+    "admin": "Έλεγχος πρόσβασης",
+    "settings": "Ρυθμίσεις"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "import": "Εισαγωγή",
+    "faq": "FAQ",
+    "nodes": "Nodes",
+    "namespaces": "Namespaces",
+    "ingress": "Ingress",
+    "network": "Δίκτυο",
+    "metrics": "Μετρήσεις",
+    "admin": "Διαχείριση",
+    "users": "Χρήστες",
+    "roles": "Ρόλοι",
+    "permissions": "Δικαιώματα",
+    "backToApp": "Πίσω στην εφαρμογή",
+    "logout": "Αποσύνδεση"
+  },
+  "topbar": {
+    "connected": "API συνδεδεμένο",
+    "checking": "Έλεγχος API..."
+  },
+  "mobileMenu": {
+    "open": "Άνοιγμα μενού",
+    "close": "Κλείσιμο μενού"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Réplicas actualizadas",
+    "scaleError": "No se pudo escalar el deployment",
+    "imageSuccess": "Imagen del contenedor actualizada",
+    "imageError": "No se pudo actualizar la imagen del contenedor",
+    "deleteSuccess": "Deployment eliminado",
+    "deleteError": "No se pudo eliminar el deployment",
+    "createSuccess": "Deployment creado",
+    "createError": "No se pudo crear el deployment",
+    "configSaved": "Configuración guardada",
+    "configError": "No se pudo guardar la configuración",
+    "restartSuccess": "Deployment reiniciado",
+    "restartError": "No se pudo reiniciar el deployment",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback completado",
+    "rollbackError": "Rollback fallido",
+    "projectGroupDeleteSuccess": "Grupo de proyecto eliminado",
+    "projectGroupDeleteError": "No se pudo eliminar el grupo de proyecto",
+    "projectGroupRestartSuccess": "Grupo reiniciado",
+    "projectGroupRestartError": "No se pudo reiniciar el grupo",
+    "projectGroupDisableSuccess": "Grupo desactivado",
+    "projectGroupDisableError": "No se pudo desactivar el grupo",
+    "filesFolderCreated": "Carpeta creada",
+    "filesUploaded": "Archivo subido",
+    "filesDeleted": "Eliminado",
+    "filesRenamed": "Renombrado",
+    "filesError": "La operación de archivo falló"
+  },
+  "pod": {
+    "restartSuccess": "Pod reiniciado",
+    "restartError": "No se pudo reiniciar el pod",
+    "deleteSuccess": "Pod eliminado",
+    "deleteError": "No se pudo eliminar el pod"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service creado",
+    "serviceCreateError": "No se pudo crear el service",
+    "serviceDeleteSuccess": "Service eliminado",
+    "serviceDeleteError": "No se pudo eliminar el service",
+    "serviceUpdateSuccess": "Service actualizado",
+    "serviceUpdateError": "No se pudo actualizar el service",
+    "tunnelError": "No se pudo abrir el acceso al service",
+    "openBlocked": "El navegador bloqueó la nueva pestaña. Permite pop-ups en este sitio.",
+    "openError": "No se pudo abrir {{name}}. Comprueba que los pod están en ejecución.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Regla ingress eliminada",
+    "ingressDeleteError": "No se pudo eliminar la regla ingress"
+  },
+  "ingress": {
+    "createSuccess": "Regla ingress creada",
+    "createError": "No se pudo crear la regla ingress",
+    "deleteSuccess": "Regla ingress eliminada",
+    "deleteError": "No se pudo eliminar la regla ingress"
+  },
+  "namespace": {
+    "createSuccess": "Namespace creado",
+    "createError": "No se pudo crear el namespace",
+    "deleteSuccess": "Namespace eliminado",
+    "deleteError": "No se pudo eliminar el namespace"
+  },
+  "import": {
+    "buildSuccess": "Imágenes construidas",
+    "buildError": "No se pudieron construir las imágenes",
+    "rebuildSuccess": "Docker Compose reconstruido e iniciado",
+    "rebuildError": "No se pudo reconstruir el proyecto",
+    "loadSuccess": "Imágenes cargadas en el cluster",
+    "loadError": "No se pudieron cargar las imágenes en el cluster",
+    "applySuccess": "Proyecto importado a Kubernetes",
+    "applyWithImages": "Proyecto importado, {{count}} imágenes cargadas en kind",
+    "openImportedApp": "Abriendo app en {{url}}",
+    "openUnavailable": "Import completado, pero la URL aún no está lista. Ábrela desde Network → web.",
+    "applyError": "No se pudo importar el proyecto",
+    "previewError": "No se pudo generar la vista previa"
+  },
+  "admin": {
+    "userSaveSuccess": "Usuario guardado",
+    "userSaveError": "No se pudo guardar el usuario",
+    "userDeleteSuccess": "Usuario eliminado",
+    "userDeleteError": "No se pudo eliminar el usuario",
+    "roleSaveSuccess": "Rol guardado",
+    "roleSaveError": "No se pudo guardar el rol",
+    "roleDeleteSuccess": "Rol eliminado",
+    "roleDeleteError": "No se pudo eliminar el rol",
+    "permissionSaveSuccess": "Permiso guardado",
+    "permissionSaveError": "No se pudo guardar el permiso",
+    "permissionDeleteSuccess": "Permiso eliminado",
+    "permissionDeleteError": "No se pudo eliminar el permiso"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "title": "Administration",
+  "subtitle": "Users, roles, and deployment permissions",
+  "back": "Back to deployments",
+  "actions": {
+    "label": "Actions",
+    "create": "Create",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "saving": "Saving...",
+    "deleting": "Deleting..."
+  },
+  "users": {
+    "title": "Users",
+    "subtitle": "Manage dashboard accounts and role assignments",
+    "create": "Add user",
+    "createTitle": "Create user",
+    "editTitle": "Edit user",
+    "deleteTitle": "Delete user",
+    "deleteMessage": "Delete {{email}}? This cannot be undone.",
+    "email": "Email",
+    "name": "Name",
+    "password": "Password",
+    "newPassword": "New password (optional)",
+    "roles": "Roles",
+    "status": "Status",
+    "active": "Active",
+    "inactive": "Inactive"
+  },
+  "roles": {
+    "title": "Roles",
+    "subtitle": "Access by section and interaction level",
+    "create": "Add role",
+    "createTitle": "Create role",
+    "editTitle": "Edit role",
+    "deleteTitle": "Delete role",
+    "deleteMessage": "Delete role \"{{name}}\"? It must not be assigned to any user.",
+    "name": "Name",
+    "permissions": "Permissions"
+  },
+  "permissions": {
+    "title": "Access catalog",
+    "subtitle": "Predefined section and level grants used by roles",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Section",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Network",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Metrics",
+      "admin": "Administration"
+    },
+    "level": "Access",
+    "levels": {
+      "none": "No access",
+      "view": "View",
+      "operate": "Operate",
+      "manage": "Manage"
+    },
+    "hints": {
+      "view": "Open section, read lists and details",
+      "operate": "Restart, disable, rollback, logs, terminal",
+      "manage": "Create, delete, import, and admin changes"
+    }
+  }
+}

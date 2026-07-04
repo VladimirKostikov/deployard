@@ -1,0 +1,81 @@
+{
+  "title": "Sieć",
+  "subtitle": "Services, Endpoints i Ingress: jak pody komunikują się w klastrze",
+  "tabs": {
+    "ariaLabel": "Sekcje sieci",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Ładowanie services...",
+    "error": "Nie udało się załadować services",
+    "empty": "Brak services w tym namespace",
+    "table": {
+      "name": "Nazwa",
+      "type": "Typ",
+      "clusterIp": "Cluster IP",
+      "ports": "Porty",
+      "selector": "Selector",
+      "actions": "Akcje"
+    },
+    "actions": {
+      "delete": "Usuń",
+      "open": "Otwórz {{name}} w przeglądarce",
+      "openTooltip": "{{url}}: jeśli strona się nie ładuje, uruchom w terminalu: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Kopiuj komendę port-forward dla {{name}}",
+      "copied": "Komenda skopiowana",
+      "edit": "Edytuj porty",
+      "editShort": "Porty"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Typ",
+      "portsLabel": "Porty",
+      "port": "Port service",
+      "targetPort": "Target port",
+      "nodePort": "NodePort",
+      "cancel": "Anuluj",
+      "save": "Zapisz",
+      "saving": "Zapisywanie..."
+    },
+    "delete": {
+      "title": "Usuń service",
+      "message": "Usunąć service {{name}}? Pody nadal działają, ale nazwa DNS przestanie działać."
+    },
+    "create": {
+      "title": "Utwórz service",
+      "name": "Nazwa service",
+      "deployment": "Deployment",
+      "port": "Port service",
+      "targetPort": "Target port (opcjonalnie)",
+      "submit": "Utwórz service",
+      "submitting": "Tworzenie...",
+      "cancel": "Anuluj"
+    }
+  },
+  "endpoints": {
+    "subtitle": "Adresy IP podów za każdym service (zarządzane automatycznie przez Kubernetes)",
+    "loading": "Ładowanie endpoints...",
+    "error": "Nie udało się załadować endpoints",
+    "empty": "Brak endpoints: utwórz service dla deploymentu",
+    "table": {
+      "name": "Service",
+      "ports": "Porty",
+      "addresses": "Pod IP / nazwa"
+    }
+  },
+  "deployment": {
+    "title": "Powiązane services",
+    "loading": "Ładowanie services...",
+    "error": "Nie udało się załadować services",
+    "empty": "Brak service dla tego deploymentu. Utwórz go na stronie Sieć.",
+    "openNetwork": "Otwórz sieć",
+    "viewEndpoints": "Pod IP ->"
+  }
+}

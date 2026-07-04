@@ -1,0 +1,32 @@
+{
+  "appTitle": "Deployard",
+  "sections": {
+    "main": "Hoofd",
+    "admin": "Toegangsbeheer",
+    "settings": "Instellingen"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "import": "Import",
+    "faq": "FAQ",
+    "nodes": "Nodes",
+    "namespaces": "Namespaces",
+    "ingress": "Ingress",
+    "network": "Netwerk",
+    "metrics": "Metrics",
+    "admin": "Beheer",
+    "users": "Gebruikers",
+    "roles": "Rollen",
+    "permissions": "Rechten",
+    "backToApp": "Terug naar app",
+    "logout": "Uitloggen"
+  },
+  "topbar": {
+    "connected": "API verbonden",
+    "checking": "API controleren..."
+  },
+  "mobileMenu": {
+    "open": "Menu openen",
+    "close": "Menu sluiten"
+  }
+}

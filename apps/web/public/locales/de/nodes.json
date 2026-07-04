@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Worker-Nodes im Cluster und darauf geplante Pods",
+  "loading": "Nodes werden geladen...",
+  "error": "Nodes konnten nicht geladen werden",
+  "podsTitle": "Pods auf {{node}}",
+  "podsLoading": "Pods werden geladen...",
+  "podsError": "Pods für diesen Node konnten nicht geladen werden",
+  "podsEmpty": "Keine Pods auf diesem Node",
+  "table": {
+    "name": "Node",
+    "status": "Status",
+    "roles": "Rollen",
+    "pods": "Pods",
+    "version": "Kubelet",
+    "actions": "Aktionen"
+  },
+  "actions": {
+    "viewPods": "Pods anzeigen"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Phase",
+    "ready": "Bereit",
+    "yes": "Ja",
+    "no": "Nein"
+  }
+}

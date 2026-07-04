@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Worker nodes klastra i pody na nich schedulowane",
+  "loading": "Ładowanie nodes...",
+  "error": "Nie udało się załadować nodes",
+  "podsTitle": "Pody na {{node}}",
+  "podsLoading": "Ładowanie podów...",
+  "podsError": "Nie udało się załadować podów dla tego node",
+  "podsEmpty": "Brak podów na tym node",
+  "table": {
+    "name": "Node",
+    "status": "Status",
+    "roles": "Role",
+    "pods": "Pods",
+    "version": "Kubelet",
+    "actions": "Akcje"
+  },
+  "actions": {
+    "viewPods": "Zobacz pody"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Phase",
+    "ready": "Ready",
+    "yes": "Tak",
+    "no": "Nie"
+  }
+}

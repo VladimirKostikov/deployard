@@ -1,0 +1,29 @@
+{
+  "title": "Nóid",
+  "subtitle": "Nóid oibre an chlustair agus podanna sceidealaithe orthu",
+  "loading": "Ag lódáil na nóid...",
+  "error": "Theip ar lódáil na nóid",
+  "podsTitle": "Podanna ar {{node}}",
+  "podsLoading": "Ag lódáil podanna...",
+  "podsError": "Theip ar lódáil podanna don nód seo",
+  "podsEmpty": "Níl podanna ar an nód seo",
+  "table": {
+    "name": "Nód",
+    "status": "Stádas",
+    "roles": "Róil",
+    "pods": "Podanna",
+    "version": "Kubelet",
+    "actions": "Gníomhartha"
+  },
+  "actions": {
+    "viewPods": "Féach ar podanna"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Céim",
+    "ready": "Réidh",
+    "yes": "Tá",
+    "no": "Níl"
+  }
+}

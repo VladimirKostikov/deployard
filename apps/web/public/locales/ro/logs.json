@@ -1,0 +1,7 @@
+{
+  "title": "Logs",
+  "streaming": "Se transmit logurile...",
+  "error": "Nu s-au putut transmite logurile",
+  "empty": "Încă nu există linii de log",
+  "autoScroll": "Derulare automată"
+}

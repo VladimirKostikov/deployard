@@ -1,0 +1,99 @@
+services:
+
+  postgres:
+    container_name: dpd-postgres
+    restart: unless-stopped
+    image: postgres:16-alpine
+    env_file:
+      - ../../.env
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-dpd}
+      POSTGRES_USER: ${POSTGRES_USER:-dpd}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-dpd}
+    volumes:
+      - dpd-postgres-data:/var/lib/postgresql/data
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U "$$POSTGRES_USER" -d "$$POSTGRES_DB"']
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    container_name: dpd-api
+    restart: unless-stopped
+    build:
+      context: ../..
+      dockerfile: deploy/docker/api.Dockerfile
+    env_file:
+      - ../../.env
+    environment:
+      PORT: 3000
+      APP_ENV: ${APP_ENV:-development}
+      CORS_ORIGIN: ${CORS_ORIGIN:-http://localhost:18480}
+      K8S_CONFIG_MODE: ${K8S_CONFIG_MODE:-default}
+      K8S_SKIP_TLS_VERIFY: ${K8S_SKIP_TLS_VERIFY:-auto}
+      DATABASE_URL: postgresql://${POSTGRES_USER:-dpd}:${POSTGRES_PASSWORD:-dpd}@postgres:5432/${POSTGRES_DB:-dpd}
+      JWT_SECRET: ${JWT_SECRET:-change-me-in-production}
+      JWT_EXPIRES_IN: ${JWT_EXPIRES_IN:-8h}
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
+      DB_SEED: ${DB_SEED:-true}
+      DB_SYNCHRONIZE: ${DB_SYNCHRONIZE:-true}
+      DB_MIGRATE: ${DB_MIGRATE:-false}
+      DEPLOY_WEBHOOK_SECRET: ${DEPLOY_WEBHOOK_SECRET:-dev-deploy-webhook-secret}
+      WEBHOOK_ALLOWED_NAMESPACES: ${WEBHOOK_ALLOWED_NAMESPACES:-}
+      SWAGGER_ENABLED: ${SWAGGER_ENABLED:-true}
+      METRICS_PUBLIC: ${METRICS_PUBLIC:-false}
+      SERVICE_ACCESS_PUBLIC_HOST: ${SERVICE_ACCESS_PUBLIC_HOST:-http://localhost}
+      DOCKER_SCAN_ENABLED: ${DOCKER_SCAN_ENABLED:-true}
+      KIND_CLUSTER_NAME: ${KIND_CLUSTER_NAME:-dpd-local}
+      COMPOSE_DISCOVERY_PATHS: ${COMPOSE_DISCOVERY_PATHS:-/workspace/demo}
+      COMPOSE_CONTAINER_ROOT: ${COMPOSE_CONTAINER_ROOT:-/workspace/dpd}
+      COMPOSE_HOST_ROOT: ${COMPOSE_HOST_ROOT:-}
+
+    volumes:
+      - ${KUBE_CONFIG_PATH:-~/.kube/config}:/home/node/.kube/config:ro
+      - ../../demo:/workspace/demo:rw
+      - ../..:/workspace/dpd:rw
+
+    extra_hosts:
+      - host.docker.internal:host-gateway
+
+    ports:
+      - "31080-31119:31080-31119"
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+    healthcheck:
+      test:
+        - CMD
+        - wget
+        - -qO-
+        - http://127.0.0.1:3000/api/health
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+  web:
+    container_name: dpd-web
+    restart: unless-stopped
+    build:
+      context: ../..
+      dockerfile: deploy/docker/web.Dockerfile
+      args:
+        VITE_API_BASE_URL: /api
+    env_file:
+      - ../../.env
+    ports:
+      - "${WEB_PORT:-18480}:80"
+
+    depends_on:
+      api:
+        condition: service_healthy
+
+volumes:
+  dpd-postgres-data:

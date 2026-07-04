@@ -1,0 +1,32 @@
+{
+  "appTitle": "Deployard",
+  "sections": {
+    "main": "Principal",
+    "admin": "Control acces",
+    "settings": "Setări"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "import": "Import",
+    "faq": "FAQ",
+    "nodes": "Nodes",
+    "namespaces": "Namespaces",
+    "ingress": "Ingress",
+    "network": "Rețea",
+    "metrics": "Metrici",
+    "admin": "Administrare",
+    "users": "Utilizatori",
+    "roles": "Roluri",
+    "permissions": "Permisiuni",
+    "backToApp": "Înapoi la aplicație",
+    "logout": "Deconectare"
+  },
+  "topbar": {
+    "connected": "API conectat",
+    "checking": "Se verifică API-ul..."
+  },
+  "mobileMenu": {
+    "open": "Deschide meniul",
+    "close": "Închide meniul"
+  }
+}

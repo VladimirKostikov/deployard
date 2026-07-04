@@ -1,0 +1,81 @@
+{
+  "title": "Líonra",
+  "subtitle": "Services, Endpoints, agus Ingress: conas a shroicheann podanna a chéile sa chlustar",
+  "tabs": {
+    "ariaLabel": "Rannáin líonra",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Ag lódáil Services...",
+    "error": "Theip ar lódáil na Services",
+    "empty": "Níl Service sa Namespace seo",
+    "table": {
+      "name": "Ainm",
+      "type": "Cineál",
+      "clusterIp": "Cluster IP",
+      "ports": "Portanna",
+      "selector": "Roghnóir",
+      "actions": "Gníomhartha"
+    },
+    "actions": {
+      "delete": "Scrios",
+      "open": "Oscail {{name}} sa bhrabhsálaí",
+      "openTooltip": "{{url}}: mura lódálann an leathanach, rith sa teirminéal: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Cóipeáil ordú port-forward do {{name}}",
+      "copied": "Ordú cóipeáilte",
+      "edit": "Cuir portanna in eagar",
+      "editShort": "Portanna"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Cineál",
+      "portsLabel": "Portanna",
+      "port": "Port seirbhíse",
+      "targetPort": "Port sprice",
+      "nodePort": "NodePort",
+      "cancel": "Cealaigh",
+      "save": "Sábháil",
+      "saving": "Ag sábháil..."
+    },
+    "delete": {
+      "title": "Scrios Service",
+      "message": "Scrios Service {{name}}? Fanfaidh podanna ar siúl ach stopfaidh an t-ainm DNS ag obair."
+    },
+    "create": {
+      "title": "Cruthaigh Service",
+      "name": "Ainm Service",
+      "deployment": "Deployment",
+      "port": "Port seirbhíse",
+      "targetPort": "Port sprice (roghnach)",
+      "submit": "Cruthaigh Service",
+      "submitting": "Ag cruthú...",
+      "cancel": "Cealaigh"
+    }
+  },
+  "endpoints": {
+    "subtitle": "Pod IP taobh thiar de gach Service (bainistithe go huathoibríoch ag Kubernetes)",
+    "loading": "Ag lódáil Endpoints...",
+    "error": "Theip ar lódáil na Endpoints",
+    "empty": "Níl Endpoint fós: cruthaigh Service do Deployment",
+    "table": {
+      "name": "Service",
+      "ports": "Portanna",
+      "addresses": "Pod IP / ainm"
+    }
+  },
+  "deployment": {
+    "title": "Services nasctha",
+    "loading": "Ag lódáil Services...",
+    "error": "Theip ar lódáil na Services",
+    "empty": "Níl Service don Deployment seo. Cruthaigh ceann ar leathanach Líonra.",
+    "openNetwork": "Oscail líonra",
+    "viewEndpoints": "Pod IP →"
+  }
+}

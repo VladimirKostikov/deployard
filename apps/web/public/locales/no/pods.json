@@ -1,0 +1,26 @@
+{
+  "loading": "Laster pods...",
+  "error": "Kunne ikke laste pods",
+  "empty": "Ingen pods funnet for dette deploymentet",
+  "yes": "Ja",
+  "no": "Nei",
+  "table": {
+    "name": "Pod",
+    "phase": "Phase",
+    "ready": "Ready",
+    "restarts": "Omstarter",
+    "node": "Node",
+    "podIp": "Pod IP",
+    "ports": "Porter",
+    "actions": "Handlinger"
+  },
+  "actions": {
+    "restart": "Start pod på nytt",
+    "delete": "Slett pod",
+    "console": "Åpne konsoll"
+  },
+  "delete": {
+    "title": "Slett pod",
+    "message": "Slette pod {{name}}? Deployment-kontrolleren kan opprette den på nytt."
+  }
+}

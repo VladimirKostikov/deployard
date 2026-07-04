@@ -1,0 +1,71 @@
+{
+  "title": "Správa",
+  "subtitle": "Používatelia, roly a oprávnenia k deployments",
+  "back": "Späť na deployments",
+  "actions": {
+    "label": "Akcie",
+    "create": "Vytvoriť",
+    "edit": "Upraviť",
+    "delete": "Zmazať",
+    "save": "Uložiť",
+    "cancel": "Zrušiť",
+    "saving": "Ukladanie...",
+    "deleting": "Mazanie..."
+  },
+  "users": {
+    "title": "Používatelia",
+    "subtitle": "Správa účtov dashboardu a priradenie rolí",
+    "create": "Pridať používateľa",
+    "createTitle": "Vytvoriť používateľa",
+    "editTitle": "Upraviť používateľa",
+    "deleteTitle": "Zmazať používateľa",
+    "deleteMessage": "Zmazať {{email}}? Túto akciu nemožno vrátiť.",
+    "email": "E-mail",
+    "name": "Meno",
+    "password": "Heslo",
+    "newPassword": "Nové heslo (voliteľné)",
+    "roles": "Roly",
+    "status": "Stav",
+    "active": "Aktívny",
+    "inactive": "Neaktívny"
+  },
+  "roles": {
+    "title": "Roly",
+    "subtitle": "Definície rolí a priradené oprávnenia",
+    "create": "Pridať rolu",
+    "createTitle": "Vytvoriť rolu",
+    "editTitle": "Upraviť rolu",
+    "deleteTitle": "Zmazať rolu",
+    "deleteMessage": "Zmazať rolu \"{{name}}\"? Nesmie byť priradená žiadnemu používateľovi.",
+    "name": "Názov",
+    "permissions": "Oprávnenia"
+  },
+  "permissions": {
+    "title": "Oprávnenia",
+    "subtitle": "Podrobné pravidlá prístupu k deployments",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Sekcia",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Sieť",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Metriky",
+      "admin": "Administrácia"
+    },
+    "level": "Prístup",
+    "levels": {
+      "none": "Bez prístupu",
+      "view": "Zobrazenie",
+      "operate": "Obsluha",
+      "manage": "Správa"
+    },
+    "hints": {
+      "view": "Otvoriť sekciu, čítať zoznamy a detaily",
+      "operate": "Reštart, vypnutie, rollback, logy, terminál",
+      "manage": "Vytváranie, mazanie, import a admin zmeny"
+    }
+  }
+}

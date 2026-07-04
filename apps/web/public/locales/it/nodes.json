@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Node worker del cluster e pod schedulati su di essi",
+  "loading": "Caricamento nodes...",
+  "error": "Impossibile caricare i nodes",
+  "podsTitle": "Pod su {{node}}",
+  "podsLoading": "Caricamento pod...",
+  "podsError": "Impossibile caricare i pod per questo node",
+  "podsEmpty": "Nessun pod su questo node",
+  "table": {
+    "name": "Node",
+    "status": "Stato",
+    "roles": "Ruoli",
+    "pods": "Pods",
+    "version": "Kubelet",
+    "actions": "Azioni"
+  },
+  "actions": {
+    "viewPods": "Vedi pod"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Phase",
+    "ready": "Ready",
+    "yes": "Sì",
+    "no": "No"
+  }
+}

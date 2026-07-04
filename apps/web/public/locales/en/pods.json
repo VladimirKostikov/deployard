@@ -1,0 +1,26 @@
+{
+  "loading": "Loading pods...",
+  "error": "Failed to load pods",
+  "empty": "No pods found for this deployment",
+  "yes": "Yes",
+  "no": "No",
+  "table": {
+    "name": "Pod",
+    "phase": "Phase",
+    "ready": "Ready",
+    "restarts": "Restarts",
+    "node": "Node",
+    "podIp": "Pod IP",
+    "ports": "Ports",
+    "actions": "Actions"
+  },
+  "actions": {
+    "restart": "Restart pod",
+    "delete": "Delete pod",
+    "console": "Open console"
+  },
+  "delete": {
+    "title": "Delete pod",
+    "message": "Delete pod {{name}}? The deployment controller may recreate it."
+  }
+}

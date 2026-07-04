@@ -1,0 +1,32 @@
+{
+  "title": "Ingress",
+  "subtitle": "Rialacha HTTP routing sa Namespace roghnaithe",
+  "loading": "Ag lódáil rialacha Ingress...",
+  "error": "Theip ar lódáil rialacha Ingress",
+  "empty": "Níl rialacha Ingress sa Namespace seo",
+  "create": {
+    "title": "Ingress nua",
+    "name": "Ainm",
+    "host": "Óstach (m.sh. api.local)",
+    "path": "Conair",
+    "service": "Ainm an tseirbhís",
+    "port": "Port seirbhíse",
+    "submit": "Cruthaigh Ingress",
+    "submitting": "Ag cruthú...",
+    "cancel": "Cealaigh"
+  },
+  "table": {
+    "name": "Ainm",
+    "host": "Óstach",
+    "path": "Conair",
+    "service": "Cúl",
+    "actions": "Gníomhartha"
+  },
+  "actions": {
+    "delete": "Scrios"
+  },
+  "delete": {
+    "title": "Scrios Ingress",
+    "message": "Scrios Ingress {{name}}?"
+  }
+}

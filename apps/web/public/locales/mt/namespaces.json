@@ -1,0 +1,29 @@
+{
+  "title": "Namespaces",
+  "subtitle": "Oħloq u neħħi Namespaces Kubernetes fil-cluster attiv",
+  "loading": "Qed jillowdja n-Namespaces...",
+  "error": "Ma rnexxiex jillowdja n-Namespaces",
+  "protected": "Protett",
+  "create": {
+    "title": "Namespace ġdid",
+    "label": "Isem",
+    "placeholder": "staging",
+    "submit": "Oħloq Namespace",
+    "submitting": "Qed joħolqu...",
+    "cancel": "Ikkanċella",
+    "hint": "Uża ismijiet DNS bil-ittri żgħar. Namespaces tas-sistema bil-prefix kube- ma jistgħux jitħassru."
+  },
+  "table": {
+    "name": "Isem",
+    "status": "Status",
+    "created": "Maħluq",
+    "actions": "Azzjonijiet"
+  },
+  "actions": {
+    "delete": "Ħassar"
+  },
+  "delete": {
+    "title": "Ħassar Namespace",
+    "message": "Ħassar Namespace {{name}}? Ir-riżorsi kollha ġewwa se jitneħħew."
+  }
+}

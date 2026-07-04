@@ -1,0 +1,32 @@
+{
+  "appTitle": "Deployard",
+  "sections": {
+    "main": "Prinċipali",
+    "admin": "Kontroll tal-aċċess",
+    "settings": "Settings"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "import": "Importa",
+    "faq": "Mistoqsijiet frekwenti",
+    "nodes": "Nodes",
+    "namespaces": "Namespaces",
+    "ingress": "Ingress",
+    "network": "Netwerk",
+    "metrics": "Metriċi",
+    "admin": "Amministrazzjoni",
+    "users": "Utenti",
+    "roles": "Rwoli",
+    "permissions": "Permessi",
+    "backToApp": "Lura għall-app",
+    "logout": "Oħroġ"
+  },
+  "topbar": {
+    "connected": "API konness",
+    "checking": "Qed jiċċekkja l-API..."
+  },
+  "mobileMenu": {
+    "open": "Iftaħ il-menu",
+    "close": "Agħlaq il-menu"
+  }
+}

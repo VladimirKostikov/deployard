@@ -1,0 +1,26 @@
+{
+  "appTitle": "Deployard",
+  "language": "Idioma",
+  "theme": {
+    "label": "Tema",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Auto"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "admin": "Admin",
+    "logout": "Cerrar sesión"
+  },
+  "status": {
+    "connected": "API conectada",
+    "checking": "Comprobando API..."
+  },
+  "cluster": {
+    "label": "Cluster"
+  },
+  "namespace": {
+    "label": "Namespace",
+    "all": "Todos los namespaces"
+  }
+}

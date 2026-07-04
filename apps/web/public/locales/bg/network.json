@@ -1,0 +1,81 @@
+{
+  "title": "Мрежа",
+  "subtitle": "Services, Endpoints и Ingress: как pods се намират в cluster-а",
+  "tabs": {
+    "ariaLabel": "Мрежови секции",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Зареждане на services...",
+    "error": "Неуспешно зареждане на services",
+    "empty": "Няма services в този namespace",
+    "table": {
+      "name": "Име",
+      "type": "Тип",
+      "clusterIp": "Cluster IP",
+      "ports": "Портове",
+      "selector": "Selector",
+      "actions": "Действия"
+    },
+    "actions": {
+      "delete": "Изтрий",
+      "open": "Отвори {{name}} в браузъра",
+      "openTooltip": "{{url}}: ако страницата не се зареди, изпълни в терминала: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Копирай port-forward команда за {{name}}",
+      "copied": "Командата е копирана",
+      "edit": "Редактирай портове",
+      "editShort": "Портове"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Тип",
+      "portsLabel": "Портове",
+      "port": "Service порт",
+      "targetPort": "Target порт",
+      "nodePort": "NodePort",
+      "cancel": "Отказ",
+      "save": "Запази",
+      "saving": "Запазване..."
+    },
+    "delete": {
+      "title": "Изтрий service",
+      "message": "Изтрий service {{name}}? Pods ще продължат да работят, но DNS името ще спре да работи."
+    },
+    "create": {
+      "title": "Създай service",
+      "name": "Service име",
+      "deployment": "Deployment",
+      "port": "Service порт",
+      "targetPort": "Target порт (по избор)",
+      "submit": "Създай service",
+      "submitting": "Създаване...",
+      "cancel": "Отказ"
+    }
+  },
+  "endpoints": {
+    "subtitle": "Pod IP адреси зад всеки service (управляват се автоматично от Kubernetes)",
+    "loading": "Зареждане на endpoints...",
+    "error": "Неуспешно зареждане на endpoints",
+    "empty": "Все още няма endpoints: създай service за deployment",
+    "table": {
+      "name": "Service",
+      "ports": "Портове",
+      "addresses": "Pod IP / име"
+    }
+  },
+  "deployment": {
+    "title": "Свързани services",
+    "loading": "Зареждане на services...",
+    "error": "Неуспешно зареждане на services",
+    "empty": "Няма service за този deployment. Създай на страницата Мрежа.",
+    "openNetwork": "Отвори мрежа",
+    "viewEndpoints": "Pod IP ->"
+  }
+}

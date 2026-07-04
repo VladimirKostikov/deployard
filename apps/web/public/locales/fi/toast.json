@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Replikat päivitetty",
+    "scaleError": "Deploymentin skaalaus epäonnistui",
+    "imageSuccess": "Container image päivitetty",
+    "imageError": "Container imagen päivitys epäonnistui",
+    "deleteSuccess": "Deployment poistettu",
+    "deleteError": "Deploymentin poisto epäonnistui",
+    "createSuccess": "Deployment luotu",
+    "createError": "Deploymentin luonti epäonnistui",
+    "configSaved": "Konfiguraatio tallennettu",
+    "configError": "Konfiguraation tallennus epäonnistui",
+    "restartSuccess": "Deployment käynnistetty uudelleen",
+    "restartError": "Deploymentin uudelleenkäynnistys epäonnistui",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback valmis",
+    "rollbackError": "Rollback epäonnistui",
+    "projectGroupDeleteSuccess": "Projektiryhmä poistettu",
+    "projectGroupDeleteError": "Projektiryhmän poisto epäonnistui",
+    "projectGroupRestartSuccess": "Ryhmä käynnistetty uudelleen",
+    "projectGroupRestartError": "Ryhmän uudelleenkäynnistys epäonnistui",
+    "projectGroupDisableSuccess": "Ryhmä poistettu käytöstä",
+    "projectGroupDisableError": "Ryhmän poisto käytöstä epäonnistui",
+    "filesFolderCreated": "Kansio luotu",
+    "filesUploaded": "Tiedosto ladattu",
+    "filesDeleted": "Poistettu",
+    "filesRenamed": "Nimetty uudelleen",
+    "filesError": "Tiedostotoiminto epäonnistui"
+  },
+  "pod": {
+    "restartSuccess": "Pod käynnistetty uudelleen",
+    "restartError": "Podin uudelleenkäynnistys epäonnistui",
+    "deleteSuccess": "Pod poistettu",
+    "deleteError": "Podin poisto epäonnistui"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service luotu",
+    "serviceCreateError": "Servicen luonti epäonnistui",
+    "serviceDeleteSuccess": "Service poistettu",
+    "serviceDeleteError": "Servicen poisto epäonnistui",
+    "serviceUpdateSuccess": "Service päivitetty",
+    "serviceUpdateError": "Servicen päivitys epäonnistui",
+    "tunnelError": "Service-pääsyn avaaminen epäonnistui",
+    "openBlocked": "Selain esti uuden välilehden. Salli pop-upit tälle sivustolle.",
+    "openError": "Ei voitu avata {{name}}. Tarkista, että podit ovat käynnissä.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Ingress-sääntö poistettu",
+    "ingressDeleteError": "Ingress-säännön poisto epäonnistui"
+  },
+  "ingress": {
+    "createSuccess": "Ingress-sääntö luotu",
+    "createError": "Ingress-säännön luonti epäonnistui",
+    "deleteSuccess": "Ingress-sääntö poistettu",
+    "deleteError": "Ingress-säännön poisto epäonnistui"
+  },
+  "namespace": {
+    "createSuccess": "Namespace luotu",
+    "createError": "Namespacen luonti epäonnistui",
+    "deleteSuccess": "Namespace poistettu",
+    "deleteError": "Namespacen poisto epäonnistui"
+  },
+  "import": {
+    "buildSuccess": "Imagen rakennettu",
+    "buildError": "Imagejen rakentaminen epäonnistui",
+    "rebuildSuccess": "Docker Compose rakennettu uudelleen ja käynnistetty",
+    "rebuildError": "Projektin uudelleenrakennus epäonnistui",
+    "loadSuccess": "Imagen ladattu clusteriin",
+    "loadError": "Imagejen lataus clusteriin epäonnistui",
+    "applySuccess": "Projekti tuotu Kubernetesiin",
+    "applyWithImages": "Projekti tuotu, {{count}} imagea ladattu kindiin",
+    "openImportedApp": "Avataan sovellus osoitteessa {{url}}",
+    "openUnavailable": "Import valmis, mutta URL ei ole vielä valmis. Avaa se Network → web -kohdasta.",
+    "applyError": "Projektin tuonti epäonnistui",
+    "previewError": "Esikatselun luonti epäonnistui"
+  },
+  "admin": {
+    "userSaveSuccess": "Käyttäjä tallennettu",
+    "userSaveError": "Käyttäjän tallennus epäonnistui",
+    "userDeleteSuccess": "Käyttäjä poistettu",
+    "userDeleteError": "Käyttäjän poisto epäonnistui",
+    "roleSaveSuccess": "Rooli tallennettu",
+    "roleSaveError": "Roolin tallennus epäonnistui",
+    "roleDeleteSuccess": "Rooli poistettu",
+    "roleDeleteError": "Roolin poisto epäonnistui",
+    "permissionSaveSuccess": "Oikeus tallennettu",
+    "permissionSaveError": "Oikeuden tallennus epäonnistui",
+    "permissionDeleteSuccess": "Oikeus poistettu",
+    "permissionDeleteError": "Oikeuden poisto epäonnistui"
+  }
+}

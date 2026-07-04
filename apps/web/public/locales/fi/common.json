@@ -1,0 +1,26 @@
+{
+  "appTitle": "Deployard",
+  "language": "Kieli",
+  "theme": {
+    "label": "Teema",
+    "light": "Vaalea",
+    "dark": "Tumma",
+    "system": "Auto"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "admin": "Admin",
+    "logout": "Kirjaudu ulos"
+  },
+  "status": {
+    "connected": "API yhdistetty",
+    "checking": "Tarkistetaan API..."
+  },
+  "cluster": {
+    "label": "Cluster"
+  },
+  "namespace": {
+    "label": "Namespace",
+    "all": "Kaikki namespacet"
+  }
+}

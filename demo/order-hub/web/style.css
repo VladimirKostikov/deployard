@@ -1,0 +1,101 @@
+:root {
+  color-scheme: light;
+  font-family: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+  background: #f4f1ea;
+  color: #1f1c18;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.header h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.85rem;
+}
+
+.header p {
+  margin: 0;
+  color: #5f574d;
+}
+
+.panel {
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  border: 1px solid #d8d0c4;
+  background: #fffdf8;
+}
+
+.panel h2 {
+  margin: 0 0 0.85rem;
+  font-size: 1.05rem;
+}
+
+.mesh-list,
+.catalog-list,
+.orders-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mesh-list li,
+.catalog-list li,
+.orders-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid #ece5da;
+}
+
+.status-up {
+  color: #1f6b3a;
+  font-weight: 600;
+}
+
+.status-down {
+  color: #9b1c1c;
+  font-weight: 600;
+}
+
+.order-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.order-form select,
+.order-form input {
+  padding: 0.5rem 0.65rem;
+  border: 1px solid #cfc6b8;
+  background: #fff;
+}
+
+.order-form button {
+  padding: 0.55rem 0.9rem;
+  border: 0;
+  background: #1f1c18;
+  color: #fffdf8;
+  cursor: pointer;
+}
+
+.feedback {
+  min-height: 1.25rem;
+  margin: 0.75rem 0 0;
+  color: #5f574d;
+}
+
+.feedback.error {
+  color: #9b1c1c;
+}
+
+.feedback.success {
+  color: #1f6b3a;
+}

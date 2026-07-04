@@ -1,0 +1,318 @@
+{
+  "title": "Deployments",
+  "subtitle": "Aplicații în namespace-ul selectat",
+  "subtitleAll": "Aplicații în toate namespace-urile accesibile",
+  "loading": "Se încarcă deployment-urile...",
+  "error": "Nu s-au putut încărca deployment-urile",
+  "empty": "Nu s-au găsit deployment-uri în acest namespace",
+  "emptyAll": "Nu s-au găsit deployment-uri în namespace-urile accesibile",
+  "projectGroups": {
+    "standalone": "Independent",
+    "services_one": "{{count}} serviciu",
+    "services_other": "{{count}} servicii",
+    "health": "{{healthy}}/{{total}} sănătoase",
+    "restarting": "{{count}}/{{total}} se repornesc",
+    "restartingBanner": "Repornire {{count}} din {{total}} deployments în acest grup",
+    "settings": "Setări",
+    "settingsTitle": "Setări grup",
+    "settingsGroupLabel": "Grup proiect",
+    "settingsDockerReady": "Docker disponibil",
+    "settingsDockerUnavailable": "Docker indisponibil",
+    "settingsRebuildHint": "Reconstruiește compose, încarcă imaginile în kind și face rollout la deployment-urile din acest grup.",
+    "settingsLoading": "Se verifică mediul...",
+    "settingsClose": "Închide",
+    "settingsNoCompose": "Nu s-a găsit un proiect compose cu acest nume. Rebuild este disponibil doar pentru grupurile importate din Docker Compose.",
+    "delete": "Șterge grupul",
+    "restart": "Repornește grupul",
+    "disable": "Dezactivează grupul",
+    "deleteTitle": "Șterge grupul de proiect",
+    "deleteMessage": "Ștergi toate deployment-urile, service-urile și secret-urile din grupul \"{{name}}\"?",
+    "services_few": "{{count}} servicii",
+    "services_many": "{{count}} de servicii"
+  },
+  "table": {
+    "name": "Nume",
+    "namespace": "Namespace",
+    "image": "Image",
+    "replicas": "Ready / Total",
+    "revision": "Revision",
+    "status": "Stare"
+  },
+  "status": {
+    "healthy": "Sănătos",
+    "starting": "Pornește",
+    "restarting": "Repornire",
+    "degraded": "Degradat",
+    "scaledToZero": "Scalat la zero",
+    "disabled": "Disabled"
+  },
+  "statusModal": {
+    "open": "Vezi detalii stare",
+    "title": "Stare deployment",
+    "summary": {
+      "healthy": "Toate pod-urile sunt gata.",
+      "starting": "Deployment-ul pornește. Este normal imediat după creare.",
+      "degraded": "Unele pod-uri nu sunt gata. Deschide detaliile ca să vezi de ce.",
+      "scaledToZero": "Numărul de replici este 0, nu rulează pod-uri.",
+      "disabled": "Deployment is disabled. Pods are stopped until you enable it again.",
+      "restarting": "Rolling restart în curs: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} actualizate."
+    },
+    "reasonsTitle": "De ce această stare",
+    "desired": "Dorite",
+    "ready": "Ready",
+    "available": "Disponibile",
+    "updated": "Actualizate",
+    "reasons": {
+      "healthy": "{{ready}} din {{desired}} replici sunt gata.",
+      "starting": "Deployment-ul tocmai a fost creat sau se actualizează.",
+      "scaledToZero": "Scalat la zero, nu rulează pod-uri.",
+      "disabled": "Disabled via Deployard. Enable to restore {{replicas}} replica(s).",
+      "podsNotReady": "{{ready}} din {{desired}} ready, nu toate pod-urile au trecut probe-urile de readiness.",
+      "podsNotAvailable": "{{available}} din {{desired}} disponibile, pod-urile nu sunt încă gata.",
+      "rolloutInProgress": "{{updated}} din {{desired}} actualizate, rollout în curs.",
+      "rolloutStalled": "Rolling update s-a terminat dar pod-urile nu devin gata. Vezi tabelul de mai jos.",
+      "restarting": "Pod-urile sunt recreate: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} actualizate."
+    },
+    "podsTitle": "Stare pod-uri",
+    "podsLoading": "Se încarcă pod-urile...",
+    "podsEmpty": "Nu s-au găsit pod-uri pentru acest deployment.",
+    "podsHint": "Imaginea poate lipsi din cluster. Construiește-o local și încarc-o în kind, sau folosește un registry.",
+    "podsColumns": {
+      "pod": "Pod",
+      "phase": "Phase",
+      "container": "Container",
+      "state": "Stare"
+    },
+    "containerStates": {
+      "ImagePullBackOff": "Nu se poate descărca imaginea",
+      "ErrImagePull": "Eroare la descărcarea imaginii",
+      "CrashLoopBackOff": "Containerul se oprește și repornește",
+      "ContainerCreating": "Se creează containerul",
+      "PodInitializing": "Pod-ul se inițializează",
+      "CreateContainerConfigError": "Eroare de configurare container",
+      "InvalidImageName": "Nume de imagine invalid",
+      "CreateContainerError": "Nu s-a putut crea containerul",
+      "RunContainerError": "Nu s-a putut rula containerul",
+      "waiting": "Așteptare",
+      "running": "Rulează dar nu este ready",
+      "terminated": "Terminat",
+      "pending": "Așteaptă programare"
+    }
+  },
+  "actions": {
+    "label": "Acțiuni",
+    "view": "Vezi",
+    "pods": "Vezi pod-urile",
+    "logs": "Vezi logurile",
+    "history": "Istoric revisions",
+    "console": "Deschide consola",
+    "restart": "Repornește deployment",
+    "delete": "Șterge deployment",
+    "disable": "Disable deployment",
+    "enable": "Enable deployment",
+    "enableAfterError": "Activează din nou. Au existat erori la dezactivare",
+    "error": "Acțiunea a eșuat"
+  },
+  "tabs": {
+    "ariaLabel": "Secțiuni deployment",
+    "overview": "Prezentare",
+    "health": "Health probes",
+    "config": "Config",
+    "history": "Istoric",
+    "pods": "Pods",
+    "files": "Fișiere",
+    "logs": "Logs",
+    "console": "Consolă"
+  },
+  "files": {
+    "podLabel": "Pod",
+    "loading": "Se încarcă fișierele...",
+    "error": "Nu s-au putut încărca fișierele",
+    "empty": "Acest director este gol",
+    "noPods": "Nu există pod pentru acest deployment",
+    "refresh": "Reîmprospătează",
+    "newFolder": "Folder nou",
+    "upload": "Încarcă fișier",
+    "download": "Descarcă",
+    "rename": "Redenumește",
+    "delete": "Șterge",
+    "folderPrompt": "Nume folder",
+    "renamePrompt": "Nume nou",
+    "deleteConfirm": "Ștergi \"{{name}}\"?",
+    "previewEmpty": "Fișierul este gol",
+    "breadcrumbs": "Cale",
+    "root": "Rădăcină",
+    "pod": "Pod",
+    "columns": {
+      "name": "Nume",
+      "size": "Dimensiune",
+      "modified": "Modificat",
+      "actions": "Acțiuni"
+    }
+  },
+  "scale": {
+    "label": "Replicas",
+    "submit": "Aplică scalare",
+    "submitting": "Scalare...",
+    "hint": "Schimbă câte copii de pod ar trebui să ruleze deployment-ul."
+  },
+  "disable": {
+    "disable": "Disable deployment",
+    "disabling": "Disabling...",
+    "disableHint": "Stops all pods and saves the current replica count for quick restore.",
+    "enable": "Enable deployment",
+    "enabling": "Enabling...",
+    "enableHint": "Restores {{replicas}} replica(s) and starts pods again.",
+    "enableErrorHint": "Au existat erori la dezactivare. Repară image-ul sau config-ul și activează din nou ({{replicas}} replici)."
+  },
+  "console": {
+    "connect": "Conectare",
+    "connecting": "Conectare...",
+    "disconnect": "Deconectare",
+    "connected": "Conectat la {{pod}}",
+    "disconnected": "Sesiune închisă",
+    "statusConnected": "Conectat",
+    "statusDisconnected": "Deconectat",
+    "empty": "Conectează-te pentru a deschide un shell interactiv în pod-ul selectat.",
+    "inputPlaceholder": "Scrie comenzi aici...",
+    "inputDisabled": "Conectează-te mai întâi la pod"
+  },
+  "detail": {
+    "subtitle": "Namespace: {{namespace}}",
+    "loading": "Se încarcă deployment-ul...",
+    "error": "Nu s-a putut încărca deployment-ul",
+    "historyTitle": "Istoric revisions",
+    "podsTitle": "Pods",
+    "logsTitle": "Logs",
+    "logsEmpty": "Nu există pod-uri disponibile pentru streaming de loguri"
+  },
+  "history": {
+    "loading": "Se încarcă istoricul revisions...",
+    "error": "Nu s-a putut încărca istoricul revisions",
+    "empty": "Nu s-au găsit revisions",
+    "current": "Curent",
+    "rollback": "Rollback",
+    "table": {
+      "revision": "Revision",
+      "image": "Image",
+      "replicas": "Replicas",
+      "created": "Creat",
+      "actions": "Acțiuni"
+    }
+  },
+  "rollback": {
+    "title": "Confirmă rollback",
+    "subtitle": "Deployment: {{name}}",
+    "targetRevision": "Revision țintă",
+    "targetImage": "Imagine țintă",
+    "cancel": "Anulează",
+    "confirm": "Rollback",
+    "submitting": "Rollback..."
+  },
+  "create": {
+    "title": "Deployment nou",
+    "namePlaceholder": "my-api",
+    "imagePlaceholder": "Alege din catalog sau scrie propria imagine",
+    "replicasPlaceholder": "Replicas",
+    "portPlaceholder": "Port container",
+    "projectLabel": "Grup proiect",
+    "projectHint": "Deployment-urile cu același label apar împreună în listă.",
+    "projectNone": "Fără grup",
+    "projectExisting": "Adaugă la grup existent",
+    "projectNew": "Creează grup nou",
+    "projectNewPlaceholder": "my-project",
+    "submit": "Creează deployment",
+    "submitting": "Se creează...",
+    "cancel": "Anulează"
+  },
+  "image": {
+    "label": "Container image",
+    "submit": "Deploy versiune nouă",
+    "submitting": "Deploy...",
+    "hint": "Actualizează template-ul deployment-ului și declanșează un rolling rollout.",
+    "error": "Nu s-a putut actualiza imaginea containerului.",
+    "unchanged": "Imaginea este deja deployată."
+  },
+  "imagePicker": {
+    "placeholder": "nginx:1.27-alpine, redis:7-alpine, postgres:16-alpine...",
+    "browse": "Catalog imagini",
+    "catalogHint": "{{count}} imagini: Web server, Database, Runtime și altele",
+    "customTitle": "Imagine personalizată",
+    "customHint": "Scrie registry/repository:tag",
+    "empty": "Niciun rezultat. Scrie o imagine personalizată mai sus."
+  },
+  "delete": {
+    "title": "Șterge deployment",
+    "message": "Ștergi deployment {{name}}? Toate pod-urile vor fi eliminate.",
+    "submit": "Șterge deployment"
+  },
+  "restart": {
+    "submit": "Repornește deployment",
+    "submitting": "Repornire...",
+    "hint": "Rolling restart recreează toate pod-urile cu aceeași imagine (ca kubectl rollout restart).",
+    "bannerTitle": "Actualizare în curs",
+    "bannerProgress": "{{ready}}/{{desired}} ready, {{updated}}/{{desired}} actualizate",
+    "bannerHint": "Pod-urile sunt recreate. Urmărește fila Pods pentru stare live.",
+    "rowProgress": "({{ready}}/{{desired}} ready)",
+    "error": "Nu s-a putut reporni deployment-ul.",
+    "done": "Deployment-ul se repornește"
+  },
+  "config": {
+    "title": "Variabile de mediu",
+    "loading": "Se încarcă configurația...",
+    "error": "Nu s-a putut încărca configurația",
+    "empty": "Nu sunt variabile setate",
+    "namePlaceholder": "MYSQL_ROOT_PASSWORD",
+    "valuePlaceholder": "valoare",
+    "add": "Adaugă variabilă",
+    "remove": "Elimină",
+    "submit": "Salvează",
+    "submitting": "Se salvează...",
+    "portHint": "Port container: {{port}}",
+    "createHint": "Imaginile din catalog primesc valori implicite dev. Verifică înainte de creare."
+  },
+  "healthProbes": {
+    "title": "Health probes",
+    "loading": "Se încarcă configurația probe...",
+    "error": "Nu s-au putut încărca health probe-urile",
+    "empty": "Nu sunt probe configurate pentru containerul principal",
+    "configTitle": "Probe configurate",
+    "podsTitle": "Readiness pod-uri",
+    "podsEmpty": "Nu există pod-uri de inspectat",
+    "podReady": "Ready",
+    "podNotReady": "Nu este ready",
+    "podStates": {
+      "ready": "Ready",
+      "runningNotReady": "Rulează, nu e ready",
+      "pending": "În așteptare",
+      "failed": "Eșuat",
+      "notReady": "Nu e ready"
+    },
+    "types": {
+      "readiness": "Readiness",
+      "liveness": "Liveness",
+      "startup": "Startup"
+    },
+    "mechanisms": {
+      "http": "HTTP",
+      "tcp": "TCP",
+      "exec": "Exec",
+      "grpc": "gRPC",
+      "none": "Niciunul"
+    },
+    "columns": {
+      "type": "Tip",
+      "mechanism": "Mecanism",
+      "target": "Țintă",
+      "timing": "Timing",
+      "pod": "Pod",
+      "phase": "Phase",
+      "podStatus": "Readiness"
+    },
+    "timing": {
+      "start": "start {{seconds}}s",
+      "every": "la fiecare {{seconds}}s",
+      "timeout": "timeout {{seconds}}s"
+    }
+  }
+}

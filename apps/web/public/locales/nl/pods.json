@@ -1,0 +1,26 @@
+{
+  "loading": "Pods laden...",
+  "error": "Pods laden mislukt",
+  "empty": "Geen pods voor deze deployment",
+  "yes": "Ja",
+  "no": "Nee",
+  "table": {
+    "name": "Pod",
+    "phase": "Phase",
+    "ready": "Ready",
+    "restarts": "Herstarts",
+    "node": "Node",
+    "podIp": "Pod IP",
+    "ports": "Poorten",
+    "actions": "Acties"
+  },
+  "actions": {
+    "restart": "Pod herstarten",
+    "delete": "Pod verwijderen",
+    "console": "Console openen"
+  },
+  "delete": {
+    "title": "Pod verwijderen",
+    "message": "Pod {{name}} verwijderen? De deployment controller kan hem opnieuw aanmaken."
+  }
+}

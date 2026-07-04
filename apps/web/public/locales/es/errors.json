@@ -1,0 +1,10 @@
+{
+  "DEPLOYMENT_NOT_FOUND": "Deployment no encontrado",
+  "POD_NOT_FOUND": "Pod no encontrado",
+  "NAMESPACE_NOT_FOUND": "Namespace no encontrado",
+  "ROLLBACK_FAILED": "Rollback fallido",
+  "K8S_API_ERROR": "Error de la API de Kubernetes",
+  "FORBIDDEN": "Permisos insuficientes",
+  "VALIDATION_ERROR": "Error de validación",
+  "INTERNAL_ERROR": "Error interno del servidor"
+}

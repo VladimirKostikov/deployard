@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Noduri worker din cluster și pod-urile programate pe ele",
+  "loading": "Se încarcă nodurile...",
+  "error": "Nu s-au putut încărca nodurile",
+  "podsTitle": "Pod-uri pe {{node}}",
+  "podsLoading": "Se încarcă pod-urile...",
+  "podsError": "Nu s-au putut încărca pod-urile pentru acest nod",
+  "podsEmpty": "Nu există pod-uri pe acest nod",
+  "table": {
+    "name": "Node",
+    "status": "Stare",
+    "roles": "Roluri",
+    "pods": "Pods",
+    "version": "Kubelet",
+    "actions": "Acțiuni"
+  },
+  "actions": {
+    "viewPods": "Vezi pod-urile"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Phase",
+    "ready": "Ready",
+    "yes": "Da",
+    "no": "Nu"
+  }
+}

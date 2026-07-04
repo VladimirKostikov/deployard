@@ -1,0 +1,71 @@
+{
+  "title": "Riarachán",
+  "subtitle": "Úsáideoirí, róil, agus ceadanna Deployment",
+  "back": "Ar ais chuig Deployments",
+  "actions": {
+    "label": "Gníomhartha",
+    "create": "Cruthaigh",
+    "edit": "Cuir in eagar",
+    "delete": "Scrios",
+    "save": "Sábháil",
+    "cancel": "Cealaigh",
+    "saving": "Ag sábháil...",
+    "deleting": "Ag scriosadh..."
+  },
+  "users": {
+    "title": "Úsáideoirí",
+    "subtitle": "Bainistigh cuntais an phainéil agus sannadh róil",
+    "create": "Cuir úsáideoir leis",
+    "createTitle": "Cruthaigh úsáideoir",
+    "editTitle": "Cuir úsáideoir in eagar",
+    "deleteTitle": "Scrios úsáideoir",
+    "deleteMessage": "Scrios {{email}}? Ní féidir é seo a chealú.",
+    "email": "Ríomhphost",
+    "name": "Ainm",
+    "password": "Pasfhocal",
+    "newPassword": "Pasfhocal nua (roghnach)",
+    "roles": "Róil",
+    "status": "Stádas",
+    "active": "Gníomhach",
+    "inactive": "Neamhghníomhach"
+  },
+  "roles": {
+    "title": "Róil",
+    "subtitle": "Sainmhínithe róil agus ceadanna ceangailte",
+    "create": "Cuir ról leis",
+    "createTitle": "Cruthaigh ról",
+    "editTitle": "Cuir ról in eagar",
+    "deleteTitle": "Scrios ról",
+    "deleteMessage": "Scrios ról \"{{name}}\"? Ní mór é a bheith gan sannadh d'aon úsáideoir.",
+    "name": "Ainm",
+    "permissions": "Ceadanna"
+  },
+  "permissions": {
+    "title": "Ceadanna",
+    "subtitle": "Rialacha rochtana mionsonraithe do Deployments",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Rannóg",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Líonra",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Méadrachtaí",
+      "admin": "Riarachán"
+    },
+    "level": "Rochtain",
+    "levels": {
+      "none": "Gan rochtain",
+      "view": "Amharc",
+      "operate": "Oibriú",
+      "manage": "Bainistiú"
+    },
+    "hints": {
+      "view": "Oscail rannóg, léigh liostaí agus sonraí",
+      "operate": "Atosaigh, díchumasaigh, rollback, loganna, teirminéal",
+      "manage": "Cruthú, scriosadh, import agus athruithe riaracháin"
+    }
+  }
+}

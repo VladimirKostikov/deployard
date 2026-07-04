@@ -1,0 +1,26 @@
+{
+  "appTitle": "Deployard",
+  "language": "Lingwa",
+  "theme": {
+    "label": "Tema",
+    "light": "Ċar",
+    "dark": "Skur",
+    "system": "Awtomatiku"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "admin": "Admin",
+    "logout": "Oħroġ"
+  },
+  "status": {
+    "connected": "API konnessa",
+    "checking": "Qed tiġi verifikata l-API..."
+  },
+  "cluster": {
+    "label": "Cluster"
+  },
+  "namespace": {
+    "label": "Namespace",
+    "all": "L-ispazji tas-sehem kollha"
+  }
+}

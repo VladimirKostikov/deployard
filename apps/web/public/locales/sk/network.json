@@ -1,0 +1,81 @@
+{
+  "title": "Sieť",
+  "subtitle": "Services, Endpoints a Ingress: ako sa pody v clustri navzájom dosiahnu",
+  "tabs": {
+    "ariaLabel": "Sekcie siete",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Načítavanie services...",
+    "error": "Nepodarilo sa načítať services",
+    "empty": "V tomto namespace nie sú žiadne services",
+    "table": {
+      "name": "Názov",
+      "type": "Typ",
+      "clusterIp": "Cluster IP",
+      "ports": "Porty",
+      "selector": "Selector",
+      "actions": "Akcie"
+    },
+    "actions": {
+      "delete": "Zmazať",
+      "open": "Otvoriť {{name}} v prehliadači",
+      "openTooltip": "{{url}}: ak sa stránka nenačíta, spustite v termináli: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Skopírovať príkaz port-forward pre {{name}}",
+      "copied": "Príkaz skopírovaný",
+      "edit": "Upraviť porty",
+      "editShort": "Porty"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Typ",
+      "portsLabel": "Porty",
+      "port": "Port service",
+      "targetPort": "Target port",
+      "nodePort": "NodePort",
+      "cancel": "Zrušiť",
+      "save": "Uložiť",
+      "saving": "Ukladanie..."
+    },
+    "delete": {
+      "title": "Zmazať service",
+      "message": "Zmazať service {{name}}? Pody ďalej bežia, ale DNS názov prestane fungovať."
+    },
+    "create": {
+      "title": "Vytvoriť service",
+      "name": "Názov service",
+      "deployment": "Deployment",
+      "port": "Port service",
+      "targetPort": "Target port (voliteľné)",
+      "submit": "Vytvoriť service",
+      "submitting": "Vytváranie...",
+      "cancel": "Zrušiť"
+    }
+  },
+  "endpoints": {
+    "subtitle": "Pod IP adresy za každým service (spravuje automaticky Kubernetes)",
+    "loading": "Načítavanie endpoints...",
+    "error": "Nepodarilo sa načítať endpoints",
+    "empty": "Zatiaľ žiadne endpoints: vytvorte service pre deployment",
+    "table": {
+      "name": "Service",
+      "ports": "Porty",
+      "addresses": "Pod IP / názov"
+    }
+  },
+  "deployment": {
+    "title": "Prepojené services",
+    "loading": "Načítavanie services...",
+    "error": "Nepodarilo sa načítať services",
+    "empty": "Pre tento deployment nie je žiadny service. Vytvorte ho na stránke Sieť.",
+    "openNetwork": "Otvoriť sieť",
+    "viewEndpoints": "Pod IP ->"
+  }
+}

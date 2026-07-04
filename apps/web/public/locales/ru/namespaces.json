@@ -1,0 +1,29 @@
+{
+  "title": "Namespaces",
+  "subtitle": "Создание и удаление namespace в активном кластере",
+  "loading": "Загрузка namespace...",
+  "error": "Не удалось загрузить namespace",
+  "protected": "Защищён",
+  "create": {
+    "title": "Новый namespace",
+    "label": "Имя",
+    "placeholder": "staging",
+    "submit": "Создать namespace",
+    "submitting": "Создание...",
+    "cancel": "Отмена",
+    "hint": "Используйте lowercase DNS-имена. Системные namespace с префиксом kube- удалить нельзя."
+  },
+  "table": {
+    "name": "Имя",
+    "status": "Статус",
+    "created": "Создан",
+    "actions": "Действия"
+  },
+  "actions": {
+    "delete": "Удалить"
+  },
+  "delete": {
+    "title": "Удалить namespace",
+    "message": "Удалить namespace {{name}}? Все ресурсы внутри будут удалены."
+  }
+}

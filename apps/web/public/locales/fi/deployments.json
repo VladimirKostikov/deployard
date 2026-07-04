@@ -1,0 +1,316 @@
+{
+  "title": "Deployments",
+  "subtitle": "Sovellukset valitussa namespacessa",
+  "subtitleAll": "Sovellukset kaikissa saatavilla olevissa namespaceissa",
+  "loading": "Ladataan deploymenteja...",
+  "error": "Deploymentien lataus epäonnistui",
+  "empty": "Deploymenteja ei löytynyt tässä namespacessa",
+  "emptyAll": "Deploymenteja ei löytynyt saatavilla olevista namespaceista",
+  "projectGroups": {
+    "standalone": "Erillinen",
+    "services_one": "{{count}} palvelu",
+    "services_other": "{{count}} palvelua",
+    "health": "{{healthy}}/{{total}} kunnossa",
+    "restarting": "{{count}}/{{total}} käynnistyy uudelleen",
+    "restartingBanner": "Käynnistetään uudelleen {{count}}/{{total}} deploymentia tässä ryhmässä",
+    "settings": "Asetukset",
+    "settingsTitle": "Ryhmäasetukset",
+    "settingsGroupLabel": "Projektiryhmä",
+    "settingsDockerReady": "Docker käytettävissä",
+    "settingsDockerUnavailable": "Docker ei käytettävissä",
+    "settingsRebuildHint": "Rakentaa compon uudelleen, lataa imaget kindiin ja rolloutaa deploymentit tässä ryhmässä.",
+    "settingsLoading": "Tarkistetaan ympäristö...",
+    "settingsClose": "Sulje",
+    "settingsNoCompose": "Compose-projektia tällä nimellä ei löytynyt. Uudelleenrakennus on vain Docker Composesta tuoduille ryhmille.",
+    "delete": "Poista ryhmä",
+    "restart": "Käynnistä ryhmä uudelleen",
+    "disable": "Poista ryhmä käytöstä",
+    "deleteTitle": "Poista projektiryhmä",
+    "deleteMessage": "Poistetaanko kaikki deploymentin, servicen ja secretin ryhmästä \"{{name}}\"?"
+  },
+  "table": {
+    "name": "Nimi",
+    "namespace": "Namespace",
+    "image": "Image",
+    "replicas": "Valmis / Yhteensä",
+    "revision": "Revision",
+    "status": "Status"
+  },
+  "status": {
+    "healthy": "Healthy",
+    "starting": "Käynnistyy",
+    "restarting": "Käynnistyy uudelleen",
+    "degraded": "Degraded",
+    "scaledToZero": "Skaalattu nollaan",
+    "disabled": "Disabled"
+  },
+  "statusModal": {
+    "open": "Näytä tilatiedot",
+    "title": "Deployment-tila",
+    "summary": {
+      "healthy": "Kaikki podit ovat valmiita.",
+      "starting": "Deployment käynnistyy. Tämä on normaalia heti luonnin jälkeen.",
+      "degraded": "Jotkut podit eivät ole valmiita. Avaa tiedot nähdäksesi miksi.",
+      "scaledToZero": "Replikamäärä on 0, podit eivät ole käynnissä.",
+      "disabled": "Deployment is disabled. Pods are stopped until you enable it again.",
+      "restarting": "Rolling restart käynnissä: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} päivitetty."
+    },
+    "reasonsTitle": "Miksi tämä status",
+    "desired": "Haluttu",
+    "ready": "Ready",
+    "available": "Available",
+    "updated": "Päivitetty",
+    "reasons": {
+      "healthy": "{{ready}}/{{desired}} replikaa on ready.",
+      "starting": "Deployment luotiin juuri tai sitä päivitetään.",
+      "scaledToZero": "Skaalattu nollaan, podit eivät ole käynnissä.",
+      "disabled": "Disabled via Deployard. Enable to restore {{replicas}} replica(s).",
+      "podsNotReady": "{{ready}}/{{desired}} ready, kaikki podit eivät läpäisseet readiness probeja.",
+      "podsNotAvailable": "{{available}}/{{desired}} available, podit eivät ole vielä valmiita.",
+      "rolloutInProgress": "{{updated}}/{{desired}} päivitetty, rollout käynnissä.",
+      "rolloutStalled": "Rolling update valmis, mutta podit eivät muutu valmiiksi. Katso alla oleva taulukko.",
+      "restarting": "Podit luodaan uudelleen: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} päivitetty."
+    },
+    "podsTitle": "Pod-tila",
+    "podsLoading": "Ladataan podeja...",
+    "podsEmpty": "Ei podeja tälle deploymentille.",
+    "podsHint": "Image voi puuttua clusterista. Rakenna paikallisesti ja lataa kindiin tai käytä registryä.",
+    "podsColumns": {
+      "pod": "Pod",
+      "phase": "Phase",
+      "container": "Container",
+      "state": "Tila"
+    },
+    "containerStates": {
+      "ImagePullBackOff": "Imagea ei voi hakea",
+      "ErrImagePull": "Image pull -virhe",
+      "CrashLoopBackOff": "Container kaatuu ja käynnistyy uudelleen",
+      "ContainerCreating": "Containeria luodaan",
+      "PodInitializing": "Pod alustetaan",
+      "CreateContainerConfigError": "Container-konfiguraatiovirhe",
+      "InvalidImageName": "Virheellinen image-nimi",
+      "CreateContainerError": "Containerin luonti epäonnistui",
+      "RunContainerError": "Containerin käynnistys epäonnistui",
+      "waiting": "Odottaa",
+      "running": "Käynnissä mutta ei valmis",
+      "terminated": "Päättynyt",
+      "pending": "Odottaa ajoitusta"
+    }
+  },
+  "actions": {
+    "label": "Toiminnot",
+    "view": "Näytä",
+    "pods": "Näytä podit",
+    "logs": "Näytä logit",
+    "history": "Revision-historia",
+    "console": "Avaa konsoli",
+    "restart": "Käynnistä deployment uudelleen",
+    "delete": "Poista deployment",
+    "disable": "Disable deployment",
+    "enable": "Enable deployment",
+    "enableAfterError": "Ota uudelleen käyttöön. Poistossa olivat virheet",
+    "error": "Toiminto epäonnistui"
+  },
+  "tabs": {
+    "ariaLabel": "Deployment-osiot",
+    "overview": "Yleiskatsaus",
+    "health": "Terveystarkistukset",
+    "config": "Konfig",
+    "history": "Historia",
+    "pods": "Pods",
+    "files": "Tiedostot",
+    "logs": "Logs",
+    "console": "Konsoli"
+  },
+  "files": {
+    "podLabel": "Pod",
+    "loading": "Ladataan tiedostoja...",
+    "error": "Tiedostojen lataus epäonnistui",
+    "empty": "Tämä hakemisto on tyhjä",
+    "noPods": "Ei pod-eja tälle deploymentille",
+    "refresh": "Päivitä",
+    "newFolder": "Uusi kansio",
+    "upload": "Lataa tiedosto",
+    "download": "Lataa",
+    "rename": "Nimeä uudelleen",
+    "delete": "Poista",
+    "folderPrompt": "Kansion nimi",
+    "renamePrompt": "Uusi nimi",
+    "deleteConfirm": "Poistetaanko \"{{name}}\"?",
+    "previewEmpty": "Tiedosto on tyhjä",
+    "breadcrumbs": "Polku",
+    "root": "Juuri",
+    "pod": "Pod",
+    "columns": {
+      "name": "Nimi",
+      "size": "Koko",
+      "modified": "Muokattu",
+      "actions": "Toiminnot"
+    }
+  },
+  "scale": {
+    "label": "Replikat",
+    "submit": "Käytä skaalaus",
+    "submitting": "Skaalataan...",
+    "hint": "Muuta montako pod-kopiota deployment pitää käynnissä."
+  },
+  "disable": {
+    "disable": "Disable deployment",
+    "disabling": "Disabling...",
+    "disableHint": "Stops all pods and saves the current replica count for quick restore.",
+    "enable": "Enable deployment",
+    "enabling": "Enabling...",
+    "enableHint": "Restores {{replicas}} replica(s) and starts pods again.",
+    "enableErrorHint": "Poistossa olivat virheet. Korjaa image tai config ja ota uudelleen käyttöön ({{replicas}} replikaa)."
+  },
+  "console": {
+    "connect": "Yhdistä",
+    "connecting": "Yhdistetään...",
+    "disconnect": "Katkaise yhteys",
+    "connected": "Yhdistetty {{pod}}",
+    "disconnected": "Istunto suljettu",
+    "statusConnected": "Yhdistetty",
+    "statusDisconnected": "Yhteys katkaistu",
+    "empty": "Yhdistä aloittaaksesi interaktiivisen shellin valitussa podissa.",
+    "inputPlaceholder": "Kirjoita komennot tähän...",
+    "inputDisabled": "Yhdistä ensin podiin"
+  },
+  "detail": {
+    "subtitle": "Namespace: {{namespace}}",
+    "loading": "Ladataan deploymentia...",
+    "error": "Deploymentin lataus epäonnistui",
+    "historyTitle": "Revision-historia",
+    "podsTitle": "Pods",
+    "logsTitle": "Logs",
+    "logsEmpty": "Ei podeja logien striimaukseen"
+  },
+  "history": {
+    "loading": "Ladataan revision-historiaa...",
+    "error": "Revision-historian lataus epäonnistui",
+    "empty": "Ei revisioneja",
+    "current": "Nykyinen",
+    "rollback": "Rollback",
+    "table": {
+      "revision": "Revision",
+      "image": "Image",
+      "replicas": "Replikat",
+      "created": "Luotu",
+      "actions": "Toiminnot"
+    }
+  },
+  "rollback": {
+    "title": "Vahvista rollback",
+    "subtitle": "Deployment: {{name}}",
+    "targetRevision": "Kohderevision",
+    "targetImage": "Kohde-image",
+    "cancel": "Peruuta",
+    "confirm": "Rollback",
+    "submitting": "Rollback käynnissä..."
+  },
+  "create": {
+    "title": "Uusi deployment",
+    "namePlaceholder": "my-api",
+    "imagePlaceholder": "Valitse luettelosta tai kirjoita oma",
+    "replicasPlaceholder": "Replikat",
+    "portPlaceholder": "Container-portti",
+    "projectLabel": "Projektiryhmä",
+    "projectHint": "Saman labelin deploymentit näytetään listassa yhdessä.",
+    "projectNone": "Ei ryhmää",
+    "projectExisting": "Lisää olemassa olevaan ryhmään",
+    "projectNew": "Luo uusi ryhmä",
+    "projectNewPlaceholder": "my-project",
+    "submit": "Luo deployment",
+    "submitting": "Luodaan...",
+    "cancel": "Peruuta"
+  },
+  "image": {
+    "label": "Kontainerin image",
+    "submit": "Deployaa uusi versio",
+    "submitting": "Deployataan...",
+    "hint": "Päivittää deployment-mallin ja käynnistää rolling rolloutin.",
+    "error": "Container imagen päivitys epäonnistui.",
+    "unchanged": "Image on jo deployattu."
+  },
+  "imagePicker": {
+    "placeholder": "nginx:1.27-alpine, redis:7-alpine, postgres:16-alpine...",
+    "browse": "Image-luettelo",
+    "catalogHint": "{{count}} imagea: Web server, Database, Runtime ja muuta",
+    "customTitle": "Oma image",
+    "customHint": "Kirjoita mikä tahansa registry/repository:tag",
+    "empty": "Ei osumia. Kirjoita oma image yllä."
+  },
+  "delete": {
+    "title": "Poista deployment",
+    "message": "Poistetaanko deployment {{name}}? Kaikki podit poistetaan.",
+    "submit": "Poista deployment"
+  },
+  "restart": {
+    "submit": "Käynnistä deployment uudelleen",
+    "submitting": "Käynnistetään uudelleen...",
+    "hint": "Rolling restart luo kaikki podit uudelleen samalla imagella (kuten kubectl rollout restart).",
+    "bannerTitle": "Päivitys käynnissä",
+    "bannerProgress": "{{ready}}/{{desired}} ready, {{updated}}/{{desired}} updated",
+    "bannerHint": "Podeja luodaan uudelleen. Seuraa Pods-välilehteä live-tilaa varten.",
+    "rowProgress": "({{ready}}/{{desired}} ready)",
+    "error": "Deploymentin uudelleenkäynnistys epäonnistui.",
+    "done": "Deployment käynnistyy uudelleen"
+  },
+  "config": {
+    "title": "Ympäristömuuttujat",
+    "loading": "Ladataan konfiguraatiota...",
+    "error": "Konfiguraation lataus epäonnistui",
+    "empty": "Ei muuttujia asetettu",
+    "namePlaceholder": "MYSQL_ROOT_PASSWORD",
+    "valuePlaceholder": "arvo",
+    "add": "Lisää muuttuja",
+    "remove": "Poista",
+    "submit": "Tallenna",
+    "submitting": "Tallennetaan...",
+    "portHint": "Container-portti: {{port}}",
+    "createHint": "Luettelon imaget saavat dev-oletukset. Tarkista ennen luontia."
+  },
+  "healthProbes": {
+    "title": "Terveystarkistukset",
+    "loading": "Ladataan probe-konfiguraatiota...",
+    "error": "Health probejen lataus epäonnistui",
+    "empty": "Ei probeja määritetty pääcontainerille",
+    "configTitle": "Määritetyt probet",
+    "podsTitle": "Pod-valmius",
+    "podsEmpty": "Ei podeja tarkistettavaksi",
+    "podReady": "Ready",
+    "podNotReady": "Ei valmis",
+    "podStates": {
+      "ready": "Ready",
+      "runningNotReady": "Käynnissä, ei ready",
+      "pending": "Odottaa",
+      "failed": "Epäonnistui",
+      "notReady": "Ei ready"
+    },
+    "types": {
+      "readiness": "Readiness",
+      "liveness": "Liveness",
+      "startup": "Startup"
+    },
+    "mechanisms": {
+      "http": "HTTP",
+      "tcp": "TCP",
+      "exec": "Exec",
+      "grpc": "gRPC",
+      "none": "None"
+    },
+    "columns": {
+      "type": "Tyyppi",
+      "mechanism": "Mekanismi",
+      "target": "Kohde",
+      "timing": "Ajoitus",
+      "pod": "Pod",
+      "phase": "Phase",
+      "podStatus": "Readiness"
+    },
+    "timing": {
+      "start": "start {{seconds}}s",
+      "every": "joka {{seconds}}. s",
+      "timeout": "timeout {{seconds}}s"
+    }
+  }
+}

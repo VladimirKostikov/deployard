@@ -1,0 +1,32 @@
+{
+  "appTitle": "Deployard",
+  "sections": {
+    "main": "Galvenais",
+    "admin": "Piekļuves kontrole",
+    "settings": "Iestatījumi"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "import": "Imports",
+    "faq": "BUJ",
+    "nodes": "Nodes",
+    "namespaces": "Namespaces",
+    "ingress": "Ingress",
+    "network": "Tīkls",
+    "metrics": "Metrics",
+    "admin": "Administrācija",
+    "users": "Lietotāji",
+    "roles": "Lomas",
+    "permissions": "Atļaujas",
+    "backToApp": "Atpakaļ uz lietotni",
+    "logout": "Iziet"
+  },
+  "topbar": {
+    "connected": "API savienots",
+    "checking": "Pārbauda API..."
+  },
+  "mobileMenu": {
+    "open": "Atvērt izvēlni",
+    "close": "Aizvērt izvēlni"
+  }
+}

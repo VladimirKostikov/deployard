@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Кількість реплік оновлено",
+    "scaleError": "Не вдалося масштабувати deployment",
+    "imageSuccess": "Образ контейнера оновлено",
+    "imageError": "Не вдалося оновити образ контейнера",
+    "deleteSuccess": "Deployment видалено",
+    "deleteError": "Не вдалося видалити deployment",
+    "createSuccess": "Deployment створено",
+    "createError": "Не вдалося створити deployment",
+    "configSaved": "Конфігурацію збережено",
+    "configError": "Не вдалося зберегти конфігурацію",
+    "restartSuccess": "Deployment перезапущено",
+    "restartError": "Не вдалося перезапустити deployment",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback завершено",
+    "rollbackError": "Rollback не вдався",
+    "projectGroupDeleteSuccess": "Групу проєкту видалено",
+    "projectGroupDeleteError": "Не вдалося видалити групу проєкту",
+    "projectGroupRestartSuccess": "Групу перезапущено",
+    "projectGroupRestartError": "Не вдалося перезапустити групу",
+    "projectGroupDisableSuccess": "Групу вимкнено",
+    "projectGroupDisableError": "Не вдалося вимкнути групу",
+    "filesFolderCreated": "Папку створено",
+    "filesUploaded": "Файл завантажено",
+    "filesDeleted": "Видалено",
+    "filesRenamed": "Перейменовано",
+    "filesError": "Операція з файлом не вдалася"
+  },
+  "pod": {
+    "restartSuccess": "Pod перезапущено",
+    "restartError": "Не вдалося перезапустити pod",
+    "deleteSuccess": "Pod видалено",
+    "deleteError": "Не вдалося видалити pod"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service створено",
+    "serviceCreateError": "Не вдалося створити service",
+    "serviceDeleteSuccess": "Service видалено",
+    "serviceDeleteError": "Не вдалося видалити service",
+    "serviceUpdateSuccess": "Service оновлено",
+    "serviceUpdateError": "Не вдалося оновити service",
+    "tunnelError": "Не вдалося відкрити доступ до service",
+    "openBlocked": "Браузер заблокував нову вкладку. Дозволь pop-up для цього сайту.",
+    "openError": "Не вдалося відкрити {{name}}. Перевір, що pod працюють.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Ingress-правило видалено",
+    "ingressDeleteError": "Не вдалося видалити ingress-правило"
+  },
+  "ingress": {
+    "createSuccess": "Ingress-правило створено",
+    "createError": "Не вдалося створити ingress-правило",
+    "deleteSuccess": "Ingress-правило видалено",
+    "deleteError": "Не вдалося видалити ingress-правило"
+  },
+  "namespace": {
+    "createSuccess": "Namespace створено",
+    "createError": "Не вдалося створити namespace",
+    "deleteSuccess": "Namespace видалено",
+    "deleteError": "Не вдалося видалити namespace"
+  },
+  "import": {
+    "buildSuccess": "Образи зібрано",
+    "buildError": "Не вдалося зібрати образи",
+    "rebuildSuccess": "Docker Compose перезібрано та запущено",
+    "rebuildError": "Не вдалося перезібрати проєкт",
+    "loadSuccess": "Образи завантажено в кластер",
+    "loadError": "Не вдалося завантажити образи в кластер",
+    "applySuccess": "Проєкт імпортовано в Kubernetes",
+    "applyWithImages": "Проєкт імпортовано, {{count}} образів завантажено в kind",
+    "openImportedApp": "Відкриття застосунку на {{url}}",
+    "openUnavailable": "Import завершено, але URL ще не готовий. Відкрий його з Network → web.",
+    "applyError": "Не вдалося імпортувати проєкт",
+    "previewError": "Не вдалося побудувати попередній перегляд"
+  },
+  "admin": {
+    "userSaveSuccess": "Користувача збережено",
+    "userSaveError": "Не вдалося зберегти користувача",
+    "userDeleteSuccess": "Користувача видалено",
+    "userDeleteError": "Не вдалося видалити користувача",
+    "roleSaveSuccess": "Роль збережено",
+    "roleSaveError": "Не вдалося зберегти роль",
+    "roleDeleteSuccess": "Роль видалено",
+    "roleDeleteError": "Не вдалося видалити роль",
+    "permissionSaveSuccess": "Дозвіл збережено",
+    "permissionSaveError": "Не вдалося зберегти дозвіл",
+    "permissionDeleteSuccess": "Дозвіл видалено",
+    "permissionDeleteError": "Не вдалося видалити дозвіл"
+  }
+}

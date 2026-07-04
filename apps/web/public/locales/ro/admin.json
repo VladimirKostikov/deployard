@@ -1,0 +1,71 @@
+{
+  "title": "Administrare",
+  "subtitle": "Utilizatori, roluri și permisiuni pentru deployments",
+  "back": "Înapoi la deployments",
+  "actions": {
+    "label": "Acțiuni",
+    "create": "Creează",
+    "edit": "Editează",
+    "delete": "Șterge",
+    "save": "Salvează",
+    "cancel": "Anulează",
+    "saving": "Se salvează...",
+    "deleting": "Se șterge..."
+  },
+  "users": {
+    "title": "Utilizatori",
+    "subtitle": "Gestionează conturile din dashboard și atribuirea rolurilor",
+    "create": "Adaugă utilizator",
+    "createTitle": "Creează utilizator",
+    "editTitle": "Editează utilizator",
+    "deleteTitle": "Șterge utilizator",
+    "deleteMessage": "Ștergi {{email}}? Această acțiune nu poate fi anulată.",
+    "email": "Email",
+    "name": "Nume",
+    "password": "Parolă",
+    "newPassword": "Parolă nouă (opțional)",
+    "roles": "Roluri",
+    "status": "Stare",
+    "active": "Activ",
+    "inactive": "Inactiv"
+  },
+  "roles": {
+    "title": "Roluri",
+    "subtitle": "Definiții de roluri și permisiuni atașate",
+    "create": "Adaugă rol",
+    "createTitle": "Creează rol",
+    "editTitle": "Editează rol",
+    "deleteTitle": "Șterge rol",
+    "deleteMessage": "Ștergi rolul \"{{name}}\"? Nu trebuie să fie atribuit niciunui utilizator.",
+    "name": "Nume",
+    "permissions": "Permisiuni"
+  },
+  "permissions": {
+    "title": "Permisiuni",
+    "subtitle": "Reguli de acces detaliate pentru deployments",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Secțiune",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Rețea",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Metrici",
+      "admin": "Administrare"
+    },
+    "level": "Acces",
+    "levels": {
+      "none": "Fără acces",
+      "view": "Vizualizare",
+      "operate": "Operare",
+      "manage": "Administrare"
+    },
+    "hints": {
+      "view": "Deschide secțiunea, citește listele și detaliile",
+      "operate": "Repornire, dezactivare, rollback, loguri, terminal",
+      "manage": "Creare, ștergere, import și modificări admin"
+    }
+  }
+}

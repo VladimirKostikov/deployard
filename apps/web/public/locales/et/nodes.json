@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Cluster worker node'id ja nendele ajastatud podid",
+  "loading": "Laadin node'e...",
+  "error": "Node'ide laadimine ebaõnnestus",
+  "podsTitle": "Podid node'il {{node}}",
+  "podsLoading": "Laadin pode...",
+  "podsError": "Selle node podide laadimine ebaõnnestus",
+  "podsEmpty": "Sellel node'il pole pode",
+  "table": {
+    "name": "Node",
+    "status": "Olek",
+    "roles": "Rollid",
+    "pods": "Pods",
+    "version": "Kubelet",
+    "actions": "Toimingud"
+  },
+  "actions": {
+    "viewPods": "Vaata pode"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Phase",
+    "ready": "Ready",
+    "yes": "Jah",
+    "no": "Ei"
+  }
+}

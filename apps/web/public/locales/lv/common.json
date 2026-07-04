@@ -1,0 +1,26 @@
+{
+  "appTitle": "Deployard",
+  "language": "Valoda",
+  "theme": {
+    "label": "Tēma",
+    "light": "Gaiša",
+    "dark": "Tumša",
+    "system": "Auto"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "admin": "Admin",
+    "logout": "Iziet"
+  },
+  "status": {
+    "connected": "API savienots",
+    "checking": "Pārbauda API..."
+  },
+  "cluster": {
+    "label": "Cluster"
+  },
+  "namespace": {
+    "label": "Namespace",
+    "all": "Visi namespaces"
+  }
+}

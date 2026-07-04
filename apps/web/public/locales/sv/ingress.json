@@ -1,0 +1,32 @@
+{
+  "title": "Ingress",
+  "subtitle": "HTTP-routingregler i valt namespace",
+  "loading": "Laddar ingress-regler...",
+  "error": "Kunde inte ladda ingress-regler",
+  "empty": "Inga ingress-regler i detta namespace",
+  "create": {
+    "title": "Ny ingress",
+    "name": "Namn",
+    "host": "Host (t.ex. api.local)",
+    "path": "Path",
+    "service": "Service-namn",
+    "port": "Service-port",
+    "submit": "Skapa ingress",
+    "submitting": "Skapar...",
+    "cancel": "Avbryt"
+  },
+  "table": {
+    "name": "Namn",
+    "host": "Host",
+    "path": "Path",
+    "service": "Backend",
+    "actions": "Åtgärder"
+  },
+  "actions": {
+    "delete": "Ta bort"
+  },
+  "delete": {
+    "title": "Ta bort ingress",
+    "message": "Ta bort ingress {{name}}?"
+  }
+}

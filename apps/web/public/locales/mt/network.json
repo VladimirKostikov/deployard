@@ -1,0 +1,81 @@
+{
+  "title": "Netwerk",
+  "subtitle": "Services, Endpoints, u Ingress: kif pods jilħqu lil xulxin fil-cluster",
+  "tabs": {
+    "ariaLabel": "Sezzjonijiet tan-netwerk",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Qed jillowdja l-Services...",
+    "error": "Ma rnexxiex jillowdja l-Services",
+    "empty": "M'hemmx Service f'dan in-Namespace",
+    "table": {
+      "name": "Isem",
+      "type": "Tip",
+      "clusterIp": "Cluster IP",
+      "ports": "Ports",
+      "selector": "Selector",
+      "actions": "Azzjonijiet"
+    },
+    "actions": {
+      "delete": "Ħassar",
+      "open": "Iftaħ {{name}} fil-browser",
+      "openTooltip": "{{url}}: jekk il-paġna ma tloadjax, ħaddem fit-terminal: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Ikkopja kmand port-forward għal {{name}}",
+      "copied": "Kmand ikkupjat",
+      "edit": "Editja ports",
+      "editShort": "Ports"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Tip",
+      "portsLabel": "Ports",
+      "port": "Port tas-service",
+      "targetPort": "Port fil-mira",
+      "nodePort": "NodePort",
+      "cancel": "Ikkanċella",
+      "save": "Issejvja",
+      "saving": "Qed jissejvja..."
+    },
+    "delete": {
+      "title": "Ħassar Service",
+      "message": "Ħassar Service {{name}}? Pods jibqgħu jaħdmu imma l-isem DNS ma jaħdimx aktar."
+    },
+    "create": {
+      "title": "Oħloq Service",
+      "name": "Isem tas-Service",
+      "deployment": "Deployment",
+      "port": "Port tas-service",
+      "targetPort": "Port fil-mira (opzjonali)",
+      "submit": "Oħloq Service",
+      "submitting": "Qed joħolqu...",
+      "cancel": "Ikkanċella"
+    }
+  },
+  "endpoints": {
+    "subtitle": "Pod IP wara kull Service (immaniġġjati awtomatikament minn Kubernetes)",
+    "loading": "Qed jillowdja l-Endpoints...",
+    "error": "Ma rnexxiex jillowdja l-Endpoints",
+    "empty": "Għad m'hemmx Endpoints: oħloq Service għal Deployment",
+    "table": {
+      "name": "Service",
+      "ports": "Ports",
+      "addresses": "Pod IP / isem"
+    }
+  },
+  "deployment": {
+    "title": "Services marbuta",
+    "loading": "Qed jillowdja l-Services...",
+    "error": "Ma rnexxiex jillowdja l-Services",
+    "empty": "M'hemmx Service għal dan id-Deployment. Oħloq wieħed fil-paġna Netwerk.",
+    "openNetwork": "Iftaħ netwerk",
+    "viewEndpoints": "Pod IP →"
+  }
+}

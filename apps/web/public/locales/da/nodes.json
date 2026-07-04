@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Cluster worker nodes og pods planlagt på dem",
+  "loading": "Indlæser nodes...",
+  "error": "Kunne ikke indlæse nodes",
+  "podsTitle": "Pods på {{node}}",
+  "podsLoading": "Indlæser pods...",
+  "podsError": "Kunne ikke indlæse pods for denne node",
+  "podsEmpty": "Ingen pods på denne node",
+  "table": {
+    "name": "Node",
+    "status": "Status",
+    "roles": "Roller",
+    "pods": "Pods",
+    "version": "Kubelet",
+    "actions": "Handlinger"
+  },
+  "actions": {
+    "viewPods": "Vis pods"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Phase",
+    "ready": "Ready",
+    "yes": "Ja",
+    "no": "Nej"
+  }
+}

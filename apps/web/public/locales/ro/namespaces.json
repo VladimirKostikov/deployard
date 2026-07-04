@@ -1,0 +1,29 @@
+{
+  "title": "Namespaces",
+  "subtitle": "Creează și șterge namespace-uri Kubernetes în clusterul activ",
+  "loading": "Se încarcă namespace-urile...",
+  "error": "Nu s-au putut încărca namespace-urile",
+  "protected": "Protejat",
+  "create": {
+    "title": "Namespace nou",
+    "label": "Nume",
+    "placeholder": "staging",
+    "submit": "Creează namespace",
+    "submitting": "Se creează...",
+    "cancel": "Anulează",
+    "hint": "Folosește nume DNS cu litere mici. Namespace-urile de sistem cu prefix kube- nu pot fi șterse."
+  },
+  "table": {
+    "name": "Nume",
+    "status": "Stare",
+    "created": "Creat",
+    "actions": "Acțiuni"
+  },
+  "actions": {
+    "delete": "Șterge"
+  },
+  "delete": {
+    "title": "Șterge namespace",
+    "message": "Ștergi namespace {{name}}? Toate resursele din interior vor fi eliminate."
+  }
+}

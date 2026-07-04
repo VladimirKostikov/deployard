@@ -1,0 +1,26 @@
+{
+  "appTitle": "Deployard",
+  "language": "Tungumál",
+  "theme": {
+    "label": "Þema",
+    "light": "Ljóst",
+    "dark": "Dökkt",
+    "system": "Sjálfvirkt"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "admin": "Admin",
+    "logout": "Skrá út"
+  },
+  "status": {
+    "connected": "API tengt",
+    "checking": "Athugar API..."
+  },
+  "cluster": {
+    "label": "Cluster"
+  },
+  "namespace": {
+    "label": "Namespace",
+    "all": "Öll namespaces"
+  }
+}

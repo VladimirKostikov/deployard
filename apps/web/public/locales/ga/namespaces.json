@@ -1,0 +1,29 @@
+{
+  "title": "Namespaces",
+  "subtitle": "Cruthaigh agus bain Namespaces Kubernetes sa chlustar gníomhach",
+  "loading": "Ag lódáil Namespaces...",
+  "error": "Theip ar lódáil na Namespaces",
+  "protected": "Cosanta",
+  "create": {
+    "title": "Namespace nua",
+    "label": "Ainm",
+    "placeholder": "staging",
+    "submit": "Cruthaigh Namespace",
+    "submitting": "Ag cruthú...",
+    "cancel": "Cealaigh",
+    "hint": "Úsáid ainmneacha DNS beaglitreach. Ní féidir Namespaces córais leis an réimír kube- a scriosadh."
+  },
+  "table": {
+    "name": "Ainm",
+    "status": "Stádas",
+    "created": "Cruthaithe",
+    "actions": "Gníomhartha"
+  },
+  "actions": {
+    "delete": "Scrios"
+  },
+  "delete": {
+    "title": "Scrios Namespace",
+    "message": "Scrios Namespace {{name}}? Bainfear gach acmhainn atá ann."
+  }
+}

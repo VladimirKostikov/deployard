@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Worker nodes в cluster-а и pods, планирани на тях",
+  "loading": "Зареждане на nodes...",
+  "error": "Неуспешно зареждане на nodes",
+  "podsTitle": "Pods на {{node}}",
+  "podsLoading": "Зареждане на pods...",
+  "podsError": "Неуспешно зареждане на pods за този node",
+  "podsEmpty": "Няма pods на този node",
+  "table": {
+    "name": "Node",
+    "status": "Статус",
+    "roles": "Роли",
+    "pods": "Pods",
+    "version": "Kubelet",
+    "actions": "Действия"
+  },
+  "actions": {
+    "viewPods": "Виж pods"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Phase",
+    "ready": "Ready",
+    "yes": "Да",
+    "no": "Не"
+  }
+}

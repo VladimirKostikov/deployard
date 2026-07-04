@@ -1,0 +1,26 @@
+{
+  "loading": "Načítání podů...",
+  "error": "Nepodařilo se načíst pody",
+  "empty": "Pro tento deployment nebyly nalezeny žádné pody",
+  "yes": "Ano",
+  "no": "Ne",
+  "table": {
+    "name": "Pod",
+    "phase": "Phase",
+    "ready": "Ready",
+    "restarts": "Restarty",
+    "node": "Node",
+    "podIp": "Pod IP",
+    "ports": "Porty",
+    "actions": "Akce"
+  },
+  "actions": {
+    "restart": "Restartovat pod",
+    "delete": "Smazat pod",
+    "console": "Otevřít konzoli"
+  },
+  "delete": {
+    "title": "Smazat pod",
+    "message": "Smazat pod {{name}}? Deployment controller ho může znovu vytvořit."
+  }
+}

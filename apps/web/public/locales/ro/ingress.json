@@ -1,0 +1,32 @@
+{
+  "title": "Ingress",
+  "subtitle": "Reguli de rutare HTTP în namespace-ul selectat",
+  "loading": "Se încarcă regulile ingress...",
+  "error": "Nu s-au putut încărca regulile ingress",
+  "empty": "Nu există reguli ingress în acest namespace",
+  "create": {
+    "title": "Ingress nou",
+    "name": "Nume",
+    "host": "Host (ex. api.local)",
+    "path": "Path",
+    "service": "Nume service",
+    "port": "Port service",
+    "submit": "Creează ingress",
+    "submitting": "Se creează...",
+    "cancel": "Anulează"
+  },
+  "table": {
+    "name": "Nume",
+    "host": "Host",
+    "path": "Path",
+    "service": "Backend",
+    "actions": "Acțiuni"
+  },
+  "actions": {
+    "delete": "Șterge"
+  },
+  "delete": {
+    "title": "Șterge ingress",
+    "message": "Ștergi ingress {{name}}?"
+  }
+}

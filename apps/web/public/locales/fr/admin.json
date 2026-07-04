@@ -1,0 +1,71 @@
+{
+  "title": "Administration",
+  "subtitle": "Utilisateurs, rôles et permissions sur les deployments",
+  "back": "Retour aux deployments",
+  "actions": {
+    "label": "Actions",
+    "create": "Créer",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "saving": "Enregistrement...",
+    "deleting": "Suppression..."
+  },
+  "users": {
+    "title": "Utilisateurs",
+    "subtitle": "Gérer les comptes du tableau de bord et les rôles",
+    "create": "Ajouter un utilisateur",
+    "createTitle": "Créer un utilisateur",
+    "editTitle": "Modifier l'utilisateur",
+    "deleteTitle": "Supprimer l'utilisateur",
+    "deleteMessage": "Supprimer {{email}} ? Cette action est irréversible.",
+    "email": "Email",
+    "name": "Nom",
+    "password": "Mot de passe",
+    "newPassword": "Nouveau mot de passe (optionnel)",
+    "roles": "Rôles",
+    "status": "Statut",
+    "active": "Actif",
+    "inactive": "Inactif"
+  },
+  "roles": {
+    "title": "Rôles",
+    "subtitle": "Définitions de rôles et permissions associées",
+    "create": "Ajouter un rôle",
+    "createTitle": "Créer un rôle",
+    "editTitle": "Modifier le rôle",
+    "deleteTitle": "Supprimer le rôle",
+    "deleteMessage": "Supprimer le rôle \"{{name}}\" ? Il ne doit être assigné à aucun utilisateur.",
+    "name": "Nom",
+    "permissions": "Permissions"
+  },
+  "permissions": {
+    "title": "Permissions",
+    "subtitle": "Règles d'accès fines pour les deployments",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Section",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Réseau",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Métriques",
+      "admin": "Administration"
+    },
+    "level": "Accès",
+    "levels": {
+      "none": "Aucun accès",
+      "view": "Lecture",
+      "operate": "Exploitation",
+      "manage": "Gestion"
+    },
+    "hints": {
+      "view": "Ouvrir la section, lire listes et détails",
+      "operate": "Redémarrage, désactivation, rollback, logs, terminal",
+      "manage": "Création, suppression, import et changements admin"
+    }
+  }
+}

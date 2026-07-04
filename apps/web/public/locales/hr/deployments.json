@@ -1,0 +1,318 @@
+{
+  "title": "Deployments",
+  "subtitle": "Aplikacije u odabranom namespace-u",
+  "subtitleAll": "Aplikacije u svim dostupnim namespace-ima",
+  "loading": "Učitavanje deploymenta...",
+  "error": "Učitavanje deploymenta nije uspjelo",
+  "empty": "Nema deploymenta u ovom namespace-u",
+  "emptyAll": "Nema deploymenta u dostupnim namespace-ima",
+  "projectGroups": {
+    "standalone": "Samostalno",
+    "services_one": "{{count}} servis",
+    "services_other": "{{count}} servisa",
+    "health": "{{healthy}}/{{total}} zdravo",
+    "restarting": "{{count}}/{{total}} se ponovno pokreće",
+    "restartingBanner": "Ponovno pokretanje {{count}} od {{total}} deploymenta u ovoj grupi",
+    "settings": "Postavke",
+    "settingsTitle": "Postavke grupe",
+    "settingsGroupLabel": "Grupa projekta",
+    "settingsDockerReady": "Docker dostupan",
+    "settingsDockerUnavailable": "Docker nije dostupan",
+    "settingsRebuildHint": "Rebuilda compose, učitava image-e u kind i deploya deploymente u ovoj grupi.",
+    "settingsLoading": "Provjera okruženja...",
+    "settingsClose": "Zatvori",
+    "settingsNoCompose": "Compose projekt s tim nazivom nije pronađen. Rebuild je dostupan samo za grupe uvezene iz Docker Compose-a.",
+    "delete": "Obriši grupu",
+    "restart": "Ponovno pokreni grupu",
+    "disable": "Onemogući grupu",
+    "deleteTitle": "Obriši grupu projekta",
+    "deleteMessage": "Obrisati sve deploymente, service-e i secret-e u grupi \"{{name}}\"?",
+    "services_few": "{{count}} servisa",
+    "services_many": "{{count}} servisa"
+  },
+  "table": {
+    "name": "Naziv",
+    "namespace": "Namespace",
+    "image": "Image",
+    "replicas": "Spremno / Ukupno",
+    "revision": "Revizija",
+    "status": "Status"
+  },
+  "status": {
+    "healthy": "Zdravo",
+    "starting": "Pokretanje",
+    "restarting": "Ponovno pokretanje",
+    "degraded": "Degradirano",
+    "scaledToZero": "Isključeno",
+    "disabled": "Disabled"
+  },
+  "statusModal": {
+    "open": "Prikaži detalje statusa",
+    "title": "Status deploymenta",
+    "summary": {
+      "healthy": "Svi podovi su spremni.",
+      "starting": "Deployment se pokreće. To je normalno odmah nakon stvaranja.",
+      "degraded": "Neki podovi nisu spremni. Otvori detalje da vidiš zašto.",
+      "scaledToZero": "Broj replika je 0, nijedan pod ne radi.",
+      "disabled": "Deployment is disabled. Pods are stopped until you enable it again.",
+      "restarting": "Rolling restart u tijeku: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} ažurirano."
+    },
+    "reasonsTitle": "Zašto ovaj status",
+    "desired": "Željeno",
+    "ready": "Ready",
+    "available": "Dostupno",
+    "updated": "Ažurirano",
+    "reasons": {
+      "healthy": "{{ready}} od {{desired}} replika je spremno.",
+      "starting": "Deployment je upravo stvoren ili se ažurira.",
+      "scaledToZero": "Skalirano na nulu, nijedan pod ne radi.",
+      "disabled": "Disabled via Deployard. Enable to restore {{replicas}} replica(s).",
+      "podsNotReady": "{{ready}} od {{desired}} spremno, nisu svi podovi prošli readiness probe.",
+      "podsNotAvailable": "{{available}} od {{desired}} dostupno, podovi još nisu spremni.",
+      "rolloutInProgress": "{{updated}} od {{desired}} ažurirano, rollout u tijeku.",
+      "rolloutStalled": "Rolling update je završen, ali podovi ne postaju spremni. Pogledaj tablicu ispod.",
+      "restarting": "Pod se ponovno stvaraju: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} ažurirano."
+    },
+    "podsTitle": "Status podova",
+    "podsLoading": "Učitavanje podova...",
+    "podsEmpty": "Nema podova za ovaj deployment.",
+    "podsHint": "Image možda nedostaje u clusteru. Izgradi ga lokalno i učitaj u kind ili koristi registry.",
+    "podsColumns": {
+      "pod": "Pod",
+      "phase": "Phase",
+      "container": "Container",
+      "state": "Stan"
+    },
+    "containerStates": {
+      "ImagePullBackOff": "Image se ne može preuzeti",
+      "ErrImagePull": "Greška pri preuzimanju image-a",
+      "CrashLoopBackOff": "Container se ruši i restartira",
+      "ContainerCreating": "Container se stvara",
+      "PodInitializing": "Pod se inicijalizira",
+      "CreateContainerConfigError": "Greška u konfiguraciji containera",
+      "InvalidImageName": "Neispravan naziv image-a",
+      "CreateContainerError": "Stvaranje containera nije uspjelo",
+      "RunContainerError": "Pokretanje containera nije uspjelo",
+      "waiting": "Čekanje",
+      "running": "Running, ali nije ready",
+      "terminated": "Završeno",
+      "pending": "Čeka scheduling"
+    }
+  },
+  "actions": {
+    "label": "Radnje",
+    "view": "Pregled",
+    "pods": "Prikaži podove",
+    "logs": "Prikaži logove",
+    "history": "Povijest revision-a",
+    "console": "Otvori konzolu",
+    "restart": "Restart deploymenta",
+    "delete": "Obriši deployment",
+    "disable": "Disable deployment",
+    "enable": "Enable deployment",
+    "enableAfterError": "Omogući ponovno. Pri onemogućavanju bile su greške",
+    "error": "Radnja nije uspjela"
+  },
+  "tabs": {
+    "ariaLabel": "Sekcije deploymenta",
+    "overview": "Pregled",
+    "health": "Health probes",
+    "config": "Konfiguracija",
+    "history": "Povijest",
+    "pods": "Podovi",
+    "files": "Datoteke",
+    "logs": "Logovi",
+    "console": "Konzola"
+  },
+  "files": {
+    "podLabel": "Pod",
+    "loading": "Učitavanje datoteka...",
+    "error": "Učitavanje datoteka nije uspjelo",
+    "empty": "Ovaj direktorij je prazan",
+    "noPods": "Nema podova za ovaj deployment",
+    "refresh": "Osvježi",
+    "newFolder": "Nova mapa",
+    "upload": "Prenesi datoteku",
+    "download": "Preuzmi",
+    "rename": "Preimenuj",
+    "delete": "Obriši",
+    "folderPrompt": "Naziv mape",
+    "renamePrompt": "Novi naziv",
+    "deleteConfirm": "Obrisati \"{{name}}\"?",
+    "previewEmpty": "Datoteka je prazna",
+    "breadcrumbs": "Put",
+    "root": "Korijen",
+    "pod": "Pod",
+    "columns": {
+      "name": "Naziv",
+      "size": "Veličina",
+      "modified": "Izmijenjeno",
+      "actions": "Radnje"
+    }
+  },
+  "scale": {
+    "label": "Replike",
+    "submit": "Primijeni skaliranje",
+    "submitting": "Skaliranje...",
+    "hint": "Promijeni koliko kopija podova deployment treba držati u radu."
+  },
+  "disable": {
+    "disable": "Disable deployment",
+    "disabling": "Disabling...",
+    "disableHint": "Stops all pods and saves the current replica count for quick restore.",
+    "enable": "Enable deployment",
+    "enabling": "Enabling...",
+    "enableHint": "Restores {{replicas}} replica(s) and starts pods again.",
+    "enableErrorHint": "Pri onemogućavanju bile su greške. Popravi image ili config i omogući ponovno ({{replicas}} replika)."
+  },
+  "console": {
+    "connect": "Poveži",
+    "connecting": "Povezivanje...",
+    "disconnect": "Prekini vezu",
+    "connected": "Povezan s {{pod}}",
+    "disconnected": "Sesija zatvorena",
+    "statusConnected": "Povezan",
+    "statusDisconnected": "Prekinuta veza",
+    "empty": "Poveži se za interaktivnu shell sesiju u odabranom podu.",
+    "inputPlaceholder": "Upiši naredbe ovdje...",
+    "inputDisabled": "Prvo se poveži s podom"
+  },
+  "detail": {
+    "subtitle": "Namespace: {{namespace}}",
+    "loading": "Učitavanje deploymenta...",
+    "error": "Učitavanje deploymenta nije uspjelo",
+    "historyTitle": "Povijest revision-a",
+    "podsTitle": "Podovi",
+    "logsTitle": "Logovi",
+    "logsEmpty": "Nema podova za streamanje logova"
+  },
+  "history": {
+    "loading": "Učitavanje povijesti revision-a...",
+    "error": "Učitavanje povijesti revision-a nije uspjelo",
+    "empty": "Nema revision-a",
+    "current": "Trenutni",
+    "rollback": "Rollback",
+    "table": {
+      "revision": "Revision",
+      "image": "Image",
+      "replicas": "Replike",
+      "created": "Stvoren",
+      "actions": "Radnje"
+    }
+  },
+  "rollback": {
+    "title": "Potvrdi rollback",
+    "subtitle": "Deployment: {{name}}",
+    "targetRevision": "Ciljni revision",
+    "targetImage": "Ciljni image",
+    "cancel": "Odustani",
+    "confirm": "Rollback",
+    "submitting": "Rollback u tijeku..."
+  },
+  "create": {
+    "title": "Novi deployment",
+    "namePlaceholder": "my-api",
+    "imagePlaceholder": "Odaberi iz kataloga ili upiši vlastiti",
+    "replicasPlaceholder": "Replike",
+    "portPlaceholder": "Port containera",
+    "projectLabel": "Grupa projekta",
+    "projectHint": "Deploymenti s istom oznakom prikazuju se zajedno na listi.",
+    "projectNone": "Bez grupe",
+    "projectExisting": "Dodaj u postojeću grupu",
+    "projectNew": "Stvori novu grupu",
+    "projectNewPlaceholder": "my-project",
+    "submit": "Stvori deployment",
+    "submitting": "Stvaranje...",
+    "cancel": "Odustani"
+  },
+  "image": {
+    "label": "Image containera",
+    "submit": "Deployaj novu verziju",
+    "submitting": "Deployanje...",
+    "hint": "Ažurira predložak deploymenta i pokreće rolling rollout.",
+    "error": "Ažuriranje container image-a nije uspjelo.",
+    "unchanged": "Image je već deployan."
+  },
+  "imagePicker": {
+    "placeholder": "nginx:1.27-alpine, redis:7-alpine, postgres:16-alpine...",
+    "browse": "Katalog image-a",
+    "catalogHint": "{{count}} image-a: Web server, Database, Runtime i drugo",
+    "customTitle": "Vlastiti image",
+    "customHint": "Upiši bilo koji registry/repository:tag",
+    "empty": "Nema rezultata. Upiši vlastiti image gore."
+  },
+  "delete": {
+    "title": "Obriši deployment",
+    "message": "Obrisati deployment {{name}}? Svi podovi bit će uklonjeni.",
+    "submit": "Obriši deployment"
+  },
+  "restart": {
+    "submit": "Restart deploymenta",
+    "submitting": "Restartiranje...",
+    "hint": "Rolling restart ponovno stvara sve podove s istim image-om (kao kubectl rollout restart).",
+    "bannerTitle": "Ažuriranje u tijeku",
+    "bannerProgress": "{{ready}}/{{desired}} spremno, {{updated}}/{{desired}} ažurirano",
+    "bannerHint": "Podovi se ponovno stvaraju. Prati status na kartici Podovi.",
+    "rowProgress": "({{ready}}/{{desired}} ready)",
+    "error": "Restart deploymenta nije uspio.",
+    "done": "Deployment se restartira"
+  },
+  "config": {
+    "title": "Varijable okruženja",
+    "loading": "Učitavanje konfiguracije...",
+    "error": "Učitavanje konfiguracije nije uspjelo",
+    "empty": "Nema postavljenih varijabli",
+    "namePlaceholder": "MYSQL_ROOT_PASSWORD",
+    "valuePlaceholder": "vrijednost",
+    "add": "Dodaj varijablu",
+    "remove": "Ukloni",
+    "submit": "Spremi",
+    "submitting": "Spremanje...",
+    "portHint": "Port containera: {{port}}",
+    "createHint": "Image-i iz kataloga dobivaju dev default vrijednosti. Provjeri prije stvaranja."
+  },
+  "healthProbes": {
+    "title": "Health probes",
+    "loading": "Učitavanje konfiguracije probe-a...",
+    "error": "Učitavanje health probe-a nije uspjelo",
+    "empty": "Nema probe-a za primarni container",
+    "configTitle": "Konfigurirani probe-i",
+    "podsTitle": "Spremnost podova",
+    "podsEmpty": "Nema podova za pregled",
+    "podReady": "Ready",
+    "podNotReady": "Nije spreman",
+    "podStates": {
+      "ready": "Ready",
+      "runningNotReady": "Radi, nije ready",
+      "pending": "Na čekanju",
+      "failed": "Neuspjelo",
+      "notReady": "Nije ready"
+    },
+    "types": {
+      "readiness": "Readiness",
+      "liveness": "Liveness",
+      "startup": "Startup"
+    },
+    "mechanisms": {
+      "http": "HTTP",
+      "tcp": "TCP",
+      "exec": "Exec",
+      "grpc": "gRPC",
+      "none": "Nema"
+    },
+    "columns": {
+      "type": "Tip",
+      "mechanism": "Mehanizam",
+      "target": "Cilj",
+      "timing": "Intervali",
+      "pod": "Pod",
+      "phase": "Phase",
+      "podStatus": "Readiness"
+    },
+    "timing": {
+      "start": "start {{seconds}}s",
+      "every": "svakih {{seconds}}s",
+      "timeout": "timeout {{seconds}}s"
+    }
+  }
+}

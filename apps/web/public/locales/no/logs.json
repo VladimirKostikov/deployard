@@ -1,0 +1,7 @@
+{
+  "title": "Logger",
+  "streaming": "Streamer logger...",
+  "error": "Kunne ikke streame logger",
+  "empty": "Ingen logglinjer ennå",
+  "autoScroll": "Auto-scroll"
+}

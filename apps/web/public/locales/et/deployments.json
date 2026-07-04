@@ -1,0 +1,316 @@
+{
+  "title": "Deployments",
+  "subtitle": "Rakendused valitud namespace'is",
+  "subtitleAll": "Rakendused kõigis ligipääsetavates namespaces",
+  "loading": "Laadin deploymente...",
+  "error": "Deploymentide laadimine ebaõnnestus",
+  "empty": "Selles namespace'is pole deploymente",
+  "emptyAll": "Ligipääsetavates namespaces pole deploymente",
+  "projectGroups": {
+    "standalone": "Eraldi",
+    "services_one": "{{count}} teenus",
+    "services_other": "{{count}} teenust",
+    "health": "{{healthy}}/{{total}} terve",
+    "restarting": "{{count}}/{{total}} taaskäivitub",
+    "restartingBanner": "Taaskäivitatakse {{count}}/{{total}} deploymenti selles grupis",
+    "settings": "Seaded",
+    "settingsTitle": "Grupi seaded",
+    "settingsGroupLabel": "Projektigrupp",
+    "settingsDockerReady": "Docker saadaval",
+    "settingsDockerUnavailable": "Docker pole saadaval",
+    "settingsRebuildHint": "Ehitab compose uuesti, laadib images kind'i ja veeretab välja deploymentid selles grupis.",
+    "settingsLoading": "Kontrollin keskkonda...",
+    "settingsClose": "Sulge",
+    "settingsNoCompose": "Selle nimega compose-projekti ei leitud. Uuesti ehitamine on saadaval ainult Docker Compose'ist imporditud gruppidele.",
+    "delete": "Kustuta grupp",
+    "restart": "Taaskäivita grupp",
+    "disable": "Keela grupp",
+    "deleteTitle": "Kustuta projektigrupp",
+    "deleteMessage": "Kustutada kõik deploymentid, services ja secrets grupis \"{{name}}\"?"
+  },
+  "table": {
+    "name": "Nimi",
+    "namespace": "Namespace",
+    "image": "Image",
+    "replicas": "Valmis / Kokku",
+    "revision": "Revision",
+    "status": "Olek"
+  },
+  "status": {
+    "healthy": "Healthy",
+    "starting": "Käivitub",
+    "restarting": "Taaskäivitamine",
+    "degraded": "Degraded",
+    "scaledToZero": "Skaalatud nulli",
+    "disabled": "Disabled"
+  },
+  "statusModal": {
+    "open": "Vaata oleku üksikasju",
+    "title": "Deploymenti olek",
+    "summary": {
+      "healthy": "Kõik podid on valmis.",
+      "starting": "Deployment käivitub. See on loomise järel normaalne.",
+      "degraded": "Mõned podid pole valmis. Ava üksikasjad, et näha põhjust.",
+      "scaledToZero": "Replikate arv on 0, ühtegi podi ei tööta.",
+      "disabled": "Deployment is disabled. Pods are stopped until you enable it again.",
+      "restarting": "Rolling restart käib: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} uuendatud."
+    },
+    "reasonsTitle": "Miks see olek",
+    "desired": "Soovitud",
+    "ready": "Ready",
+    "available": "Available",
+    "updated": "Updated",
+    "reasons": {
+      "healthy": "{{ready}} / {{desired}} replikast on valmis.",
+      "starting": "Deployment loodi hiljuti või uuendatakse.",
+      "scaledToZero": "Skaalatud nulli, ühtegi podi ei tööta.",
+      "disabled": "Disabled via Deployard. Enable to restore {{replicas}} replica(s).",
+      "podsNotReady": "{{ready}} / {{desired}} valmis, mitte kõik podid läbisid readiness probes.",
+      "podsNotAvailable": "{{available}} / {{desired}} available, podid pole veel valmis.",
+      "rolloutInProgress": "{{updated}} / {{desired}} uuendatud, rollout käib.",
+      "rolloutStalled": "Rolling update lõppes, kuid podid ei muutu valmis. Vaata allolevat tabelit.",
+      "restarting": "Pod-id luuakse uuesti: {{ready}}/{{desired}} ready, {{updated}}/{{desired}} uuendatud."
+    },
+    "podsTitle": "Podi olek",
+    "podsLoading": "Laadin pode...",
+    "podsEmpty": "Selle deploymenti jaoks pole pode leitud.",
+    "podsHint": "Image võib clusteris puududa. Ehita kohapeal ja laadi kind'i või kasuta registryt.",
+    "podsColumns": {
+      "pod": "Pod",
+      "phase": "Phase",
+      "container": "Container",
+      "state": "State"
+    },
+    "containerStates": {
+      "ImagePullBackOff": "Image'i ei saa tõmmata",
+      "ErrImagePull": "Image pull viga",
+      "CrashLoopBackOff": "Container jookseb kokku ja taaskäivitub",
+      "ContainerCreating": "Containerit luuakse",
+      "PodInitializing": "Pod initsialiseeritakse",
+      "CreateContainerConfigError": "Containeri konfiguratsiooni viga",
+      "InvalidImageName": "Vigane image'i nimi",
+      "CreateContainerError": "Containeri loomine ebaõnnestus",
+      "RunContainerError": "Containeri käivitamine ebaõnnestus",
+      "waiting": "Ootab",
+      "running": "Töötab, kuid pole valmis",
+      "terminated": "Lõpetatud",
+      "pending": "Ootab ajastamist"
+    }
+  },
+  "actions": {
+    "label": "Toimingud",
+    "view": "Vaata",
+    "pods": "Vaata pode",
+    "logs": "Vaata logisid",
+    "history": "Revisioni ajalugu",
+    "console": "Ava konsool",
+    "restart": "Taaskäivita deployment",
+    "delete": "Kustuta deployment",
+    "disable": "Disable deployment",
+    "enable": "Enable deployment",
+    "enableAfterError": "Luba uuesti. Keelamisel olid vead",
+    "error": "Toiming ebaõnnestus"
+  },
+  "tabs": {
+    "ariaLabel": "Deploymenti jaotised",
+    "overview": "Ülevaade",
+    "health": "Tervisekontrollid",
+    "config": "Config",
+    "history": "Ajalugu",
+    "pods": "Pods",
+    "files": "Failid",
+    "logs": "Logid",
+    "console": "Konsool"
+  },
+  "files": {
+    "podLabel": "Pod",
+    "loading": "Failide laadimine...",
+    "error": "Failide laadimine ebaõnnestus",
+    "empty": "See kaust on tühi",
+    "noPods": "Selle deploymenti jaoks pole pod-e",
+    "refresh": "Värskenda",
+    "newFolder": "Uus kaust",
+    "upload": "Laadi fail üles",
+    "download": "Laadi alla",
+    "rename": "Nimeta ümber",
+    "delete": "Kustuta",
+    "folderPrompt": "Kausta nimi",
+    "renamePrompt": "Uus nimi",
+    "deleteConfirm": "Kustuta \"{{name}}\"?",
+    "previewEmpty": "Fail on tühi",
+    "breadcrumbs": "Tee",
+    "root": "Juur",
+    "pod": "Pod",
+    "columns": {
+      "name": "Nimi",
+      "size": "Suurus",
+      "modified": "Muudetud",
+      "actions": "Toimingud"
+    }
+  },
+  "scale": {
+    "label": "Replikad",
+    "submit": "Rakenda skaleerimine",
+    "submitting": "Skaleerin...",
+    "hint": "Muuda, mitu podi koopiat deployment peaks töös hoidma."
+  },
+  "disable": {
+    "disable": "Disable deployment",
+    "disabling": "Disabling...",
+    "disableHint": "Stops all pods and saves the current replica count for quick restore.",
+    "enable": "Enable deployment",
+    "enabling": "Enabling...",
+    "enableHint": "Restores {{replicas}} replica(s) and starts pods again.",
+    "enableErrorHint": "Keelamisel olid vead. Paranda image või seadistus ja luba uuesti ({{replicas}} koopiat)."
+  },
+  "console": {
+    "connect": "Ühenda",
+    "connecting": "Ühendan...",
+    "disconnect": "Katkesta",
+    "connected": "Ühendatud {{pod}}",
+    "disconnected": "Seanss suletud",
+    "statusConnected": "Ühendatud",
+    "statusDisconnected": "Ühendus katkestatud",
+    "empty": "Ühenda, et alustada interaktiivset shelli valitud podis.",
+    "inputPlaceholder": "Sisesta käsud siia...",
+    "inputDisabled": "Ühenda esmalt podiga"
+  },
+  "detail": {
+    "subtitle": "Namespace: {{namespace}}",
+    "loading": "Laadin deploymenti...",
+    "error": "Deploymenti laadimine ebaõnnestus",
+    "historyTitle": "Revisioni ajalugu",
+    "podsTitle": "Pods",
+    "logsTitle": "Logid",
+    "logsEmpty": "Logi striimimiseks pole pode saadaval"
+  },
+  "history": {
+    "loading": "Laadin revisioni ajalugu...",
+    "error": "Revisioni ajaloo laadimine ebaõnnestus",
+    "empty": "Revisione ei leitud",
+    "current": "Praegune",
+    "rollback": "Rollback",
+    "table": {
+      "revision": "Revision",
+      "image": "Image",
+      "replicas": "Replikad",
+      "created": "Loodud",
+      "actions": "Toimingud"
+    }
+  },
+  "rollback": {
+    "title": "Kinnita rollback",
+    "subtitle": "Deployment: {{name}}",
+    "targetRevision": "Sihtrevision",
+    "targetImage": "Sihtimage",
+    "cancel": "Tühista",
+    "confirm": "Rollback",
+    "submitting": "Veere tagasi..."
+  },
+  "create": {
+    "title": "Uus deployment",
+    "namePlaceholder": "my-api",
+    "imagePlaceholder": "Vali kataloogist või sisesta oma",
+    "replicasPlaceholder": "Replikad",
+    "portPlaceholder": "Containeri port",
+    "projectLabel": "Projektigrupp",
+    "projectHint": "Sama labeliga deploymentid kuvatakse nimekirjas koos.",
+    "projectNone": "Gruppi pole",
+    "projectExisting": "Lisa olemasolevasse gruppi",
+    "projectNew": "Loo uus grupp",
+    "projectNewPlaceholder": "my-project",
+    "submit": "Loo deployment",
+    "submitting": "Loon...",
+    "cancel": "Tühista"
+  },
+  "image": {
+    "label": "Container image",
+    "submit": "Deploy uus versioon",
+    "submitting": "Deployin...",
+    "hint": "Uuendab deploymenti malli ja käivitab rolling rollout.",
+    "error": "Container image'i uuendamine ebaõnnestus.",
+    "unchanged": "Image on juba deployitud."
+  },
+  "imagePicker": {
+    "placeholder": "nginx:1.27-alpine, redis:7-alpine, postgres:16-alpine...",
+    "browse": "Image'i kataloog",
+    "catalogHint": "{{count}} images: Web server, Database, Runtime ja muu",
+    "customTitle": "Kohandatud image",
+    "customHint": "Sisesta registry/repository:tag",
+    "empty": "Vasteid pole. Sisesta kohandatud image ülal."
+  },
+  "delete": {
+    "title": "Kustuta deployment",
+    "message": "Kustutada deployment {{name}}? Kõik podid eemaldatakse.",
+    "submit": "Kustuta deployment"
+  },
+  "restart": {
+    "submit": "Taaskäivita deployment",
+    "submitting": "Taaskäivitan...",
+    "hint": "Rolling restart loob kõik podid uuesti sama image'iga (nagu kubectl rollout restart).",
+    "bannerTitle": "Uuendus käib",
+    "bannerProgress": "{{ready}}/{{desired}} valmis, {{updated}}/{{desired}} uuendatud",
+    "bannerHint": "Podid luuakse uuesti. Jälgi Pods vahekaarti reaalajas oleku jaoks.",
+    "rowProgress": "({{ready}}/{{desired}} ready)",
+    "error": "Deploymenti taaskäivitamine ebaõnnestus.",
+    "done": "Deployment taaskäivitub"
+  },
+  "config": {
+    "title": "Keskkonnamuutujad",
+    "loading": "Laadin konfiguratsiooni...",
+    "error": "Konfiguratsiooni laadimine ebaõnnestus",
+    "empty": "Muutujaid pole seatud",
+    "namePlaceholder": "MYSQL_ROOT_PASSWORD",
+    "valuePlaceholder": "väärtus",
+    "add": "Lisa muutuja",
+    "remove": "Eemalda",
+    "submit": "Salvesta",
+    "submitting": "Salvestan...",
+    "portHint": "Containeri port: {{port}}",
+    "createHint": "Kataloogi images saavad dev vaikeväärtused. Vaata üle enne loomist."
+  },
+  "healthProbes": {
+    "title": "Tervisekontrollid",
+    "loading": "Laadin probe konfiguratsiooni...",
+    "error": "Health probes laadimine ebaõnnestus",
+    "empty": "Põhicontainerile pole probes konfigureeritud",
+    "configTitle": "Konfigureeritud probes",
+    "podsTitle": "Pod valmisolek",
+    "podsEmpty": "Pole pode ülevaatamiseks",
+    "podReady": "Ready",
+    "podNotReady": "Pole valmis",
+    "podStates": {
+      "ready": "Ready",
+      "runningNotReady": "Töötab, aga pole ready",
+      "pending": "Ootel",
+      "failed": "Ebaõnnestus",
+      "notReady": "Pole ready"
+    },
+    "types": {
+      "readiness": "Readiness",
+      "liveness": "Liveness",
+      "startup": "Startup"
+    },
+    "mechanisms": {
+      "http": "HTTP",
+      "tcp": "TCP",
+      "exec": "Exec",
+      "grpc": "gRPC",
+      "none": "Puudub"
+    },
+    "columns": {
+      "type": "Tüüp",
+      "mechanism": "Mehhanism",
+      "target": "Siht",
+      "timing": "Ajastus",
+      "pod": "Pod",
+      "phase": "Phase",
+      "podStatus": "Readiness"
+    },
+    "timing": {
+      "start": "start {{seconds}}s",
+      "every": "iga {{seconds}}s",
+      "timeout": "timeout {{seconds}}s"
+    }
+  }
+}

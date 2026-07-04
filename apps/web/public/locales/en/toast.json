@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Replicas updated",
+    "scaleError": "Failed to scale deployment",
+    "imageSuccess": "Container image updated",
+    "imageError": "Failed to update container image",
+    "deleteSuccess": "Deployment deleted",
+    "deleteError": "Failed to delete deployment",
+    "createSuccess": "Deployment created",
+    "createError": "Failed to create deployment",
+    "configSaved": "Configuration saved",
+    "configError": "Failed to save configuration",
+    "restartSuccess": "Deployment restarted",
+    "restartError": "Failed to restart deployment",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback completed",
+    "rollbackError": "Rollback failed",
+    "projectGroupDeleteSuccess": "Project group deleted",
+    "projectGroupDeleteError": "Failed to delete project group",
+    "projectGroupRestartSuccess": "Project group restarted",
+    "projectGroupRestartError": "Failed to restart project group",
+    "projectGroupDisableSuccess": "Project group disabled",
+    "projectGroupDisableError": "Failed to disable project group",
+    "filesFolderCreated": "Folder created",
+    "filesUploaded": "File uploaded",
+    "filesDeleted": "Deleted",
+    "filesRenamed": "Renamed",
+    "filesError": "File operation failed"
+  },
+  "pod": {
+    "restartSuccess": "Pod restarted",
+    "restartError": "Failed to restart pod",
+    "deleteSuccess": "Pod deleted",
+    "deleteError": "Failed to delete pod"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service created",
+    "serviceCreateError": "Failed to create service",
+    "serviceDeleteSuccess": "Service deleted",
+    "serviceDeleteError": "Failed to delete service",
+    "serviceUpdateSuccess": "Service updated",
+    "serviceUpdateError": "Failed to update service",
+    "tunnelError": "Failed to open service access",
+    "openBlocked": "Browser blocked the new tab. Allow pop-ups for this site.",
+    "openError": "Could not open {{name}}. Check that pods are running.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Ingress rule deleted",
+    "ingressDeleteError": "Failed to delete ingress rule"
+  },
+  "ingress": {
+    "createSuccess": "Ingress rule created",
+    "createError": "Failed to create ingress rule",
+    "deleteSuccess": "Ingress rule deleted",
+    "deleteError": "Failed to delete ingress rule"
+  },
+  "namespace": {
+    "createSuccess": "Namespace created",
+    "createError": "Failed to create namespace",
+    "deleteSuccess": "Namespace deleted",
+    "deleteError": "Failed to delete namespace"
+  },
+  "import": {
+    "buildSuccess": "Images built",
+    "buildError": "Failed to build images",
+    "rebuildSuccess": "Docker Compose rebuilt",
+    "rebuildError": "Failed to rebuild project",
+    "loadSuccess": "Images loaded into cluster",
+    "loadError": "Failed to load images into cluster",
+    "applySuccess": "Project imported into Kubernetes",
+    "applyWithImages": "Project imported, {{count}} images loaded into kind",
+    "openImportedApp": "Opening app at {{url}}",
+    "openUnavailable": "Import finished, but the app URL is not ready yet. Open it from Network → web.",
+    "applyError": "Failed to import project",
+    "previewError": "Failed to build preview"
+  },
+  "admin": {
+    "userSaveSuccess": "User saved",
+    "userSaveError": "Failed to save user",
+    "userDeleteSuccess": "User deleted",
+    "userDeleteError": "Failed to delete user",
+    "roleSaveSuccess": "Role saved",
+    "roleSaveError": "Failed to save role",
+    "roleDeleteSuccess": "Role deleted",
+    "roleDeleteError": "Failed to delete role",
+    "permissionSaveSuccess": "Permission saved",
+    "permissionSaveError": "Failed to save permission",
+    "permissionDeleteSuccess": "Permission deleted",
+    "permissionDeleteError": "Failed to delete permission"
+  }
+}

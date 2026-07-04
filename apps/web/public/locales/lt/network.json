@@ -1,0 +1,81 @@
+{
+  "title": "Tinklas",
+  "subtitle": "Services, Endpoints ir Ingress: kaip podai pasiekia vienas kitą klasteryje",
+  "tabs": {
+    "ariaLabel": "Tinklo skiltys",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Kraunami services...",
+    "error": "Nepavyko įkelti services",
+    "empty": "Šiame namespace nėra services",
+    "table": {
+      "name": "Pavadinimas",
+      "type": "Tipas",
+      "clusterIp": "Cluster IP",
+      "ports": "Prievadai",
+      "selector": "Selector",
+      "actions": "Veiksmai"
+    },
+    "actions": {
+      "delete": "Ištrinti",
+      "open": "Atidaryti {{name}} naršyklėje",
+      "openTooltip": "{{url}}: jei puslapis neįsikrauna, vykdykite terminale: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Kopijuoti port-forward komandą {{name}}",
+      "copied": "Komanda nukopijuota",
+      "edit": "Redaguoti prievadus",
+      "editShort": "Prievadai"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Tipas",
+      "portsLabel": "Prievadai",
+      "port": "Service prievadas",
+      "targetPort": "Target port",
+      "nodePort": "NodePort",
+      "cancel": "Atšaukti",
+      "save": "Išsaugoti",
+      "saving": "Saugoma..."
+    },
+    "delete": {
+      "title": "Ištrinti service",
+      "message": "Ištrinti service {{name}}? Podai toliau veiks, bet DNS pavadinimas nustos veikti."
+    },
+    "create": {
+      "title": "Sukurti service",
+      "name": "Service pavadinimas",
+      "deployment": "Deployment",
+      "port": "Service prievadas",
+      "targetPort": "Target port (neprivaloma)",
+      "submit": "Sukurti service",
+      "submitting": "Kuriama...",
+      "cancel": "Atšaukti"
+    }
+  },
+  "endpoints": {
+    "subtitle": "Pod IP už kiekvieno service (valdo automatiškai Kubernetes)",
+    "loading": "Kraunami endpoints...",
+    "error": "Nepavyko įkelti endpoints",
+    "empty": "Endpoints dar nėra: sukurkite service deployment",
+    "table": {
+      "name": "Service",
+      "ports": "Prievadai",
+      "addresses": "Pod IP / pavadinimas"
+    }
+  },
+  "deployment": {
+    "title": "Susieti services",
+    "loading": "Kraunami services...",
+    "error": "Nepavyko įkelti services",
+    "empty": "Šiam deployment nėra service. Sukurkite Tinklas puslapyje.",
+    "openNetwork": "Atidaryti tinklą",
+    "viewEndpoints": "Pod IP →"
+  }
+}

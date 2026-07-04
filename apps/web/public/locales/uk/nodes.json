@@ -1,0 +1,29 @@
+{
+  "title": "Вузли",
+  "subtitle": "Робочі вузли кластера та pod'и на них",
+  "loading": "Завантаження вузлів...",
+  "error": "Не вдалося завантажити вузли",
+  "podsTitle": "Pod'и на {{node}}",
+  "podsLoading": "Завантаження pod'ів...",
+  "podsError": "Не вдалося завантажити pod'и цього вузла",
+  "podsEmpty": "На цьому вузлі немає pod'ів",
+  "table": {
+    "name": "Вузол",
+    "status": "Статус",
+    "roles": "Ролі",
+    "pods": "Pod'и",
+    "version": "Kubelet",
+    "actions": "Дії"
+  },
+  "actions": {
+    "viewPods": "Переглянути pod'и"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Фаза",
+    "ready": "Ready",
+    "yes": "Так",
+    "no": "Ні"
+  }
+}

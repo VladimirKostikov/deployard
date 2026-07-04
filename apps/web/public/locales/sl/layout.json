@@ -1,0 +1,32 @@
+{
+  "appTitle": "Deployard",
+  "sections": {
+    "main": "Glavno",
+    "admin": "Nadzor dostopa",
+    "settings": "Nastavitve"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "import": "Import",
+    "faq": "FAQ",
+    "nodes": "Nodes",
+    "namespaces": "Namespaces",
+    "ingress": "Ingress",
+    "network": "Omrežje",
+    "metrics": "Metrics",
+    "admin": "Upravljanje",
+    "users": "Uporabniki",
+    "roles": "Vloge",
+    "permissions": "Dovoljenja",
+    "backToApp": "Nazaj v aplikacijo",
+    "logout": "Odjava"
+  },
+  "topbar": {
+    "connected": "API povezan",
+    "checking": "Preverjanje API..."
+  },
+  "mobileMenu": {
+    "open": "Odpri meni",
+    "close": "Zapri meni"
+  }
+}

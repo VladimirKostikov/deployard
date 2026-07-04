@@ -1,0 +1,26 @@
+{
+  "loading": "Загрузка pod'ов...",
+  "error": "Не удалось загрузить pod'ы",
+  "empty": "Для этого деплоя нет pod'ов",
+  "yes": "Да",
+  "no": "Нет",
+  "table": {
+    "name": "Pod",
+    "phase": "Фаза",
+    "ready": "Готов",
+    "restarts": "Рестарты",
+    "node": "Нода",
+    "podIp": "Pod IP",
+    "ports": "Порты",
+    "actions": "Действия"
+  },
+  "actions": {
+    "restart": "Перезапустить",
+    "delete": "Удалить",
+    "console": "Консоль"
+  },
+  "delete": {
+    "title": "Удалить pod",
+    "message": "Удалить pod {{name}}? Deployment может создать его заново."
+  }
+}

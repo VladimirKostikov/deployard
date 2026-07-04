@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Nodes tax-xogħol tal-cluster u pods skedati fuqhom",
+  "loading": "Qed jillowdja n-nodes...",
+  "error": "Ma rnexxiex jillowdja n-nodes",
+  "podsTitle": "Pods fuq {{node}}",
+  "podsLoading": "Qed jillowdja l-pods...",
+  "podsError": "Ma rnexxiex jillowdja l-pods għal dan in-node",
+  "podsEmpty": "M'hemmx pods fuq dan in-node",
+  "table": {
+    "name": "Node",
+    "status": "Status",
+    "roles": "Rwoli",
+    "pods": "Pods",
+    "version": "Kubelet",
+    "actions": "Azzjonijiet"
+  },
+  "actions": {
+    "viewPods": "Ara l-pods"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Fażi",
+    "ready": "Lest",
+    "yes": "Iva",
+    "no": "Le"
+  }
+}

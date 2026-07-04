@@ -1,0 +1,29 @@
+{
+  "title": "Nodes",
+  "subtitle": "Worker node-ovi clustera i podovi zakazani na njima",
+  "loading": "Učitavanje node-ova...",
+  "error": "Učitavanje node-ova nije uspjelo",
+  "podsTitle": "Podovi na {{node}}",
+  "podsLoading": "Učitavanje podova...",
+  "podsError": "Učitavanje podova za ovaj node nije uspjelo",
+  "podsEmpty": "Nema podova na ovom node-u",
+  "table": {
+    "name": "Node",
+    "status": "Status",
+    "roles": "Uloge",
+    "pods": "Pods",
+    "version": "Kubelet",
+    "actions": "Radnje"
+  },
+  "actions": {
+    "viewPods": "Prikaži podove"
+  },
+  "podTable": {
+    "name": "Pod",
+    "namespace": "Namespace",
+    "phase": "Phase",
+    "ready": "Ready",
+    "yes": "Da",
+    "no": "Ne"
+  }
+}

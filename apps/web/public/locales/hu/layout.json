@@ -1,0 +1,32 @@
+{
+  "appTitle": "Deployard",
+  "sections": {
+    "main": "Fő",
+    "admin": "Hozzáférés-kezelés",
+    "settings": "Beállítások"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "import": "Importálás",
+    "faq": "FAQ",
+    "nodes": "Nodes",
+    "namespaces": "Namespaces",
+    "ingress": "Ingress",
+    "network": "Hálózat",
+    "metrics": "Metrikák",
+    "admin": "Adminisztráció",
+    "users": "Felhasználók",
+    "roles": "Szerepkörök",
+    "permissions": "Jogosultságok",
+    "backToApp": "Vissza az alkalmazáshoz",
+    "logout": "Kijelentkezés"
+  },
+  "topbar": {
+    "connected": "API csatlakozva",
+    "checking": "API ellenőrzése..."
+  },
+  "mobileMenu": {
+    "open": "Menü megnyitása",
+    "close": "Menü bezárása"
+  }
+}

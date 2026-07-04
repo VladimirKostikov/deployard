@@ -1,0 +1,26 @@
+{
+  "loading": "Ag lódáil podanna...",
+  "error": "Theip ar lódáil na podanna",
+  "empty": "Níor aimsíodh podanna don Deployment seo",
+  "yes": "Tá",
+  "no": "Níl",
+  "table": {
+    "name": "Pod",
+    "phase": "Céim",
+    "ready": "Réidh",
+    "restarts": "Atosanna",
+    "node": "Nód",
+    "podIp": "Pod IP",
+    "ports": "Portanna",
+    "actions": "Gníomhartha"
+  },
+  "actions": {
+    "restart": "Atosaigh pod",
+    "delete": "Scrios pod",
+    "console": "Oscail consól"
+  },
+  "delete": {
+    "title": "Scrios pod",
+    "message": "Scrios pod {{name}}? D'fhéadfadh rialaitheoir an Deployment é a athchruthú."
+  }
+}

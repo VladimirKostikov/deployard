@@ -1,0 +1,7 @@
+{
+  "title": "Logs",
+  "streaming": "Striimataan logeja...",
+  "error": "Logien striimaus epäonnistui",
+  "empty": "Ei logirivejä vielä",
+  "autoScroll": "Automaattinen vieritys"
+}

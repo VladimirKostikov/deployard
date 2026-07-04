@@ -1,0 +1,26 @@
+{
+  "appTitle": "Deployard",
+  "language": "Мова",
+  "theme": {
+    "label": "Тема",
+    "light": "Світла",
+    "dark": "Темна",
+    "system": "Авто"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "admin": "Адмін",
+    "logout": "Вийти"
+  },
+  "status": {
+    "connected": "API підключено",
+    "checking": "Перевірка API..."
+  },
+  "cluster": {
+    "label": "Кластер"
+  },
+  "namespace": {
+    "label": "Namespace",
+    "all": "Усі namespace"
+  }
+}

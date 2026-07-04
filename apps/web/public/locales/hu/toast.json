@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Replikák frissítve",
+    "scaleError": "Nem sikerült skálázni a deploymentet",
+    "imageSuccess": "Container image frissítve",
+    "imageError": "Nem sikerült frissíteni a container image-et",
+    "deleteSuccess": "Deployment törölve",
+    "deleteError": "Nem sikerült törölni a deploymentet",
+    "createSuccess": "Deployment létrehozva",
+    "createError": "Nem sikerült létrehozni a deploymentet",
+    "configSaved": "Konfiguráció mentve",
+    "configError": "Nem sikerült menteni a konfigurációt",
+    "restartSuccess": "Deployment újraindítva",
+    "restartError": "Nem sikerült újraindítani a deploymentet",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback kész",
+    "rollbackError": "Rollback sikertelen",
+    "projectGroupDeleteSuccess": "Projektcsoport törölve",
+    "projectGroupDeleteError": "Nem sikerült törölni a projektcsoportot",
+    "projectGroupRestartSuccess": "A csoport újraindult",
+    "projectGroupRestartError": "A csoport újraindítása sikertelen",
+    "projectGroupDisableSuccess": "A csoport letiltva",
+    "projectGroupDisableError": "A csoport letiltása sikertelen",
+    "filesFolderCreated": "Mappa létrehozva",
+    "filesUploaded": "Fájl feltöltve",
+    "filesDeleted": "Törölve",
+    "filesRenamed": "Átnevezve",
+    "filesError": "A fájlművelet sikertelen"
+  },
+  "pod": {
+    "restartSuccess": "Pod újraindítva",
+    "restartError": "Nem sikerült újraindítani a podot",
+    "deleteSuccess": "Pod törölve",
+    "deleteError": "Nem sikerült törölni a podot"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service létrehozva",
+    "serviceCreateError": "Nem sikerült létrehozni a service-t",
+    "serviceDeleteSuccess": "Service törölve",
+    "serviceDeleteError": "Nem sikerült törölni a service-t",
+    "serviceUpdateSuccess": "Service frissítve",
+    "serviceUpdateError": "Nem sikerült frissíteni a service-t",
+    "tunnelError": "Nem sikerült megnyitni a service elérést",
+    "openBlocked": "A böngésző blokkolta az új lapot. Engedélyezd a pop-upokat ezen az oldalon.",
+    "openError": "Nem sikerült megnyitni: {{name}}. Ellenőrizd, hogy a pod-ok futnak-e.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Ingress szabály törölve",
+    "ingressDeleteError": "Nem sikerült törölni az ingress szabályt"
+  },
+  "ingress": {
+    "createSuccess": "Ingress szabály létrehozva",
+    "createError": "Nem sikerült létrehozni az ingress szabályt",
+    "deleteSuccess": "Ingress szabály törölve",
+    "deleteError": "Nem sikerült törölni az ingress szabályt"
+  },
+  "namespace": {
+    "createSuccess": "Namespace létrehozva",
+    "createError": "Nem sikerült létrehozni a namespace-t",
+    "deleteSuccess": "Namespace törölve",
+    "deleteError": "Nem sikerült törölni a namespace-t"
+  },
+  "import": {
+    "buildSuccess": "Image-ek építve",
+    "buildError": "Nem sikerült építeni az image-eket",
+    "rebuildSuccess": "Docker Compose újraépítve és elindítva",
+    "rebuildError": "Nem sikerült újraépíteni a projektet",
+    "loadSuccess": "Image-ek betöltve a clusterbe",
+    "loadError": "Nem sikerült betölteni az image-eket a clusterbe",
+    "applySuccess": "Projekt importálva Kubernetesbe",
+    "applyWithImages": "Projekt importálva, {{count}} image betöltve a kind-ba",
+    "openImportedApp": "Alkalmazás megnyitása: {{url}}",
+    "openUnavailable": "Az import kész, de az URL még nem elérhető. Nyisd meg a Network → web menüből.",
+    "applyError": "Nem sikerült importálni a projektet",
+    "previewError": "Nem sikerült előnézetet készíteni"
+  },
+  "admin": {
+    "userSaveSuccess": "Felhasználó mentve",
+    "userSaveError": "Nem sikerült menteni a felhasználót",
+    "userDeleteSuccess": "Felhasználó törölve",
+    "userDeleteError": "Nem sikerült törölni a felhasználót",
+    "roleSaveSuccess": "Szerepkör mentve",
+    "roleSaveError": "Nem sikerült menteni a szerepkört",
+    "roleDeleteSuccess": "Szerepkör törölve",
+    "roleDeleteError": "Nem sikerült törölni a szerepkört",
+    "permissionSaveSuccess": "Jogosultság mentve",
+    "permissionSaveError": "Nem sikerült menteni a jogosultságot",
+    "permissionDeleteSuccess": "Jogosultság törölve",
+    "permissionDeleteError": "Nem sikerült törölni a jogosultságot"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "appTitle": "Deployard",
+  "sections": {
+    "main": "Pagrindinis",
+    "admin": "Prieigos kontrolė",
+    "settings": "Nustatymai"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "import": "Importas",
+    "faq": "DUK",
+    "nodes": "Nodes",
+    "namespaces": "Namespaces",
+    "ingress": "Ingress",
+    "network": "Tinklas",
+    "metrics": "Metrics",
+    "admin": "Administravimas",
+    "users": "Naudotojai",
+    "roles": "Rolės",
+    "permissions": "Leidimai",
+    "backToApp": "Atgal į programą",
+    "logout": "Atsijungti"
+  },
+  "topbar": {
+    "connected": "API prijungtas",
+    "checking": "Tikrinama API..."
+  },
+  "mobileMenu": {
+    "open": "Atidaryti meniu",
+    "close": "Uždaryti meniu"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Репликите са обновени",
+    "scaleError": "Неуспешно мащабиране на deployment",
+    "imageSuccess": "Container image е обновен",
+    "imageError": "Неуспешно обновяване на container image",
+    "deleteSuccess": "Deployment е изтрит",
+    "deleteError": "Неуспешно изтриване на deployment",
+    "createSuccess": "Deployment е създаден",
+    "createError": "Неуспешно създаване на deployment",
+    "configSaved": "Конфигурацията е запазена",
+    "configError": "Неуспешно запазване на конфигурация",
+    "restartSuccess": "Deployment е рестартиран",
+    "restartError": "Неуспешен рестарт на deployment",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback завършен",
+    "rollbackError": "Rollback неуспешен",
+    "projectGroupDeleteSuccess": "Проектната група е изтрита",
+    "projectGroupDeleteError": "Неуспешно изтриване на проектна група",
+    "projectGroupRestartSuccess": "Групата е рестартирана",
+    "projectGroupRestartError": "Неуспешен рестарт на групата",
+    "projectGroupDisableSuccess": "Групата е деактивирана",
+    "projectGroupDisableError": "Неуспешно деактивиране на групата",
+    "filesFolderCreated": "Папката е създадена",
+    "filesUploaded": "Файлът е качен",
+    "filesDeleted": "Изтрито",
+    "filesRenamed": "Преименувано",
+    "filesError": "Операцията с файла не успя"
+  },
+  "pod": {
+    "restartSuccess": "Pod е рестартиран",
+    "restartError": "Неуспешен рестарт на pod",
+    "deleteSuccess": "Pod е изтрит",
+    "deleteError": "Неуспешно изтриване на pod"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service е създаден",
+    "serviceCreateError": "Неуспешно създаване на service",
+    "serviceDeleteSuccess": "Service е изтрит",
+    "serviceDeleteError": "Неуспешно изтриване на service",
+    "serviceUpdateSuccess": "Service е обновен",
+    "serviceUpdateError": "Неуспешно обновяване на service",
+    "tunnelError": "Неуспешно отваряне на достъп до service",
+    "openBlocked": "Браузърът блокира новия таб. Разреши pop-up прозорци за този сайт.",
+    "openError": "Не може да се отвори {{name}}. Провери дали pod-овете работят.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Ingress правило е изтрито",
+    "ingressDeleteError": "Неуспешно изтриване на ingress правило"
+  },
+  "ingress": {
+    "createSuccess": "Ingress правило е създадено",
+    "createError": "Неуспешно създаване на ingress правило",
+    "deleteSuccess": "Ingress правило е изтрито",
+    "deleteError": "Неуспешно изтриване на ingress правило"
+  },
+  "namespace": {
+    "createSuccess": "Namespace е създаден",
+    "createError": "Неуспешно създаване на namespace",
+    "deleteSuccess": "Namespace е изтрит",
+    "deleteError": "Неуспешно изтриване на namespace"
+  },
+  "import": {
+    "buildSuccess": "Images са изградени",
+    "buildError": "Неуспешно изграждане на images",
+    "rebuildSuccess": "Docker Compose е преизграден и стартиран",
+    "rebuildError": "Неуспешно преизграждане на проекта",
+    "loadSuccess": "Images са заредени в cluster",
+    "loadError": "Неуспешно зареждане на images в cluster",
+    "applySuccess": "Проектът е импортиран в Kubernetes",
+    "applyWithImages": "Проектът е импортиран, {{count}} images заредени в kind",
+    "openImportedApp": "Отваряне на приложението на {{url}}",
+    "openUnavailable": "Импортът приключи, но URL на приложението още не е готов. Отвори го от Network → web.",
+    "applyError": "Неуспешен импорт на проекта",
+    "previewError": "Неуспешно създаване на preview"
+  },
+  "admin": {
+    "userSaveSuccess": "Потребителят е запазен",
+    "userSaveError": "Неуспешно запазване на потребител",
+    "userDeleteSuccess": "Потребителят е изтрит",
+    "userDeleteError": "Неуспешно изтриване на потребител",
+    "roleSaveSuccess": "Ролята е запазена",
+    "roleSaveError": "Неуспешно запазване на роля",
+    "roleDeleteSuccess": "Ролята е изтрита",
+    "roleDeleteError": "Неуспешно изтриване на роля",
+    "permissionSaveSuccess": "Правото е запазено",
+    "permissionSaveError": "Неуспешно запазване на право",
+    "permissionDeleteSuccess": "Правото е изтрито",
+    "permissionDeleteError": "Неуспешно изтриване на право"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Ingress",
+  "subtitle": "HTTP-reitityssäännöt valitussa namespacessa",
+  "loading": "Ladataan ingress-sääntöjä...",
+  "error": "Ingress-sääntöjen lataus epäonnistui",
+  "empty": "Ei ingress-sääntöjä tässä namespacessa",
+  "create": {
+    "title": "Uusi ingress",
+    "name": "Nimi",
+    "host": "Host (esim. api.local)",
+    "path": "Path",
+    "service": "Service-nimi",
+    "port": "Service-portti",
+    "submit": "Luo ingress",
+    "submitting": "Luodaan...",
+    "cancel": "Peruuta"
+  },
+  "table": {
+    "name": "Nimi",
+    "host": "Host",
+    "path": "Path",
+    "service": "Backend",
+    "actions": "Toiminnot"
+  },
+  "actions": {
+    "delete": "Poista"
+  },
+  "delete": {
+    "title": "Poista ingress",
+    "message": "Poistetaanko ingress {{name}}?"
+  }
+}

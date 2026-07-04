@@ -1,0 +1,81 @@
+{
+  "title": "Δίκτυο",
+  "subtitle": "Services, Endpoints και Ingress: πώς τα pods επικοινωνούν μέσα στο cluster",
+  "tabs": {
+    "ariaLabel": "Ενότητες δικτύου",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Φόρτωση services...",
+    "error": "Αποτυχία φόρτωσης services",
+    "empty": "Δεν υπάρχουν services σε αυτό το namespace",
+    "table": {
+      "name": "Όνομα",
+      "type": "Τύπος",
+      "clusterIp": "Cluster IP",
+      "ports": "Ports",
+      "selector": "Selector",
+      "actions": "Ενέργειες"
+    },
+    "actions": {
+      "delete": "Διαγραφή",
+      "open": "Άνοιγμα {{name}} στον browser",
+      "openTooltip": "{{url}}: αν η σελίδα δεν φορτώνει, τρέξε στο terminal: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Αντιγραφή εντολής port-forward για {{name}}",
+      "copied": "Η εντολή αντιγράφηκε",
+      "edit": "Επεξεργασία ports",
+      "editShort": "Ports"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Τύπος",
+      "portsLabel": "Ports",
+      "port": "Port service",
+      "targetPort": "Target port",
+      "nodePort": "NodePort",
+      "cancel": "Ακύρωση",
+      "save": "Αποθήκευση",
+      "saving": "Αποθήκευση..."
+    },
+    "delete": {
+      "title": "Διαγραφή service",
+      "message": "Διαγραφή service {{name}}; Τα pods συνεχίζουν να τρέχουν αλλά το DNS όνομα θα σταματήσει να λειτουργεί."
+    },
+    "create": {
+      "title": "Δημιουργία service",
+      "name": "Όνομα service",
+      "deployment": "Deployment",
+      "port": "Port service",
+      "targetPort": "Target port (προαιρετικό)",
+      "submit": "Δημιουργία service",
+      "submitting": "Δημιουργία...",
+      "cancel": "Ακύρωση"
+    }
+  },
+  "endpoints": {
+    "subtitle": "Pod IPs πίσω από κάθε service (διαχειρίζονται αυτόματα από το Kubernetes)",
+    "loading": "Φόρτωση endpoints...",
+    "error": "Αποτυχία φόρτωσης endpoints",
+    "empty": "Δεν υπάρχουν endpoints ακόμα: δημιούργησε service για deployment",
+    "table": {
+      "name": "Service",
+      "ports": "Ports",
+      "addresses": "Pod IP / όνομα"
+    }
+  },
+  "deployment": {
+    "title": "Συνδεδεμένα services",
+    "loading": "Φόρτωση services...",
+    "error": "Αποτυχία φόρτωσης services",
+    "empty": "Δεν υπάρχει service για αυτό το deployment. Δημιούργησε ένα στη σελίδα Δίκτυο.",
+    "openNetwork": "Άνοιγμα δικτύου",
+    "viewEndpoints": "Pod IPs →"
+  }
+}

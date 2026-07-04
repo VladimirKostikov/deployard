@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Repliki zaktualizowane",
+    "scaleError": "Nie udało się skalować deploymentu",
+    "imageSuccess": "Container image zaktualizowany",
+    "imageError": "Nie udało się zaktualizować container image",
+    "deleteSuccess": "Deployment usunięty",
+    "deleteError": "Nie udało się usunąć deploymentu",
+    "createSuccess": "Deployment utworzony",
+    "createError": "Nie udało się utworzyć deploymentu",
+    "configSaved": "Konfiguracja zapisana",
+    "configError": "Nie udało się zapisać konfiguracji",
+    "restartSuccess": "Deployment zrestartowany",
+    "restartError": "Nie udało się zrestartować deploymentu",
+    "disableSuccess": "Deployment disabled",
+    "disableError": "Failed to disable deployment",
+    "enableSuccess": "Deployment enabled",
+    "enableError": "Failed to enable deployment",
+    "rollbackSuccess": "Rollback zakończony",
+    "rollbackError": "Rollback nie powiódł się",
+    "projectGroupDeleteSuccess": "Grupa projektu usunięta",
+    "projectGroupDeleteError": "Nie udało się usunąć grupy projektu",
+    "projectGroupRestartSuccess": "Grupa zrestartowana",
+    "projectGroupRestartError": "Nie udało się zrestartować grupy",
+    "projectGroupDisableSuccess": "Grupa wyłączona",
+    "projectGroupDisableError": "Nie udało się wyłączyć grupy",
+    "filesFolderCreated": "Folder utworzony",
+    "filesUploaded": "Plik przesłany",
+    "filesDeleted": "Usunięto",
+    "filesRenamed": "Zmieniono nazwę",
+    "filesError": "Operacja na pliku nie powiodła się"
+  },
+  "pod": {
+    "restartSuccess": "Pod zrestartowany",
+    "restartError": "Nie udało się zrestartować poda",
+    "deleteSuccess": "Pod usunięty",
+    "deleteError": "Nie udało się usunąć poda"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service utworzony",
+    "serviceCreateError": "Nie udało się utworzyć service",
+    "serviceDeleteSuccess": "Service usunięty",
+    "serviceDeleteError": "Nie udało się usunąć service",
+    "serviceUpdateSuccess": "Service zaktualizowany",
+    "serviceUpdateError": "Nie udało się zaktualizować service",
+    "tunnelError": "Nie udało się otworzyć dostępu do service",
+    "openBlocked": "Przeglądarka zablokowała nową kartę. Zezwól na pop-upy dla tej strony.",
+    "openError": "Nie udało się otworzyć {{name}}. Sprawdź, czy pody działają.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Reguła ingress usunięta",
+    "ingressDeleteError": "Nie udało się usunąć reguły ingress"
+  },
+  "ingress": {
+    "createSuccess": "Reguła ingress utworzona",
+    "createError": "Nie udało się utworzyć reguły ingress",
+    "deleteSuccess": "Reguła ingress usunięta",
+    "deleteError": "Nie udało się usunąć reguły ingress"
+  },
+  "namespace": {
+    "createSuccess": "Namespace utworzony",
+    "createError": "Nie udało się utworzyć namespace",
+    "deleteSuccess": "Namespace usunięty",
+    "deleteError": "Nie udało się usunąć namespace"
+  },
+  "import": {
+    "buildSuccess": "Obrazy zbudowane",
+    "buildError": "Nie udało się zbudować obrazów",
+    "rebuildSuccess": "Docker Compose przebudowany i uruchomiony",
+    "rebuildError": "Nie udało się przebudować projektu",
+    "loadSuccess": "Obrazy załadowane do cluster",
+    "loadError": "Nie udało się załadować obrazów do cluster",
+    "applySuccess": "Projekt zaimportowany do Kubernetes",
+    "applyWithImages": "Projekt zaimportowany, {{count}} obrazów załadowanych do kind",
+    "openImportedApp": "Otwieranie aplikacji na {{url}}",
+    "openUnavailable": "Import zakończony, ale URL nie jest jeszcze gotowy. Otwórz go z Network → web.",
+    "applyError": "Nie udało się zaimportować projektu",
+    "previewError": "Nie udało się zbudować podglądu"
+  },
+  "admin": {
+    "userSaveSuccess": "Użytkownik zapisany",
+    "userSaveError": "Nie udało się zapisać użytkownika",
+    "userDeleteSuccess": "Użytkownik usunięty",
+    "userDeleteError": "Nie udało się usunąć użytkownika",
+    "roleSaveSuccess": "Rola zapisana",
+    "roleSaveError": "Nie udało się zapisać roli",
+    "roleDeleteSuccess": "Rola usunięta",
+    "roleDeleteError": "Nie udało się usunąć roli",
+    "permissionSaveSuccess": "Uprawnienie zapisane",
+    "permissionSaveError": "Nie udało się zapisać uprawnienia",
+    "permissionDeleteSuccess": "Uprawnienie usunięte",
+    "permissionDeleteError": "Nie udało się usunąć uprawnienia"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "appTitle": "Deployard",
+  "sections": {
+    "main": "Aðal",
+    "admin": "Aðgangsstýring",
+    "settings": "Stillingar"
+  },
+  "nav": {
+    "deployments": "Deployments",
+    "import": "Innflutningur",
+    "faq": "FAQ",
+    "nodes": "Nodes",
+    "namespaces": "Namespaces",
+    "ingress": "Ingress",
+    "network": "Net",
+    "metrics": "Metrics",
+    "admin": "Stjórnun",
+    "users": "Notendur",
+    "roles": "Hlutverk",
+    "permissions": "Heimildir",
+    "backToApp": "Til baka í app",
+    "logout": "Skrá út"
+  },
+  "topbar": {
+    "connected": "API tengt",
+    "checking": "Athugar API..."
+  },
+  "mobileMenu": {
+    "open": "Opna valmynd",
+    "close": "Loka valmynd"
+  }
+}

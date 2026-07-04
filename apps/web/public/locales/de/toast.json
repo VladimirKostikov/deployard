@@ -1,0 +1,93 @@
+{
+  "deployment": {
+    "scaleSuccess": "Replikas aktualisiert",
+    "scaleError": "Deployment konnte nicht skaliert werden",
+    "imageSuccess": "Container-Image aktualisiert",
+    "imageError": "Container-Image konnte nicht aktualisiert werden",
+    "deleteSuccess": "Deployment gelöscht",
+    "deleteError": "Deployment konnte nicht gelöscht werden",
+    "createSuccess": "Deployment erstellt",
+    "createError": "Deployment konnte nicht erstellt werden",
+    "configSaved": "Konfiguration gespeichert",
+    "configError": "Konfiguration konnte nicht gespeichert werden",
+    "restartSuccess": "Deployment neu gestartet",
+    "restartError": "Deployment konnte nicht neu gestartet werden",
+    "disableSuccess": "Deployment deaktiviert",
+    "disableError": "Deployment konnte nicht deaktiviert werden",
+    "enableSuccess": "Deployment aktiviert",
+    "enableError": "Deployment konnte nicht aktiviert werden",
+    "rollbackSuccess": "Rollback abgeschlossen",
+    "rollbackError": "Rollback fehlgeschlagen",
+    "projectGroupDeleteSuccess": "Projektgruppe gelöscht",
+    "projectGroupDeleteError": "Projektgruppe konnte nicht gelöscht werden",
+    "projectGroupRestartSuccess": "Projektgruppe neu gestartet",
+    "projectGroupRestartError": "Projektgruppe konnte nicht neu gestartet werden",
+    "projectGroupDisableSuccess": "Projektgruppe deaktiviert",
+    "projectGroupDisableError": "Projektgruppe konnte nicht deaktiviert werden",
+    "filesFolderCreated": "Ordner erstellt",
+    "filesUploaded": "Datei hochgeladen",
+    "filesDeleted": "Gelöscht",
+    "filesRenamed": "Umbenannt",
+    "filesError": "Dateioperation fehlgeschlagen"
+  },
+  "pod": {
+    "restartSuccess": "Pod neu gestartet",
+    "restartError": "Pod konnte nicht neu gestartet werden",
+    "deleteSuccess": "Pod gelöscht",
+    "deleteError": "Pod konnte nicht gelöscht werden"
+  },
+  "network": {
+    "serviceCreateSuccess": "Service erstellt",
+    "serviceCreateError": "Service konnte nicht erstellt werden",
+    "serviceDeleteSuccess": "Service gelöscht",
+    "serviceDeleteError": "Service konnte nicht gelöscht werden",
+    "serviceUpdateSuccess": "Service aktualisiert",
+    "serviceUpdateError": "Service konnte nicht aktualisiert werden",
+    "tunnelError": "Service-Zugriff konnte nicht geöffnet werden",
+    "openBlocked": "Der Browser hat den neuen Tab blockiert. Erlauben Sie Pop-ups für diese Seite.",
+    "openError": "{{name}} konnte nicht geöffnet werden. Prüfen Sie, ob die Pods laufen.",
+    "openSuccess": "{{url}}",
+    "ingressDeleteSuccess": "Ingress-Regel gelöscht",
+    "ingressDeleteError": "Ingress-Regel konnte nicht gelöscht werden"
+  },
+  "ingress": {
+    "createSuccess": "Ingress-Regel erstellt",
+    "createError": "Ingress-Regel konnte nicht erstellt werden",
+    "deleteSuccess": "Ingress-Regel gelöscht",
+    "deleteError": "Ingress-Regel konnte nicht gelöscht werden"
+  },
+  "namespace": {
+    "createSuccess": "Namespace erstellt",
+    "createError": "Namespace konnte nicht erstellt werden",
+    "deleteSuccess": "Namespace gelöscht",
+    "deleteError": "Namespace konnte nicht gelöscht werden"
+  },
+  "import": {
+    "buildSuccess": "Images gebaut",
+    "buildError": "Images konnten nicht gebaut werden",
+    "rebuildSuccess": "Docker Compose neu gebaut",
+    "rebuildError": "Projekt konnte nicht neu gebaut werden",
+    "loadSuccess": "Images in Cluster geladen",
+    "loadError": "Images konnten nicht in Cluster geladen werden",
+    "applySuccess": "Projekt in Kubernetes importiert",
+    "applyWithImages": "Projekt importiert, {{count}} Images in kind geladen",
+    "openImportedApp": "App wird geöffnet: {{url}}",
+    "openUnavailable": "Import abgeschlossen, aber die App-URL ist noch nicht bereit. Öffnen Sie sie unter Netzwerk → web.",
+    "applyError": "Projekt konnte nicht importiert werden",
+    "previewError": "Vorschau fehlgeschlagen"
+  },
+  "admin": {
+    "userSaveSuccess": "Benutzer gespeichert",
+    "userSaveError": "Benutzer konnte nicht gespeichert werden",
+    "userDeleteSuccess": "Benutzer gelöscht",
+    "userDeleteError": "Benutzer konnte nicht gelöscht werden",
+    "roleSaveSuccess": "Rolle gespeichert",
+    "roleSaveError": "Rolle konnte nicht gespeichert werden",
+    "roleDeleteSuccess": "Rolle gelöscht",
+    "roleDeleteError": "Rolle konnte nicht gelöscht werden",
+    "permissionSaveSuccess": "Berechtigung gespeichert",
+    "permissionSaveError": "Berechtigung konnte nicht gespeichert werden",
+    "permissionDeleteSuccess": "Berechtigung gelöscht",
+    "permissionDeleteError": "Berechtigung konnte nicht gelöscht werden"
+  }
+}

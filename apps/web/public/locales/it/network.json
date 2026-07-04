@@ -1,0 +1,81 @@
+{
+  "title": "Rete",
+  "subtitle": "Services, Endpoints e Ingress: come i pod si raggiungono nel cluster",
+  "tabs": {
+    "ariaLabel": "Sezioni rete",
+    "services": "Services",
+    "endpoints": "Endpoints",
+    "ingress": "Ingress"
+  },
+  "services": {
+    "loading": "Caricamento services...",
+    "error": "Impossibile caricare i services",
+    "empty": "Nessun service in questo namespace",
+    "table": {
+      "name": "Nome",
+      "type": "Tipo",
+      "clusterIp": "Cluster IP",
+      "ports": "Porte",
+      "selector": "Selector",
+      "actions": "Azioni"
+    },
+    "actions": {
+      "delete": "Elimina",
+      "open": "Apri {{name}} nel browser",
+      "openTooltip": "{{url}}: se la pagina non carica, esegui nel terminale: {{command}}",
+      "accessUrlLoading": "...",
+      "accessUrlTitle": "{{namespace}}/{{service}} - {{url}}",
+      "portForward": "Copia comando port-forward per {{name}}",
+      "copied": "Comando copiato",
+      "edit": "Modifica porte",
+      "editShort": "Porte"
+    },
+    "groups": {
+      "count": "{{count}} services"
+    },
+    "edit": {
+      "title": "Service {{name}}",
+      "typeLabel": "Tipo",
+      "portsLabel": "Porte",
+      "port": "Porta service",
+      "targetPort": "Porta target",
+      "nodePort": "NodePort",
+      "cancel": "Annulla",
+      "save": "Salva",
+      "saving": "Salvataggio..."
+    },
+    "delete": {
+      "title": "Elimina service",
+      "message": "Eliminare il service {{name}}? I pod restano in esecuzione ma il nome DNS smetterà di funzionare."
+    },
+    "create": {
+      "title": "Crea service",
+      "name": "Nome service",
+      "deployment": "Deployment",
+      "port": "Porta service",
+      "targetPort": "Porta target (opzionale)",
+      "submit": "Crea service",
+      "submitting": "Creazione...",
+      "cancel": "Annulla"
+    }
+  },
+  "endpoints": {
+    "subtitle": "IP dei pod dietro ogni service (gestiti automaticamente da Kubernetes)",
+    "loading": "Caricamento endpoints...",
+    "error": "Impossibile caricare gli endpoints",
+    "empty": "Nessun endpoint ancora: crea un service per un deployment",
+    "table": {
+      "name": "Service",
+      "ports": "Porte",
+      "addresses": "IP / nome pod"
+    }
+  },
+  "deployment": {
+    "title": "Services collegati",
+    "loading": "Caricamento services...",
+    "error": "Impossibile caricare i services",
+    "empty": "Nessun service per questo deployment. Creane uno nella pagina Rete.",
+    "openNetwork": "Apri rete",
+    "viewEndpoints": "IP pod →"
+  }
+}

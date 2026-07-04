@@ -1,0 +1,71 @@
+{
+  "title": "Administrācija",
+  "subtitle": "Lietotāji, lomas un deployment atļaujas",
+  "back": "Atpakaļ uz deployments",
+  "actions": {
+    "label": "Darbības",
+    "create": "Izveidot",
+    "edit": "Rediģēt",
+    "delete": "Dzēst",
+    "save": "Saglabāt",
+    "cancel": "Atcelt",
+    "saving": "Saglabā...",
+    "deleting": "Dzēš..."
+  },
+  "users": {
+    "title": "Lietotāji",
+    "subtitle": "Pārvaldiet dashboard kontus un lomu piešķiršanu",
+    "create": "Pievienot lietotāju",
+    "createTitle": "Izveidot lietotāju",
+    "editTitle": "Rediģēt lietotāju",
+    "deleteTitle": "Dzēst lietotāju",
+    "deleteMessage": "Dzēst {{email}}? To nevar atsaukt.",
+    "email": "E-pasts",
+    "name": "Vārds",
+    "password": "Parole",
+    "newPassword": "Jauna parole (neobligāta)",
+    "roles": "Lomas",
+    "status": "Statuss",
+    "active": "Aktīvs",
+    "inactive": "Neaktīvs"
+  },
+  "roles": {
+    "title": "Lomas",
+    "subtitle": "Lomu definīcijas un pievienotās atļaujas",
+    "create": "Pievienot lomu",
+    "createTitle": "Izveidot lomu",
+    "editTitle": "Rediģēt lomu",
+    "deleteTitle": "Dzēst lomu",
+    "deleteMessage": "Dzēst lomu \"{{name}}\"? Tā nedrīkst būt piešķirta nevienam lietotājam.",
+    "name": "Nosaukums",
+    "permissions": "Atļaujas"
+  },
+  "permissions": {
+    "title": "Atļaujas",
+    "subtitle": "Detalizēti piekļuves noteikumi deploymentiem",
+    "namespace": "Namespace"
+  },
+  "access": {
+    "section": "Sadaļa",
+    "sections": {
+      "deployments": "Deployments",
+      "network": "Tīkls",
+      "import": "Import",
+      "namespaces": "Namespaces",
+      "metrics": "Metrikas",
+      "admin": "Administrācija"
+    },
+    "level": "Piekļuve",
+    "levels": {
+      "none": "Nav piekļuves",
+      "view": "Skatīt",
+      "operate": "Pārvaldīt",
+      "manage": "Administrēt"
+    },
+    "hints": {
+      "view": "Atvērt sadaļu, lasīt sarakstus un detaļas",
+      "operate": "Restartēt, atspējot, rollback, logi, terminālis",
+      "manage": "Izveide, dzēšana, import un admin izmaiņas"
+    }
+  }
+}

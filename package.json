@@ -7,7 +7,7 @@
     "dev": "pnpm --parallel --filter @dpd/api --filter @dpd/web run dev",
     "build": "pnpm --filter @dpd/shared build && pnpm --filter @dpd/api --filter @dpd/web run build && pnpm run docker:build",
     "docker:build": "docker compose --env-file .env -f deploy/docker/compose.yml build",
-    "lint": "pnpm -r run lint",
+    "lint": "pnpm --filter @dpd/shared build && pnpm -r run lint",
     "test": "pnpm -r run test",
     "test:e2e": "pnpm --filter @dpd/e2e test"
   },

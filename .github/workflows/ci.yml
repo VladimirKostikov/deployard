@@ -48,6 +48,8 @@ jobs:
 
       - name: Unit tests
         run: pnpm --filter @dpd/api test && pnpm --filter @dpd/web test
+        env:
+          DATABASE_URL: ''
 
       - name: Build apps
         run: pnpm --filter @dpd/api --filter @dpd/web run build

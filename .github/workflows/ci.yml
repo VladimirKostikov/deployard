@@ -40,14 +40,17 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Build shared package
+        run: pnpm run prepare:shared
+
       - name: Lint
-        run: pnpm lint
+        run: pnpm -r run lint
 
       - name: Unit tests
         run: pnpm --filter @dpd/api test && pnpm --filter @dpd/web test
 
       - name: Build apps
-        run: pnpm --filter @dpd/shared build && pnpm --filter @dpd/api --filter @dpd/web run build
+        run: pnpm --filter @dpd/api --filter @dpd/web run build
 
       - name: Helm lint
         run: helm lint deploy/helm/dpd
